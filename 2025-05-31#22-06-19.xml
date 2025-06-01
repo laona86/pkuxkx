@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSP="yes" mEnableMSDP="yes" mMapStrongHighlight="no" mLogStatus="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>PKUXKX</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -47,7 +47,7 @@
 				<string>enable-accessibility</string>
 				<string>generic_mapper</string>
 			</mInstalledPackages>
-			<url>pkuxkx.com</url>
+			<url>hk.pkuxkx.com</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>-1</serverPackageVersion>
 			<port>8081</port>
@@ -79,13 +79,15 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Monaco,16,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Ubuntu Mono,16,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
 			<mBgColor2>#000000</mBgColor2>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
+			<mRoomCollisionBorderColor>#ffff00</mRoomCollisionBorderColor>
+			<mMapInfoBg alpha="120">#969696</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
 			<mRed2>#800000</mRed2>
@@ -105,9 +107,24 @@
 			<mSpellDic>en_US</mSpellDic>
 			<mLineSize>10.0</mLineSize>
 			<mRoomSize>0.5</mRoomSize>
-			<mMapInfoContributors>
-				<mapInfoContributor>Short</mapInfoContributor>
-			</mMapInfoContributors>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<profileShortcut key="Script editor">Alt+E</profileShortcut>
+			<profileShortcut key="Show Map">Alt+M</profileShortcut>
+			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
+			<profileShortcut key="Preferences">Alt+P</profileShortcut>
+			<profileShortcut key="Notepad">Alt+N</profileShortcut>
+			<profileShortcut key="Package manager">Alt+O</profileShortcut>
+			<profileShortcut key="Module manager">Alt+I</profileShortcut>
+			<profileShortcut key="MultiView">Alt+V</profileShortcut>
+			<profileShortcut key="Mute all media">Alt+K</profileShortcut>
+			<profileShortcut key="Play">Alt+C</profileShortcut>
+			<profileShortcut key="Disconnect">Alt+D</profileShortcut>
+			<profileShortcut key="Reconnect">Alt+R</profileShortcut>
+			<profileShortcut key="Close profile">Alt+W</profileShortcut>
+			<profileShortcut key="Toggle Time Stamps">Ctrl+Alt+T</profileShortcut>
+			<profileShortcut key="Toggle Replay">Ctrl+Alt+R</profileShortcut>
+			<profileShortcut key="Toggle Logging">Ctrl+Alt+L</profileShortcut>
+			<profileShortcut key="Toggle Emergency Stop">Ctrl+Alt+S</profileShortcut>
 			<stopwatches />
 		</Host>
 	</HostPackage>
@@ -2424,29 +2441,6 @@ send("zouwei "..new_pos)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>丹炉</name>
-				<script>echo("---")
-echo (matches[2])
---local color = analyze_fg_ansi_color(matches[2])
---echo("--&gt;:"..color)</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>.*^^^^^.*</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
 		</TriggerGroup>
 	</TriggerPackage>
 	<TimerPackage />
@@ -4087,7 +4081,7 @@ end</script>
 		</Alias>
 		<Alias isActive="yes" isFolder="no">
 			<name>Test script</name>
-			<script>echo("*^^^^^*******")</script>
+			<script>get_result()</script>
 			<command></command>
 			<packageName></packageName>
 			<regex>^testscript$</regex>
@@ -13742,6 +13736,30 @@ end
 			</Variable>
 		</VariableGroup>
 		<VariableGroup>
+			<name>murong_task</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
+			<Variable>
+				<name>current_mrf_location</name>
+				<keyType>4</keyType>
+				<value>node walk zj_mrf</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>murong_target_room</name>
+				<keyType>4</keyType>
+				<value>关帝庙</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>murong_target_city</name>
+				<keyType>4</keyType>
+				<value>建宁府</value>
+				<valueType>4</valueType>
+			</Variable>
+		</VariableGroup>
+		<VariableGroup>
 			<name>skill_learning_set</name>
 			<keyType>4</keyType>
 			<value></value>
@@ -13796,112 +13814,10 @@ end
 			</Variable>
 		</VariableGroup>
 		<VariableGroup>
-			<name>murong_task</name>
+			<name>luren_set</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
-			<Variable>
-				<name>current_mrf_location</name>
-				<keyType>4</keyType>
-				<value>node walk zj_mrf</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>murong_target_room</name>
-				<keyType>4</keyType>
-				<value>关帝庙</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>murong_target_city</name>
-				<keyType>4</keyType>
-				<value>建宁府</value>
-				<valueType>4</valueType>
-			</Variable>
-		</VariableGroup>
-		<VariableGroup>
-			<name>hp_info</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-			<Variable>
-				<name>base_xue</name>
-				<keyType>4</keyType>
-				<value>3743</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_neili</name>
-				<keyType>4</keyType>
-				<value>2015</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>food</name>
-				<keyType>4</keyType>
-				<value>286</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_shen</name>
-				<keyType>4</keyType>
-				<value>541</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>max_shen</name>
-				<keyType>4</keyType>
-				<value>541</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>water</name>
-				<keyType>4</keyType>
-				<value>272</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>max_neili</name>
-				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>current_jingli</name>
-				<keyType>4</keyType>
-				<value>1477</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_xue</name>
-				<keyType>4</keyType>
-				<value>3741</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_neili</name>
-				<keyType>4</keyType>
-				<value>3730</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_jingli</name>
-				<keyType>4</keyType>
-				<value>751</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_shen</name>
-				<keyType>4</keyType>
-				<value>541</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>max_xue</name>
-				<keyType>4</keyType>
-				<value>3774</value>
-				<valueType>4</valueType>
-			</Variable>
 		</VariableGroup>
 		<VariableGroup>
 			<name>skill_info</name>
@@ -13958,10 +13874,88 @@ end
 			</Variable>
 		</VariableGroup>
 		<VariableGroup>
-			<name>luren_set</name>
+			<name>hp_info</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
+			<Variable>
+				<name>base_xue</name>
+				<keyType>4</keyType>
+				<value>3743</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_neili</name>
+				<keyType>4</keyType>
+				<value>2015</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>food</name>
+				<keyType>4</keyType>
+				<value>286</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_shen</name>
+				<keyType>4</keyType>
+				<value>541</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_jingli</name>
+				<keyType>4</keyType>
+				<value>751</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>water</name>
+				<keyType>4</keyType>
+				<value>272</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>max_xue</name>
+				<keyType>4</keyType>
+				<value>3774</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>max_neili</name>
+				<keyType>4</keyType>
+				<value>2014</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>current_neili</name>
+				<keyType>4</keyType>
+				<value>3730</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_xue</name>
+				<keyType>4</keyType>
+				<value>3741</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_jingli</name>
+				<keyType>4</keyType>
+				<value>1477</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_shen</name>
+				<keyType>4</keyType>
+				<value>541</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>max_shen</name>
+				<keyType>4</keyType>
+				<value>541</value>
+				<valueType>4</valueType>
+			</Variable>
 		</VariableGroup>
 		<VariableGroup>
 			<name>hp_constants</name>
@@ -14005,9 +13999,9 @@ end
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -14023,9 +14017,9 @@ end
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>

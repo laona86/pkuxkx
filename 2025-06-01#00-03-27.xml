@@ -2426,10 +2426,9 @@ send("zouwei "..new_pos)</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>丹炉</name>
-				<script>echo("---")
-echo (matches[2])
---local color = analyze_fg_ansi_color(matches[2])
---echo("--&gt;:"..color)</script>
+				<script>
+local color = analyze_fg_ansi_color(matches[2])
+echo("--&gt;:"..color)</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2441,7 +2440,7 @@ echo (matches[2])
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>.*^^^^^.*</string>
+					<string>.*(^^^^^).*</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
