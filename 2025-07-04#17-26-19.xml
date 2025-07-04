@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>PKUXKX</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -1191,7 +1191,7 @@ tiyunzong_level = matches[2]</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
-				<mCommand>dazuo 100</mCommand>
+				<mCommand>dazuo 40</mCommand>
 				<packageName></packageName>
 				<mFgColor>#ff0000</mFgColor>
 				<mBgColor>#ffff00</mBgColor>
@@ -1211,7 +1211,7 @@ tiyunzong_level = matches[2]</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
-				<mCommand>yc</mCommand>
+				<mCommand>sleep</mCommand>
 				<packageName></packageName>
 				<mFgColor>#ff0000</mFgColor>
 				<mBgColor>#ffff00</mBgColor>
@@ -1227,7 +1227,8 @@ tiyunzong_level = matches[2]</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>补气完成</name>
-				<script>if hp_info.food+0 &lt; 100 then
+				<script>expandAlias("hb")
+if hp_info.food+0 &lt; 100 then
   eat_and_drink()
 end
 send("dazuo 10")</script>
@@ -1246,6 +1247,46 @@ send("dazuo 10")</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>睡醒</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand>dazuo 10</mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>你一觉醒来，精神抖擞地活动了几下手脚。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>睡多</name>
+				<script>tempTimer(10, function() send("dazuo 10") end)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^你刚刚睡过一觉, 多睡对身体有害无益</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
@@ -1470,7 +1511,7 @@ murong_task["current_mrf_location"] = ""</script>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
-		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>交战</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -1819,7 +1860,7 @@ set_message(name, msg)
 				<integer>7</integer>
 			</regexCodePropertyList>
 		</Trigger>
-		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>武当任务</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -2017,7 +2058,7 @@ parse_jing(addr, book, chapter, page)
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
-		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>任务地址</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -2054,7 +2095,7 @@ parse_jing(addr, book, chapter, page)
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>慕容复</name>
-				<script>--echo("====&gt; found")
+				<script>echo("====&gt; found")
 update_location("慕容复")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -2067,7 +2108,7 @@ update_location("慕容复")</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>茶馆 -.*  ★</string>
+					<string>^茶馆</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -2075,7 +2116,8 @@ update_location("慕容复")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>破阵-归云庄</name>
-				<script>update_location("归云庄")</script>
+				<script>update_location("归云庄")
+murong_task["current_mrf_location"] = "node walk pozhen_mrf"</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2863,6 +2905,86 @@ murong_task["current_mrf_location"] = "walk zhenjiang"</script>
 					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>ferry</name>
+				<script>update_location("ferry")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>&lt;ferry&gt;</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>黄河渡口</name>
+				<script>update_location("黄河渡口")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^黄河渡口</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>建康府中城</name>
+				<script>update_location("建康府中城")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>中城 -</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>归云庄的大厅</name>
+				<script>update_location("归云庄的大厅")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string> 这里是归云庄的大厅，是庄主会客的地方</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
 		</TriggerGroup>
 		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>加精神</name>
@@ -2885,7 +3007,7 @@ murong_task["current_mrf_location"] = "walk zhenjiang"</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
-				<mCommand>drink;;tuna 100</mCommand>
+				<mCommand>drink;;tuna 20</mCommand>
 				<packageName></packageName>
 				<mFgColor>#ff0000</mFgColor>
 				<mBgColor>#ffff00</mBgColor>
@@ -2905,7 +3027,7 @@ murong_task["current_mrf_location"] = "walk zhenjiang"</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
-				<mCommand>yr</mCommand>
+				<mCommand>sleep</mCommand>
 				<packageName></packageName>
 				<mFgColor>#ff0000</mFgColor>
 				<mBgColor>#ffff00</mBgColor>
@@ -2939,6 +3061,26 @@ murong_task["current_mrf_location"] = "walk zhenjiang"</script>
 					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>wake up</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand>tuna 20</mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>你一觉醒来，精神抖擞地活动了几下手脚。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
 		</TriggerGroup>
 		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>破阵</name>
@@ -2963,8 +3105,191 @@ expandAlias("pc")</script>
 				<integer>1</integer>
 			</regexCodePropertyList>
 		</Trigger>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>陆家庄任务</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>陆-占挂</name>
+				<script>select_one_gua(matches[2])
+send("e;;e;;e;;e")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^陆乘风说道：「格格恶，我为你占得一卦：(.*)。」</string>
+					<string>^系统回馈：(.*) = 0</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>开始桃花林任务</name>
+				<script>take_one_step()</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^你来到了一片桃花林里，立刻迷失了方向。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>桃花林任务结束</name>
+				<script>tempTimer(2, function() 
+  send("leave") 
+  tempTimer(2, function() send("w;;w;;w;;") end)
+end)
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^天色大变，陆乘风给你算的卦也不那么准了。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>单步走太快</name>
+				<script>tempTimer(1, function() take_one_step() end)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>你的动作还没有完成，不能移动。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>继续桃花林任务</name>
+				<script>increase_step()
+tempTimer(2, function() take_one_step() end)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^你顺利地回到了起点。</string>
+					<string>^你充满自信的向前走去，桃花阵看来也不在话下。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>回到大厅</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand>ask lu about job</mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>大厅 - </string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>走错</name>
+				<script>tempTimer(2, function() restart_zhen() end)
+--restart_zhen()</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^你胡乱走着，像个没头苍蝇一样，有个声音冷笑：</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
 	</TriggerPackage>
-	<TimerPackage />
+	<TimerPackage>
+		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
+			<name>study</name>
+			<script>--expandAlias("hb")</script>
+			<command>yr;; du book 2 for 20</command>
+			<packageName></packageName>
+			<time>00:00:20.000</time>
+		</Timer>
+		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
+			<name>disable script</name>
+			<script>-- status_handler
+disableScript("status_handler")</script>
+			<command></command>
+			<packageName></packageName>
+			<time>02:00:00.000</time>
+		</Timer>
+	</TimerPackage>
 	<AliasPackage>
 		<AliasGroup isActive="no" isFolder="yes">
 			<name>run-lua-code</name>
@@ -4527,6 +4852,20 @@ expandAlias("song "..number)</script>
 				<packageName></packageName>
 				<regex>^job$</regex>
 			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>kill</name>
+				<script>send("kill "..matches[2])</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^k (.*)$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>jifa all</name>
+				<script></script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^jfall$</regex>
+			</Alias>
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>当前挂机练习项目</name>
@@ -4699,16 +5038,6 @@ end
 			</Alias>
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
-			<name>insert to table</name>
-			<script>--table.insert(skill_learning_set, "do 10 lian cuff 1")
---table.insert(skill_learning_set, "do 10 lian dodge 1")
---table.insert(skill_learning_set, "do 10 lian sword 1")
-</script>
-			<command></command>
-			<packageName></packageName>
-			<regex>^insert_table$</regex>
-		</Alias>
-		<Alias isActive="yes" isFolder="no">
 			<name>Test script</name>
 			<script>-- echo("+++\n")
 --local page = find_zhuangzi_chapter_start_page("养身主")
@@ -4832,6 +5161,13 @@ identify_all_luren_with_opposite_clue()</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^bhz$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>回破阵</name>
+				<script>back_to_pozhen()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^bp$</regex>
 			</Alias>
 		</AliasGroup>
 	</AliasPackage>
@@ -14446,9 +14782,9 @@ quest = {location = ""}
 function update_location(location)
   if location == "武当广场" then
     quest.location = "wdgc"
-   elseif location == "慕容复" then
-    quest.location = "mrf"
-   elseif location == "归云庄" then
+  elseif location == "慕容复" then
+    quest.location = "mrf"  
+  elseif location == "归云庄" then
     quest.location = "pozhen" 
   elseif location == "扬子津" then
     quest.location = "yangziji"
@@ -14465,12 +14801,25 @@ function update_location(location)
   elseif location == "代州" then
     quest.location = "daizhou"  
   elseif location == "岳阳" then
-    quest.location = "yueyang"         
+    quest.location = "yueyang"     
+  elseif location == "ferry" then
+    quest.location = "ferry"     
+  elseif location == "黄河渡口" then
+    quest.location = "hhdk"    
+  elseif location == "建康府中城" then
+    quest.location = "jkf"       
   end
 
 end
 
 local quest_map = {
+  jkf = { 
+    back_hangzhou = "node walk jk_hz",
+    back_pozhen = "node walk jk_pozhen"},
+  hhdk = { 
+    ask_job = "ask shao gong about 过河;;enter"},
+  ferry = { 
+    ask_job = "ride"},
   yueyang = { 
     back_hangzhou = "node walk yy_laf"},
   daizhou = { 
@@ -14485,26 +14834,29 @@ local quest_map = {
     job_done = "give pu xin", 
     job_fail = "ask pu about fail",
     back_hangzhou = "node walk mrf_hz",
-    back_yangzhou = "node walk mrf_zjdk"},
+    back_yangzhou = "node walk mrf_zjdk",
+    back_pozhen = "node walk mrf_pozhen"},
   pozhen = { 
     ask_job = "ask lu about pozhen;;set ForcedAct;;jiali max", 
     job_done = "ask lu about 破阵奖励", 
-    job_fail = "ask lu about 破阵失败"}, 
+    job_fail = "ask lu about 破阵失败",
+    back_hangzhou = "node walk pozhen_hz",
+    back_yangzhou = "node walk pozhen_zjdk"}, 
   yangziji = { 
-    ask_job = "ask shao gong about jiang",
+    ask_job = "ask shao gong about jiang;;enter",
     back_yangzhou = "walk yangzhou",
   },
   zjdk = { 
-    ask_job = "ask shao gong about jiang",
+    ask_job = "ask shao gong about jiang;;enter",
     back_yangzhou = "walk yangzhou",
     back_hangzhou = "node walk zjdk_hz"
   },  
-  lydk = { ask_job = "ask shao gong about 过河", back_yangzhou = "node walk lydk_yz",},
-  jydk = { ask_job = "ask shao gong about 过河"},
+  lydk = { ask_job = "ask shao gong about 过河;;enter", back_yangzhou = "node walk lydk_yz",},
+  jydk = { ask_job = "ask shao gong about 过河;;enter"},
   hz = { 
     ask_job = "ask zhang about job", 
     job_done = "give zhang core", 
-    job_fail = "ask zhang about cancel",
+    job_fail = "ask zhang about 失败",
     back_yangzhou = "node walk hz_zjdk"},
 }
 
@@ -14520,7 +14872,6 @@ end
 
 function job_fail()
   local str = quest_map[quest.location].job_fail
-  --echo(str)
   send(quest_map[quest.location].job_fail)
 end
 
@@ -14530,8 +14881,86 @@ end
 
 function back_to_hz()
   send(quest_map[quest.location].back_hangzhou)
+end
+
+function back_to_pozhen()
+  send(quest_map[quest.location].back_pozhen)
 end</script>
 			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>陆家庄任务</name>
+			<packageName></packageName>
+			<script>local bagua = {
+  qian = {"e","ne","w","s"},
+  dui = {"n","sw","nw","s"},
+  li = {"s","n","se","nw"},
+  zhen = {"w","se","n","n"},
+  xun = {"se","e","s","sw"},
+  kan = {"ne","n","sw","nw"},
+  gen = {"sw","w","w","s"},
+  kun = {"nw","nw","s","e"}
+}
+
+step = 1
+selected_gua = {}
+
+function select_one_gua(gua)
+  selected_gua = init_taohuazhen_task(gua)
+end
+
+function init_taohuazhen_task(gua)
+  step = 1
+  if gua == "乾天" then 
+    return bagua.qian
+  elseif gua == "兑泽" then
+    return bagua.dui
+  elseif gua == "离火" then
+    return bagua.li
+  elseif gua == "震雷" then
+    return bagua.zhen
+  elseif gua == "巽风" then
+    return bagua.xun
+  elseif gua == "坎水" then
+    return bagua.kan
+  elseif gua == "艮山" then
+    return bagua.gen
+  elseif gua == "坤地" then
+    return bagua.kun
+  end
+end
+
+function increase_step()
+  step = step + 1
+  if step == 5 then
+    step = 1
+  end
+end
+
+function take_one_step()
+  send(selected_gua[step])
+end
+
+function restart_zhen()
+  step = 1
+  take_one_step()
+end
+</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>status_handler</name>
+			<packageName></packageName>
+			<script>function status_handler()
+  --display(gmcp)
+  --echo("----&gt;"..gmcp.GMCP.Status.food)
+  if gmcp.GMCP.Status.food+0 &lt; 50 then
+     eat_and_drink()
+  end
+end</script>
+			<eventHandlerList>
+				<string>gmcp.GMCP.Status</string>
+			</eventHandlerList>
 		</Script>
 	</ScriptPackage>
 	<KeyPackage />
@@ -14547,7 +14976,7 @@ end</script>
 			<Variable>
 				<name>current_mrf_location</name>
 				<keyType>4</keyType>
-				<value>walk zhenjiang</value>
+				<value>node walk pozhen_mrf</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -14559,7 +14988,7 @@ end</script>
 			<Variable>
 				<name>murong_target_room</name>
 				<keyType>4</keyType>
-				<value>客房</value>
+				<value>走廊</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -14581,9 +15010,9 @@ end</script>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>thirthty</name>
+				<name>hunger</name>
 				<keyType>4</keyType>
-				<value>"饥渴状态"</value>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -14593,21 +15022,21 @@ end</script>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
-				<keyType>4</keyType>
-				<value>血不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>hunger</name>
-				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>short_of_shen</name>
 				<keyType>4</keyType>
 				<value>神不足</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>thirthty</name>
+				<keyType>4</keyType>
+				<value>"饥渴状态"</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>short_of_xue</name>
+				<keyType>4</keyType>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -14799,43 +15228,7 @@ end</script>
 			<Variable>
 				<name>base_xue</name>
 				<keyType>4</keyType>
-				<value>4169</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_neili</name>
-				<keyType>4</keyType>
-				<value>2092</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>food</name>
-				<keyType>4</keyType>
-				<value>226</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_shen</name>
-				<keyType>4</keyType>
-				<value>745</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>water</name>
-				<keyType>4</keyType>
-				<value>152</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>max_shen</name>
-				<keyType>4</keyType>
-				<value>745</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>max_xue</name>
-				<keyType>4</keyType>
-				<value>4230</value>
+				<value>4319</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -14845,33 +15238,69 @@ end</script>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_xue</name>
+				<name>food</name>
 				<keyType>4</keyType>
-				<value>4140</value>
+				<value>184</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_neili</name>
+				<name>current_shen</name>
 				<keyType>4</keyType>
-				<value>2092</value>
+				<value>773</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_jingli</name>
+				<name>max_xue</name>
 				<keyType>4</keyType>
-				<value>2685</value>
+				<value>4406</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_shen</name>
+				<name>max_shen</name>
 				<keyType>4</keyType>
-				<value>745</value>
+				<value>773</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_neili</name>
+				<keyType>4</keyType>
+				<value>2816</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
 				<name>base_jingli</name>
 				<keyType>4</keyType>
 				<value>1355</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_neili</name>
+				<keyType>4</keyType>
+				<value>2816</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_xue</name>
+				<keyType>4</keyType>
+				<value>4170</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_jingli</name>
+				<keyType>4</keyType>
+				<value>2620</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_shen</name>
+				<keyType>4</keyType>
+				<value>773</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>water</name>
+				<keyType>4</keyType>
+				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -14881,9 +15310,9 @@ end</script>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -14899,17 +15328,11 @@ end</script>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
-		</VariableGroup>
-		<VariableGroup>
-			<name>luren_set</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
 		</VariableGroup>
 		<Variable>
 			<name>current_learning_skills</name>
@@ -14917,5 +15340,11 @@ end</script>
 			<value>lingwu dodge</value>
 			<valueType>4</valueType>
 		</Variable>
+		<VariableGroup>
+			<name>luren_set</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
+		</VariableGroup>
 	</VariablePackage>
 </MudletPackage>
