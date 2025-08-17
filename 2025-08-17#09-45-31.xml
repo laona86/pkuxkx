@@ -15762,7 +15762,7 @@ local quest_map = {
   cajgm = { 
     back_changan = "node walk jgm_ca"},
   qzxgc = { 
-    ask_job = "unset save_money;;ask hua about job",
+    ask_job = "unset save_money;;set always_pic;;ask hua about job",
     back_changan = "w;;w;;s;;walk changan",
     back_yangzhou = "w;;w;;s;;walk huijiang"},
   jx = { 
@@ -15809,14 +15809,14 @@ local quest_map = {
     job_fail = "ask chongxu about cancel",
     back_yangzhou = "node walk wdgc_yz"},
   mrf = { 
-    ask_job = "ask pu about job;;unset forced_act;;jiali 0;;set wimpy 40", 
+    ask_job = "ask pu about job;;unset forced_act;;unset always_pic;;jiali 0;;set wimpy 40", 
     job_done = "give pu xin", 
     job_fail = "ask pu about fail",
     back_hangzhou = "node walk mrf_hz",
     back_yangzhou = "node walk mrf_zjdk",
     back_pozhen = "node walk mrf_pozhen"},
   pozhen = { 
-    ask_job = "ask lu about pozhen;;set forced_act;;jiali max;;set wimpy 0;;unset save_money", 
+    ask_job = "ask lu about pozhen;;set forced_act;;set always_pic;;jiali max;;set wimpy 0;;unset save_money", 
     job_done = "ask lu about 破阵奖励", 
     job_fail = "ask lu about 破阵失败",
     back_hangzhou = "node walk pozhen_hz",
@@ -16096,7 +16096,7 @@ end</script>
 			<Variable>
 				<name>current_mrf_location</name>
 				<keyType>4</keyType>
-				<value>node walk pozhen_mrf</value>
+				<value></value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -16468,7 +16468,7 @@ end</script>
 			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
-				<value>190</value>
+				<value>138</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
@@ -16486,7 +16486,7 @@ end</script>
 			<Variable>
 				<name>food</name>
 				<keyType>4</keyType>
-				<value>108</value>
+				<value>82</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
