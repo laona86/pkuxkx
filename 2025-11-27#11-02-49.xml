@@ -79,9 +79,9 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>LXGW WenKai Mono,17,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>LXGW WenKai Mono,16,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
-			<mCommandSeparator>;;</mCommandSeparator>
+			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
 			<mBgColor2>#000000</mBgColor2>
@@ -1226,8 +1226,12 @@ end
 			<regexCodeList />
 			<regexCodePropertyList />
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>武当广场</name>
-				<script>update_location("武当广场")</script>
+				<name>通用地点触发</name>
+				<script>set_xkx_room(matches[2])
+--find_one_room(matches[2])
+--set_room1(matches[2])
+--echo("通用地点触发 ===&gt; find one room: "..matches[2].."\n")
+</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1239,7 +1243,7 @@ end
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>^武当广场.*★$</string>
+					<string>^(.*) - .*$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -1248,7 +1252,8 @@ end
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>慕容复</name>
 				<script>--echo("====&gt; found")
-update_location("慕容复")</script>
+update_location("慕容复")
+set_xkx_room("慕容复")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1269,6 +1274,7 @@ update_location("慕容复")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>破阵-归云庄</name>
 				<script>update_location("归云庄")
+set_xkx_room("归云庄")
 --murong_task["current_mrf_location"] = "node walk pozhen_mrf"</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -1289,7 +1295,8 @@ update_location("慕容复")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>扬子津</name>
-				<script>update_location("扬子津")</script>
+				<script>update_location("扬子津")
+set_xkx_room("扬子津")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1310,48 +1317,9 @@ update_location("慕容复")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>大理寺</name>
-				<script>update_location("大理寺")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^大理寺 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>孟津渡</name>
-				<script>update_location("孟津渡")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^孟津渡 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>孟津渡对面</name>
-				<script>update_location("孟津渡对面") -- jydk</script>
+				<script>update_location("孟津渡对面") -- jydk
+set_xkx_room("孟津渡对面")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1370,29 +1338,10 @@ update_location("慕容复")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>永安门 -</name>
-				<script>update_location("永安门") -- bj_jydk</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^永安门 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>义兴</name>
 				<script>--murong_task["current_mrf_location"] = "walk wuxi"
-update_location("义兴")</script>
+update_location("义兴")
+set_xkx_room("义兴")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1413,7 +1362,8 @@ update_location("义兴")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>无锡</name>
 				<script>--murong_task["current_mrf_location"] = "walk suzhou"
-update_location("无锡")</script>
+update_location("无锡")
+set_xkx_room("无锡")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1434,7 +1384,8 @@ update_location("无锡")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>处州府</name>
 				<script>--murong_task["current_mrf_location"] = "walk yandang"
-update_location("处州府")</script>
+update_location("处州府")
+set_xkx_room("处州府")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1453,30 +1404,10 @@ update_location("处州府")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>西湖岸边</name>
-				<script>--murong_task["current_mrf_location"] = "node walk xhab_mrf"
-update_location("西湖岸边")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>西湖岸边 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>建宁府</name>
 				<script>--murong_task["current_mrf_location"] = "node walk jn_mrf"
-update_location("建宁府")</script>
+update_location("建宁府")
+set_xkx_room("建宁府")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1495,30 +1426,10 @@ update_location("建宁府")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>归云庄大门</name>
-				<script>--murong_task["current_mrf_location"] = "node walk gyz_mrf"
-update_location("归云庄大门")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>归云庄大门 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>湖州</name>
 				<script>--murong_task["current_mrf_location"] = "node walk hzf_mrf"
-update_location("湖州")</script>
+update_location("湖州")
+set_xkx_room("湖州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1541,7 +1452,8 @@ update_location("湖州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>铅山</name>
 				<script>--murong_task["current_mrf_location"] = "walk jiangzhou"
-update_location("铅山")</script>
+update_location("铅山")
+set_xkx_room("铅山")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1564,7 +1476,8 @@ update_location("铅山")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>上饶</name>
 				<script>--murong_task["current_mrf_location"] = "walk qianshan"
-update_location("上饶")</script>
+update_location("上饶")
+set_xkx_room("上饶")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1587,7 +1500,8 @@ update_location("上饶")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>温州</name>
 				<script>--murong_task["current_mrf_location"] = "walk fuzhou"
-update_location("温州")</script>
+update_location("温州")
+set_xkx_room("温州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1608,7 +1522,8 @@ update_location("温州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>江州</name>
 				<script>--murong_task["current_mrf_location"] = "node walk jz_mrf"
-update_location("江州")</script>
+update_location("江州")
+set_xkx_room("江州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1631,7 +1546,8 @@ update_location("江州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>雁荡山</name>
 				<script>--murong_task["current_mrf_location"] = "walk mingzhou"
-update_location("雁荡山")</script>
+update_location("雁荡山")
+set_xkx_room("雁荡山")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1650,30 +1566,10 @@ update_location("雁荡山")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>铜关镇</name>
-				<script>--murong_task["current_mrf_location"] = "node walk tgz_mrf"
-update_location("铜关镇")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>铜官镇 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>潮州</name>
 				<script>--murong_task["current_mrf_location"] = "node walk cz_mrf"
-update_location("潮州")</script>
+update_location("潮州")
+set_xkx_room("潮州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1694,7 +1590,8 @@ update_location("潮州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>龙泉镇</name>
 				<script>--murong_task["current_mrf_location"] = "walk wuyi"
-update_location("龙泉镇")</script>
+update_location("龙泉镇")
+set_xkx_room("龙泉镇")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1715,7 +1612,8 @@ update_location("龙泉镇")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>建康</name>
 				<script>--murong_task["current_mrf_location"] = "node walk jk_mrf"
-update_location("建康")</script>
+update_location("建康")
+set_xkx_room("建康")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1738,7 +1636,8 @@ update_location("建康")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>泉州</name>
 				<script>--murong_task["current_mrf_location"] = "node walk qz_mrf"
-update_location("泉州")</script>
+update_location("泉州")
+set_xkx_room("泉州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1759,7 +1658,8 @@ update_location("泉州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>武夷山</name>
 				<script>--murong_task["current_mrf_location"] = "walk quanzhou"
-update_location("武夷山")</script>
+update_location("武夷山")
+set_xkx_room("武夷山")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1780,7 +1680,8 @@ update_location("武夷山")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>衢州</name>
 				<script>--murong_task["current_mrf_location"] = "walk shangrao"
-update_location("衢州")</script>
+update_location("衢州")
+set_xkx_room("衢州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1801,7 +1702,8 @@ update_location("衢州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>提督府</name>
 				<script>--murong_task["current_mrf_location"] = "node walk tdf_mrf"
-update_location("提督府")</script>
+update_location("提督府")
+set_xkx_room("提督府")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1822,7 +1724,8 @@ update_location("提督府")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>岳王墓</name>
 				<script>--murong_task["current_mrf_location"] = "node walk ywm_mrf"
-update_location("岳王墓")</script>
+update_location("岳王墓")
+set_xkx_room("岳王墓")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1843,7 +1746,8 @@ update_location("岳王墓")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>镇江</name>
 				<script>--murong_task["current_mrf_location"] = "node walk zj_mrf"
-update_location("镇江")</script>
+update_location("镇江")
+set_xkx_room("镇江")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1864,7 +1768,8 @@ update_location("镇江")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>绍兴</name>
 				<script>--murong_task["current_mrf_location"] = "walk jinhua"
-update_location("绍兴")</script>
+update_location("绍兴")
+set_xkx_room("绍兴")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1885,7 +1790,8 @@ update_location("绍兴")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>闽中</name>
 				<script>--murong_task["current_mrf_location"] = "node walk fz_mrf"
-update_location("闽中")</script>
+update_location("闽中")
+set_xkx_room("闽中")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1908,7 +1814,8 @@ update_location("闽中")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>燕子坞</name>
 				<script>--murong_task["current_mrf_location"] = "node walk mr_mrf"
-update_location("燕子坞")</script>
+update_location("燕子坞")
+set_xkx_room("燕子坞")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1929,7 +1836,8 @@ update_location("燕子坞")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>嘉兴</name>
 				<script>--murong_task["current_mrf_location"] = "node walk jx_mrf"
-update_location("嘉兴")</script>
+update_location("嘉兴")
+set_xkx_room("嘉兴")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1950,7 +1858,8 @@ update_location("嘉兴")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>明州</name>
 				<script>--murong_task["current_mrf_location"] = "node walk mz_mrf"
-update_location("明州")</script>
+update_location("明州")
+set_xkx_room("明州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1971,6 +1880,7 @@ update_location("明州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>扬州</name>
 				<script>update_location("扬州") -- bj_jydk
+set_xkx_room("扬州")
 --murong_task["current_mrf_location"] = "walk zhenjiang"</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -1991,7 +1901,8 @@ update_location("明州")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>代州</name>
-				<script>update_location("代州") -- bj_jydk</script>
+				<script>update_location("代州") -- bj_jydk
+set_xkx_room("代州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2011,7 +1922,8 @@ update_location("明州")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>岳阳</name>
-				<script>update_location("岳阳")</script>
+				<script>update_location("岳阳")
+set_xkx_room("岳阳")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2031,7 +1943,8 @@ update_location("明州")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>ferry</name>
-				<script>update_location("ferry")</script>
+				<script>update_location("ferry")
+set_xkx_room("ferry")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2051,7 +1964,8 @@ update_location("明州")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>黄河渡口</name>
-				<script>update_location("黄河渡口")</script>
+				<script>update_location("黄河渡口")
+set_xkx_room("孟之经")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2073,7 +1987,8 @@ update_location("明州")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>归云庄的大厅</name>
-				<script>update_location("归云庄的大厅")</script>
+				<script>update_location("归云庄的大厅")
+set_xkx_room("归云庄的大厅")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2094,7 +2009,8 @@ update_location("明州")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>桃花岛</name>
 				<script>--murong_task["current_mrf_location"] = "node walk hys_ht"
-update_location("桃花岛")</script>
+update_location("桃花岛")
+set_xkx_room("桃花岛")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2110,86 +2026,6 @@ update_location("桃花岛")</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>小广场</name>
-				<script>update_location("小广场")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^小广场</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>金光门</name>
-				<script>update_location("金光门")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>金光门 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>朱雀大街</name>
-				<script>update_location("朱雀大街")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>朱雀大街 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>富贵花圃</name>
-				<script>update_location("富贵花圃")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>富贵花圃 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -2210,190 +2046,6 @@ update_location("桃花岛")</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>塘沽口</name>
-				<script>update_location("塘沽口")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>塘沽口 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>京口渡</name>
-				<script>update_location("京口渡")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>京口渡 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>沧浪亭</name>
-				<script>update_location("沧浪亭")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>沧浪亭 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>金华府</name>
-				<script>--murong_task["current_mrf_location"] = "walk quzhou"
-update_location("金华府")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>金华府 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>神策门</name>
-				<script>update_location("神策门")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>神策门 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>清凉门</name>
-				<script>update_location("清凉门")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>清凉门 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>朝阳门</name>
-				<script>update_location("朝阳门")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>朝阳门 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>正阳门</name>
-				<script>--正阳门 -  ☆
-update_location("正阳门")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>正阳门 -</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>通用地点触发</name>
-				<script>find_one_room(matches[2])
-set_room(matches[2])
---echo("===&gt; find one room: "..matches[2].."\n")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^(.*) - .*$</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -2418,7 +2070,8 @@ set_room(matches[2])
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>韩世忠</name>
-				<script>update_location("韩世忠")</script>
+				<script>update_location("韩世忠")
+set_xkx_room("韩世忠")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2434,26 +2087,6 @@ set_room(matches[2])
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>万安塔</name>
-				<script>update_location("万安塔")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^万安塔 - </string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -2475,6 +2108,28 @@ set_city(matches[2])</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>孟之经</name>
+				<script>echo("===&gt; 孟之经\n")
+update_location("孟之经")
+set_xkx_room("孟之经")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>(Meng zhijing)</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
@@ -3103,6 +2758,26 @@ send(dest)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>set wimpy</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand>set wimpy 50</mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>赶走冒充桃花岛的恶人之后，你可以回去向陆庄主复命了</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
 		</TriggerGroup>
 		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>凌霄看雪</name>
@@ -3408,7 +3083,7 @@ echo("===&gt; 切换到基本功\n")</script>
 			<regexCodePropertyList />
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="yes" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>启动任务</name>
-				<script>--showMultimatches()
+				<script>showMultimatches()
 mrf_or_pozhen="hsz"
 local city = multimatches[3][2]
 local room = multimatches[3][3]
@@ -3484,7 +3159,7 @@ end)
 				<integer>1</integer>
 			</regexCodePropertyList>
 		</Trigger>
-		<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>test walk</name>
 			<script>-- echo("----&gt; {")
 -- echo("city = \""..matches[2].."\", ")
@@ -3512,11 +3187,11 @@ create_city_node(matches[2], matches[3], matches[4]) </script>
 		</Trigger>
 		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>继续走</name>
-			<script></script>
+			<script>tempTimer(1, function() send("walk") end)</script>
 			<triggerType>0</triggerType>
 			<conditonLineDelta>0</conditonLineDelta>
 			<mStayOpen>0</mStayOpen>
-			<mCommand>walk</mCommand>
+			<mCommand></mCommand>
 			<packageName></packageName>
 			<mFgColor>#ff0000</mFgColor>
 			<mBgColor>#ffff00</mBgColor>
@@ -3550,6 +3225,89 @@ create_city_node(matches[2], matches[3], matches[4]) </script>
 				<integer>0</integer>
 			</regexCodePropertyList>
 		</Trigger>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>孟之经</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="yes" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>捕捉任务信息</name>
+				<script>showMultimatches()
+echo("===&gt; 等候地址：" .. multimatches[2][2])
+mzj_to_waiting_room(multimatches[2][2])
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>2</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^你向孟之经打听.*$</string>
+					<string>.*你先到(.*)等候.*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>通传</name>
+				<script>tempTimer(1, function() 
+  send("ask shiwei about 通传")
+end)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^都统制府侍卫说道：「没有经过通传，任何人等不得擅闯都统治府。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>准备</name>
+				<script>expandAlias("shi")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>你定睛一看，.*正是你要找的汉奸卖国贼！</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
 	</TriggerPackage>
 	<TimerPackage>
 		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
@@ -4879,6 +4637,20 @@ end)
 				<packageName></packageName>
 				<regex>^gc4$</regex>
 			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>gc1</name>
+				<script></script>
+				<command>get all from corpse</command>
+				<packageName></packageName>
+				<regex>^gc1$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>捡石头</name>
+				<script></script>
+				<command>get stone from corpse</command>
+				<packageName></packageName>
+				<regex>^gstone$</regex>
+			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
 			<name>慕容</name>
@@ -5176,6 +4948,13 @@ identify_all_luren_with_opposite_clue()</script>
 				<packageName></packageName>
 				<regex>^bh$</regex>
 			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>回孟之经</name>
+				<script>back_to_mzj()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^bmeng$</regex>
+			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
 			<name>陆家庄</name>
@@ -5381,6 +5160,48 @@ echo("city node list cleared\n")</script>
 			<command></command>
 			<packageName></packageName>
 			<regex>^reset_city$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>去永安</name>
+			<script></script>
+			<command>do 3 e;;s;;do 3 w;;do 5 s</command>
+			<packageName></packageName>
+			<regex>^aohui$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>去庄家</name>
+			<script></script>
+			<command>e;;e;;s;;s;;s;;s;;e;;ne;;n;;n;;break men;;n;;n;;n;;n</command>
+			<packageName></packageName>
+			<regex>^tozhuang$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>从庄家返回</name>
+			<script></script>
+			<command>do 6 s;;sw;;w;;do 4 n;; do 2 w;;</command>
+			<packageName></packageName>
+			<regex>^zhuanghui$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>去鳌拜家</name>
+			<script></script>
+			<command>do 5 n;;do 3 e;;n;;do 3 w</command>
+			<packageName></packageName>
+			<regex>^toao$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>显示回去路径</name>
+			<script>show_back_path()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^show_back$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>显示key room</name>
+			<script>display_key_room()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^show_kroom$</regex>
 		</Alias>
 	</AliasPackage>
 	<ActionPackage />
@@ -15039,413 +14860,78 @@ end</script>
 		<Script isActive="yes" isFolder="no">
 			<name>通用任务</name>
 			<packageName></packageName>
-			<script>
-quest = {location = "",
-          prefix = "",}
--- location是中文地名
-function update_location(location)
-  if location == "武当广场" then
-    quest.location = "wdgc"
-  elseif location == "万安塔" then
-    quest.location = "wat"    
-  elseif location == "韩世忠" then
-    quest.location = "hsz"      
-  elseif location == "正阳门" then
-    quest.location = "zhengyang"    
-  elseif location == "清凉门" then
-    quest.location = "qingliang"
-  elseif location == "朝阳门" then
-    quest.location = "chaoyang"           
-  elseif location == "神策门" then
-    quest.location = "shence"      
-  elseif location == "金华府" then
-    quest.location = "jinhuafu"     
-  elseif location == "明州" then
-    quest.location = "mingzhou"       
-  elseif location == "闽中" then
-    quest.location = "fuzhou"       
-  elseif location == "绍兴" then
-    quest.location = "shaoxing"       
-  elseif location == "衢州" then
-    quest.location = "quzhou"       
-  elseif location == "武夷山" then
-    quest.location = "wuyi"     
-  elseif location == "泉州" then
-    quest.location = "quanzhou"      
-  elseif location == "龙泉镇" then
-    quest.location = "longquan"     
-  elseif location == "潮州" then
-    quest.location = "cz"      
-  elseif location == "雁荡山" then
-    quest.location = "yandang"      
-  elseif location == "温州" then
-    quest.location = "wenzhou"    
-  elseif location == "上饶" then
-    quest.location = "shangrao"     
-  elseif location == "铅山" then
-    quest.location = "qianshan"        
-  elseif location == "建宁府" then
-    quest.location = "jnf"       
-  elseif location == "西湖岸边" then
-    quest.location = "xhab"        
-  elseif location == "处州府" then
-    quest.location = "czf"     
-  elseif location == "无锡" then
-    quest.location = "jn_wx"       
-  elseif location == "义兴" then
-    quest.location = "jn_yx"     
-  elseif location == "沧浪亭" then
-    quest.location = "szclt"    
-  elseif location == "湖州" then
-    quest.location = "hzf"     
-  elseif location == "京口渡" then
-    quest.location = "zjdk"     
-  elseif location == "塘沽口" then
-    quest.location = "tgk"     
-  elseif location == "回疆小镇" then
-    quest.location = "hj_xz" 
-  elseif location == "富贵花圃" then
-    quest.location = "lyhp"     
-  elseif location == "朱雀大街" then
-    quest.location = "cazqdj"     
-  elseif location == "金光门" then
-    quest.location = "cajgm"     
-  elseif location == "小广场" then
-    quest.location = "qzxgc"      
-  elseif location == "慕容复" then
-    quest.location = "mrf"  
-  elseif location == "归云庄" then
-    quest.location = "pozhen" 
-  elseif location == "归云庄大门" then
-    quest.location = "gyz"    
-  elseif location == "扬子津" then
-    quest.location = "yangziji"
-  elseif location == "镇江渡口" then
-    quest.location = "zjdk"    
-  elseif location == "大理寺" then
-    quest.location = "hz" 
-  elseif location == "孟津渡" then
-    quest.location = "lydk"   
-  elseif location == "扬州" then
-    quest.location = "yz"    
-  elseif location == "孟津渡对面" then
-    quest.location = "jydk"    
-  elseif location == "代州" then
-    quest.location = "daizhou"  
-  elseif location == "岳阳" then
-    quest.location = "yueyang"     
-  elseif location == "ferry" then
-    quest.location = "ferry"     
-  elseif location == "黄河渡口" then
-    quest.location = "hhdk"    
-  elseif location == "建康" then
-    quest.location = "jkf"
-  elseif location == "桃花岛" then
-    quest.location = "thd"    
-  elseif location == "燕子坞" then
-    quest.location = "mr"   
-  elseif location == "提督府" then
-    quest.location = "tdf"   
-  elseif location == "岳王墓" then
-    quest.location = "ywm" 
-  elseif location == "镇江" then
-    quest.location = "zj"     
-   elseif location == "江州" then
-    quest.location = "jz"       
-  elseif location == "铜关镇" then
-    quest.location = "tgz"     
-  elseif location == "嘉兴" then
-    quest.location = "jx"   
-  else
-    quest.location = nil      
-  end
-  setup_key_room(quest.location)
-end
-
-local quest_map = {
-  qingliang = { --  清凉门 -  ☆
-    back_mrf = "walk chaoyang",
-    back_pozhen = "walk zhengyang"},
-  chaoyang = { --  朝阳门 -  ☆
-    back_mrf = "walk suzhou",
-    back_pozhen = "walk zhengyang"},
-  zhengyang = { --  正阳门 -  ☆
-    back_mrf = "walk chaoyang",
-    back_pozhen = "walk guiyun"},
-  shence = { --  神策门 -  ☆
-    back_mrf = "walk chaoyang",
-    back_pozhen = "walk zhengyang"},
-  jinhuafu = { --  金华府
-    back_mrf = "walk quzhou",
-    back_pozhen = "walk quzhou"},
-  mingzhou = { --  明州
-    back_mrf = "node walk mz_mrf",
-    back_pozhen = "node walk mz_mrf",
-    back_hsz = "node walk mz_hsz"},
-  fuzhou = { --  闽中
-    back_mrf = "node walk fz_mrf",
-    back_pozhen = "node walk fz_pozhen",
-    back_hsz = "node walk fz_hsz",},
-  shaoxing = { --  绍兴
-    back_mrf = "walk jinhua",
-    back_pozhen = "walk jinhua"},
-  quzhou = { --  衢州
-    back_mrf = "walk shangrao",
-    back_pozhen = "walk shangrao"},
-  wuyi = { --  武夷山
-    back_mrf = "walk quanzhou",
-    back_pozhen = "walk quanzhou"},
-  quanzhou = { --  泉州
-    back_mrf = "node walk qz_mrf",
-    back_pozhen = "node walk qz_pozhen",
-    back_hsz = "node walk qz_hsz2"},
-  longquan = { --  龙泉镇
-    back_mrf = "walk wuyi",
-    back_pozhen = "walk wuyi"},
-  cz = { --  潮州
-    back_mrf = "node walk cz_mrf",
-    back_pozhen = "node walk cz_pozhen",
-    ask_job = "ask xing about job", 
-    job_done = "ask xing about finish", 
-    job_fail = "ask xing about fail",
-    },
-  yandang = { --  雁荡山
-    back_mrf = "walk mingzhou",
-    back_pozhen = "walk mingzhou"},
-  wenzhou = { --  温州
-    back_mrf = "walk fuzhou",
-    back_pozhen = "walk fuzhou"},
-  shangrao = { --  上饶
-    back_mrf = "walk qianshan",
-    back_pozhen = "walk qianshan"},
-  qianshan = { --  铅山
-    back_mrf = "walk jiangzhou",
-    back_pozhen = "walk jiangzhou"},
-  jnf = { -- 建宁府 
-    back_mrf = "node walk jn_mrf",
-    back_pozhen = "node walk jn_pozhen"},
-  xhab = { -- 西湖岸边 
-    back_mrf = "node walk xhab_mrf",
-    back_pozhen = "node walk xhab_pozhen",
-    back_hsz = "node walk xhab_hsz"},
-  jn_czf = { -- 处州府 
-    back_mrf = "walk yandang",
-    back_pozhen = "walk yandang"},
-  jn_wx = { -- 无锡 
-    back_mrf = "walk suzhou",
-    back_pozhen = "walk suzhou"},  
-  jn_yx = { -- 义兴 
-    back_mrf = "walk wuxi",
-    back_pozhen = "walk wuxi"},
-  hzf = { 
-    back_yangzhou = "node walk hzf_mrf",
-    back_hua = "node walk hzf_pozhen",
-    back_mrf = "node walk hzf_mrf",
-    back_pozhen = "node walk hzf_pozhen",
-    },
-  szclt = { 
-    back_yangzhou = "node walk sz_zjdk",
-    back_hua = "node walk sz_zjdk",
-    back_hangzhou = "s;;s;;ne;;node walk mrf_hz",
-    back_pozhen = "node walk szclt_pozhen"},
-  tgk = { 
-    back_yangzhou = "node walk tgk_jydk",
-    back_hua = "node walk tgk_jydk"},
-  yz = { 
-    back_changan = "node walk yz_ca",
-    back_hua = "node walk yz_qinz",
-    back_mrf = "walk zhenjiang",
-    back_pozhen = "walk zhenjiang",},
-  hj_xz = { 
-    back_changan = "node walk hj_yz",
-    back_yangzhou = "node walk hj_yz"},
-  lyhp = { 
-    back_changan = "w;;s;;s;;node walk ly_ca",
-    back_yangzhou = "w;;s;;s;;node walk ly_yz"},
-  cazqdj = { 
-    back_luoyang = "node walk ca_ly",
-    back_yangzhou = "node walk ca_yz"},
-  cajgm = { 
-    back_changan = "node walk jgm_ca"},
-  qzxgc = { 
-    ask_job = "ask hua about job",
-    back_changan = "w;;w;;s;;walk changan",
-    back_yangzhou = "w;;w;;s;;walk huijiang"},
-  jx = { 
-    back_hangzhou = "node walk jx_hz",
-    back_pozhen = "node walk jx_pozhen",
-    back_mrf = "node walk jx_mrf",
-    back_hsz = "node walk jx_hsz",},
-  gyz = { 
-    back_hangzhou = "node walk gyz_hz",
-    back_pozhen = "node walk gyz_lcf",
-    back_mrf = "node walk gyz_mrf"
-    },
-  tgz = { 
-    back_hangzhou = "node walk tgz_hz",
-    back_pozhen = "node walk tgz_pozhen",
-    back_mrf = "node walk tgz_mrf",
-    back_hsz = "node walk tgz_hsz",},
-  jz = { 
-    back_hangzhou = "node walk jz_hz",
-    back_pozhen = "node walk jz_pozhen",
-    back_mrf = "node walk jz_mrf",
-    back_hsz = "node walk jz_hsz"},
-  zj = { 
-    back_hangzhou = "node walk zj_hz",
-    back_pozhen = "node walk zj_pozhen",
-    back_mrf = "node walk zj_mrf"},
-  ywm = { 
-    back_hangzhou = "node walk ywm_hz",
-    back_pozhen = "node walk ywm_pozhen",
-    back_mrf = "node walk ywm_mrf",
-    back_hsz = "node walk ywm_hsz",},
-  tdf = { 
-    back_hangzhou = "node walk tdf_hz",
-    back_pozhen = "node walk tdf_pozhen",
-    back_mrf = "node walk tdf_mrf"},
-  mr = { 
-    back_hangzhou = "node walk mr_hz",
-    back_pozhen = "node walk mr_pozhen",
-    back_mrf = "node walk mr_mrf",
-    back_hsz = "node walk mr_hsz",},
-  thd = { 
-    back_hangzhou = "node walk hys_ht",
-    back_pozhen = "node walk hys_ht",
-    back_mrf = "node walk hys_ht"},
-  jkf = { 
-    back_hangzhou = "node walk jk_hz",
-    back_pozhen = "node walk jk_pozhen",
-    back_mrf = "node walk jk_mrf",
-    back_hsz = "node walk jkf_hsz",},
-  hhdk = { 
-    ask_job = "ask shao gong about 过河;;enter"},
-  ferry = { 
-    ask_job = "ride"},
-  yueyang = { 
-    back_hangzhou = "node walk yy_laf"},
-  daizhou = { 
-    back_yangzhou = "node walk dz_jydk"},
-  wdgc = { 
-    ask_job = "ask chongxu about quest", 
-    job_done = "ask chongxu about success", 
-    job_fail = "ask chongxu about cancel",
-    back_yangzhou = "node walk wdgc_yz"},
-   hsz = {
-    ask_job = "ask han about job;;unset forced_act;;set wimpy 50;;jiali 0",
-    job_done = "ask han about finish", 
-    job_fail = "ask han about fail",
-    back_pozhen = "node walk hsz_pozhen",
-    back_yangzhou = "node walk hsz_zjdk3",
-   },
-   wat = {
-    ask_job = "set wimpy 0;;jiali 0;;ask ke about 进塔",
-    job_done = "qiao luo", 
-    job_fail = "qiao luo",
-    back_pozhen = "node walk wat_yz",
-    back_yangzhou = "node walk wat_yz",
-    back_mrf = "node walk wat_yz",
-    back_hsz = "node walk wat_yz",
-   },   
-      
-  mrf = { 
-    ask_job = "ask pu about job;;unset forced_act;;jiali 0;;set wimpy 40", 
-    job_done = "give pu xin", 
-    job_fail = "ask pu about fail",
-    back_hangzhou = "node walk mrf_hz",
-    back_yangzhou = "node walk mrf_zjdk",
-    back_pozhen = "node walk mrf_pozhen",
-    back_hsz = "node walk mrf_hsz"},
-  pozhen = { 
-    ask_job = "ask lu about pozhen;;set forced_act;;jiali max;;set wimpy 0", 
-    job_done = "ask lu about 破阵奖励;;tell feixuex 治疗", 
-    job_fail = "ask lu about 破阵失败",
-    back_hangzhou = "node walk pozhen_hz",
-    back_yangzhou = "node walk pozhen_zjdk",
-    back_mrf = "node walk pozhen_mrf",
-    back_hsz = "node walk pozhen_hsz",
-    }, 
-  yangziji = { 
-    ask_job = "ask shao gong about jiang;;enter",
-    back_yangzhou = "walk yangzhou",
-  },
-  zjdk = { 
-    ask_job = "ask shao gong about jiang;;enter",
-    back_yangzhou = "walk yangzhou",
-    back_hangzhou = "node walk zjdk_hz",
-    back_pozhen = "node walk zjdk_pozhen",
-    back_mrf = "node walk zjdk_mrf",
-    back_hsz = "node walk zjdk_hsz",
-  },  
-  lydk = { ask_job = "ask shao gong about 过河;;enter", back_yangzhou = "node walk lydk_yz",},
-  jydk = { ask_job = "ask shao gong about 过河;;enter"},
-  hz = { 
-    ask_job = "ask zhang about job", 
-    job_done = "give zhang core", 
-    job_fail = "ask zhang about 失败",
-    back_yangzhou = "node walk hz_zjdk",
-    back_pozhen = "node walk hz_pozhen",
-    back_mrf = "node walk hz_mrf"},
-}
-
--- function trace_jiangnan_route(pp_p, p_p, c_p)
-  -- if c_p == "茶馆" then 
-    -- quest.location = "mrf"
-  -- elseif cp == "" then
-  -- end
--- end
-
-function ask_job()
-  send(quest_map[quest.location].ask_job)
+			<script>function ask_job()
+  local room = get_current_room_name()
+  --echo("---&gt;room = "..room.."\n")
+  send(node_city[room].ask_job)
 end 
 
 function job_done()
-  send(quest_map[quest.location].job_done)
+  local room = get_current_room_name()
+  send(node_city[room].job_done)
 end
 
 function job_fail()
-  local str = quest_map[quest.location].job_fail
-  send(quest_map[quest.location].job_fail)
+  local room = get_current_room_name()
+  send(node_city[room].job_fail)
 end
 
 function back_to_yangzhou()
-  send(quest_map[quest.location].back_yangzhou)
+  local room = get_current_room_name()
+  send(node_city[room].back_yangzhou)
 end
 
 function back_to_mrf()
-  send(quest_map[quest.location].back_mrf)
+  local room = get_current_room_name()
+  send(node_city[room].back_mrf)
 end
 
 function back_to_hz()
-  send(quest_map[quest.location].back_hangzhou)
+  local room = get_current_room_name()
+  send(node_city[room].back_hangzhou)
 end
 
 function back_to_pozhen()
-  send(quest_map[quest.location].back_pozhen)
+  local room = get_current_room_name()
+  send(node_city[room].back_pozhen)
 end
 
 function back_to_changan()
-  send(quest_map[quest.location].back_changan)
+  local room = get_current_room_name()
+  send(node_city[room].back_changan)
 end
 
 function back_to_luoyang()
-  send(quest_map[quest.location].back_luoyang)
+  local room = get_current_room_name()
+  send(node_city[room].back_luoyang)
 end
 
 function back_to_hua()
-  send(quest_map[quest.location].back_hua)
+  local room = get_current_room_name()
+  send(node_city[room].back_hua)
 end
 
 function back_to_hsz()
-  send(quest_map[quest.location].back_hsz)
+  local room = get_current_room_name()
+  send(node_city[room].back_hsz)
+end
+
+function back_to_mzj()
+  local room = get_current_room_name()
+  local back_path = mzj_path_back(room)
+  if back_path == nil then
+    expandAlias("@ mzj")
+  else
+    send(back_path)
+  end
 end
 
 function short_cut_to(target)
-  --echo("==&gt; "..quest.location)
-  if quest.prefix == "" then
-    send("node walk "..quest.location.."_"..target)
+  local room = get_current_room_name()
+  if node_city[room].short_name == nil then
+    echo(" ==&gt; no short name\n")
   else
-    send("node walk "..quest.prefix.."_"..target)
+    send("node walk "..node_city[room].short_name.."_"..target)
   end
 end
 
@@ -15457,6 +14943,8 @@ end
 			<packageName></packageName>
 			<script>lujiazhuang = {}
 pozhen_task = {}
+local pozhen_destination = {}
+
 mrf_or_pozhen=""
 function init_pozhen(city, room)
   pozhen_task.city = city
@@ -15464,54 +14952,32 @@ function init_pozhen(city, room)
 end
 
 function pozhen_go()
-  if pozhen_task.city == "上饶" then 
-    return "node walk pozhen_sr"   
-  elseif pozhen_task.city == "临安府" then 
-    return "node walk pozhen_hz"
-  elseif pozhen_task.city == "义兴县" then 
-    return "node walk pozhen_yx"
-  elseif pozhen_task.city == "南昌" then 
-    return "node walk pozhen_nc"
-  elseif pozhen_task.city == "嘉兴" then 
-    return "node walk pozhen_jx"
-  elseif pozhen_task.city == "姑苏慕容" then 
-    return "node walk pozhen_mr"
-  elseif pozhen_task.city == "岳王墓" then 
-    return "node walk pozhen_yfm"
-  elseif pozhen_task.city == "岳阳" then 
-    return "node walk pozhen_yy"
-  elseif pozhen_task.city == "建康府北城" then 
-    return "node walk pozhen_jk"
-  elseif pozhen_task.city == "建康府南城" then 
-    return "node walk lcf_cym"
-  elseif pozhen_task.city == "无锡" then 
-    return "node walk pozhen_wx"
-  elseif pozhen_task.city == "明州" then 
-    return "node walk pozhen_mz"
-  elseif pozhen_task.city == "杭州提督府" then 
-    return "node walk pozhen_tdf"
-  elseif pozhen_task.city == "江州" then 
-    return "node walk pozhen_jz"
-  elseif pozhen_task.city == "湖州" then 
-    return "node walk pozhen_hzf"
-  elseif pozhen_task.city == "绍兴府" then 
-    return "node walk pozhen_sx"
-  elseif pozhen_task.city == "苏州" then 
-    return "node walk pozhen_mrf"
-  elseif pozhen_task.city == "衢州" then 
-    return "node walk pozhen_qz"
-  elseif pozhen_task.city == "西湖" then 
-    return "node walk pozhen_xhab"
-  elseif pozhen_task.city == "诸军统制府" then 
-    return "node walk pozhen_mzj"
-  elseif pozhen_task.city == "铜官山" then 
-    return "node walk pozhen_tgz"
-  elseif pozhen_task.city == "镇江" then 
-    return "node walk pozhen_zj"  
-  elseif pozhen_task.city == "长沙府" then 
-    return "node walk pozhen_cs"                       
-  end                    
+  return pozhen_destination[pozhen_task.city].path
 end
+
+pozhen_destination["上饶"] = { path = "node walk pozhen_sr" }
+pozhen_destination["临安府"] = { path = "node walk pozhen_hz" }
+pozhen_destination["义兴县"] = { path = "node walk pozhen_yx" }
+pozhen_destination["南昌"] = { path = "node walk pozhen_nc" }
+pozhen_destination["嘉兴"] = { path = "node walk pozhen_jx" }
+pozhen_destination["姑苏慕容"] = { path = "node walk pozhen_mr" }
+pozhen_destination["岳王墓"] = { path = "node walk pozhen_yfm" }
+pozhen_destination["岳阳"] = { path = "node walk pozhen_yy" }
+pozhen_destination["建康府北城"] = { path = "node walk pozhen_jk" }
+pozhen_destination["建康府南城"] = { path = "node walk lcf_cym" }
+pozhen_destination["无锡"] = { path = "node walk pozhen_wx" }
+pozhen_destination["明州"] = { path = "node walk pozhen_mz" }
+pozhen_destination["杭州提督府"] = { path = "node walk pozhen_tdf" }
+pozhen_destination["江州"] = { path = "node walk pozhen_jz" }
+pozhen_destination["湖州"] = { path = "node walk pozhen_hzf" }
+pozhen_destination["绍兴府"] = { path = "node walk pozhen_sx" }
+pozhen_destination["苏州"] = { path = "node walk pozhen_mrf" }
+pozhen_destination["衢州"] = { path = "node walk pozhen_qz" }
+pozhen_destination["西湖"] = { path = "node walk pozhen_xhab" }
+pozhen_destination["诸军统制府"] = { path = "node walk pozhen_mzj" }
+pozhen_destination["铜官山"] = { path = "node walk pozhen_tgz" }
+pozhen_destination["镇江"] = { path = "node walk pozhen_zj"}
+pozhen_destination["长沙府"] = { path = "node walk pozhen_cs"}
 
 local bagua = {
   qian = {"e","ne","w","s"},
@@ -15649,66 +15115,67 @@ function wudang_perform_skills(qishi)
 end</script>
 			<eventHandlerList />
 		</Script>
-		<Script isActive="yes" isFolder="no">
+		<Script isActive="no" isFolder="no">
 			<name>move_handler</name>
 			<packageName></packageName>
 			<script>maps = {}
---local exit_selected = ""
+local city="wuxi"
 local current_room = {}
 local prev_room = {}
 function move_handler()
   current_room = gmcp.GMCP.Move[1]
   --display(current_room)
-  if not current_room.result then
-    return
-  end 
-  if room_exists(current_room.short) then
-    return
-  end  
-  local room = {}
-  room.short = current_room.short
-  room.dirs = current_room.dir
-  table.insert(maps, room)
+  echo(city.."[\""..current_room.short.."\"] = ")
+  display(current_room.dir)
+
+  -- if not current_room.result then
+    -- return
+  -- end 
+  -- if room_exists(current_room.short) then
+    -- return
+  -- end  
+  -- local room = {}
+  -- room.short = current_room.short
+  -- room.dirs = current_room.dir
+  -- table.insert(maps, room)
+-- end
 end
 
-
-
-function list_maps()
-  --echo(" ===&gt; "..#maps)
-  --table.save(getMudletHomeDir().."/mydata.lua", maps)
-end
-
-function room_exists(short)
-  for _, v in pairs(maps) do
-    if v.short == short then
-      return true
-    end
-  end
-  return false    
-end
-
-function save_maps()
-  table.save(getMudletHomeDir().."/current/my_map.lua", maps)
-end
-
-function load_maps()
-  table.load(getMudletHomeDir().."/current/my_map.lua", maps)
-end
 </script>
 			<eventHandlerList>
 				<string>gmcp.GMCP.Move</string>
 			</eventHandlerList>
 		</Script>
 		<Script isActive="yes" isFolder="no">
-			<name>路径生产</name>
+			<name>围绕key room生产路径</name>
 			<packageName></packageName>
-			<script>local current_key_room = ""
+			<script>
+local current_room = {}
+
+local current_key_room = ""
 local exit_selected = ""
 local path_from_key_room = ""
 local path_back_to_key_room = ""
 local back_path = ""
+
+function get_current_room_name()
+  return current_room.name
+end
+
+function set_xkx_room(name)
+  --echo(" \n -- in set_xkx_room :"..name.."\n")
+  current_room.name = name
+  if is_key_room(name) then
+    cecho("\n===&gt; in setup_key_room: Key room changed to : &lt;green&gt;"..name.."\n")
+    current_key_room = name
+    reset_path()
+  else
+    update_path()    
+  end
+end
+
 function go_dir(dir)
-  --echo("===&gt; in go_dir\n")
+  echo("===&gt; in go_dir\n")
   exit_selected = dir
   send(dir,false)
 end
@@ -15717,35 +15184,28 @@ function is_key_room(room)
   if room == nil then
     return false
   end 
-  if xkx_rooms[room][key_room] == true then
-    return true
-  end  
-  --xkx_rooms["中央广场"] = {city = "yz", key_room = true}
-  if key_rooms[room] ~= nil then
+
+  if node_city[room] ~= nil then
     return true
   else
     return false  
   end  
 end
 
-function setup_key_room(room)
-  if is_key_room(room) then
-    cecho("\n===&gt; in setup_key_room: Key room changed to : &lt;green&gt;"..room.."\n")
-    current_key_room = room
+function reset_path()
     path_from_key_room = ""
     path_back_to_key_room = ""
-  else 
-    ceho("\n room ==&gt; &lt;yellow&gt;"..room.."\n")
-    current_key_room = ""
-  end    
+    back_path = ""
 end
 
-function find_one_room(room)
+function update_path()
     path_from_key_room = path_from_key_room..";;"..exit_selected
     path_back_to_key_room = path_pair[exit_selected]..";;"..path_back_to_key_room
 end
 
+
 function display_key_room()
+  echo("current room: "..current_room.name.."\n")
   echo("key room: "..current_key_room.."\n")
   echo("path from key room to target: "..path_from_key_room.."\n")
   echo("path back to key room:"..path_back_to_key_room.."\n")
@@ -15759,6 +15219,10 @@ function back_to_key_room()
   send(back_path)
 end
 
+function show_back_path()
+  echo(" -- current key room: "..current_key_room.."\n")
+  echo(" --back path: "..back_path)
+end
 </script>
 			<eventHandlerList />
 		</Script>
@@ -15766,16 +15230,16 @@ end
 			<name>常量</name>
 			<packageName></packageName>
 			<script>
-node_list = {}
+local node_list = {}
 
-current_room = {}
+local current_room = {}
 
 function set_city(city)
   current_room.city = city
   --echo("--&gt; current_room.city = "..current_room.city)
 end
 
-function set_room(room)
+function set_room1(room)
   current_room.room = room
   --echo("--&gt; current_room.room = "..current_room.room)
 end
@@ -15836,8 +15300,6 @@ path_pair = {
   seu = "nwd",
   sed = "nwu"
 }
-xkx_rooms = {}
-xkx_rooms["扬州"] = {short_name = "yz", key_room = true}
 
 key_rooms =  {
  wdgc = {}, --"武当广场"
@@ -15907,86 +15369,54 @@ function init_hsz(city, room)
   _task.city = city
   _task.room = room
 end
+local hsz_destination = {}
+
+hsz_destination["上饶"] = { path = "node walk hsz_sr" }
+hsz_destination["台州"] = { path = "node walk hsz_mz" }
+hsz_destination["杭州提督府"] = { path = "node walk hsz_tdf" }
+hsz_destination["归云庄"] = { path = "node walk hsz_gyz" }
+hsz_destination["闽中"] = { path = "node walk hsz_fz" }
+hsz_destination["建宁"] = { path = "node walk hsz_jn" }
+hsz_destination["桃花岛"] = { path = "node walk hsz_mz" }
+hsz_destination["龙泉镇"] = { path = "node walk hsz_lq" }
+hsz_destination["温州府"] = { path = "node walk hsz_wz" }
+hsz_destination["泉州"] = { path = "node walk hsz_qz" }
+hsz_destination["雁荡山"] = { path = "node walk hsz_mz" }
+hsz_destination["武夷山"] = { path = "node walk hsz_wy" }
+hsz_destination["临安府"] = { path = "node walk hsz_hz" }
+hsz_destination["处州府"] = { path = "node walk hsz_lq" }
+hsz_destination["天台山"] = { path = "node walk hsz_mz" }
+hsz_destination["义兴县"] = { path = "node walk hsz_yx" }
+hsz_destination["南昌"] = { path = "node walk hsz_nc" }
+hsz_destination["嘉兴"] = { path = "node walk hsz_jx" }
+hsz_destination["姑苏慕容"] = { path = "node walk hsz_mr" }
+hsz_destination["岳王墓"] = { path = "node walk hsz_yfm" }
+hsz_destination["岳阳"] = { path = "node walk hsz_yy" }
+hsz_destination["建康府北城"] = { path = "node walk hsz_jk" }
+hsz_destination["建康府南城"] = { path = "node walk hsz_jk" }
+hsz_destination["无锡"] = { path = "node walk hsz_sz" }
+hsz_destination["明州"] = { path = "node walk hsz_mz" }
+hsz_destination["杭州提督府"] = { path = "node walk hsz_tdf" }
+hsz_destination["江州"] = { path = "node walk hsz_jz" }
+hsz_destination["湖州"] = { path = "node walk hsz_hzf" }
+hsz_destination["绍兴府"] = { path = "node walk hsz_sx" }
+hsz_destination["苏州"] = { path = "node walk hsz_mrf" }
+hsz_destination["衢州"] = { path = "node walk hsz_qz1" }
+hsz_destination["西湖"] = { path = "node walk hsz_xhab" }
+hsz_destination["诸军统制府"] = { path = "node walk hsz_mzj" }
+hsz_destination["铜官山"] = { path = "node walk hsz_tgz" }
+hsz_destination["镇江"] = { path = "node walk hsz_zj" }
+hsz_destination["长沙府"] = { path = "node walk hsz_cs" }
 
 function hsz_go()
-  if _task.city == "上饶" then 
-    return "node walk hsz_sr"  
-  elseif _task.city == "台州" then 
-    return "node walk hsz_mz"   
-  elseif _task.city == "杭州提督府" then 
-    return "node walk hsz_tdf"       
-  elseif _task.city == "归云庄" then 
-    return "node walk hsz_gyz"      
-  elseif _task.city == "闽中" then 
-    return "node walk hsz_fz"    
-  elseif _task.city == "建宁" then 
-    return "node walk hsz_jn"        
-  elseif _task.city == "桃花岛" then 
-    return "node walk hsz_mz"       
-  elseif _task.city == "龙泉镇" then 
-    return "node walk hsz_lq"     
-  elseif _task.city == "温州府" then 
-    return "node walk hsz_wz"
-  elseif _task.city == "泉州" then 
-    return "node walk hsz_qz"    
-  elseif _task.city == "雁荡山" then 
-    return "node walk hsz_mz"
-  elseif _task.city == "武夷山" then 
-    return "node walk hsz_wy"    
-  elseif _task.city == "临安府" then 
-    return "node walk hsz_hz"  
-  elseif _task.city == "处州府" then 
-    return "node walk hsz_lq"    
-  elseif _task.city == "天台山" then 
-    return "node walk hsz_mz"    
-  elseif _task.city == "义兴县" then 
-    return "node walk hsz_yx"
-  elseif _task.city == "南昌" then 
-    return "node walk hsz_nc"
-  elseif _task.city == "嘉兴" then 
-    return "node walk hsz_jx"
-  elseif _task.city == "姑苏慕容" then 
-    return "node walk hsz_mr"
-  elseif _task.city == "岳王墓" then 
-    return "node walk hsz_yfm"
-  elseif _task.city == "岳阳" then 
-    return "node walk hsz_yy"
-  elseif _task.city == "建康府北城" then 
-    return "node walk hsz_jk"
-  elseif _task.city == "建康府南城" then 
-    return "node walk hsz_jk"
-  elseif _task.city == "无锡" then 
-    return "node walk hsz_sz"
-  elseif _task.city == "明州" then 
-    return "node walk hsz_mz"
-  elseif _task.city == "杭州提督府" then 
-    return "node walk hsz_tdf"
-  elseif _task.city == "江州" then 
-    return "node walk hsz_jz"
-  elseif _task.city == "湖州" then 
-    return "node walk hsz_hzf"
-  elseif _task.city == "绍兴府" then 
-    return "node walk hsz_sx"
-  elseif _task.city == "苏州" then 
-    return "node walk hsz_mrf"
-  elseif _task.city == "衢州" then 
-    return "node walk hsz_qz1"
-  elseif _task.city == "西湖" then 
-    return "node walk hsz_xhab"
-  elseif _task.city == "诸军统制府" then 
-    return "node walk hsz_mzj"
-  elseif _task.city == "铜官山" then 
-    return "node walk hsz_tgz"
-  elseif _task.city == "镇江" then 
-    return "node walk hsz_zj"  
-  elseif _task.city == "长沙府" then 
-    return "node walk hsz_cs"                       
-  end                    
+  echo("city --&gt; ".._task.city)
+  echo(" path ---&gt; :"..hsz_destination[_task.city].path.."\n")
+  return send(hsz_destination[_task.city].path)
 end</script>
 			<eventHandlerList />
 		</Script>
 		<Script isActive="yes" isFolder="no">
-			<name>城市</name>
+			<name>walk 节点</name>
 			<packageName></packageName>
 			<script>city = {}
 city["苏州"] = { room = "沧浪亭",
@@ -16035,7 +15465,7 @@ city["嘉兴"] = { room = "嘉兴城",
 	{city = "建康府南", room = "正阳门", path = "jiankang"},
 	{city = "临安府", room = "大理寺", path = "linan"},
 	{city = "陆家庄", room = "陆家庄", path = "lujiazhuang"},
-	{city = "姑苏慕容", room = "太湖边", path = "murong"},
+	{city = "姑苏慕容", room = "湖边", path = "murong"},
 	{city = "苏州", room = "沧浪亭", path = "suzhou"},
   }
 }
@@ -16059,21 +15489,20 @@ city["镇江"] = { room = "广场",
 	{city = "建康府", room = "朝阳门", path = "jiankang"},
 	{city = "苏州", room = "沧浪亭", path = "suzhou"},
 	{city = "无锡", room = "盛巷桥", path = "wuxi"},
-	{city = "扬州", room = "京口渡", path = "yangzhou"},
+	{city = "扬州京口渡", room = "京口渡", path = "yangzhou"},
   }
 }
 
-city["归云庄"] = { room = "归云庄大门",
+city["扬州京口渡"] = { room = "京口渡",
   adjacent_cities = {
-	{city = "建康府南", room = "正阳门", path = "jiankang"},
-	{city = "姑苏慕容", room = "湖边", path = "murong"},
-	{city = "苏州", room = "沧浪亭", path = "suzhou"},
+	{city = "镇江", room = "广场", path = "zhenjiang"},
   }
 }
+
 
 city["建康府南"] = { room = "正阳门",
   adjacent_cities = {
-	{city = "建康府东", room = "朝阳门", path = "chaoyang"},
+	{city = "建康府", room = "朝阳门", path = "chaoyang"},
 	{city = "归云庄", room = "归云庄大门", path = "guiyun"},
 	{city = "湖州府", room = "广场", path = "huzhou"},
 	{city = "嘉兴", room = "嘉兴城", path = "jiaxing"},
@@ -16086,7 +15515,7 @@ city["建康府南"] = { room = "正阳门",
 
 city["建康府西"] = { room = "清凉门",
   adjacent_cities = {
-	{city = "建康府东", room = "朝阳门", path = "chaoyang"},
+	{city = "建康府", room = "朝阳门", path = "chaoyang"},
 	{city = "建康府北", room = "神策门", path = "shence"},
 	{city = "铜官山", room = "铜官镇", path = "tongguan"},
 	{city = "建康府南", room = "正阳门", path = "zhengyang"},
@@ -16095,10 +15524,16 @@ city["建康府西"] = { room = "清凉门",
 
 city["建康府北"] = { room = "神策门",
   adjacent_cities = {
-	{city = "建康府东", room = "朝阳门", path = "chaoyang"},
+	{city = "建康府", room = "朝阳门", path = "chaoyang"},
 	{city = "建康府西", room = "清凉门", path = "qingliang"},
 	{city = "长江南岸", room = "燕子矶", path = "yanziji"},
 	{city = "建康府南", room = "正阳门", path = "zhengyang"},
+  }
+}
+
+city["长江南岸"] = { room = "燕子矶",
+  adjacent_cities = {
+	{city = "建康府北", room = "神策门", path = "jiankang"},
   }
 }
 
@@ -16178,7 +15613,7 @@ city["江州"] = { room = "中央广场",
   adjacent_cities = {
 	{city = "南昌", room = "城中心", path = "nanchang"},
 	{city = "祁门县", room = "祁门县", path = "qimen"},
-	{city = "上饶县", room = "铅山县", path = "shangrao"},
+	{city = "铅山县", room = "铅山县", path = "shangrao"},
 	{city = "铜官山", room = "铜官镇", path = "tongguan"},
 	{city = "信阳", room = "富池口古渡", path = "xinyang"},
 	{city = "岳阳", room = "城中心", path = "yueyang"},
@@ -16199,7 +15634,7 @@ city["南昌"] = { room = "城中心",
 city["祁门县"] = { room = "祁门县",
   adjacent_cities = {
 	{city = "黄山", room = "歙县", path = "huangshan"},
-	{city = "江洲", room = "中央广场", path = "jiangzhou"},
+	{city = "江州", room = "中央广场", path = "jiangzhou"},
 	{city = "铜官山", room = "铜官镇", path = "tongguan"},
   }
 }
@@ -16255,13 +15690,13 @@ city["衢州府"] = { room = "北广场",
   adjacent_cities = {
 	{city = "上饶县", room = "中央广场", path = "shangrao"},
 	{city = "金华府", room = "金华府", path = "shaoxing"},
-	{city = "仙霞岭", room = "乌溪江边", path = "xianxia"},
+	{city = "乌溪江边", room = "乌溪江边", path = "xianxia"},
   }
 }
 
-city["仙霞岭"] = { room = "乌溪江边",
+city["乌溪江边"] = { room = "乌溪江边",
   adjacent_cities = {
-	{city = "衢州", room = "北广场", path = "quzhou"},
+	{city = "衢州府", room = "北广场", path = "quzhou"},
   }
 }
 
@@ -16303,7 +15738,7 @@ city["明州"] = { room = "鼓楼",
 
 city["台州府"] = { room = "灵江西岸",
   adjacent_cities = {
-	{city = "明州府", room = "鼓楼", path = "mingzhou"},
+	{city = "明州", room = "鼓楼", path = "mingzhou"},
 	{city = "天台县", room = "市口", path = "tiantai"},
   }
 }
@@ -16311,7 +15746,7 @@ city["台州府"] = { room = "灵江西岸",
 city["天台县"] = { room = "市口",
   adjacent_cities = {
 	{city = "金华府", room = "金华府", path = "jinhua"},
-	{city = "明州府", room = "鼓楼", path = "mingzhou"},
+	{city = "明州", room = "鼓楼", path = "mingzhou"},
 	{city = "绍兴府", room = "八字桥", path = "shaoxing"},
 	{city = "台州府", room = "灵江西岸", path = "taizhou"},
 	{city = "天台山", room = "弥勒殿", path = "tiantaishan"},
@@ -16329,7 +15764,7 @@ city["雁荡山"] = { room = "碧霄峰",
   adjacent_cities = {
 	{city = "处州府", room = "中央广场", path = "chuzhou"},
 	{city = "明州", room = "鼓楼", path = "mingzhou"},
-	{city = "台州府", room = "灵江南岸", path = "taizhou"},
+	{city = "灵江南岸", room = "灵江南岸", path = "taizhou"},
 	{city = "天台县", room = "市口", path = "tiantai"},
 	{city = "瓯江北岸", room = "瓯江北岸", path = "wenzhou"},
   }
@@ -16373,7 +15808,7 @@ city["龙泉镇"] = { room = "水井",
 
 city["武夷山"] = { room = "九龙窠",
   adjacent_cities = {
-	{city = "建宁府", room = "北津", path = "jianning"},
+	{city = "建宁府北津", room = "北津", path = "jianning"},
 	{city = "龙泉镇", room = "水井", path = "longquan"},
 	{city = "泉州", room = "城中心", path = "quanzhou"},
   }
@@ -16418,7 +15853,7 @@ city["莆田"] = { room = "中心广场",
 city["泉州"] = { room = "城中心",
   adjacent_cities = {
 	{city = "福州", room = "城中心", path = "fuzhou"},
-	{city = "建宁府", room = "北津", path = "jianning"},
+	{city = "建宁府北津", room = "北津", path = "jianning"},
 	{city = "晋江东岸", room = "晋江东岸", path = "jinjiang"},
 	{city = "南少林", room = "山门", path = "nanshaolin"},
 	{city = "莆田", room = "中心广场", path = "putian"},
@@ -16455,14 +15890,14 @@ city["晋江东岸"] = { room = "晋江东岸",
 
 city["圣峰嶂"] = { room = "山间小路",
   adjacent_cities = {
-	{city = "潮州府", room = "中央广场", path = "chaozhou"},
+	{city = "潮州", room = "中央广场", path = "chaozhou"},
 	{city = "圣峰嶂西部", room = "山间小路", path = "xi"},
   }
 }
 
 city["圣峰嶂西部"] = { room = "山间小路",
   adjacent_cities = {
-	{city = "圣峰嶂东部", room = "山间小路", path = "dong"},
+	{city = "圣峰嶂", room = "山间小路", path = "dong"},
 	{city = "广州府", room = "市口", path = "guangzhou"},
   }
 }
@@ -16474,7 +15909,7 @@ city["广州府"] = { room = "市口",
   }
 }
 
-city["广州府"] = { room = "老林尽头",
+city["老林"] = { room = "老林尽头",
   adjacent_cities = {
 	{city = "广州府", room = "市口", path = "guangzhou"},
   }
@@ -16516,7 +15951,958 @@ city["五岭"] = { room = "湘江渡口",
   }
 }
 
+city["庐陵"] = { room = "嘉和门",
+  adjacent_cities = {
+	{city = "龙虎山", room = "正一观", path = "longhu"},
+	{city = "南昌", room = "城中心", path = "nanchang"},
+	{city = "袁州", room = "鼓楼", path = "yuanzhou"},
+	{city = "越城岭山口", room = "山间道", path = "yuechengling"},
+  }
+}
 
+city["龙虎山"] = { room = "正一观",
+  adjacent_cities = {
+	{city = "龙泉镇", room = "水井", path = "longquan"},
+	{city = "庐陵", room = "嘉和门", path = "luling"},
+	{city = "南昌", room = "城中心", path = "nanchang"},
+	{city = "上饶县", room = "铅山县", path = "shangrao"},
+	{city = "仙霞岭", room = "关顶", path = "xianxia"},
+	{city = "袁州", room = "鼓楼", path = "yuanzhou"},
+  }
+}
+
+city["仙霞岭"] = { room = "关顶",
+  adjacent_cities = {
+	{city = "龙虎山", room = "正一观", path = "longhu"},
+	{city = "龙泉镇", room = "水井", path = "longquan"},
+	{city = "衢州府", room = "乌溪江南岸", path = "quzhou"},
+	{city = "上饶县", room = "中央广场", path = "shangrao"},
+  }
+}
+
+city["越城岭山口"] = { room = "山间道",
+  adjacent_cities = {
+	{city = "庐陵", room = "嘉和门", path = "luling"},
+	{city = "衡州湘江东岸", room = "湘江东岸", path = "xiangjiang"},
+  }
+}
+
+city["衡州湘江东岸"] = { room = "湘江东岸",
+  adjacent_cities = {
+	{city = "越城岭山口", room = "山间道", path = "luling"},
+  }
+}</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>孟之经</name>
+			<packageName></packageName>
+			<script>mzj = {}
+
+local mzj_room = {}
+
+mzj_room["正阳门"] = { path = "node walk mzj_jkzym", back_to_meng = "north;northwest;west;north;north;north;north"}
+mzj_room["三山街"] = { path = "node walk mzj_jkssj", back_to_meng = "east;north;north;north;north;east;east;east"}
+mzj_room["三山门"] = {path = "node walk mzj_jkssm", back_to_meng = "east;east;north;north;north;north;east;east;east"}
+mzj_room["亲军营"] = {path = "node walk mzj_jkqjy", back_to_meng = "northwest;west;north;north;north;north"}
+
+mzj_room["云来客栈"] = {path = "node walk mzj_jkylkz", back_to_meng = "north;east;north;north;east;east;east"}
+mzj_room["内桥"] = {path = "node walk mzj_jknq", back_to_meng = "north;north;east;east;east"}
+mzj_room["南大街"] = {path = "node walk mzj_jkndj", back_to_meng = "north;north;north;east;east;east"}
+mzj_room["圣府"] = {path = "node walk mzj_jksf", back_to_meng = "east;north;north;north;north;north"}
+
+mzj_room["城南官道"] = {path = "node walk mzj_jkcngd3", back_to_meng = "north;north;north;north;north;north;north;east;east;east"}
+mzj_room["大中街"] = {path = "node walk mzj_jkdzj", back_to_meng = "east;east;north;north;north;north;north"}
+mzj_room["太平门"] = {path = "node walk mzj_jktpm", back_to_meng = "southeast;southeast;west;west;west"}
+mzj_room["小巷"] = {path = "node walk mzj_jkxx", back_to_meng = "se;do 3 w"}
+
+mzj_room["建康府"] = {path = "node walk mzj_jkf", back_to_meng = "east;north;north;north;east;east;east"}
+mzj_room["建康府南城宠物店"] = {path = "node walk mzj_jkcwd", back_to_meng = "e;n;e;e;e"} 
+mzj_room["承恩寺"] = {path = "node walk mzj_jkces", back_to_meng = "west;north;north;north;east;east;east"}
+mzj_room["朝阳门"] = {path = "node walk mzj_jkcym", back_to_meng = "w;w;w"}
+mzj_room["正阳门"] = {path = "node walk mzj_jkzym", back_to_meng = "north;northwest;west;north;north;north;north"}
+mzj_room["淮清桥"] = {path = "node walk mzj_jkhqq", back_to_meng = "do 5 n"}
+
+mzj_room["聚宝门"] = {path = "node walk mzj_jkjbm", back_to_meng = "do 6 n;do 3 e"}
+mzj_room["药铺"] = {path = "node walk mzj_jkyp", back_to_meng = "east;east;north;north;east;east;east"}
+mzj_room["贡院"] = {path = "node walk mzj_jkgy", back_to_meng = "s;e;do 5 n"}
+mzj_room["通济门"] = {path = "node walk mzj_jktjm", back_to_meng = "w;do 5 n"}
+
+mzj_room["金陵镖局"] = {path = "node walk mzj_jkjlbj", back_to_meng = "south;east;north;north;north;north;north"}
+mzj_room["镇淮桥"] = {path = "node walk mzj_jkzhq", back_to_meng = "north;north;north;north;north;east;east;east"}
+mzj_room["长街"] = {path = "node walk mzj_jkcj", back_to_meng = "do 3 e"}
+
+function mzj_path_back(room)
+  if mzj_room[room] ~= nil then
+    return mzj_room[room].back_to_meng
+  else
+    echo("=== 不存在这个mzj房间\n")
+    return nil
+  end   
+end
+
+function mzj_to_waiting_room(room)
+  local path = mzj_room[room].path
+  if path == nil then      
+    echo(" == 需要补充这个地点 - "..room)
+  else
+    send(path)  
+  end  
+end</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>node 节点 - 任务</name>
+			<packageName></packageName>
+			<script>node_city = {}
+
+node_city["孟之经"] = {
+    short_name = "mzj",
+    back_mrf = "node walk mzj_mrf",
+    back_pozhen = "node walk mzj_pozhen",
+    back_hsz = "node walk mzj_hsz",
+    ask_job = "ask meng about job", 
+    job_done = "ask meng about finish", 
+    job_fail = "ask meng about fail",  
+}
+node_city["万安塔"] = {
+    short_name = "wat",
+    ask_job = "set wimpy 0;;jiali 0;;ask ke about 进塔",
+    job_done = "qiao luo", 
+    job_fail = "qiao luo",
+    back_pozhen = "node walk wat_yz",
+    back_yangzhou = "node walk wat_yz",
+    back_mrf = "node walk wat_yz",
+    back_hsz = "node walk wat_yz",  
+}
+      
+node_city["韩世忠"] = {
+    short_name = "hsz",
+    ask_job = "ask han about job;;unset forced_act;;set wimpy 50;;jiali 0",
+    job_done = "ask han about finish", 
+    job_fail = "ask han about fail",
+    back_pozhen = "node walk hsz_pozhen",
+    back_yangzhou = "node walk hsz_zjdk3",
+}
+         
+node_city["正阳门"] = {
+    back_mrf = "walk chaoyang",
+    back_pozhen = "walk guiyun"
+}
+        
+node_city["清凉门"] = {
+    back_mrf = "walk chaoyang",
+    back_pozhen = "walk zhengyang"    
+}
+    
+node_city["朝阳门"] = {
+    back_mrf = "walk suzhou",
+    back_pozhen = "walk zhengyang"
+}
+           
+node_city["神策门"] = {
+    back_mrf = "walk chaoyang",
+    back_pozhen = "walk zhengyang"    
+}
+node_city["金华府"] = {
+    back_mrf = "walk quzhou",
+    back_pozhen = "walk quzhou"    
+}
+   
+node_city["明州"] = {
+    short_name = "mz",
+    back_mrf = "node walk mz_mrf",
+    back_pozhen = "node walk mz_mrf",
+    back_hsz = "node walk mz_hsz"    
+}
+    
+node_city["闽中"] = {
+    short_name = "fz",
+    back_mrf = "node walk fz_mrf",
+    back_pozhen = "node walk fz_pozhen",
+    back_hsz = "node walk fz_hsz",    
+}
+
+node_city["绍兴"] = {
+    back_mrf = "walk jinhua",
+    back_pozhen = "walk jinhua"    
+}
+
+node_city["衢州"] = {
+    back_mrf = "walk shangrao",
+    back_pozhen = "walk shangrao"    
+}
+     
+node_city["武夷山"] = {
+    back_mrf = "walk quanzhou",
+    back_pozhen = "walk quanzhou"    
+}
+   
+node_city["泉州"] = {
+    short_name = "qz",
+    back_mrf = "node walk qz_mrf",
+    back_pozhen = "node walk qz_pozhen",
+    back_hsz = "node walk qz_hsz2"    
+}
+    
+node_city["龙泉镇"] = {
+    back_mrf = "walk wuyi",
+    back_pozhen = "walk wuyi"    
+}
+
+node_city["潮州"] = {
+    short_name = "cz",
+    back_mrf = "node walk cz_mrf",
+    back_pozhen = "node walk cz_pozhen",
+    back_hsz = "node walk cz_hsz",
+    ask_job = "ask xing about job", 
+    job_done = "ask xing about finish", 
+    job_fail = "ask xing about fail",    
+}
+     
+node_city["雁荡山"] = {
+    back_mrf = "walk mingzhou",
+    back_pozhen = "walk mingzhou"    
+}
+   
+node_city["温州"] = {
+    back_mrf = "walk fuzhou",
+    back_pozhen = "walk fuzhou"
+}
+ 
+node_city["上饶"] = {
+    back_mrf = "walk qianshan",
+    back_pozhen = "walk qianshan"    
+}
+
+node_city["铅山"] = {
+    back_mrf = "walk jiangzhou",
+    back_pozhen = "walk jiangzhou"    
+}
+       
+node_city["建宁府"] = {
+    short_name = "jn",
+    back_mrf = "node walk jn_mrf",
+    back_pozhen = "node walk jn_pozhen"    
+}
+node_city["西湖岸边"] = {
+    short_name = "xhab",
+    back_mrf = "node walk xhab_mrf",
+    back_pozhen = "node walk xhab_pozhen",
+    back_hsz = "node walk xhab_hsz"    
+}
+      
+node_city["处州府"] = {
+    back_mrf = "walk yandang",
+    back_pozhen = "walk yandang"  
+}
+
+node_city["无锡"] = {
+    back_mrf = "walk suzhou",
+    back_pozhen = "walk suzhou"    
+}
+
+node_city["义兴"] = {
+    back_mrf = "walk wuxi",
+    back_pozhen = "walk wuxi"
+}
+  
+node_city["沧浪亭"] = {
+    short_name = "szclt",
+    back_yangzhou = "node walk sz_zjdk",
+    back_hua = "node walk sz_zjdk",
+    back_hangzhou = "s;;s;;ne;;node walk mrf_hz",
+    back_pozhen = "node walk szclt_pozhen"    
+}
+node_city["湖州"] = {
+    short_name = "hzf",
+    back_yangzhou = "node walk hzf_mrf",
+    back_hua = "node walk hzf_pozhen",
+    back_mrf = "node walk hzf_mrf",
+    back_pozhen = "node walk hzf_pozhen",    
+}
+
+node_city["京口渡"] = {
+    short_name = "zjdk",
+    ask_job = "ask shao gong about jiang;;enter",
+    back_yangzhou = "walk yangzhou",
+    back_hangzhou = "node walk zjdk_hz",
+    back_pozhen = "node walk zjdk_pozhen",
+    back_mrf = "node walk zjdk_mrf",
+    back_hsz = "node walk zjdk_hsz",    
+}
+     
+node_city["塘沽口"] = {}
+    
+node_city["回疆小镇"] = {}
+node_city["富贵花圃"] = {
+    back_changan = "w;;s;;s;;node walk ly_ca",
+    back_yangzhou = "w;;s;;s;;node walk ly_yz"    
+}
+   
+node_city["朱雀大街"] = {
+    back_luoyang = "node walk ca_ly",
+    back_yangzhou = "node walk ca_yz"    
+}
+
+node_city["金光门"] = {
+    back_changan = "node walk jgm_ca"
+}
+
+node_city["小广场"] = {
+    ask_job = "ask hua about job",
+    back_changan = "w;;w;;s;;walk changan",
+    back_yangzhou = "w;;w;;s;;walk huijiang"    
+}
+    
+node_city["慕容复"] = {
+    short_name = "mrf",
+    ask_job = "ask pu about job;;unset forced_act;;jiali 0;;set wimpy 40", 
+    job_done = "give pu xin", 
+    job_fail = "ask pu about fail",
+    back_hangzhou = "node walk mrf_hz",
+    back_yangzhou = "node walk mrf_zjdk",
+    back_pozhen = "node walk mrf_pozhen",
+    back_hsz = "node walk mrf_hsz"    
+}
+
+node_city["归云庄"] = {
+    short_name = "pozhen",
+    ask_job = "ask lu about pozhen;;set forced_act;;jiali max;;set wimpy 0", 
+    job_done = "ask lu about 破阵奖励;;tell feixuex 治疗", 
+    job_fail = "ask lu about 破阵失败",
+    back_hangzhou = "node walk pozhen_hz",
+    back_yangzhou = "node walk pozhen_zjdk",
+    back_mrf = "node walk pozhen_mrf",
+    back_hsz = "node walk pozhen_hsz",    
+}
+
+node_city["归云庄大门"] = {
+    short_name = "gyz",
+    back_hangzhou = "node walk gyz_hz",
+    back_pozhen = "node walk gyz_lcf",
+    back_mrf = "node walk gyz_mrf"    
+}
+  
+node_city["扬子津"] = {
+    ask_job = "ask shao gong about jiang;;enter",
+    back_yangzhou = "walk yangzhou",    
+}
+
+node_city["镇江渡口"] = {
+    short_name = "zjdk",
+    ask_job = "ask shao gong about jiang;;enter",
+    back_yangzhou = "walk yangzhou",
+    back_hangzhou = "node walk zjdk_hz",
+    back_pozhen = "node walk zjdk_pozhen",
+    back_mrf = "node walk zjdk_mrf",
+    back_hsz = "node walk zjdk_hsz",    
+}
+
+node_city["大理寺"] = {
+    short_name = "hz",
+    ask_job = "ask zhang about job", 
+    job_done = "give zhang core", 
+    job_fail = "ask zhang about 失败",
+    back_yangzhou = "node walk hz_zjdk",
+    back_pozhen = "node walk hz_pozhen",
+    back_mrf = "node walk hz_mrf"
+}
+node_city["孟津渡"] = {
+    ask_job = "ask shao gong about 过河;;enter"
+}
+
+node_city["扬州"] = {
+    short_name = "yz",
+    back_changan = "node walk yz_ca",
+    back_hua = "node walk yz_qinz",
+    back_mrf = "walk zhenjiang",
+    back_pozhen = "walk zhenjiang",    
+}
+
+node_city["孟津渡对面"] = {
+    ask_job = "ask shao gong about 过河;;enter"
+}
+node_city["代州"] = {
+    short_name = "dz",
+    back_yangzhou = "node walk dz_jydk"
+}
+
+node_city["岳阳"] = {
+    short_name = "yy",
+    back_hangzhou = "node walk yy_laf"
+}
+    
+node_city["黄河渡口"] = {
+    ask_job = "ask shao gong about 过河;;enter"
+}
+  
+node_city["建康"] = {
+    short_name = "jk",
+    back_hangzhou = "node walk jk_hz",
+    back_pozhen = "node walk jk_pozhen",
+    back_mrf = "node walk jk_mrf",
+    back_hsz = "node walk jkf_hsz",
+}
+
+node_city["桃花岛"] = {
+    back_hangzhou = "node walk hys_ht",
+    back_pozhen = "node walk hys_ht",
+    back_mrf = "node walk hys_ht"    
+}
+  
+node_city["燕子坞"] = {
+    short_name = "mr",
+    back_hangzhou = "node walk mr_hz",
+    back_pozhen = "node walk mr_pozhen",
+    back_mrf = "node walk mr_mrf",
+    back_hsz = "node walk mr_hsz",    
+}
+  
+node_city["提督府"] = {
+    short_name = "tdf",
+    back_hangzhou = "node walk tdf_hz",
+    back_pozhen = "node walk tdf_pozhen",
+    back_mrf = "node walk tdf_mrf"
+}
+
+node_city["岳王墓"] = {
+    short_name = "ywm",
+    back_hangzhou = "node walk ywm_hz",
+    back_pozhen = "node walk ywm_pozhen",
+    back_mrf = "node walk ywm_mrf",
+    back_hsz = "node walk ywm_hsz",    
+}
+
+node_city["镇江"] = {
+    short_name = "zj",
+    back_hangzhou = "node walk zj_hz",
+    back_pozhen = "node walk zj_pozhen",
+    back_mrf = "node walk zj_mrf"    
+}
+   
+node_city["江州"] = {
+    short_name = "jz",
+    back_hangzhou = "node walk jz_hz",
+    back_pozhen = "node walk jz_pozhen",
+    back_mrf = "node walk jz_mrf",
+    back_hsz = "node walk jz_hsz"    
+}
+ 
+node_city["铜官镇"] = {
+    short_name = "tgz",
+    back_hangzhou = "node walk tgz_hz",
+    back_pozhen = "node walk tgz_pozhen",
+    back_mrf = "node walk tgz_mrf",
+    back_hsz = "node walk tgz_hsz",
+}
+  
+node_city["嘉兴"] = {
+    short_name = "jx",
+    back_hangzhou = "node walk jx_hz",
+    back_pozhen = "node walk jx_pozhen",
+    back_mrf = "node walk jx_mrf",
+    back_hsz = "node walk jx_hsz",
+}
+</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>util</name>
+			<packageName></packageName>
+			<script>local function split(str, delimiter)
+    local resultTable = {}
+    -- The pattern '([^' .. delimiter .. ']+)' matches one or more characters
+    -- that are NOT the delimiter, effectively capturing the segments between delimiters.
+    for segment in string.gmatch(str, "([^" .. delimiter .. "]+)") do
+        table.insert(resultTable, segment)
+    end
+    return resultTable
+end</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>无锡地图</name>
+			<packageName></packageName>
+			<script>local wuxi = {}
+wuxi["无锡"] = {
+  adj = {
+    {room = "连元街", path = "w"},
+    {room = "捕快营", path = "n"},
+    {room = "观前街", path = "se"},
+  }
+}
+wuxi["捕快营"] = {
+  adj = {
+    {room = "无锡", path = "s"},
+    {room = "仓桥", path = "wu"},
+    {room = "书院街", path = "n"},
+    {room = "大厅", path = "enter"},
+  }
+}
+
+wuxi["仓桥"] = {
+  adj = {
+    {room = "捕快营", path = "ed"},
+    {room = "道场巷", path = "nw"},
+  }
+}
+
+wuxi["道场巷"] = {
+  adj = {
+    {room = "仓桥", path = "se"},
+  }
+}
+
+wuxi["书院街"] = {
+  adj = {
+    { room = "打铁桥", path = "south"} , 
+    { room = "城头街", path = "east"}, 
+    { room = "捕快营", path = "northwest" }
+  }
+}
+
+wuxi["打铁桥"] = {
+  adj = {
+    { room = "打铁铺", path = "east"}, 
+    { room = "书院街", path = "southeast"}, 
+    { room = "北门", path = "northwest" }
+  }
+}
+
+wuxi["北门"] = { 
+  adj = {
+    {room = "杏子林", path = "north"},
+    {room = "打铁桥", path = "se"}
+  } 
+}
+
+wuxi["杏子林"] = { 
+  adj = {
+    { room = "北门", path = "s"},
+    { room = "青石官道", path = "se"},
+    { room = "锡山脚下", path = "nw"}
+  }
+}
+
+wuxi["锡山脚下"] = {
+  adj = {
+    { room = "杏子林", path = "se"},
+    { room = "常州", path = "nw"}
+  } 
+}
+
+wuxi["常州"] = { 
+  adj = {
+    { room = "丹阳", path = "n"},
+    { room = "土路", path = "nw"},
+    { room = "锡山脚下", path = "se"},
+    { room = "寨桥镇", path = "sw"},
+    { room = "山路", path = "su"},
+  } 
+}
+
+wuxi["山路"] = { 
+  adj = {
+    { room = "常州", path = "nd"},
+    { room = "惠山", path = "su"},
+  } 
+}
+
+wuxi["惠山"] = { 
+  adj = {
+    { room = "山路", path = "nd"},
+    { room = "山脚下", path = "sd"},
+    { room = "春申涧", path = "ed"},
+    { room = "三茅峰", path = "wu"},
+  } 
+}
+
+wuxi["三茅峰"] = {
+  adj = {
+    { room = "阳山", path = "n"},
+    { room = "惠山", path = "ed"},
+  } 
+}
+
+wuxi["春申涧"] = { 
+  adj = {
+    { room = "惠山", path = "wu"},
+  } 
+}
+
+wuxi["山脚下"] = { 
+  adj = {
+    { room = "山路", path = "s"},
+    { room = "惠山泉", path = "e"},
+    { room = "惠山", path = "nu"},
+  } 
+}
+
+wuxi["惠山泉"] = { 
+  adj = {
+    { room = "山脚下", path = "w"},
+  }
+}
+
+wuxi["山路"] = { 
+  adj = {
+    { room = "山脚下", path = "n"},
+    { room = "惠山寺", path = "se"},
+  }   
+}
+
+wuxi["惠山寺"] = { 
+  adj = {
+    { room = "山路", path = "nw"},
+    { room = "土路", path = "sw"},
+  }  
+}
+
+wuxi["土路"] = { 
+  adj = {
+    { room = "西门", path = "se"},
+    { room = "惠山寺", path = "ne"},
+  } 
+}
+
+wuxi["西门"] = {
+  adj = {
+    { room = "西大街", path = "se"},
+    { room = "雪浪山", path = "sw"},
+    { room = "土路", path = "nw"},
+  } 
+}
+
+wuxi["雪浪山"] = { 
+  adj = {
+    { room = "太湖湖边", path = "sw"},
+    { room = "西门", path = "ne"},
+  } 
+}
+
+wuxi["西大街"] = { 
+  adj = {
+    { room = "府衙", path = "n"},
+    { room = "东大街", path = "e"},
+    { room = "西门", path = "nw"},
+    { room = "西桥", path = "su"},    
+  } 
+}
+
+wuxi["府衙"] = { 
+  adj = {
+    { room = "连元街", path = "n"},
+    { room = "大厅", path = "enter"},
+    { room = "西大街", path = "s"},  
+  } 
+}
+
+wuxi["连元街"] = { 
+  adj = {
+    { room = "连元街", path = "e"},
+    { room = "府衙", path = "s"},  
+  } 
+}
+
+wuxi["连元街"] = { 
+  adj = {
+    { room = "连元街", path = "e"},
+    { room = "无锡", path = "w"},  
+  } 
+}
+
+wuxi["西桥"] = { 
+  adj = {
+    { room = "北禅寺巷", path = "sd"},
+    { room = "西大街", path = "nd"},  
+  } 
+}
+
+wuxi["北禅寺巷"] = { 
+  adj = {
+    { room = "北禅寺巷", path = "e"},
+    { room = "庙巷", path = "w"},  
+    { room = "西桥", path = "nu"},
+  } 
+}
+
+wuxi["庙巷"] = { 
+  adj = {
+    { room = "当铺", path = "n"},
+    { room = "钱庄", path = "s"},  
+    { room = "北禅寺巷", path = "e"},
+  } 
+}
+
+wuxi["当铺"] = { 
+  adj = {
+    { room = "庙巷", path = "s"},
+  } 
+}
+
+wuxi["钱庄"] = { 
+  adj = {
+    { room = "庙巷", path = "n"},
+  } 
+}
+
+wuxi["北禅寺巷"] = { 
+  adj = {
+    { room = "南大街", path = "e"},
+    { room = "北禅寺巷", path = "w"},  
+    { room = "北禅寺", path = "n"},
+  } 
+}
+
+wuxi["北禅寺"] = { 
+  adj = {
+    { room = "北禅寺巷", path = "s"},
+    { room = "东大街", path = "n"},
+  } 
+}
+
+wuxi["东大街"] = { 
+  adj = {
+    { room = "北禅寺", path = "s"},
+    { room = "石皮巷", path = "ne"},
+    { room = "大市桥", path = "se"},
+    { room = "西大街", path = "w"},
+    { room = "城隍庙", path = "nw"},
+  } 
+}
+
+wuxi["城隍庙"] = { 
+  adj = {
+    { room = "东大街", path = "se"},
+  } 
+}
+
+wuxi["石皮巷"] = { 
+  adj = {
+    { room = "观前街", path = "e"},
+    { room = "东大街", path = "sw"},
+  } 
+}
+
+wuxi["观前街"] = { 
+  adj = {
+    { room = "无锡", path = "nw"},
+    { room = "石皮巷", path = "w"},
+    { room = "观前街1", path = "e"},
+    { room = "大市桥", path = "s"},
+  } 
+}
+
+wuxi["观前街1"] = { 
+  adj = {
+    { room = "洞虚宫", path = "n"},
+    { room = "观前街", path = "w"},
+    { room = "盛巷", path = "e"},
+  } 
+}
+
+wuxi["盛巷"] = { 
+  adj = {
+    { room = "硝皮巷", path = "n"},
+    { room = "观前街1", path = "w"},
+    { room = "营桥", path = "eu"},
+  } 
+}
+
+wuxi["营桥"] = { 
+  adj = {
+    { room = "城守营", path = "n"},
+    { room = "盛巷", path = "wd"},
+    { room = "东门", path = "ed"},
+  } 
+}
+
+wuxi["东门"] = { 
+  adj = {
+    { room = "城外土路", path = "e"},
+    { room = "营桥", path = "wu"},
+  }
+}
+
+wuxi["城外土路"] = { 
+  adj = {
+    { room = "御亭镇", path = "se;se;se"},
+    { room = "东门", path = "w"},
+  }
+}
+
+
+
+wuxi["捕快营"] = {
+  adj = {
+    { room = "书院街", path = "n"},
+    { room = "无锡", path = "s"},
+    { room = "仓桥", path = "wu"},
+  }  
+}
+
+wuxi["书院街"] = { 
+  adj = {
+    { room = "城头街", path = "e"},
+    { room = "捕快营", path = "s"},
+    { room = "打铁桥", path = "nw"},
+  }  
+}
+
+wuxi["打铁铺"] = { 
+  adj = {
+    { room = "打铁桥", path = "w"},
+  }  
+}
+
+wuxi["南大街"] = {
+  adj = {
+    { room = "槐树巷", path = "e"},
+    { room = "南市桥", path = "se"},
+    { room = "欢喜巷", path = "ne"},
+    { room = "北禅寺巷", path = "w"},
+    { room = "大市桥", path = "nw"},
+  }  
+}
+
+wuxi["大市桥"] = { 
+  adj = {
+    { room = "东大街", path = "nw"},
+    { room = "南大街", path = "se"},
+    { room = "观前街", path = "n"},
+  }  
+}
+
+wuxi["欢喜巷"] = { 
+  adj = {
+    { room = "松鹤楼", path = "n"},
+    { room = "欢喜巷1", path = "e"},
+    { room = "南大街", path = "sw"},
+    { room = "槐树巷", path = "se"},
+  }  
+}
+
+wuxi["松鹤楼"] = { 
+  adj = {
+    { room = "欢喜巷", path = "s"},
+  } 
+}
+
+
+wuxi["槐树巷"] = { 
+  adj = {
+    { room = "杂货铺", path = "s"},
+    { room = "槐树巷1", path = "e"},
+    { room = "南大街", path = "w"},
+    { room = "欢喜巷", path = "nw"},
+  } 
+}
+
+wuxi["槐树巷1"] = { 
+  adj = {
+    { room = "欢喜巷1", path = "ne"},
+    { room = "槐树巷", path = "w"},
+    { room = "医馆", path = "s"},
+  } 
+}
+
+wuxi["槐树巷"] = {   
+adj = {
+    { room = "槐树", path = "n"},
+  } 
+}
+
+wuxi["医馆"] = {   
+adj = {
+    { room = "槐树巷1", path = "n"},
+  } 
+}
+
+wuxi["欢喜巷1"] = { 
+  adj = {
+    { room = "长风镖局", path = "n"},
+    { room = "欢喜巷", path = "w"},
+    { room = "槐树巷1", path = "se"},
+  } 
+}
+
+wuxi["长风镖局"] = {   
+adj = {
+    { room = "欢喜巷1", path = "s"},
+  } 
+}
+
+wuxi["南市桥"] = { 
+  adj = {
+    { room = "无锡马车行", path = "w"},
+    { room = "南市桥巷", path = "sw"},
+    { room = "南大街", path = "nw"},
+  } 
+}
+
+wuxi["无锡马车行"] = { 
+  adj = {
+    { room = "南市桥", path = "e"},
+  } 
+}
+
+wuxi["南市桥巷"] = { 
+  adj = {
+    { room = "南门", path = "se"},
+    { room = "南市桥", path = "ne"},
+  } 
+}
+
+wuxi["南门"] = { 
+  adj = {
+    { room = "御亭镇", path = "e;e;e"},
+    { room = "南市桥巷", path = "nw"},
+  } 
+}
+
+wuxi["御亭镇"] = { 
+  adj = {
+    { room = "南门", path = "w;w;w"},
+    { room = "城外土路", path = "nw;nw;nw"},
+  } 
+}
+
+wuxi["洞虚宫"] = { 
+  adj = {
+    { room = "观前街1", path = "s"},
+  } 
+}
+
+
+wuxi["硝皮巷"] = { 
+  adj = {
+    { room = "城守营", path = "se"},
+    { room = "黄泥桥", path = "nu"},
+    { room = "盛巷", path = "s"},
+  } 
+}
+
+wuxi["城守营"] = { 
+  adj = {
+    { room = "硝皮巷", path = "nw"},
+    { room = "营桥", path = "s"},
+  } 
+}
+
+wuxi["黄泥桥"] = { 
+  adj = {
+    { room = "城头街", path = "nd"},
+    { room = "硝皮巷", path = "sd"},
+  } 
+}
+
+wuxi["城头街"] = {
+  adj = {
+    { room = "书院街", path = "w"},
+    { room = "黄泥桥", path = "su"},
+  }  
+}
 
 </script>
 			<eventHandlerList />
@@ -16569,9 +16955,9 @@ city["五岭"] = { room = "湘江渡口",
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_xue</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -16581,21 +16967,21 @@ city["五岭"] = { room = "湘江渡口",
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
-				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>thirthty</name>
 				<keyType>4</keyType>
 				<value>"饥渴状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>神不足</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>hunger</name>
+				<keyType>4</keyType>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -16791,10 +17177,10 @@ city["五岭"] = { room = "湘江渡口",
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
+				<value>1093</value>
+				<valueType>4</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -16809,33 +17195,27 @@ city["五岭"] = { room = "湘江渡口",
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
+				<name>water</name>
+				<keyType>4</keyType>
+				<value>68</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
 				<name>max_xue</name>
 				<keyType>4</keyType>
 				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_shen</name>
+				<name>max_neili</name>
 				<keyType>4</keyType>
-				<value>464</value>
-				<valueType>4</valueType>
+				<value>2014</value>
+				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>base_neili</name>
+				<name>current_jingli</name>
 				<keyType>4</keyType>
-				<value>1093</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_jingli</name>
-				<keyType>4</keyType>
-				<value>991</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_neili</name>
-				<keyType>4</keyType>
-				<value>1432</value>
+				<value>1982</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -16845,9 +17225,15 @@ city["五岭"] = { room = "湘江渡口",
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_jingli</name>
+				<name>current_neili</name>
 				<keyType>4</keyType>
-				<value>1982</value>
+				<value>1432</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_jingli</name>
+				<keyType>4</keyType>
+				<value>991</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -16857,9 +17243,9 @@ city["五岭"] = { room = "湘江渡口",
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>water</name>
+				<name>max_shen</name>
 				<keyType>4</keyType>
-				<value>68</value>
+				<value>464</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -16869,21 +17255,45 @@ city["五岭"] = { room = "湘江渡口",
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
+		<VariableGroup>
+			<name>stat</name>
 			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
+			<value></value>
+			<valueType>5</valueType>
+			<Variable>
+				<name>water</name>
+				<keyType>4</keyType>
+				<value>219</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>food</name>
+				<keyType>4</keyType>
+				<value>219</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>jing</name>
+				<keyType>4</keyType>
+				<value>1976</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>qi</name>
+				<keyType>4</keyType>
+				<value>3771</value>
+				<valueType>3</valueType>
+			</Variable>
+		</VariableGroup>
 		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -16899,9 +17309,9 @@ city["五岭"] = { room = "湘江渡口",
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -16911,35 +17321,11 @@ city["五岭"] = { room = "湘江渡口",
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
-		<VariableGroup>
-			<name>stat</name>
+		<Variable>
+			<name>current_learning_skills</name>
 			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-			<Variable>
-				<name>qi</name>
-				<keyType>4</keyType>
-				<value>3515</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>food</name>
-				<keyType>4</keyType>
-				<value>160</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>jing</name>
-				<keyType>4</keyType>
-				<value>1903</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>water</name>
-				<keyType>4</keyType>
-				<value>10</value>
-				<valueType>3</valueType>
-			</Variable>
-		</VariableGroup>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 	</VariablePackage>
 </MudletPackage>
