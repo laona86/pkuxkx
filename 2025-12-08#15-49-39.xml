@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>PKUXKX</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -3141,12 +3141,12 @@ create_city_node(matches[2], matches[3], matches[4]) </script>
 			</regexCodePropertyList>
 		</Trigger>
 		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-			<name>New trigger</name>
+			<name>下船</name>
 			<script>--display_node_list()</script>
 			<triggerType>0</triggerType>
 			<conditonLineDelta>0</conditonLineDelta>
 			<mStayOpen>0</mStayOpen>
-			<mCommand></mCommand>
+			<mCommand>out</mCommand>
 			<packageName></packageName>
 			<mFgColor>#ff0000</mFgColor>
 			<mBgColor>#ffff00</mBgColor>
@@ -3154,7 +3154,7 @@ create_city_node(matches[2], matches[3], matches[4]) </script>
 			<colorTriggerFgColor>#000000</colorTriggerFgColor>
 			<colorTriggerBgColor>#000000</colorTriggerBgColor>
 			<regexCodeList>
-				<string>客行────┘</string>
+				<string>到啦，上岸吧</string>
 			</regexCodeList>
 			<regexCodePropertyList>
 				<integer>0</integer>
@@ -16708,7 +16708,8 @@ mapper.mappingEnabled = true   -- 默认开启测绘
 
 -- ☆☆ 边界房间名字：这些名字的房间会被当成“边缘”，不会从这里继续向外探索 ☆☆
 mapper.boundaryNames = mapper.boundaryNames or {
-  ["饭厅"] = true,
+  ["御街"] = true,
+  ["东大街"] = true,
 }
 
 -------------------------------------------------------
@@ -17156,6 +17157,8 @@ nav = nav or {}
 --   aliasIndex = { smf = { "三茅峰|ed,n", ... }, ... }, -- 缩写 -&gt; 指纹列表
 -- }
 nav.regions = nav.regions or {}
+nav.currentFP         = nav.currentFP or nil   -- 当前所在房间指纹（由 gmcp_router 传进来的 fp 记录）
+
 
 -- 当前是否在自动行走
 nav.active            = nav.active or false
@@ -17359,13 +17362,21 @@ function nav._step()
 end
 
 
--- GMCP 回调：每次移动成功后调用，推进下一步
-function nav.onGMCPMove()
-  -- 临时调试：你可以先保留这一行，看是不是每次移动都触发了
- nprint("nav.onGMCPMove 触发, active=" .. tostring(nav.active) .. ", currentFP=" .. tostring(mapper and mapper.currentFP))
+-- GMCP 回调：由 gmcp_router 调用，参数是 mapper_core 算好的 fp 和 GMCP 的房间数据
+function nav.onGMCPMove(fp, room)
+  -- 记录当前位置，优先用参数 fp，其次用 mapper_core.currentFP
+  nav.currentFP = fp or nav.currentFP or (mapper_core and mapper_core.currentFP)
 
+  nprint("nav.onGMCPMove 触发, active="
+    .. tostring(nav.active)
+    .. ", currentFP=" .. tostring(nav.currentFP))
+
+  -- 如果当前不在“自动行走模式”，就只是更新一下位置，不做别的
   if not nav.active then return end
-  if not mapper or not mapper.currentFP then
+
+  local curFP = nav.currentFP
+  if not curFP then
+    -- 位置都不知道，没法判定是否偏离
     return
   end
 
@@ -17376,10 +17387,9 @@ function nav.onGMCPMove()
     return
   end
 
-  local fp = mapper.currentFP
   -- 如果当前位置既不是本步的 from，也不是 to，才认为真正偏离
-  if fp ~= step.from and fp ~= step.to then
-    nprint("当前位置偏离预期路径，停止自动行走。当前fp: " .. tostring(fp))
+  if curFP ~= step.from and curFP ~= step.to then
+    nprint("当前位置偏离预期路径，停止自动行走。当前fp: " .. tostring(curFP))
     nav.active = false
     return
   end
@@ -17387,6 +17397,7 @@ function nav.onGMCPMove()
   -- 只要 gmcp.GMCP.Move 触发了，就认为当前这一步完成，走下一步
   nav._step()
 end
+
 
 
 -------------------------------------------------------
@@ -17403,7 +17414,6 @@ function nav.stop()
   nprint("已停止自动行走。")
 end
 
--- 在指定区域、按目标指纹寻路
 local function gotoFPInRegion(regionKey, targetFP)
   local region = nav.regions[regionKey]
   if not region then
@@ -17411,15 +17421,17 @@ local function gotoFPInRegion(regionKey, targetFP)
     return
   end
 
-  if not mapper or not mapper.currentFP then
-    nprint("当前房间指纹未知（mapper.currentFP 为空）。等 GMCP 更新一下，比如敲个 look，再试。")
+  -- 起点优先用 nav.currentFP（nav.onGMCPMove 里记的），
+  -- 再兜底 mapper_core.currentFP
+  local startFP = nav.currentFP or (mapper_core and mapper_core.currentFP)
+
+  if not startFP then
+    nprint("当前房间指纹未知（nav.currentFP / mapper_core.currentFP 为空）。等 GMCP 更新一下，比如走一步/敲 look，再试。")
     return
   end
 
-  local startFP = mapper.currentFP
-
   if not region.mapNodes[startFP] then
-    nprint("当前所在房间不在区域[" .. regionKey .. "]的地图中。")
+    nprint("当前所在房间不在区域[" .. regionKey .. "]的地图中。当前fp: " .. tostring(startFP))
     return
   end
 
@@ -17440,6 +17452,7 @@ local function gotoFPInRegion(regionKey, targetFP)
 
   nav._step()
 end
+
 
 -- 解析 token：
 --   目前只支持： region.alias 形式，例如 "js.smf"
@@ -17566,11 +17579,9 @@ function nav.getStartFP(rkey)
     return nav.currentFP
   end
 
-  -- 2) 退而求其次：尝试用 mapper.currentFP（gmcp 驱动）
-  if mapper and mapper.currentFP and mapNodes[mapper.currentFP] then
-    -- nav.currentRegionKey = rkey
-    -- nav.currentFP        = mapper.currentFP
-    return mapper.currentFP
+  -- 2) 退而求其次：使用 mapper_core.currentFP（gmcp 驱动的“单一事实来源”）
+  if mapper_core and mapper_core.currentFP and mapNodes[mapper_core.currentFP] then
+    return mapper_core.currentFP
   end
 
   -- 3) 都没有 → 提示用户用 here
@@ -17580,6 +17591,7 @@ function nav.getStartFP(rkey)
   ))
   return nil
 end
+
 
 -- 内部工具: 计算并打印从 startFP 到 targetFP 的路径
 function nav.showPathInRegion(rkey, startFP, targetFP)
@@ -17764,6 +17776,9 @@ function gmcp_router.onGMCPMove()
       room = gmcp.GMCP.Move
     end
   end
+  
+  cecho("\n&lt;yellow&gt;[GMCP DEBUG] gmcp.GMCP.Move =\n")
+  display(room)
 
   -- 2) 更新当前房间指纹（单一事实来源）
   if mapper_core and mapper_core.updateFromGMCP then
@@ -19619,6 +19634,1212 @@ mapAliases = {
 </script>
 				<eventHandlerList />
 			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>sz</name>
+				<packageName></packageName>
+				<script>mapper = mapper or {}
+mapper.maps = mapper.maps or {}
+
+mapper.maps["sz"] = {
+  region = {
+    key  = "sz",      -- 区域代号，用在 goto wx.xxx 里
+    name = "苏州",    -- 纯注释/显示用
+  },
+  mapNodes = {
+    ["三清殿|s"] = {
+      name = "三清殿",
+      exits = {
+        ["s"] = "六角亭|e,n,sd,w",
+      },
+    },
+    ["东大街|e,n,nw,s,se,sw"] = {
+      name = "东大街",
+      exits = {
+        ["e"] = "东大街|e,n,nw,s,sw,w",
+        ["n"] = "胡同|n,ne,s,w",
+        ["nw"] = "沧浪亭|n,s,se,sw",
+        ["s"] = "宝和记|n",
+        ["se"] = "观前街|nw,se",
+        ["sw"] = "宝带桥|n,ne,nw,s",
+      },
+    },
+    ["东大街|e,n,nw,s,sw,w"] = {
+      name = "东大街",
+      exits = {
+        ["e"] = "东门|e,w",
+        ["n"] = "立春堂|s",
+        ["nw"] = "胡同|se,w",
+        ["s"] = "打铁铺|n",
+        ["sw"] = "观前街|ne,sw",
+        ["w"] = "东大街|e,n,nw,s,se,sw",
+      },
+    },
+    ["东门|e,w"] = {
+      name = "东门",
+      exits = {
+        ["w"] = "东大街|e,n,nw,s,sw,w",
+      },
+    },
+    ["书场|s"] = {
+      name = "书场",
+      exits = {
+        ["s"] = "西大街|e,n,s,w",
+      },
+    },
+    ["书院|ne"] = {
+      name = "书院",
+      exits = {
+        ["ne"] = "南大街|e,n,ne,nw,s,sw,w",
+      },
+    },
+    ["六角亭|e,n,sd,w"] = {
+      name = "六角亭",
+      exits = {
+        ["e"] = "财神殿|ne,w",
+        ["n"] = "三清殿|s",
+        ["sd"] = "正山门|nu,out",
+        ["w"] = "雷尊殿|e,nw",
+      },
+    },
+    ["兵营|n"] = {
+      name = "兵营",
+      exits = {
+        ["n"] = "西大街|n,ne,nw,s,se,w",
+      },
+    },
+    ["北大街|e,n,s,sw,w"] = {
+      name = "北大街",
+      exits = {
+        ["e"] = "客店|e,u,w",
+        ["n"] = "北大街|e,n,s,w",
+        ["s"] = "沧浪亭|n,s,se,sw",
+        ["sw"] = "戏园子|n,ne",
+        ["w"] = "马厩|e,s",
+      },
+    },
+    ["北大街|e,n,s,w"] = {
+      name = "北大街",
+      exits = {
+        ["e"] = "春在楼|w",
+        ["n"] = "北门|n,s",
+        ["s"] = "北大街|e,n,s,sw,w",
+        ["w"] = "紫金庵|e",
+      },
+    },
+    ["北门|n,s"] = {
+      name = "北门",
+      exits = {
+        ["s"] = "北大街|e,n,s,w",
+        ["n"] = "青石官道|n,s,sw",
+      },
+    },
+    ["南大街|e,n,ne,nw,s,sw,w"] = {
+      name = "南大街",
+      exits = {
+        ["e"] = "狮子林|e,ne,w",
+        ["n"] = "宝带桥|n,ne,nw,s",
+        ["ne"] = "茶馆|sw",
+        ["nw"] = "天人馆|se",
+        ["s"] = "南大街|e,n,s,w",
+        ["sw"] = "书院|ne",
+        ["w"] = "聚宝斋|e",
+      },
+    },
+    ["南大街|e,n,s,w"] = {
+      name = "南大街",
+      exits = {
+        ["e"] = "听雨轩|w",
+        ["n"] = "南大街|e,n,ne,nw,s,sw,w",
+        ["s"] = "南门|n,s",
+        ["w"] = "留园|e,w",
+      },
+    },
+    ["南门|n,s"] = {
+      name = "南门",
+      exits = {
+        ["n"] = "南大街|e,n,s,w",
+      },
+    },
+    ["古木交诃|e,sw"] = {
+      name = "古木交诃",
+      exits = {
+        ["e"] = "荷花厅|e,w",
+        ["sw"] = "池塘|ne",
+      },
+    },
+    ["听雨轩|w"] = {
+      name = "听雨轩",
+      exits = {
+        ["w"] = "南大街|e,n,s,w",
+      },
+    },
+    ["天人馆|se"] = {
+      name = "天人馆",
+      exits = {
+        ["se"] = "南大街|e,n,ne,nw,s,sw,w",
+      },
+    },
+    ["宝和记|n"] = {
+      name = "宝和记",
+      exits = {
+        ["n"] = "东大街|e,n,nw,s,se,sw",
+      },
+    },
+    ["宝带桥|n,ne,nw,s"] = {
+      name = "宝带桥",
+      exits = {
+        ["n"] = "沧浪亭|n,s,se,sw",
+        ["ne"] = "东大街|e,n,nw,s,se,sw",
+        ["nw"] = "西大街|n,ne,nw,s,se,w",
+        ["s"] = "南大街|e,n,ne,nw,s,sw,w",
+      },
+    },
+    ["客店|e,u,w"] = {
+      name = "客店",
+      exits = {
+        ["e"] = "计氏马车分行|w",
+        ["u"] = "客店二楼|d,enter",
+        ["w"] = "北大街|e,n,s,sw,w",
+      },
+    },
+    ["客店二楼|d,enter"] = {
+      name = "客店二楼",
+      exits = {
+        ["d"] = "客店|e,u,w",
+        ["enter"] = "客店二楼|out",
+      },
+    },
+    ["客店二楼|out"] = {
+      name = "客店二楼",
+      exits = {
+        ["out"] = "客店二楼|d,enter",
+      },
+    },
+    ["戏园子|n,ne"] = {
+      name = "戏园子",
+      exits = {
+        ["n"] = "马厩|e,s",
+        ["ne"] = "北大街|e,n,s,sw,w",
+      },
+    },
+    ["打铁铺|n"] = {
+      name = "打铁铺",
+      exits = {
+        ["n"] = "东大街|e,n,nw,s,sw,w",
+      },
+    },
+    ["揖峰指柏轩|sw"] = {
+      name = "揖峰指柏轩",
+      exits = {
+        ["sw"] = "狮子林|e,ne,w",
+      },
+    },
+    ["擂台前广场|e"] = {
+      name = "擂台前广场",
+      exits = {
+        ["e"] = "胡同|n,ne,s,w",
+      },
+    },
+    ["昌隆镖局|s"] = {
+      name = "昌隆镖局",
+      exits = {
+        ["s"] = "胡同|n,ne,s,w",
+      },
+    },
+    ["春在楼|w"] = {
+      name = "春在楼",
+      exits = {
+        ["w"] = "北大街|e,n,s,w",
+      },
+    },
+    ["杂货铺|n"] = {
+      name = "杂货铺",
+      exits = {
+        ["n"] = "西大街|e,n,s,w",
+      },
+    },
+    ["正山门|nu,out"] = {
+      name = "正山门",
+      exits = {
+        ["nu"] = "六角亭|e,n,sd,w",
+        ["out"] = "观前街|enter,w",
+      },
+    },
+    ["池塘|ne"] = {
+      name = "池塘",
+      exits = {
+        ["ne"] = "古木交诃|e,sw",
+      },
+    },
+    ["沧浪亭|n,s,se,sw"] = {
+      name = "沧浪亭",
+      exits = {
+        ["n"] = "北大街|e,n,s,sw,w",
+        ["s"] = "宝带桥|n,ne,nw,s",
+        ["se"] = "东大街|e,n,nw,s,se,sw",
+        ["sw"] = "西大街|n,ne,nw,s,se,w",
+      },
+    },
+    ["燕誉堂|e,se,w"] = {
+      name = "燕誉堂",
+      exits = {
+        ["e"] = "观前街|enter,w",
+        ["se"] = "真趣亭|e,nw",
+        ["w"] = "狮子林|e,ne,w",
+      },
+    },
+    ["狮子林|e,ne,w"] = {
+      name = "狮子林",
+      exits = {
+        ["e"] = "燕誉堂|e,se,w",
+        ["ne"] = "揖峰指柏轩|sw",
+        ["w"] = "南大街|e,n,ne,nw,s,sw,w",
+      },
+    },
+    ["留园|e,w"] = {
+      name = "留园",
+      exits = {
+        ["e"] = "南大街|e,n,s,w",
+        ["w"] = "荷花厅|e,w",
+      },
+    },
+    ["真趣亭|e,nw"] = {
+      name = "真趣亭",
+      exits = {
+        ["e"] = "问梅阁|s,w",
+        ["nw"] = "燕誉堂|e,se,w",
+      },
+    },
+    ["立春堂|s"] = {
+      name = "立春堂",
+      exits = {
+        ["s"] = "东大街|e,n,nw,s,sw,w",
+      },
+    },
+    ["立雪堂|n"] = {
+      name = "立雪堂",
+      exits = {
+        ["n"] = "问梅阁|s,w",
+      },
+    },
+    ["紫金庵|e"] = {
+      name = "紫金庵",
+      exits = {
+        ["e"] = "北大街|e,n,s,w",
+      },
+    },
+    ["聚宝斋|e"] = {
+      name = "聚宝斋",
+      exits = {
+        ["e"] = "南大街|e,n,ne,nw,s,sw,w",
+      },
+    },
+    ["胡同|e,sw"] = {
+      name = "胡同",
+      exits = {
+        ["e"] = "胡同|se,w",
+        ["sw"] = "胡同|n,ne,s,w",
+      },
+    },
+    ["胡同|n,ne,s,w"] = {
+      name = "胡同",
+      exits = {
+        ["n"] = "昌隆镖局|s",
+        ["ne"] = "胡同|e,sw",
+        ["s"] = "东大街|e,n,nw,s,se,sw",
+        ["w"] = "擂台前广场|e",
+      },
+    },
+    ["胡同|se,w"] = {
+      name = "胡同",
+      exits = {
+        ["se"] = "东大街|e,n,nw,s,sw,w",
+        ["w"] = "胡同|e,sw",
+      },
+    },
+    ["苏州府衙|s"] = {
+      name = "苏州府衙",
+      exits = {
+        ["s"] = "西大街|n,ne,nw,s,se,w",
+      },
+    },
+    ["茶馆|sw"] = {
+      name = "茶馆",
+      exits = {
+        ["sw"] = "南大街|e,n,ne,nw,s,sw,w",
+      },
+    },
+    ["荷花厅|e,w"] = {
+      name = "荷花厅",
+      exits = {
+        ["e"] = "留园|e,w",
+        ["w"] = "古木交诃|e,sw",
+      },
+    },
+    ["西大街|e,n,s,w"] = {
+      name = "西大街",
+      exits = {
+        ["e"] = "西大街|n,ne,nw,s,se,w",
+        ["n"] = "书场|s",
+        ["s"] = "杂货铺|n",
+        ["w"] = "西门|e,w",
+      },
+    },
+    ["西大街|n,ne,nw,s,se,w"] = {
+      name = "西大街",
+      exits = {
+        ["n"] = "苏州府衙|s",
+        ["ne"] = "沧浪亭|n,s,se,sw",
+        ["nw"] = "运河码头|se",
+        ["s"] = "兵营|n",
+        ["se"] = "宝带桥|n,ne,nw,s",
+        ["w"] = "西大街|e,n,s,w",
+      },
+    },
+    ["西门|e,w"] = {
+      name = "西门",
+      exits = {
+        ["e"] = "西大街|e,n,s,w",
+      },
+    },
+    ["观前街|enter,w"] = {
+      name = "观前街",
+      exits = {
+        ["enter"] = "正山门|nu,out",
+        ["w"] = "燕誉堂|e,se,w",
+      },
+    },
+    ["观前街|ne,sw"] = {
+      name = "观前街",
+      exits = {
+        ["ne"] = "东大街|e,n,nw,s,sw,w",
+        ["sw"] = "财神殿|ne,w",
+      },
+    },
+    ["观前街|nw,se"] = {
+      name = "观前街",
+      exits = {
+        ["nw"] = "东大街|e,n,nw,s,se,sw",
+        ["se"] = "雷尊殿|e,nw",
+      },
+    },
+    ["计氏马车分行|w"] = {
+      name = "计氏马车分行",
+      exits = {
+        ["w"] = "客店|e,u,w",
+      },
+    },
+    ["财神殿|ne,w"] = {
+      name = "财神殿",
+      exits = {
+        ["ne"] = "观前街|ne,sw",
+        ["w"] = "六角亭|e,n,sd,w",
+      },
+    },
+    ["运河码头|se"] = {
+      name = "运河码头",
+      exits = {
+        ["se"] = "西大街|n,ne,nw,s,se,w",
+      },
+    },
+    ["问梅阁|s,w"] = {
+      name = "问梅阁",
+      exits = {
+        ["s"] = "立雪堂|n",
+        ["w"] = "真趣亭|e,nw",
+      },
+    },
+    ["雷尊殿|e,nw"] = {
+      name = "雷尊殿",
+      exits = {
+        ["e"] = "六角亭|e,n,sd,w",
+        ["nw"] = "观前街|nw,se",
+      },
+    },
+    ["马厩|e,s"] = {
+      name = "马厩",
+      exits = {
+        ["e"] = "北大街|e,n,s,sw,w",
+        ["s"] = "戏园子|n,ne",
+      },
+    },
+    
+      ["二仙亭|n,w"] = {
+    name = "二仙亭",
+    exits = {
+      ["n"] = "白莲池|s",
+      ["w"] = "千人石|e,n,nw",
+    },
+  },
+  ["云岩寺塔|e,eu,wu"] = {
+    name = "云岩寺塔",
+    exits = {
+      ["e"] = "头门山|n,w",
+      ["eu"] = "试剑石|n,ne,s,wd",
+      ["wu"] = "憨憨泉|ed",
+    },
+  },
+
+  ["千人石|e,n,nw"] = {
+    name = "千人石",
+    exits = {
+      ["e"] = "二仙亭|n,w",
+      ["n"] = "试剑石|n,ne,s,wd",
+      ["nw"] = "致爽阁|se",
+    },
+  },
+  ["土路|nw,se"] = {
+    name = "土路",
+    exits = {
+      ["se"] = "青石官道|ne,nw,s",
+    },
+  },
+  ["头门山|n,w"] = {
+    name = "头门山",
+    exits = {
+      ["n"] = "虎丘山|ne,s",
+      ["w"] = "云岩寺塔|e,eu,wu",
+    },
+  },
+  ["孙武亭|s"] = {
+    name = "孙武亭",
+    exits = {
+      ["s"] = "真娘墓|n,sw",
+    },
+  },
+  ["憨憨泉|ed"] = {
+    name = "憨憨泉",
+    exits = {
+      ["ed"] = "云岩寺塔|e,eu,wu",
+    },
+  },
+  ["枕石|s"] = {
+    name = "枕石",
+    exits = {
+      ["s"] = "试剑石|n,ne,s,wd",
+    },
+  },
+  ["白莲池|s"] = {
+    name = "白莲池",
+    exits = {
+      ["s"] = "二仙亭|n,w",
+    },
+  },
+  ["真娘墓|n,sw"] = {
+    name = "真娘墓",
+    exits = {
+      ["n"] = "孙武亭|s",
+      ["sw"] = "试剑石|n,ne,s,wd",
+    },
+  },
+  ["致爽阁|se"] = {
+    name = "致爽阁",
+    exits = {
+      ["se"] = "千人石|e,n,nw",
+    },
+  },
+  ["虎丘山|ne,s"] = {
+    name = "虎丘山",
+    exits = {
+      ["ne"] = "青石官道|n,s,sw",
+      ["s"] = "头门山|n,w",
+    },
+  },
+  ["试剑石|n,ne,s,wd"] = {
+    name = "试剑石",
+    exits = {
+      ["n"] = "枕石|s",
+      ["ne"] = "真娘墓|n,sw",
+      ["s"] = "千人石|e,n,nw",
+      ["wd"] = "云岩寺塔|e,eu,wu",
+    },
+  },
+  ["青石官道|n,s,sw"] = {
+    name = "青石官道",
+    exits = {
+      ["n"] = "青石官道|nw,s",
+      ["s"] = "北门|n,s",
+      ["sw"] = "虎丘山|ne,s",
+    },
+  },
+  ["青石官道|n,se"] = {
+    name = "青石官道",
+    exits = {
+      ["n"] = "青石官道|ne,nw,s",
+      ["se"] = "青石官道|nw,s",
+    },
+  },
+  ["青石官道|n,sw"] = {
+    name = "青石官道",
+    exits = {
+      ["n"] = "青石官道|ne,nw,s",
+      ["sw"] = "青石官道|ne,sw",
+    },
+  },
+  ["青石官道|ne,nw,s"] = {
+    name = "青石官道",
+    exits = {
+      ["ne"] = "青石官道|ne,sw",
+      ["nw"] = "土路|nw,se",
+      ["s"] = "青石官道|n,se",
+    },
+  },
+  ["青石官道|ne,sw"] = {
+    name = "青石官道",
+    exits = {
+      ["ne"] = "青石官道|n,sw",
+      ["sw"] = "青石官道|ne,nw,s",
+    },
+  },
+  ["青石官道|nw,s"] = {
+    name = "青石官道",
+    exits = {
+      ["nw"] = "青石官道|n,se",
+      ["s"] = "青石官道|n,s,sw",
+    },
+  },
+  },
+  
+mapAliases = {
+  ["三清殿"]       = "sqd",
+  ["东大街"]       = "ddj",
+  ["东门"]         = "dm",
+  ["书场"]         = "sc",
+  ["书院"]         = "sy",
+  ["六角亭"]       = "ljt",
+  ["兵营"]         = "by",
+  ["北大街"]       = "bdj",
+  ["北门"]         = "bm",
+  ["南大街"]       = "ndj",
+  ["南门"]         = "nm",
+  ["古木交诃"]     = "gmjh",
+  ["听雨轩"]       = "tyx",
+  ["天人馆"]       = "trg",
+  ["宝和记"]       = "bhj",
+  ["宝带桥"]       = "bdq",
+  ["客店"]         = "kd",
+  ["客店二楼"]     = "kdel",
+  ["戏园子"]       = "xyz",
+  ["打铁铺"]       = "dtp",
+  ["揖峰指柏轩"]   = "yfzbx",
+  ["擂台前广场"]   = "ltqgc",
+  ["昌隆镖局"]     = "clbj",
+  ["春在楼"]       = "czl",
+  ["杂货铺"]       = "zhp",
+  ["正山门"]       = "zsm",
+  ["池塘"]         = "ct",
+  ["沧浪亭"]       = "clt",
+  ["燕誉堂"]       = "yyt",
+  ["狮子林"]       = "szl",
+  ["留园"]         = "ly",
+  ["真趣亭"]       = "zqt",
+  ["立春堂"]       = "lct",
+  ["立雪堂"]       = "lxt",
+  ["紫金庵"]       = "zja",
+  ["聚宝斋"]       = "jbz",
+  ["胡同"]         = "ht",
+  ["苏州府衙"]     = "szfy",
+  ["茶馆"]         = "cg",
+  ["荷花厅"]       = "hht",
+  ["西大街"]       = "xdj",
+  ["西门"]         = "xm",
+  ["观前街"]       = "gqj",
+  ["计氏马车分行"] = "jsmcfh",
+  ["财神殿"]       = "csd",
+  ["运河码头"]     = "yhmt",
+  ["问梅阁"]       = "wmg",
+  ["雷尊殿"]       = "lzd",
+  ["马厩"]         = "mj",
+  ["二仙亭"]       = "ext",
+  ["云岩寺塔"]     = "yyst",
+  ["千人石"]       = "qrs",
+  ["土路"]         = "tl",
+  ["头门山"]       = "tms",
+  ["孙武亭"]       = "swt",
+  ["憨憨泉"]       = "hhq",
+  ["枕石"]         = "zs",
+  ["白莲池"]       = "blc",
+  ["真娘墓"]       = "znm",
+  ["致爽阁"]       = "zsg",
+  ["虎丘山"]       = "hqs",
+  ["试剑石"]       = "sjs",
+  ["青石官道"]     = "qsgd",
+}  
+}</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>hz</name>
+				<packageName></packageName>
+				<script>mapper = mapper or {}
+mapper.mapNodes = {
+  ["下瓦子|e,out,s,se,sw,w"] = {
+    name = "下瓦子",
+    exits = {
+      ["e"] = "点心铺|ne,w",
+      ["out"] = "下瓦子|enter,n,w",
+      ["s"] = "江南钱庄|n,s",
+      ["se"] = "杂货铺|nw",
+      ["sw"] = "中和楼|ne,u,w",
+    },
+  },
+  ["下瓦子|enter,n,w"] = {
+    name = "下瓦子",
+    exits = {
+      ["enter"] = "下瓦子|e,out,s,se,sw,w",
+      ["n"] = "东大街|e,n,s,w",
+    },
+  },
+  ["东大街|e,n,s,w"] = {
+    name = "东大街",
+    exits = {
+      ["e"] = "东大街|e,n,s,w",
+      ["n"] = "韩王府大门|enter,s",
+      ["s"] = "下瓦子|enter,n,w",
+      ["w"] = "东大街|e,n,s,w",
+    },
+  },
+  ["中和楼|ne,u,w"] = {
+    name = "中和楼",
+    exits = {
+      ["ne"] = "下瓦子|e,out,s,se,sw,w",
+      ["u"] = "酒家二楼|d,w",
+      ["w"] = "八字桥|e,nw,s,w",
+    },
+  },
+  ["临安府|e,enter,s"] = {
+    name = "临安府",
+    exits = {
+      ["e"] = "八字桥|e,nw,s,w",
+      ["enter"] = "西街|e,n,s,w",
+      ["s"] = "西街|e,n,s,w",
+    },
+  },
+  ["八字桥|e,nw,s,w"] = {
+    name = "八字桥",
+    exits = {
+      ["e"] = "中和楼|ne,u,w",
+      ["nw"] = "大理寺|e,n,se,w",
+      ["out"] = "大理寺|e,n,se,w",
+      ["s"] = "御街|e,n,s,w",
+      ["sw"] = "御街|e,n,s,w",
+      ["w"] = "临安府|e,enter,s",
+    },
+  },
+  ["右厢房|w"] = {
+    name = "右厢房",
+    exits = {
+      ["w"] = "大厅|e,n,s,w",
+    },
+  },
+  ["后宅|s"] = {
+    name = "后宅",
+    exits = {
+      ["s"] = "大厅|e,n,s,w",
+    },
+  },
+  ["回廊|e,enter"] = {
+    name = "回廊",
+    exits = {
+      ["e"] = "酒家二楼|d,w",
+      ["enter"] = "酒家二楼|d,w",
+    },
+  },
+  ["城隍庙|n"] = {
+    name = "城隍庙",
+    exits = {
+      ["e"] = "西街|e,n,s,w",
+      ["enter"] = "西街|e,n,s,w",
+      ["n"] = "西街|e,n,s,w",
+    },
+  },
+  ["大厅|e,n,s,w"] = {
+    name = "大厅",
+    exits = {
+      ["e"] = "右厢房|w",
+      ["n"] = "后宅|s",
+      ["s"] = "花厅|n,out",
+      ["w"] = "左厢房|e",
+    },
+  },
+  ["大理寺|e,n,se,w"] = {
+    name = "大理寺",
+    exits = {
+      ["e"] = "东大街|e,n,s,w",
+      ["enter"] = "八字桥|e,nw,s,w",
+      ["n"] = "御街|e,n,s,w",
+      ["se"] = "八字桥|e,nw,s,w",
+      ["w"] = "西大街|e,n,s,w",
+    },
+  },
+  ["左厢房|e"] = {
+    name = "左厢房",
+    exits = {
+      ["e"] = "大厅|e,n,s,w",
+    },
+  },
+  ["御街|e,n,s,w"] = {
+    name = "御街",
+    exits = {
+      ["e"] = "雄武营|w",
+      ["n"] = "八字桥|e,nw,s,w",
+      ["s"] = "御街1|e,n,s,w",
+      ["w"] = "西街|e",
+    },
+  },
+    ["御街1|e,n,s,w"] = {
+    name = "御街1",
+    exits = {
+      ["e"] = "都亭驿|w",
+      ["n"] = "御街|e,n,s,w",
+      ["s"] = "和宁门|e,enter,n,s,w",
+      ["w"] = "清河坊|e,n,s",
+    },
+  },
+  ["丽正门|e,n,s,w"] = {
+    name = "丽正门",
+    exits = {
+      ["e"] = "宫墙|n,w",
+      ["n"] = "嘉会门|e,n,su,sw,w",
+      ["s"] = "嘉会门|e,n,su,sw,w",
+      ["w"] = "宫墙|e,n,nw",
+    },
+  },
+  ["凤凰山|ne,se,u"] = {
+    name = "凤凰山",
+    exits = {
+      ["e"] = "宫墙|e,n,nw",
+      ["ne"] = "宫墙|e,s,sw",
+      ["se"] = "宫墙|e,n,nw",
+      ["sw"] = "凤凰山顶|d",
+      ["u"] = "凤凰山顶|d",
+    },
+  },
+  ["凤凰山顶|d"] = {
+    name = "凤凰山顶",
+    exits = {
+      ["d"] = "凤凰山|ne,se,u",
+      ["ne"] = "凤凰山|ne,se,u",
+    },
+  },
+  ["和宁门|e,enter,n,s,w"] = {
+    name = "和宁门",
+    exits = {
+      ["e"] = "宫墙|s,w",
+      ["enter"] = "宫墙|e,s,sw",
+      ["w"] = "宫墙|e,s,sw",
+    },
+  },
+  ["嘉会门|e,n,su,sw,w"] = {
+    name = "嘉会门",
+    exits = {
+      ["n"] = "丽正门|e,n,s,w",
+      ["s"] = "丽正门|e,n,s,w",
+    },
+  },
+  ["宫墙|e,n,nw"] = {
+    name = "宫墙",
+    exits = {
+      ["e"] = "丽正门|e,n,s,w",
+      ["enter"] = "宫墙|e,s,sw",
+      ["n"] = "宫墙|e,s,sw",
+      ["nw"] = "凤凰山|ne,se,u",
+      ["w"] = "凤凰山|ne,se,u",
+    },
+  },
+  ["宫墙|e,s,sw"] = {
+    name = "宫墙",
+    exits = {
+      ["e"] = "和宁门|e,enter,n,s,w",
+      ["out"] = "宫墙|e,n,nw",
+      ["s"] = "宫墙|e,n,nw",
+      ["sw"] = "凤凰山|ne,se,u",
+    },
+  },
+  ["宫墙|n,w"] = {
+    name = "宫墙",
+    exits = {
+      ["n"] = "宫墙|s,w",
+      ["w"] = "丽正门|e,n,s,w",
+    },
+  },
+  ["宫墙|s,w"] = {
+    name = "宫墙",
+    exits = {
+      ["s"] = "宫墙|n,w",
+      ["w"] = "和宁门|e,enter,n,s,w",
+    },
+  },
+  ["杂货铺|nw"] = {
+    name = "杂货铺",
+    exits = {
+      ["nw"] = "下瓦子|e,out,s,se,sw,w",
+    },
+  },
+  ["榷场|n,sw"] = {
+    name = "榷场",
+    exits = {
+      ["sw"] = "点心铺|ne,w",
+    },
+  },
+  ["江南金店|n"] = {
+    name = "江南金店",
+    exits = {
+      ["n"] = "江南钱庄|n,s",
+    },
+  },
+  ["江南钱庄|n,s"] = {
+    name = "江南钱庄",
+    exits = {
+      ["n"] = "下瓦子|e,out,s,se,sw,w",
+      ["s"] = "江南金店|n",
+    },
+  },
+  ["清波门|e,nw,sw"] = {
+    name = "清波门",
+    exits = {
+      ["e"] = "西街|e,n,s,w",
+    },
+  },
+  ["点心铺|ne,w"] = {
+    name = "点心铺",
+    exits = {
+      ["ne"] = "榷场|n,sw",
+      ["w"] = "下瓦子|e,out,s,se,sw,w",
+    },
+  },
+  ["祚德庙|e"] = {
+    name = "祚德庙",
+    exits = {
+      ["e"] = "御街|e,n,s,w",
+      ["w"] = "御街|e,n,s,w",
+    },
+  },
+  ["花厅|n,out"] = {
+    name = "花厅",
+    exits = {
+      ["n"] = "大厅|e,n,s,w",
+      ["out"] = "韩王府大门|enter,s",
+    },
+  },
+  ["西大街|e,n,s,w"] = {
+    name = "西大街",
+    exits = {
+      ["e"] = "大理寺|e,n,se,w",
+    },
+  },
+  ["西街|e,n,s,w"] = {
+    name = "西街",
+    exits = {
+      ["e"] = "御街|e,n,s,w",
+      ["n"] = "临安府|e,enter,s",
+      ["out"] = "城隍庙|n",
+      ["s"] = "城隍庙|n",
+      ["w"] = "城隍庙|n",
+    },
+  },
+  ["酒家二楼|d,w"] = {
+    name = "酒家二楼",
+    exits = {
+      ["d"] = "中和楼|ne,u,w",
+      ["out"] = "回廊|e,enter",
+      ["w"] = "回廊|e,enter",
+    },
+  },
+    ["兴隆炮仗店|n,w"] = {
+    name = "兴隆炮仗店",
+    exits = {
+      ["n"] = "清河坊|e,n,s",
+      ["w"] = "炮仗店内室|e,w",
+    },
+  },
+  ["小径|e,sw"] = {
+    name = "小径",
+    exits = {
+      ["e"] = "炮仗店内室|e,w",
+      ["sw"] = "小径|ne,s",
+    },
+  },
+  ["小径|n,sw"] = {
+    name = "小径",
+    exits = {
+      ["n"] = "小径|ne,s",
+      ["sw"] = "提督府后门|ne",
+    },
+  },
+  ["小径|ne,s"] = {
+    name = "小径",
+    exits = {
+      ["ne"] = "小径|e,sw",
+      ["s"] = "小径|n,sw",
+    },
+  },
+  ["御街|e,n,s,w"] = {
+    name = "御街",
+    exits = {
+      ["w"] = "清河坊|e,n,s",
+    },
+  },
+  ["提督府后门|ne"] = {
+    name = "提督府后门",
+    exits = {
+      ["ne"] = "小径|n,sw",
+    },
+  },
+  ["清河坊|e,n,s"] = {
+    name = "清河坊",
+    exits = {
+      ["e"] = "御街|e,n,s,w",
+      ["n"] = "盛昌行|s",
+      ["s"] = "兴隆炮仗店|n,w",
+    },
+  },
+  ["炮仗店内室|e,w"] = {
+    name = "炮仗店内室",
+    exits = {
+      ["e"] = "兴隆炮仗店|n,w",
+      ["w"] = "小径|e,sw",
+    },
+  },
+  ["盛昌行|s"] = {
+    name = "盛昌行",
+    exits = {
+      ["s"] = "清河坊|e,n,s",
+    },
+  },
+  ["韩王府大门|enter,s"] = {
+    name = "韩王府大门",
+    exits = {
+      ["enter"] = "花厅|n,out",
+      ["s"] = "东大街|e,n,s,w",
+    },
+  },
+  ["余杭门|e,n,s,w"] = {
+    name = "余杭门",
+    exits = {
+      ["e"] = "城墙脚下|e,w",
+      ["n"] = "青石官道|n,s,w",
+      ["s"] = "御街|e,n,s,w",
+      ["w"] = "城墙脚下|e,w",
+    },
+  },
+  ["县衙|s"] = {
+    name = "县衙",
+    exits = {
+      ["s"] = "钱塘县|n,se,sw",
+    },
+  },
+  ["司天监|e"] = {
+    name = "司天监",
+    exits = {
+      ["e"] = "青石官道|n,s,w",
+    },
+  },
+  ["城墙脚下|e,w"] = {
+    name = "城墙脚下",
+    exits = {
+      ["e"] = "余杭门|e,n,s,w",
+      ["w"] = "余杭门|e,n,s,w",
+    },
+  },
+  ["官道|n,sw,w"] = {
+    name = "官道",
+    exits = {
+      ["sw"] = "青石官道|e,ne,nw,s",
+    },
+  },
+  ["官道|ne,nu,w"] = {
+    name = "官道",
+    exits = {
+      ["ne"] = "钱塘县|n,se,sw",
+    },
+  },
+  ["小酒馆|w"] = {
+    name = "小酒馆",
+    exits = {
+      ["w"] = "青石官道|e,ne,nw,s",
+    },
+  },
+  ["御街3|e,n,s,w"] = { -- around 余杭门
+    name = "御街",
+    exits = {
+      ["e"] = "常平仓",
+      ["n"] = "余杭门|e,n,s,w",
+      ["s"] = "余杭门|e,n,s,w",
+      ["w"] = "景灵宫",
+    },
+  },  
+  ["御街2|e,n,s,w"] = {
+    name = "御街",
+    exits = {
+      ["e"] = "明庆寺",
+      ["n"] = "御街3|e,n,s,w",
+      ["s"] = "大理寺",
+      ["w"] = "祚德庙",
+    },
+  },
+  ["钱塘县|n,se,sw"] = {
+    name = "钱塘县",
+    exits = {
+      ["n"] = "县衙|s",
+      ["se"] = "青石官道|e,ne,nw,s",
+      ["sw"] = "官道|ne,nu,w",
+    },
+  },
+  ["青石官道|e,ne,nw,s"] = {
+    name = "青石官道",
+    exits = {
+      ["e"] = "小酒馆|w",
+      ["ne"] = "官道|n,sw,w",
+      ["nw"] = "钱塘县|n,se,sw",
+      ["s"] = "青石官道|n,s,w",
+    },
+  },
+  ["青石官道|n,s,w"] = {
+    name = "青石官道",
+    exits = {
+      ["n"] = "青石官道|e,ne,nw,s",
+      ["s"] = "余杭门|e,n,s,w",
+      ["w"] = "司天监|e",
+    },
+  }, 
+    ["余杭|e,wu"] = {
+    name = "余杭",
+    exits = {
+      ["e"] = "官道|ne,nu,w",
+      ["wu"] = "大门岭|ed,n,sw",
+    },
+  },
+  ["大门岭|ed,n,sw"] = {
+    name = "大门岭",
+    exits = {
+      ["ed"] = "余杭|e,wu",
+      ["n"] = "汇锦潭|s",
+      ["sw"] = "官道|ne,sw",
+    },
+  },
+  ["官道|ne,nu,w"] = {
+    name = "官道",
+    exits = {
+      ["ne"] = "钱塘县|n,se,sw",
+      ["w"] = "余杭|e,wu",
+    },
+  },
+  ["官道|ne,sw"] = {
+    name = "官道",
+    exits = {
+      ["ne"] = "大门岭|ed,n,sw",
+    },
+  },
+  ["汇锦潭|s"] = {
+    name = "汇锦潭",
+    exits = {
+      ["s"] = "大门岭|ed,n,sw",
+    },
+  }, 
+  ["临安府宠物店|s"] = {
+    name = "临安府宠物店",
+    exits = {
+      ["s"] = "北大街|e,n,s,w",
+    },
+  },
+  ["仙林寺|e"] = {
+    name = "仙林寺",
+    exits = {
+      ["e"] = "北大街|e,n,ne,s,w",
+    },
+  },
+  ["刺青房|sw"] = {
+    name = "刺青房",
+    exits = {
+      ["sw"] = "北大街|e,n,ne,s,w",
+    },
+  },
+  ["北大街|e,n,ne,s,w"] = {
+    name = "北大街",
+    exits = {
+      ["e"] = "青龙会大门|enter,w",
+      ["n"] = "北大街1|e,n,s,w",
+      ["ne"] = "刺青房|sw",
+      ["s"] = "北大街|e,n,s,w",
+      ["w"] = "仙林寺|e",
+    },
+  },
+  ["北大街1|e,n,s,w"] = {
+    name = "北大街1",
+    exits = {
+      ["e"] = "药铺",
+      ["n"] = "临安府宠物店",
+      ["s"] = "北大街|e,n,ne,s,w",
+      ["w"] = "绸缎庄",
+    },
+  },
+  ["北大街|e,n,s,w"] = {
+    name = "北大街",
+    exits = {
+      ["e"] = "大染坊|w",
+      ["n"] = "北大街|e,n,ne,s,w",
+      ["s"] = "东大街",
+      ["w"] = "文思院|e",
+    },
+  },  
+  ["文思院|e"] = {
+    name = "文思院",
+    exits = {
+      ["e"] = "北大街|e,n,s,w",
+    },
+  },  
+  ["[大染坊|w"] = {
+    name = "大染坊",
+    exits = {
+      ["w"] = "北大街|e,n,s,w",
+    },
+  },    
+  ["常平仓|e,w"] = {
+    name = "常平仓",
+    exits = {
+      ["e"] = "绸缎庄|e,w",
+      ["w"] = "御街3|e,n,s,w",
+    },
+  },
+
+  ["文思院|e"] = {
+    name = "文思院",
+    exits = {
+      ["e"] = "北大街|e,n,s,w",
+    },
+  },
+  ["绸缎庄|e,w"] = {
+    name = "绸缎庄",
+    exits = {
+      ["e"] = "北大街1|e,n,s,w",
+      ["w"] = "常平仓|e,w",
+    },
+  },
+  ["药铺|enter,w"] = {
+    name = "药铺",
+    exits = {
+      ["enter"] = "北大街|e,n,s,w",
+      ["w"] = "北大街1|e,n,s,w",
+    },
+  },
+  ["青龙会大厅|out"] = {
+    name = "青龙会大厅",
+    exits = {
+      ["out"] = "青龙会大门|enter,w",
+    },
+  },
+  ["青龙会大门|enter,w"] = {
+    name = "青龙会大门",
+    exits = {
+      ["enter"] = "青龙会大厅|out",
+      ["w"] = "北大街|e,n,ne,s,w",
+    },
+  },  
+}
+</script>
+				<eventHandlerList />
+			</Script>
 		</ScriptGroup>
 	</ScriptPackage>
 	<KeyPackage />
@@ -19668,9 +20889,9 @@ mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_xue</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -19680,21 +20901,21 @@ mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
-				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>thirthty</name>
 				<keyType>4</keyType>
 				<value>"饥渴状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>神不足</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>hunger</name>
+				<keyType>4</keyType>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -19890,10 +21111,10 @@ mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
+				<value>1093</value>
+				<valueType>4</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -19908,33 +21129,27 @@ mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_xue</name>
-				<keyType>4</keyType>
-				<value>693</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>max_shen</name>
 				<keyType>4</keyType>
 				<value>464</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_neili</name>
+				<name>water</name>
 				<keyType>4</keyType>
-				<value>1093</value>
+				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_jingli</name>
+				<name>max_neili</name>
 				<keyType>4</keyType>
-				<value>991</value>
-				<valueType>4</valueType>
+				<value>2014</value>
+				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_neili</name>
+				<name>current_jingli</name>
 				<keyType>4</keyType>
-				<value>1432</value>
+				<value>1982</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -19944,9 +21159,15 @@ mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_jingli</name>
+				<name>current_neili</name>
 				<keyType>4</keyType>
-				<value>1982</value>
+				<value>1432</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_jingli</name>
+				<keyType>4</keyType>
+				<value>991</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -19956,9 +21177,9 @@ mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>water</name>
+				<name>max_xue</name>
 				<keyType>4</keyType>
-				<value>68</value>
+				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -19974,9 +21195,9 @@ mapAliases = {
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -19992,46 +21213,10 @@ mapAliases = {
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
-			</Variable>
-		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
-			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
-		<VariableGroup>
-			<name>stat</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-			<Variable>
-				<name>water</name>
-				<keyType>4</keyType>
-				<value>268</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>qi</name>
-				<keyType>4</keyType>
-				<value>4285</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>jing</name>
-				<keyType>4</keyType>
-				<value>2619</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>food</name>
-				<keyType>4</keyType>
-				<value>268</value>
-				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
 		<VariableGroup>
@@ -20040,5 +21225,41 @@ mapAliases = {
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
+		<VariableGroup>
+			<name>stat</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
+			<Variable>
+				<name>qi</name>
+				<keyType>4</keyType>
+				<value>267</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>water</name>
+				<keyType>4</keyType>
+				<value>233</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>jing</name>
+				<keyType>4</keyType>
+				<value>868</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>food</name>
+				<keyType>4</keyType>
+				<value>156</value>
+				<valueType>3</valueType>
+			</Variable>
+		</VariableGroup>
+		<Variable>
+			<name>current_learning_skills</name>
+			<keyType>4</keyType>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 	</VariablePackage>
 </MudletPackage>
