@@ -79,7 +79,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>LXGW WenKai Mono,19,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>LXGW WenKai Mono,16,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -2718,7 +2718,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>开战大恶</name>
 				<script>--echo("==find==")
 local name = string.lower(matches[2])
@@ -4834,7 +4834,9 @@ end
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>Test script</name>
-			<script>walker.start({ "n", "n", "w", "w", "w" }, { delayMs = 350 })</script>
+			<script>for k, v in pairs(nav.regions or {}) do
+  cecho(string.format("\n&lt;cyan&gt;[Region]&lt;reset&gt; key = %s, name = %s\n", k, v.name or "?"))
+end</script>
 			<command></command>
 			<packageName></packageName>
 			<regex>^testscript$</regex>
@@ -5343,7 +5345,8 @@ mapper_core.printCurrent()
 </script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^gmcp reset$</regex>
+				<regex>^gmcp reset$
+</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
@@ -17292,32 +17295,7 @@ end
 		<Script isActive="yes" isFolder="no">
 			<name>区域导航</name>
 			<packageName></packageName>
-			<script>-- 自动寻路脚本（多区域 + 别名，支持 goto js.smf）
--- 依赖：
---   1）mapper.currentFP : 当前房间指纹（由你的 mapper 测绘脚本更新）
---   2）地图文件：dofile("&lt;xxx&gt;.lua") 后提供：
---        mapper.region     = { key = "js", name = "江苏" }      -- 可选
---        mapper.mapNodes   = { ... }                            -- 必须
---        mapper.mapAliases = { ["三茅峰"] = "smf", ... }        -- 可选，但建议有
---
--- 使用建议：
---   1）lua nav.loadMap("wuxi1")      -- 加载地图 maps/wuxi1.lua
---   2）在 Mudlet 里建个 alias: ^goto (\S+)$ -&gt; nav.gotoToken(matches[2])
---   3）游戏里输入： goto js.smf     -- js 区域 + smf 别名，例如 三茅峰
-
-nav = nav or {}
-
--------------------------------------------------------
--- 全局状态
--------------------------------------------------------
-
--- 已加载的所有区域：
--- nav.regions["js"] = {
---   name       = "江苏",
---   mapNodes   = {...},           -- 这张图的所有房间
---   aliases    = {...},           -- 中文名 -&gt; 缩写
---   aliasIndex = { smf = { "三茅峰|ed,n", ... }, ... }, -- 缩写 -&gt; 指纹列表
--- }
+			<script>nav = nav or {}
 nav.regions = nav.regions or {}
 nav.currentFP         = nav.currentFP or nil   -- 当前所在房间指纹（由 gmcp_router 传进来的 fp 记录）
 nav.lastResult = nav.lastResult or nil   -- 上一次 path 计算结果（用于 go）
@@ -18028,6 +18006,134 @@ end
 			<eventHandlerList />
 		</Script>
 		<Script isActive="yes" isFolder="no">
+			<name>gmcp-router</name>
+			<packageName></packageName>
+			<script>gmcp_router = gmcp_router or {}
+
+gmcp_router.mode    = gmcp_router.mode    or "mapper" -- 默认模式
+gmcp_router.enabled = gmcp_router.enabled or false
+gmcp_router._moveHandlerId = gmcp_router._moveHandlerId or nil
+-------------------------------------------------------
+-- 注册 / 取消注册 GMCP 事件
+-------------------------------------------------------
+
+function gmcp_router.register()
+  if not registerAnonymousEventHandler then
+    echo("\n[gmcp_router] 没有 registerAnonymousEventHandler，无法注册 GMCP 事件。\n")
+    return
+  end
+
+  -- 防止重复注册，先把旧的删掉
+  if gmcp_router._moveHandlerId then
+    killAnonymousEventHandler(gmcp_router._moveHandlerId)
+    gmcp_router._moveHandlerId = nil
+  end
+
+  gmcp_router._moveHandlerId = registerAnonymousEventHandler(
+    "gmcp.GMCP.Move",
+    "gmcp_router.onGMCPMove"
+  )
+  gmcp_router.enabled = true
+  echo("\n[gmcp_router] 已注册 GMCP 事件处理器 gmcp.GMCP.Move。\n")
+end
+
+function gmcp_router.unregister()
+  if gmcp_router._moveHandlerId then
+    killAnonymousEventHandler(gmcp_router._moveHandlerId)
+    gmcp_router._moveHandlerId = nil
+    echo("\n[gmcp_router] 已取消 GMCP 事件处理器 gmcp.GMCP.Move。\n")
+  else
+    echo("\n[gmcp_router] 当前没有已注册的 GMCP 事件处理器。\n")
+  end
+
+  -- ✨ 同样别忘了这句
+  gmcp_router.enabled = false
+end
+
+-------------------------------------------------------
+-- 核心路由函数：收到 gmcp.GMCP.Move 时只调用这里
+-------------------------------------------------------
+
+function gmcp_router.onGMCPMove()
+  -- 1) 从 gmcp 里取出房间数据
+  local room = nil
+
+  if gmcp and gmcp.GMCP and gmcp.GMCP.Move then
+    -- 兼容两种写法：Move[1] 或 Move 直接就是表
+    if type(gmcp.GMCP.Move[1]) == "table" then
+      room = gmcp.GMCP.Move[1]
+    else
+      room = gmcp.GMCP.Move
+    end
+  end
+  
+  -- cecho("\n&lt;yellow&gt;[GMCP DEBUG] gmcp.GMCP.Move =\n")
+  -- display(room)
+
+  -- 2) 更新当前房间指纹（单一事实来源）
+  if mapper_core and mapper_core.updateFromGMCP then
+    mapper_core.updateFromGMCP(room)
+  end
+
+  local fp = mapper_core and mapper_core.currentFP
+
+  -- 3) 按模式分发给 mapper/nav，这里把 fp 和 room 一起丢过去
+  --    mapper/nav 就不用自己算指纹了，只消费 fp
+
+  -- 1) 调 mapper
+  if gmcp_router.mode == "mapper" or gmcp_router.mode == "both" then
+    if mapper and mapper.onGMCPMove then
+      -- 用 pcall 防止某个模块报错把整个路由搞挂
+      local ok, err = pcall(mapper.onGMCPMove, fp, room)
+      if not ok then
+        echo("\n[gmcp_router] 调用 mapper.onGMCPMove 出错: " .. tostring(err) .. "\n")
+      end
+    end
+  end
+
+  -- 2) 调 nav
+  if gmcp_router.mode == "nav" or gmcp_router.mode == "both" then
+    if nav and nav.onGMCPMove then
+      local ok, err = pcall(nav.onGMCPMove, fp, room)
+      if not ok then
+        echo("\n[gmcp_router] 调用 nav.onGMCPMove 出错: " .. tostring(err) .. "\n")
+      end
+    end
+  end
+end
+
+function gmcp_router.status()
+  local s = gmcp_router.enabled and "ON" or "OFF"
+  echo(string.format(
+    "\n[gmcp_router] GMCP: %s，mode: %s\n",
+    s,
+    gmcp_router.mode or "nil"
+  ))
+end
+
+
+-------------------------------------------------------
+-- 提供三个切换模式的命令
+-------------------------------------------------------
+
+function gmcp_router.useMapper()
+  gmcp_router.mode = "mapper"
+  echo("\n[gmcp_router] 已切换到【测绘模式】(只调用 mapper.onGMCPMove)\n")
+end
+
+function gmcp_router.useNav()
+  gmcp_router.mode = "nav"
+  echo("\n[gmcp_router] 已切换到【导航模式】(只调用 nav.onGMCPMove)\n")
+end
+
+function gmcp_router.useBoth()
+  gmcp_router.mode = "both"
+  echo("\n[gmcp_router] 已切换到【双开模式】(同时调用 mapper + nav)\n")
+end
+</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
 			<name>walker</name>
 			<packageName></packageName>
 			<script>-- ======================================================
@@ -18220,134 +18326,6 @@ function walker.status()
     .. ", idx=" .. tostring(walker.idx)
     .. ", total=" .. tostring(walker.queue and #walker.queue or 0)
     .. ", delayMs=" .. tostring(walker.delayMs))
-end
-</script>
-			<eventHandlerList />
-		</Script>
-		<Script isActive="yes" isFolder="no">
-			<name>gmcp-router</name>
-			<packageName></packageName>
-			<script>gmcp_router = gmcp_router or {}
-
-gmcp_router.mode    = gmcp_router.mode    or "mapper" -- 默认模式
-gmcp_router.enabled = gmcp_router.enabled or false
-gmcp_router._moveHandlerId = gmcp_router._moveHandlerId or nil
--------------------------------------------------------
--- 注册 / 取消注册 GMCP 事件
--------------------------------------------------------
-
-function gmcp_router.register()
-  if not registerAnonymousEventHandler then
-    echo("\n[gmcp_router] 没有 registerAnonymousEventHandler，无法注册 GMCP 事件。\n")
-    return
-  end
-
-  -- 防止重复注册，先把旧的删掉
-  if gmcp_router._moveHandlerId then
-    killAnonymousEventHandler(gmcp_router._moveHandlerId)
-    gmcp_router._moveHandlerId = nil
-  end
-
-  gmcp_router._moveHandlerId = registerAnonymousEventHandler(
-    "gmcp.GMCP.Move",
-    "gmcp_router.onGMCPMove"
-  )
-  gmcp_router.enabled = true
-  echo("\n[gmcp_router] 已注册 GMCP 事件处理器 gmcp.GMCP.Move。\n")
-end
-
-function gmcp_router.unregister()
-  if gmcp_router._moveHandlerId then
-    killAnonymousEventHandler(gmcp_router._moveHandlerId)
-    gmcp_router._moveHandlerId = nil
-    echo("\n[gmcp_router] 已取消 GMCP 事件处理器 gmcp.GMCP.Move。\n")
-  else
-    echo("\n[gmcp_router] 当前没有已注册的 GMCP 事件处理器。\n")
-  end
-
-  -- ✨ 同样别忘了这句
-  gmcp_router.enabled = false
-end
-
--------------------------------------------------------
--- 核心路由函数：收到 gmcp.GMCP.Move 时只调用这里
--------------------------------------------------------
-
-function gmcp_router.onGMCPMove()
-  -- 1) 从 gmcp 里取出房间数据
-  local room = nil
-
-  if gmcp and gmcp.GMCP and gmcp.GMCP.Move then
-    -- 兼容两种写法：Move[1] 或 Move 直接就是表
-    if type(gmcp.GMCP.Move[1]) == "table" then
-      room = gmcp.GMCP.Move[1]
-    else
-      room = gmcp.GMCP.Move
-    end
-  end
-  
-  -- cecho("\n&lt;yellow&gt;[GMCP DEBUG] gmcp.GMCP.Move =\n")
-  -- display(room)
-
-  -- 2) 更新当前房间指纹（单一事实来源）
-  if mapper_core and mapper_core.updateFromGMCP then
-    mapper_core.updateFromGMCP(room)
-  end
-
-  local fp = mapper_core and mapper_core.currentFP
-
-  -- 3) 按模式分发给 mapper/nav，这里把 fp 和 room 一起丢过去
-  --    mapper/nav 就不用自己算指纹了，只消费 fp
-
-  -- 1) 调 mapper
-  if gmcp_router.mode == "mapper" or gmcp_router.mode == "both" then
-    if mapper and mapper.onGMCPMove then
-      -- 用 pcall 防止某个模块报错把整个路由搞挂
-      local ok, err = pcall(mapper.onGMCPMove, fp, room)
-      if not ok then
-        echo("\n[gmcp_router] 调用 mapper.onGMCPMove 出错: " .. tostring(err) .. "\n")
-      end
-    end
-  end
-
-  -- 2) 调 nav
-  if gmcp_router.mode == "nav" or gmcp_router.mode == "both" then
-    if nav and nav.onGMCPMove then
-      local ok, err = pcall(nav.onGMCPMove, fp, room)
-      if not ok then
-        echo("\n[gmcp_router] 调用 nav.onGMCPMove 出错: " .. tostring(err) .. "\n")
-      end
-    end
-  end
-end
-
-function gmcp_router.status()
-  local s = gmcp_router.enabled and "ON" or "OFF"
-  echo(string.format(
-    "\n[gmcp_router] GMCP: %s，mode: %s\n",
-    s,
-    gmcp_router.mode or "nil"
-  ))
-end
-
-
--------------------------------------------------------
--- 提供三个切换模式的命令
--------------------------------------------------------
-
-function gmcp_router.useMapper()
-  gmcp_router.mode = "mapper"
-  echo("\n[gmcp_router] 已切换到【测绘模式】(只调用 mapper.onGMCPMove)\n")
-end
-
-function gmcp_router.useNav()
-  gmcp_router.mode = "nav"
-  echo("\n[gmcp_router] 已切换到【导航模式】(只调用 nav.onGMCPMove)\n")
-end
-
-function gmcp_router.useBoth()
-  gmcp_router.mode = "both"
-  echo("\n[gmcp_router] 已切换到【双开模式】(同时调用 mapper + nav)\n")
 end
 </script>
 			<eventHandlerList />
@@ -20804,18 +20782,82 @@ mapNodes = {
     name = "下瓦子",
     exits = {
       ["enter"] = "下瓦子|e,out,s,se,sw,w",
-      ["n"] = "东大街|e,n,s,w",
+      ["n"] = "东大街1|e,n,s,w",
     },
   },
   ["东大街|e,n,s,w"] = {
     name = "东大街",
     exits = {
-      ["e"] = "东大街|e,n,s,w",
+      ["e"] = "东大街1|e,n,s,w",
+      ["n"] = "岳王府|s",
+      ["s"] = "天月书肆|n",
+      ["w"] = "大理寺|e,n,se,w",
+    },
+  },
+  
+  ["岳王府|s"] = {
+    name = "岳王府",
+    exits = {
+      ["s"] = "东大街|e,n,s,w",
+    },
+  },  
+  
+  ["天月书肆|n"] = {
+    name = "天月书肆",
+    exits = {
+      ["n"] = "东大街|e,n,s,w",
+    },
+  },    
+  
+    ["东大街1|e,n,s,w"] = {
+    name = "东大街1",
+    exits = {
+      ["e"] = "众安桥|e,w",
       ["n"] = "韩王府大门|enter,s",
       ["s"] = "下瓦子|enter,n,w",
       ["w"] = "东大街|e,n,s,w",
     },
   },
+  
+     ["众安桥|e,w"] = {
+    name = "众安桥",
+    exits = {
+      ["e"] = "东大街2|e,n,s,w",
+      ["w"] = "东大街1|e,n,s,w",
+    },
+  }, 
+    ["东大街2|e,n,s,w"] = {
+    name = "东大街2",
+    exits = {
+      ["e"] = "东大街3|e,n,s,w",
+      ["n"] = "北大街|e,n,s,w",
+      ["s"] = "宠物竞技场|n,u",
+      ["w"] = "众安桥|e,w",
+    },
+  },
+  
+      ["宠物竞技场|n,u"] = {
+    name = "宠物竞技场",
+    exits = {
+      ["n"] = "东大街2|e,n,s,w",
+    },
+  },
+  
+    ["东大街3|e,n,s,w"] = {
+    name = "东大街3",
+    exits = {
+      ["e"] = "东青门|e,n,s,w",
+      ["n"] = "打铁铺|s",
+      ["s"] = "榷场|n,sw",
+      ["w"] = "东大街2|e,n,s,w",
+    },
+  },
+      ["打铁铺|s"] = {
+    name = "打铁铺",
+    exits = {
+      ["s"] = "东大街3|e,n,s,w",
+    },
+  },  
   ["中和楼|ne,u,w"] = {
     name = "中和楼",
     exits = {
@@ -20837,9 +20879,7 @@ mapNodes = {
     exits = {
       ["e"] = "中和楼|ne,u,w",
       ["nw"] = "大理寺|e,n,se,w",
-      ["out"] = "大理寺|e,n,se,w",
       ["s"] = "御街|e,n,s,w",
-      ["sw"] = "御街|e,n,s,w",
       ["w"] = "临安府|e,enter,s",
     },
   },
@@ -20995,6 +21035,7 @@ mapNodes = {
   ["榷场|n,sw"] = {
     name = "榷场",
     exits = {
+      ["n"] = "东大街3|e,n,s,w",
       ["sw"] = "点心铺|ne,w",
     },
   },
@@ -21125,7 +21166,7 @@ mapNodes = {
     name = "韩王府大门",
     exits = {
       ["enter"] = "花厅|n,out",
-      ["s"] = "东大街|e,n,s,w",
+      ["s"] = "东大街1|e,n,s,w",
     },
   },
   ["余杭门|e,n,s,w"] = {
@@ -21295,7 +21336,7 @@ mapNodes = {
     exits = {
       ["e"] = "大染坊|w",
       ["n"] = "北大街|e,n,ne,s,w",
-      ["s"] = "东大街",
+      ["s"] = "东大街2|e,n,s,w",
       ["w"] = "文思院|e",
     },
   },  
@@ -22482,7 +22523,7 @@ mapNodes = {
     name = "中央广场",
     exits = {
       ["e"] = "城隍庙|ne,nw,se,sw,w",
-      ["n"] = "城隍庙|ne,nw,se,sw,w",
+      ["n"] = "处州府|e,n,s,w",
       ["ne"] = "东街|e,n,se,sw,w",
       ["s"] = "南大街|e,n,s",
       ["se"] = "得意楼|e,ne,nw,s,w",
@@ -22627,7 +22668,6 @@ mapNodes = {
       ["e"] = "东街|e,n,se,sw,w",
       ["n"] = "北大街|n,s,w",
       ["s"] = "中央广场|e,n,ne,s,se,sw,w",
-      ["w"] = "中央广场|e,n,ne,s,se,sw,w",
     },
   },
   ["官道|nw,se"] = {
@@ -24488,10 +24528,49 @@ mapper.maps["sx"] = {
     exits = {
       ["e"] = "小酒馆|n,w",
       ["n"] = "八字桥|e,n,s",
-      ["s"] = "南大街|e,n,s,w",
+      ["s"] = "南大街1|e,n,s,w",
       ["w"] = "西大街|e,ne,nw,se,sw,w",
     },
   },
+    ["南大街1|e,n,s,w"] = {
+    name = "南大街1",
+    exits = {
+      ["e"] = "客店|u,w",
+      ["n"] = "南大街|e,n,s,w",
+      ["s"] = "南门|n,s,se",
+      ["w"] = "医馆|e",
+    },
+  },
+    ["南门|n,s,se"] = {
+    name = "南门",
+    exits = {
+      ["n"] = "南大街1|e,n,s,w",
+      ["s"] = "鉴湖|n",
+      ["se"] = "山路|eu,nw",
+    },
+  },  
+    ["鉴湖|n"] = {
+    name = "鉴湖",
+    exits = {
+      ["n"] = "南门|n,s,se",
+    },
+  },   
+  
+    ["山路|eu,nw"] = {
+    name = "山路",
+    exits = {
+      ["eu"] = "会稽山|wd",
+      ["nw"] = "南门|n,s,se",
+    },
+  },   
+ 
+     ["会稽山|wd"] = {
+    name = "会稽山",
+    exits = {
+      ["wd"] = "山路|eu,nw",
+    },
+  },  
+  
   ["双龙洞|out"] = {
     name = "双龙洞",
     exits = {
@@ -24815,6 +24894,9 @@ mapper.maps["sx"].mapAliases = {
   ["上虞"] = "sy",
   ["龙游"] = "ly",
   ["游龙帮"] = "ylb",
+  ["南门"] = "nm",
+  ["鉴湖"] = "jh",
+  ["会稽山"] = "kjs",    
   
 }
 </script>
@@ -25653,7 +25735,7 @@ mapper.maps["fz"].mapAliases = {
   ["西门"]         = "xm",
 
   ["计氏马车分行"] = "jsmc",
-  ["闽江南岸"]     = "mjn",
+  ["闽江南岸"]     = "mjna",
   ["霞浦山"]       = "xps",
 }
 </script>
@@ -26577,8 +26659,22 @@ mapNodes = {
     exits = {
       ["nd"] = "罗汉寺|ne,se,su",
       ["wu"] = "雁湖|ed,sw",
+      ["nw"] = "一帆峰|n,se",
     },
   },
+  ["一帆峰|n,se"] = {
+    name = "一帆峰",
+    exits = {
+      ["n"] = "大龙湫|s",
+      ["se"] = "芙蓉峰|nd,nw,wu",
+    },
+  },  
+    ["大龙湫|s"] = {
+    name = "大龙湫",
+    exits = {
+      ["s"] = "一帆峰|n,se",
+    },
+  },  
   ["莲花洞|out"] = {
     name = "莲花洞",
     exits = {
@@ -26656,6 +26752,8 @@ mapper.maps["yds"].mapAliases = {
 
   ["芙蓉峰"]       = "frf",
   ["芙蓉湖"]       = "frh",
+  ["一帆峰"] = "yff",
+  ["大龙湫"] = "dlq",
 
   ["莲花洞"]       = "lhd",
   ["蟾蜍石"]       = "ccs",
@@ -27655,8 +27753,6 @@ mapNodes = {
     name = "东门",
     exits = {
       ["e"] = "城东小路|ne,w",
-      ["n"] = "城墙脚下|n,s",
-      ["s"] = "城墙脚下|n,s",
       ["w"] = "东大街|e,n,s,w",
     },
   },
@@ -27681,9 +27777,7 @@ mapNodes = {
   ["北门|e,s,w"] = {
     name = "北门",
     exits = {
-      ["e"] = "城墙脚下|e,w",
       ["s"] = "北大街|n,s,w",
-      ["w"] = "城墙脚下|e,w",
     },
   },
   ["南大街|e,n,s,sw"] = {
@@ -27715,10 +27809,8 @@ mapNodes = {
   ["南门|e,n,se,w"] = {
     name = "南门",
     exits = {
-      ["e"] = "城墙脚下|e,w",
       ["n"] = "南大街|e,n,s,w",
       ["se"] = "横山镇|e,nw",
-      ["w"] = "城墙脚下|e,w",
     },
   },
   ["县衙大门|enter,s"] = {
@@ -27739,20 +27831,6 @@ mapNodes = {
     exits = {
       ["ne"] = "武安山|ne,nu,sw",
       ["w"] = "东门|e,n,s,w",
-    },
-  },
-  ["城墙脚下|e,w"] = {
-    name = "城墙脚下",
-    exits = {
-      ["e"] = "南门|e,n,se,w",
-      ["w"] = "南门|e,n,se,w",
-    },
-  },
-  ["城墙脚下|n,s"] = {
-    name = "城墙脚下",
-    exits = {
-      ["n"] = "东门|e,n,s,w",
-      ["s"] = "东门|e,n,s,w",
     },
   },
   ["大堂|n,out"] = {
@@ -27793,7 +27871,6 @@ mapNodes = {
     exits = {
       ["e"] = "南大街|e,n,s,w",
       ["n"] = "杂货铺|n,ne,s,w",
-      ["w"] = "老巷|e,n",
     },
   },
   ["杂货铺|n,ne,s,w"] = {
@@ -27802,7 +27879,6 @@ mapNodes = {
       ["n"] = "酒馆|n,ne,s,w",
       ["ne"] = "南大街|e,n,s,sw",
       ["s"] = "当铺|e,n,w",
-      ["w"] = "老巷|e,n,s",
     },
   },
   ["横山镇|e,nw"] = {
@@ -27826,18 +27902,7 @@ mapNodes = {
       ["sw"] = "武安山|ne,nu,sw",
     },
   },
-  ["老巷|e,n"] = {
-    name = "老巷",
-    exits = {
-      ["e"] = "当铺|e,n,w",
-    },
-  },
-  ["老巷|e,n,s"] = {
-    name = "老巷",
-    exits = {
-      ["e"] = "酒馆|n,ne,s,w",
-    },
-  },
+
   ["老巷|e,s,w"] = {
     name = "老巷",
     exits = {
@@ -27873,7 +27938,6 @@ mapNodes = {
       ["n"] = "钱庄|n,s,se,w",
       ["ne"] = "中央广场|e,n,nw,s,sw",
       ["s"] = "杂货铺|n,ne,s,w",
-      ["w"] = "老巷|e,n,s",
     },
   },
   ["钱庄|n,s,se,w"] = {
@@ -27882,7 +27946,6 @@ mapNodes = {
       ["n"] = "西大街|e,n,s,w",
       ["s"] = "酒馆|n,ne,s,w",
       ["se"] = "中央广场|e,n,nw,s,sw",
-      ["w"] = "老巷|e,n,s",
     },
   },
   ["阎立本墓|sd"] = {
@@ -27946,13 +28009,6 @@ mapNodes = {
     exits = {
       ["nu"] = "狮子岭|ne,sd",
       ["sw"] = "泸溪河东岸|ne,s",
-    },
-  },
-  ["城墙脚下|n,s"] = {
-    name = "城墙脚下",
-    exits = {
-      ["n"] = "西门|e,n,s,w",
-      ["s"] = "西门|e,n,s,w",
     },
   },
   ["寺内|out"] = {
@@ -28036,12 +28092,6 @@ mapNodes = {
       ["n"] = "正殿|out,s",
     },
   },
-  ["老巷|e,s,w"] = {
-    name = "老巷",
-    exits = {
-      ["w"] = "西门|e,n,s,w",
-    },
-  },
   ["芝山|wd"] = {
     name = "芝山",
     exits = {
@@ -28060,8 +28110,6 @@ mapNodes = {
     name = "西门",
     exits = {
       ["e"] = "老巷|e,s,w",
-      ["n"] = "城墙脚下|n,s",
-      ["s"] = "城墙脚下|n,s",
       ["w"] = "山路|e,wu",
     },
   },
@@ -29957,9 +30005,9 @@ mapper.maps["hengz"].mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>神不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -29969,9 +30017,9 @@ mapper.maps["hengz"].mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
+				<name>hunger</name>
 				<keyType>4</keyType>
-				<value>神不足</value>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -30197,15 +30245,15 @@ mapper.maps["hengz"].mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_xue</name>
-				<keyType>4</keyType>
-				<value>693</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>max_shen</name>
 				<keyType>4</keyType>
 				<value>464</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>water</name>
+				<keyType>4</keyType>
+				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -30245,9 +30293,9 @@ mapper.maps["hengz"].mapAliases = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>water</name>
+				<name>max_xue</name>
 				<keyType>4</keyType>
-				<value>68</value>
+				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -30301,7 +30349,7 @@ mapper.maps["hengz"].mapAliases = {
 			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
-				<value>253</value>
+				<value>182</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
@@ -30319,7 +30367,7 @@ mapper.maps["hengz"].mapAliases = {
 			<Variable>
 				<name>food</name>
 				<keyType>4</keyType>
-				<value>253</value>
+				<value>182</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
