@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="5" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>PKUXKX</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -47,7 +47,7 @@
 				<string>enable-accessibility</string>
 				<string>generic_mapper</string>
 			</mInstalledPackages>
-			<url>hk.pkuxkx.com</url>
+			<url>pkuxkx.com</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>-1</serverPackageVersion>
 			<port>8081</port>
@@ -3305,7 +3305,7 @@ mrf_or_pozhen = "mrf"</script>
 					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>开战大恶</name>
 				<script>--echo("==find==")
 local name = string.lower(matches[2])
@@ -3969,6 +3969,161 @@ expandAlias("mload "..map_code)</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>^你到达了(.*)。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>walk信息采集</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>抓表头</name>
+				<script>walkcap = walkcap or {}
+walkcap.active = true
+walkcap.rows = {}
+
+local hub = matches[2]  -- 捕获的城市名，比如 扬州
+walkcap.hub = hub
+
+cecho(string.format("\n&lt;green&gt;[WalkCap] START hub=%s&lt;/green&gt;\n", hub))
+
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\s*┌.*?([^\s─┬┐]+).*?┐\s*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>抓目的地</name>
+				<script>if not (walkcap and walkcap.active) then return end
+
+local s = line:gsub("^%s+", "")  -- 去掉行首空格
+local left, py = s:match("^│(.-)│%s*([a-z0-9_]+)%s*│")
+if not left or not py then return end
+
+-- left 形如： "建康府  ◇ 长江渡口"
+local nodeCN = left:match("^(.-)%s*◇") or left
+nodeCN = nodeCN:gsub("%s+$","")
+
+table.insert(walkcap.rows, { node = nodeCN, py = py })
+
+cecho(string.format("\n&lt;cyan&gt;[WalkCap]&lt;/cyan&gt; + %s -&gt; %s", nodeCN, py))
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\s*│.*◇.*│\s*[a-z0-9_]+\s*│\s*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>抓表尾</name>
+				<script>if not (walkcap and walkcap.active) then return end
+walkcap.active = false
+
+-- 去重（同一表格偶尔会重复行）
+local seen = {}
+local edges = {}
+for _, r in ipairs(walkcap.rows or {}) do
+  local k = r.node .. "|" .. r.py
+  if not seen[k] then
+    seen[k] = true
+    table.insert(edges, r)
+  end
+end
+
+table.sort(edges, function(a,b)
+  return (a.node .. a.py) &lt; (b.node .. b.py)
+end)
+
+local hub = walkcap.hub or "UNKNOWN"
+cecho(string.format("\n&lt;green&gt;[WalkCap] DONE&lt;/green&gt; hub=%s, edges=%d\n", hub, #edges))
+
+-- ===== 输出 walk_node 片段（可直接 paste）=====
+cecho("\n&lt;yellow&gt;----- COPY BELOW -----&lt;/yellow&gt;\n")
+cecho(string.format('walk_node["%s"] = {region = "%s", map = "",\n', hub, hub))
+cecho("  edges = {\n")
+for _, e in ipairs(edges) do
+  cecho(string.format('    {node = "%s", path = "walk %s"},\n', e.node, e.py))
+end
+cecho("  }\n}\n")
+cecho("&lt;yellow&gt;----- COPY ABOVE -----&lt;/yellow&gt;\n")
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\s*│walk\s+\[拼音名\].*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>DBG_WALK_BOX</name>
+				<script>-- 只在你输入 walk 之后的 3 秒内打印，避免刷屏
+walk_capture_dbg = walk_capture_dbg or { until_ts = 0 }
+
+local now = getEpoch()
+if now &lt;= (walk_capture_dbg.until_ts or 0) then
+  cecho("\n&lt;yellow&gt;[DBG]&lt;/yellow&gt; " .. line .. "\n")
+end
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(.*)$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -5353,6 +5508,7 @@ send("bei fuxue-shou")
 			<Alias isActive="yes" isFolder="no">
 				<name>上装备</name>
 				<script>send("wear newam_41")
+send("wear newam_42")
 send("wear am_39")
 send("wear am_38")
 send("wear am_37")
@@ -5361,7 +5517,8 @@ send("wear am_40")
 send("wear am_35")
 send("wear am_34")
 send("wear am_33")
-send("wield wp_18")</script>
+send("wield wp_18")
+</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^install_all$</regex>
@@ -5883,8 +6040,8 @@ local name = matches[2]
 
 -- 如果没写参数，且之前加载过，就用上一次的
 if not name or name == "" then
-  if nav.currentRegion then
-    name = nav.currentRegion
+  if nav.currentRegionKey then
+    name = nav.currentRegionKey
   else
     echo("\n用法：mload &lt;region&gt;（例如 mload wx）\n")
     return
@@ -5895,6 +6052,7 @@ nav.loadMap(name)
 
 -- 记住当前 region 名
 nav.currentRegion = name
+nav.currentRegionKey = name
 echo(string.format("\n当前 region 已设置为：%s\n", nav.currentRegion))
 expandAlias("zone "..name)
 </script>
@@ -6062,7 +6220,7 @@ end
 
 walker.start(nav.lastResult.dirs, {
   ackMode       = true,   -- ★ 关键：开启确认模式
-  delayMs       = 100,    -- 正常步进延迟
+  delayMs       = 50,    -- 正常步进延迟
   backoffFactor = 1.8,    -- 指数退避倍率
   maxDelayMs    = 3000,   -- 最大等待
   maxFails      = 8,      -- 连续失败上限
@@ -6121,6 +6279,13 @@ end
 				<command></command>
 				<packageName></packageName>
 				<regex>^fpnew$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>show busy room</name>
+				<script>walker.printBusyRooms()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^show busy$</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
@@ -6277,6 +6442,61 @@ end
 				<regex>^deal$</regex>
 			</Alias>
 		</AliasGroup>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>跨城路由相关</name>
+			<script></script>
+			<command></command>
+			<packageName></packageName>
+			<regex></regex>
+			<Alias isActive="yes" isFolder="no">
+				<name>travel to</name>
+				<script>travel.to(matches[2])
+</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^travel\s+(\S+)$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>travel show</name>
+				<script>travel.show()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^travel show$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>travel reset</name>
+				<script>travel.reset()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^travel reset$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>set from</name>
+				<script>travel.setFrom(matches[2])
+</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^set from\s+(\S+)$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>move</name>
+				<script>echo ("=======\n")
+travel.move()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^move$</regex>
+			</Alias>
+		</AliasGroup>
+		<Alias isActive="yes" isFolder="no">
+			<name>临时walk</name>
+			<script>walk_capture_dbg = walk_capture_dbg or {}
+walk_capture_dbg.until_ts = getEpoch() + 3
+send("walk")
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^walk_t$</regex>
+		</Alias>
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
@@ -18737,6 +18957,9 @@ end
 				<script>-- ======================================================
 -- walker.lua
 -- blind executor + ACK + exponential backoff + fail limit
+-- + retry-hotspot stats (retries before success)
+-- + busyRooms (IN-MEMORY ONLY, DO NOT MODIFY MAP DATA)
+-- + per-step dynamic delay (still supports manual busy fields if you have them)
 -- ======================================================
 
 walker = walker or {}
@@ -18757,18 +18980,155 @@ walker.lastSentDir    = walker.lastSentDir or nil
 walker.failCount      = walker.failCount or 0
 
 walker.backoffBaseMs  = walker.backoffBaseMs or 500
-walker.backoffFactor = walker.backoffFactor or 1.8
-walker.maxDelayMs    = walker.maxDelayMs or 3000
+walker.backoffFactor  = walker.backoffFactor or 1.8
+walker.maxDelayMs     = walker.maxDelayMs or 3000
 
-walker.maxFails      = walker.maxFails or 8
-walker.stopOnMaxFails= walker.stopOnMaxFails ~= false
+walker.maxFails       = walker.maxFails or 8
+walker.stopOnMaxFails = walker.stopOnMaxFails ~= false
 
 walker.debug          = walker.debug ~= false
 
 -------------------------------------------------------
+-- retry 热点统计：只统计“成功前需要 retry 的房间+出口”
+-- 统计粒度：fromFP|dir  (fromFP = mapper_core.currentFP)
+-------------------------------------------------------
+walker.retryStats = walker.retryStats or {
+  enabled = true,
+
+  -- 当前步的 retry 累计（直到 ok 才结算）
+  cur = {
+    step    = nil,
+    dir     = nil,
+    fromFP  = nil,
+    retries = 0,
+  },
+
+  -- 聚合：fromFP|dir -&gt; {passes, totalRetries, maxRetries, lastAt}
+  byEdge = {},
+}
+
+local function rs_now() return os.time() end
+local function rs_ensure(t, k, init)
+  if not t[k] then t[k] = init end
+  return t[k]
+end
+
+-------------------------------------------------------
+-- Busy 房间（内存统计，不修改地图数据）
+-------------------------------------------------------
+walker.busyRooms = walker.busyRooms or {
+  enabled = true,
+  threshold = 2, -- retries &gt;= threshold 认为该房间“busy”（你可随时改）
+  rooms = {},    -- fp -&gt; stats
+}
+
+local function br_now() return os.time() end
+
+local function br_mark(fp, dir, retries)
+  if not (walker.busyRooms and walker.busyRooms.enabled) then return end
+  if not fp then return end
+  retries = tonumber(retries) or 0
+  local th = tonumber(walker.busyRooms.threshold) or 2
+  if retries &lt; th then return end
+
+  local t = walker.busyRooms.rooms
+  local r = t[fp]
+  if not r then
+    r = { hits=0, totalRetries=0, maxRetries=0, lastAt=0, lastDir=nil }
+    t[fp] = r
+  end
+
+  r.hits = (r.hits or 0) + 1
+  r.totalRetries = (r.totalRetries or 0) + retries
+  if retries &gt; (r.maxRetries or 0) then r.maxRetries = retries end
+  r.lastAt = br_now()
+  r.lastDir = dir
+end
+
+function walker.resetBusyRooms()
+  walker.busyRooms = walker.busyRooms or {}
+  walker.busyRooms.rooms = {}
+  wprint("busyRooms 已清空（仅内存）。")
+end
+
+function walker.printBusyRooms(topN)
+  topN = tonumber(topN) or 30
+  if not (walker.busyRooms and walker.busyRooms.enabled) then
+    wprint("busyRooms 未启用。")
+    return
+  end
+
+  local arr = {}
+  for fp, r in pairs(walker.busyRooms.rooms or {}) do
+    local hits = tonumber(r.hits) or 0
+    local total = tonumber(r.totalRetries) or 0
+    local maxR = tonumber(r.maxRetries) or 0
+    local avg = (hits &gt; 0) and (total / hits) or 0
+    local score = maxR * 100000 + avg * 1000 + hits
+    arr[#arr+1] = {
+      fp=fp, hits=hits, total=total, maxR=maxR, avg=avg,
+      lastDir=r.lastDir, lastAt=r.lastAt or 0, score=score
+    }
+  end
+
+  table.sort(arr, function(a,b) return a.score &gt; b.score end)
+
+  wprint(string.format("====== Busy 房间（内存统计，threshold=%d）======", tonumber(walker.busyRooms.threshold) or 2))
+  for i=1, math.min(topN, #arr) do
+    local x = arr[i]
+    wprint(string.format(
+      "#%d fp=%s  hits=%d  avgRetry=%.2f  maxRetry=%d  totalRetry=%d  lastDir=%s  lastAt=%s",
+      i,
+      tostring(x.fp),
+      x.hits,
+      x.avg,
+      x.maxR,
+      x.total,
+      tostring(x.lastDir),
+      (x.lastAt and x.lastAt &gt; 0) and os.date("%Y-%m-%d %H:%M:%S", x.lastAt) or "-"
+    ))
+  end
+  if #arr == 0 then
+    wprint("暂无 busy 房间命中记录（需要：ACK模式 + 先失败后成功 + retries&gt;=threshold）。")
+  end
+  wprint("====================================================")
+end
+
+-------------------------------------------------------
+-- Busy（读取 only）：支持你手工在地图节点上写 busy 字段（如果你以后要用）
+-- 注意：这里不会写入 mapNodes，更不会修改你的数据文件
+-------------------------------------------------------
+walker.baseDelayMs = walker.baseDelayMs or walker.delayMs
+walker.busyDefaultDelayMs = walker.busyDefaultDelayMs or 900
+
+function walker.getBusyDelayFromMap(fromFP, dir)
+  -- 你环境里 mapNodes 可能不在 mapper.mapNodes，所以这里做成“尽力而为”
+  if not (mapper and mapper.mapNodes and fromFP) then return nil end
+  local node = mapper.mapNodes[fromFP]
+  if not node then return nil end
+
+  if dir and node.busyExits and node.busyExits[dir] ~= nil then
+    return tonumber(node.busyExits[dir]) or walker.busyDefaultDelayMs
+  end
+  if node.busyDelayMs ~= nil then
+    return tonumber(node.busyDelayMs) or walker.busyDefaultDelayMs
+  end
+  if node.busy == true then
+    return walker.busyDefaultDelayMs
+  end
+  return nil
+end
+
+function walker.getStepDelayMs(fromFP, dir)
+  local d = walker.getBusyDelayFromMap(fromFP, dir)
+  if d ~= nil then return d end
+  return walker.baseDelayMs or walker.delayMs
+end
+
+-------------------------------------------------------
 -- 打印
 -------------------------------------------------------
-local function wprint(msg)
+function wprint(msg)
   if cecho then
     cecho("\n&lt;magenta&gt;[Walker]&lt;reset&gt; " .. msg .. "\n")
   else
@@ -18776,6 +19136,25 @@ local function wprint(msg)
   end
 end
 
+local function wprintBusy(fp, dir, retries)
+  fp = tostring(fp)
+  dir = tostring(dir)
+  retries = tonumber(retries) or 0
+
+  if cecho then
+    cecho("\n&lt;red&gt;&lt;b&gt;[Walker] BUSY 房间：&lt;/b&gt;&lt;reset&gt; ")
+    cecho("&lt;yellow&gt;" .. fp .. "&lt;reset&gt; ")
+    cecho("(&lt;white&gt;dir=&lt;reset&gt;" .. tostring(dir) .. ", ")
+    cecho("&lt;white&gt;retries=&lt;reset&gt;")
+    cecho("&lt;red&gt;" .. retries .. "&lt;reset&gt;")
+    cecho(")\n")
+  else
+    print(string.format(
+      "[Walker] BUSY 房间：%s (dir=%s, retries=%d)",
+      fp, tostring(dir), retries
+    ))
+  end
+end
 -------------------------------------------------------
 -- Timer
 -------------------------------------------------------
@@ -18835,6 +19214,90 @@ local function normalizeDirs(input)
 end
 
 -------------------------------------------------------
+-- retryStats：发送前锁定“fromFP/step/dir”（同一步重试不会重置）
+-------------------------------------------------------
+local function rs_key(fromFP, dir)
+  return tostring(fromFP or "nil") .. "|" .. tostring(dir or "nil")
+end
+
+local function rs_markSend(step, dir)
+  if not (walker.retryStats and walker.retryStats.enabled) then return end
+  if not walker.ackMode then return end
+
+  local fp = (mapper_core and mapper_core.currentFP) or nil
+  local c = walker.retryStats.cur
+
+  -- 1) 只要 step/dir 变了，一定重置（新的一步）
+  if c.step ~= step or c.dir ~= dir then
+    c.step = step
+    c.dir = dir
+    c.fromFP = fp
+    c.retries = 0
+    return
+  end
+
+  -- 2) step/dir 没变：这是同一步（可能是重试）
+  --    如果第一次没拿到 fp（nil），后来拿到了，就“补上 fromFP”，但绝不清零 retries
+  if c.fromFP == nil and fp ~= nil then
+    c.fromFP = fp
+  end
+
+  -- 3) 其它情况：同一步重试，不做任何重置
+end
+
+
+local function rs_onFail()
+  if not (walker.retryStats and walker.retryStats.enabled) then return end
+  local c = walker.retryStats.cur
+  c.retries = (c.retries or 0) + 1
+end
+
+local function rs_onOk()
+  if not (walker.retryStats and walker.retryStats.enabled) then return end
+  local c = walker.retryStats.cur
+  local retries = tonumber(c.retries) or 0
+
+  -- 结算 retry 热点（仅 retries&gt;0）
+  if retries &gt; 0 then
+    local fromFP = c.fromFP or (mapper_core and mapper_core.currentFP) or "nil"
+    local dir    = c.dir or walker.lastSentDir or "nil"
+    local key    = rs_key(fromFP, dir)
+
+    local e = rs_ensure(walker.retryStats.byEdge, key, {
+      fromFP = fromFP,
+      dir = dir,
+      passes = 0,
+      totalRetries = 0,
+      maxRetries = 0,
+      lastAt = 0,
+    })
+
+    e.passes = e.passes + 1
+    e.totalRetries = e.totalRetries + retries
+    if retries &gt; (e.maxRetries or 0) then e.maxRetries = retries end
+    e.lastAt = rs_now()
+  end
+
+  -- Busy 房间（内存统计 + 即时提示）
+  do
+    local fp = c.fromFP
+    local dir = c.dir or walker.lastSentDir
+    local th = tonumber(walker.busyRooms and walker.busyRooms.threshold) or 2
+  
+    -- 1) 先做最终统计（是否入 busyRooms 由 br_mark 自己判断）
+    br_mark(fp, dir, retries)
+  
+    -- 2) 即时提示：只看 retries（不看 br_mark 结果）
+    if retries &gt;= th then
+      wprintBusy(fp, dir, retries)
+    end
+  end
+
+  -- 成功后清零
+  c.retries = 0
+end
+
+-------------------------------------------------------
 -- 内部发送
 -------------------------------------------------------
 function walker._sendCurrentStep()
@@ -18851,16 +19314,18 @@ function walker._sendCurrentStep()
   walker.waitingAck  = walker.ackMode
 
   if walker.debug then
-    wprint(string.format(
-      "send %s (step %d/%d)",
-      dir, walker.idx, #walker.queue
-    ))
+    wprint(string.format("send %s (step %d/%d)", dir, walker.idx, #walker.queue))
   end
+
+  rs_markSend(walker.idx, dir)
+
+  local fromFP = mapper_core and mapper_core.currentFP or nil
+  walker._stepDelayMs = walker.getStepDelayMs(fromFP, dir)
 
   send(dir)
 
   if not walker.ackMode then
-    scheduleAfter(walker.delayMs, function()
+    scheduleAfter(walker._stepDelayMs or walker.delayMs, function()
       if walker.active then
         walker.idx = walker.idx + 1
         walker._sendCurrentStep()
@@ -18872,15 +19337,17 @@ end
 -------------------------------------------------------
 -- ACK 回调（由 trigger 或 GMCP 调用）
 -------------------------------------------------------
-function walker.onMoveResult(ok)
+function walker.onMoveResult(ok, source)
   if not walker.active or not walker.waitingAck then return end
 
   walker.waitingAck = false
 
   if ok then
+    rs_onOk()
+
     resetBackoff()
     walker.idx = walker.idx + 1
-    scheduleAfter(walker.delayMs, function()
+    scheduleAfter(walker._stepDelayMs or walker.delayMs, function()
       if walker.active then
         walker._sendCurrentStep()
       end
@@ -18888,8 +19355,8 @@ function walker.onMoveResult(ok)
     return
   end
 
-  -- ❌ 失败
   bumpBackoff()
+  rs_onFail()
 
   if walker.stopOnMaxFails and walker.failCount &gt;= walker.maxFails then
     wprint(string.format(
@@ -18905,11 +19372,12 @@ function walker.onMoveResult(ok)
   local waitMs = nextWaitMs()
 
   wprint(string.format(
-    "移动失败，%dms 后重试（dir=%s, fail=%d/%d）",
+    "移动失败，%dms 后重试（dir=%s, fail=%d/%d%s）",
     waitMs,
     tostring(walker.lastSentDir),
     walker.failCount,
-    walker.maxFails
+    walker.maxFails,
+    source and (", src=" .. tostring(source)) or ""
   ))
 
   scheduleAfter(waitMs, function()
@@ -18936,20 +19404,33 @@ function walker.start(dirsOrSteps, opts)
   walker.queue         = dirs
   walker.idx           = 1
   walker.delayMs       = tonumber(opts.delayMs) or walker.delayMs
+  walker.baseDelayMs   = tonumber(opts.baseDelayMs) or walker.baseDelayMs or walker.delayMs
+
   walker.ackMode       = opts.ackMode == true
   walker.backoffFactor = tonumber(opts.backoffFactor) or walker.backoffFactor
   walker.maxDelayMs    = tonumber(opts.maxDelayMs) or walker.maxDelayMs
   walker.maxFails      = tonumber(opts.maxFails) or walker.maxFails
 
+  -- busyRooms threshold 可选配置
+  if opts.busyRoomThreshold ~= nil then
+    walker.busyRooms = walker.busyRooms or {}
+    walker.busyRooms.threshold = tonumber(opts.busyRoomThreshold) or walker.busyRooms.threshold or 2
+  end
+
   resetBackoff()
   walker.active = true
 
+  if walker.retryStats and walker.retryStats.enabled then
+    walker.retryStats.cur = { step=nil, dir=nil, fromFP=nil, retries=0 }
+  end
+
   wprint(string.format(
-    "开始行走：%d 步，ack=%s，delay=%dms，maxFails=%d",
+    "开始行走：%d 步，ack=%s，baseDelay=%dms，maxFails=%d，busyRoomThreshold=%d",
     #dirs,
     tostring(walker.ackMode),
-    walker.delayMs,
-    walker.maxFails
+    tonumber(walker.baseDelayMs) or walker.delayMs,
+    walker.maxFails,
+    tonumber(walker.busyRooms and walker.busyRooms.threshold) or 2
   ))
 
   walker._sendCurrentStep()
@@ -18965,6 +19446,61 @@ function walker.stop()
   if walker.debug then
     wprint("已停止。")
   end
+end
+
+-------------------------------------------------------
+-- Retry 热点报告 / 重置
+-------------------------------------------------------
+function walker.reportRetryHotspots(topN)
+  topN = tonumber(topN) or 20
+  if not (walker.retryStats and walker.retryStats.enabled) then
+    wprint("retryStats 未启用。"); return
+  end
+
+  local arr = {}
+  for _, e in pairs(walker.retryStats.byEdge or {}) do
+    local avg = (e.passes &gt; 0) and (e.totalRetries / e.passes) or 0
+    local score = (e.maxRetries or 0) * 100000 + avg * 1000 + (e.totalRetries or 0)
+    arr[#arr+1] = {
+      fromFP = e.fromFP,
+      dir = e.dir,
+      passes = e.passes,
+      total = e.totalRetries,
+      max = e.maxRetries,
+      avg = avg,
+      lastAt = e.lastAt,
+      score = score,
+    }
+  end
+  table.sort(arr, function(a,b) return a.score &gt; b.score end)
+
+  wprint("====== 重试热点榜（成功前需要 retry 的房间+出口）======")
+  for i=1, math.min(topN, #arr) do
+    local x = arr[i]
+    wprint(string.format(
+      "#%d fromFP=%s  dir=%s  passes=%d  avgRetry=%.2f  maxRetry=%d  totalRetry=%d  lastAt=%s",
+      i,
+      tostring(x.fromFP),
+      tostring(x.dir),
+      x.passes or 0,
+      x.avg or 0,
+      x.max or 0,
+      x.total or 0,
+      x.lastAt and os.date("%Y-%m-%d %H:%M:%S", x.lastAt) or "-"
+    ))
+  end
+  if #arr == 0 then
+    wprint("暂无（还没出现过 成功前 retries&gt;0 的情况）。")
+  end
+  wprint("=====================================================")
+end
+
+function walker.resetRetryStats()
+  if walker.retryStats then
+    walker.retryStats.byEdge = {}
+    walker.retryStats.cur = { step=nil, dir=nil, fromFP=nil, retries=0 }
+  end
+  wprint("retryStats 已清空。")
 end
 </script>
 				<eventHandlerList />
@@ -20409,7 +20945,7 @@ mapper.maps["sz"] = {
     },
 
     ["沧浪亭|n,s,se,sw"] = {
-      name = "沧浪亭",
+      name = "沧浪亭", 
       exits = {
         ["n"] = "北大街|e,n,s,sw,w",
         ["s"] = "宝带桥|n,ne,nw,s",
@@ -45265,14 +45801,14 @@ mapper.maps["jyang"] = {
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>大同 - dtong</name>
+					<name>大同 - datong</name>
 					<packageName></packageName>
 					<script>mapper = mapper or {}
 mapper.maps = mapper.maps or {}
 
-mapper.maps["dtong"] = {
+mapper.maps["datong"] = {
   region = {
-    key  = "dtong",
+    key  = "datong",
     name = "大同",
   },
 
@@ -56385,6 +56921,2462 @@ add("小广场", {
 				<eventHandlerList />
 			</Script>
 		</ScriptGroup>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>walk node</name>
+			<packageName></packageName>
+			<script></script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>长江以南</name>
+				<packageName></packageName>
+				<script>walk_node = walk_node or {}
+
+walk_node["富池口古渡"] = {region = "信阳", map = "", --- not draw yet.
+  edges = {
+    	{node = "江州", path = "walk jiangzhou"},----
+    {node = "信阳长江渡口", path = "ask shao gong about jiang;enter"},----
+  }
+}
+
+walk_node["岳阳长江渡口"] = {region = "荆州府", map = "yy",
+  edges = {
+    {node = "岳阳", path = "walk yueyang"}, --
+    {node = "荆州长江渡口", path = "ask shao gong about jiang;enter"}, --
+  }
+}
+
+walk_node["温州瓯江北岸"] = {region = "温州", map = "wenz",
+  edges = {
+    {node = "处州府", path = "walk chuzhou"}, --
+    {node = "处州府瓯江南岸-温州", path = "ride"}, --
+  }
+}
+
+walk_node["处州府瓯江南岸-温州"] = {region = "处州府", map = "chuz",
+  edges = {
+    {node = "温州", path = "walk wenzhou"}, 
+    {node = "温州瓯江北岸", path = "ride"}, --
+  }
+}
+
+walk_node["处州府瓯江南岸"] = {region = "处州府", map = "chuz", -- not draw yet
+  edges = {
+    {node = "龙泉镇", path = "walk longquan"}, -- 
+    {node = "龙泉镇瓯江北岸", path = "ride"}, -- 
+    
+  }
+}
+
+walk_node["龙泉镇瓯江北岸"] = {region = "龙泉镇", map = "lqz",
+  edges = {
+    {node = "处州府", path = "walk chuzhou"}, --
+    {node = "处州府瓯江南岸", path = "ride"}, -- 
+  }
+}
+
+walk_node["晋江西岸"] = {region = "晋江西岸", map = "cz",
+  edges = {
+    {node = "潮州", path = "walk chaozhou"}, --
+    {node = "晋江东岸", path = "ride"}, --
+  }
+}
+
+walk_node["晋江东岸"] = {region = "晋江东岸", map = "qz",
+  edges = {
+    {node = "泉州", path = "walk quanzhou"}, --
+    {node = "晋江西岸", path = "ride"}, --
+  }
+}
+
+
+walk_node["西镇渡口"] = {region = "西镇渡口", map = "jn",
+  edges = {
+    {node = "建宁", path = "walk jianning"}, --
+    {node = "北津", path = "ride"}, --
+  }
+}
+
+walk_node["北津"] = {region = "建宁府", map = "jn",
+  edges = {
+    {node = "泉州", path = "walk quanzhou"}, --
+    {node = "武夷山", path = "walk wuyi"}, ---
+    {node = "西镇渡口", path = "ride"}, --
+  }
+}
+
+
+walk_node["京口渡"] = {region = "扬州", map = "zhenj",
+  edges = {
+    	{node = "镇江", path = "walk zhenjiang"},--
+  }
+}
+
+walk_node["燕子矶"] = {region = "长江南岸", map = "",
+  edges = {
+    	{node = "建康府神策门", path = "walk jiankang"},--
+    {node = "长江扬州西渡口", path = "ask shao gong about jiang;enter"},--
+  }
+}
+
+walk_node["沧浪亭"] = {region = "苏州", map = "sz",
+  edges = {
+    	{node = "归云庄大门", path = "walk guiyun"}, --
+    	{node = "建康府朝阳门", path = "walk jiankang"},--
+    	{node = "嘉兴城", path = "walk jiaxing"}, -- 
+    	{node = "姑苏慕容", path = "walk murong"},--
+    	{node = "铁岭关", path = "walk tieling"}, --
+    	{node = "无锡", path = "walk wuxi"}, --
+    	{node = "镇江", path = "walk zhenjiang"}, -- 
+  }
+}
+
+walk_node["姑苏慕容"] = {region = "姑苏慕容", map = "mr",
+  edges = {
+    	{node = "归云庄大门", path = "walk guiyun"},--
+    {node = "沧浪亭", path = "walk suzhou"},--  
+  }
+}
+
+walk_node["归云庄大门"] = {region = "归云庄", map = "gyz",
+  edges = {
+    	{node = "建康府正阳门", path = "walk jiankang"},--
+    	{node = "姑苏慕容", path = "walk murong"},--
+    	{node = "沧浪亭", path = "walk suzhou"},--
+  }
+}
+
+walk_node["建康府朝阳门"] = {region = "建康府东", map = "jk",
+  root_region="建康府",
+  arrive_regions = {"建康府", "建康府东"}, 
+  edges = {
+    	{node = "建康府清凉门", path = "walk qingliang"},--
+    	{node = "建康府神策门", path = "walk shence"},--
+    	{node = "沧浪亭", path = "walk suzhou"},--
+    {node = "无锡", path = "walk wuxi"},--
+    {node = "义兴县", path = "walk yixing"},--
+    {node = "建康府正阳门", path = "walk zhengyang"},--
+    {node = "镇江", path = "walk zhenjiang"},--
+  }
+}
+
+walk_node["嘉兴城"] = {region = "嘉兴", map = "jx",
+  edges = {
+    	{node = "建康府正阳门", path = "walk jiankang"}, --
+    	{node = "姑苏慕容", path = "walk murong"}, --
+    	{node = "沧浪亭", path = "walk suzhou"}, --
+    	{node = "湖州府", path = "walk huzhou"},--
+    	{node = "大理寺", path = "walk linan"},--
+    	{node = "陆家庄", path = "walk lujiazhuang"},--      
+  }
+}
+
+walk_node["铁岭关"] = {region = "铁岭关", map = "sz",
+  edges = {
+    	{node = "无锡", path = "walk wuxi"},--
+    {node = "沧浪亭", path = "walk suzhou"},--
+  }
+}
+
+walk_node["无锡"] = {region = "无锡", map = "wx",
+  edges = {
+    	{node = "建康府朝阳门", path = "walk jiankang"},--
+    {node = "沧浪亭", path = "walk suzhou"}, --
+    {node = "铁岭关", path = "walk tieling"},  --
+    	{node = "义兴县", path = "walk yixing"}, --
+    	{node = "镇江", path = "walk zhenjiang"}, ---
+  }
+}
+
+walk_node["镇江"] = {region = "镇江", map = "zhenj",
+  edges = {
+    	{node = "建康府朝阳门", path = "walk jiankang"}, --
+    {node = "沧浪亭", path = "walk suzhou"}, -- 
+    {node = "无锡", path = "walk wuxi"}, -- 
+    	{node = "京口渡", path = "walk yangzhou"}, --
+  }
+}
+
+walk_node["建康府正阳门"] = {region = "建康府南", map = "jk",
+  root_region="建康府",
+  arrive_regions = {"建康府", "建康府南"},
+  edges = {
+    	{node = "建康府朝阳门", path = "walk chaoyang"}, --
+    {node = "归云庄大门", path = "walk guiyun"}, --
+    {node = "湖州府", path = "walk huzhou"}, -- 
+    	{node = "嘉兴城", path = "walk jiaxing"}, --
+    	{node = "大理寺", path = "walk linan"}, -- 
+    {node = "建康府清凉门", path = "walk qingliang"}, --
+    {node = "建康府神策门", path = "walk shence"}, --
+    	{node = "义兴县", path = "walk yixing"},--       
+  }
+}
+
+walk_node["建康府清凉门"] = {region = "建康府西", map = "jk",
+  root_region="建康府",
+  arrive_regions = {"建康府", "建康府西"},
+  edges = {
+    	{node = "建康府朝阳门", path = "walk chaoyang"}, --
+    	{node = "建康府神策门", path = "walk shence"}, --
+    	{node = "铜官山", path = "walk tongguan"}, --
+    {node = "建康府正阳门", path = "walk zhengyang"}, -- 
+  }
+}
+
+walk_node["建康府神策门"] = {region = "建康府北", map = "jk",
+  root_region="建康府",
+  arrive_regions = {"建康府", "建康府北"},
+  edges = {
+    {node = "建康府朝阳门", path = "walk chaoyang"},--
+    	{node = "建康府清凉门", path = "walk qingliang"},--
+    	{node = "燕子矶", path = "walk yanziji"},--
+    {node = "建康府正阳门", path = "walk zhengyang"},--
+  }
+}
+
+walk_node["义兴县"] = {region = "义兴县", map = "yx",
+  edges = {
+    	{node = "建康府朝阳门", path = "walk jiankang-chaoyang"}, --
+    {node = "建康府正阳门", path = "walk jiankang-zhengyang"}, --
+    {node = "无锡", path = "walk wuxi"},  --
+  }
+}
+
+walk_node["湖州府"] = {region = "湖州府", map = "hzf",
+  edges = {
+    	{node = "建康府正阳门", path = "walk jiankang"}, --
+    {node = "嘉兴城", path = "walk jiaxing"}, --
+    {node = "大理寺", path = "walk linan"}, -- 
+    {node = "铜官山", path = "walk tongguan"}, --
+  }
+}
+
+walk_node["钱塘北渡口"] = {region = "钱塘北渡口", map = "hz",
+  edges = {
+    	{node = "大理寺", path = "walk linan"}, --
+    {node = "钱塘东渡口", path = "ride"}, --
+  }
+}
+walk_node["钱塘西渡口"] = {region = "钱塘西渡口", map = "hz",
+  edges = {
+    	{node = "大理寺", path = "walk linan"}, --
+    {node = "钱塘东渡口", path = "ride"}, --
+  }
+}
+
+walk_node["钱塘东渡口"] = {region = "临安府", map = "hz",
+  edges = {
+    {node = "金华府", path = "walk jinhua"}, ---
+    {node = "明州", path = "walk mingzhou"}, 
+    {node = "绍兴府", path = "walk shaoxing"}, --
+    {node = "钱塘北渡口", path = "ride north"}, --
+    {node = "钱塘西渡口", path = "ride west"}, --
+  }
+}
+
+walk_node["大理寺"] = {region = "临安府", map = "hz",
+  edges = {
+    {node = "钱塘北渡口", path = "walk beidukou"}, --
+    {node = "黄山", path = "walk huangshan"}, --
+    {node = "湖州府", path = "walk huzhou"}, --
+    {node = "建康府正阳门", path = "walk jiankang"}, --
+    {node = "嘉兴城", path = "walk jiaxing"}, --
+    	{node = "梅庄", path = "walk meizhuang"}, --
+    	{node = "钱塘西渡口", path = "walk xidukou"}, --    
+    {node = "岳王墓", path = "walk yuewangmu"},
+  }
+}
+
+walk_node["陆家庄"] = {region = "陆家庄", map = "jx",
+  edges = {
+    	{node = "归云庄大门", path = "walk guiyun"},--
+    {node = "沧浪亭", path = "walk suzhou"}, -- 
+  }
+}
+
+walk_node["铜官山"] = {region = "铜官山", map = "tgz",
+  edges = {
+    {node = "湖州府", path = "walk huzhou"}, --
+    	{node = "江州", path = "walk jiangzhou"},--
+    {node = "建康府清凉门", path = "walk jiankang"},--
+    	{node = "祁门县", path = "walk qimen"},--
+  }
+}
+
+walk_node["黄山"] = {region = "黄山", map = "huangshan", -- not draw yet.
+  edges = {
+    	{node = "大理寺", path = "walk linan"},--
+    {node = "祁门县", path = "walk qimen"},--  
+  }
+}
+
+walk_node["梅庄"] = {region = "梅庄", map = "", -- not draw yet
+  edges = {
+    	{node = "大理寺", path = "walk linan"}, ---
+    {node = "岳王墓", path = "walk yuewangmu"},  ---
+  }
+}
+
+walk_node["岳王墓"] = {region = "岳王墓", map = "", -- not draw yet
+  edges = {
+    	{node = "大理寺", path = "walk linan"}, --
+    {node = "梅庄", path = "walk meizhuang"},  --
+  }
+}
+
+walk_node["祁门县"] = {region = "祁门县", map = "", --- not draw yet.
+  edges = {
+    {node = "黄山", path = "walk huangshan"}, --
+    	{node = "江州", path = "walk jiangzhou"}, --
+    {node = "铜官山", path = "walk tongguan"}, --
+  }
+}
+
+walk_node["江州"] = {region = "江州", map = "jiangz", -- not draw yet.
+  edges = {
+    	{node = "富池口", path = "walk fuchikou"},---
+    {node = "南昌", path = "walk nanchang"}, --- 
+    {node = "祁门县", path = "walk qimen"}, --
+    {node = "铅山县", path = "walk shangrao"},--  
+    {node = "铜官山", path = "walk tongguan"}, -- 
+    {node = "富池口古渡", path = "walk xinyang"},  -- to 信阳
+    {node = "岳阳", path = "walk yueyang"}, --
+  }
+}
+
+walk_node["南昌"] = {region = "南昌", map = "nc", 
+  edges = {
+    {node = "长沙", path = "walk changsha"}, --
+    {node = "江州", path = "walk jiangzhou"}, --
+    {node = "龙虎山", path = "walk longhu"}, --
+    {node = "庐陵", path = "walk luzhou"}, --
+    {node = "袁州", path = "walk yuanzhou"}, -- 袁水北岸
+    {node = "岳阳", path = "walk yueyang"}, --
+  }
+}
+walk_node["江夏"] = {region = "江夏", map = "jiangxia", --- not draw yet.
+  edges = {
+    {node = "富池口", path = "walk fuchikou"},--
+    {node = "岳阳", path = "walk yueyang"}, --
+  }
+}
+walk_node["富池口"] = {region = "富池口", map = "", --- not draw yet.
+  edges = {
+    {node = "江夏", path = "walk jiangxia"},--
+    {node = "江州", path = "walk jiangzhou"},--
+  }
+}
+walk_node["铅山县"] = {region = "上饶县", map = "sr",
+  edges = {
+    {node = "江州", path = "walk jiangzhou"}, --
+    {node = "龙虎山", path = "walk longhu"}, --
+    {node = "上饶县", path = "walk shangrao"},--
+  }
+}
+
+
+walk_node["岳阳"] = {region = "岳阳", map = "yy", 
+  edges = {
+    {node = "长沙", path = "walk changsha"}, --
+    {node = "江州", path = "walk jiangzhou"}, -- 
+    {node = "江夏", path = "walk jiangxia"}, -- 
+    {node = "岳阳长江渡口", path = "walk jingzhou"}, -- 陵矶
+    {node = "南昌", path = "walk nanchang"},---     
+  }
+}
+
+walk_node["长沙"] = {region = "长沙", map = "csha", 
+  edges = {
+    {node = "衡山", path = "walk hengshan"}, -- 
+    {node = "衡州", path = "walk hengzhou"}, -- 
+    {node = "南昌", path = "walk nanchang"}, --
+    {node = "袁水北岸", path = "walk yuanzhou"},--
+    {node = "岳阳", path = "walk yueyang"}, --           
+  }
+}
+
+walk_node["龙虎山"] = {region = "龙虎山", map = "lhs", 
+  edges = {
+    {node = "龙泉镇", path = "walk longquan"}, --
+    {node = "庐陵", path = "walk luling"},--
+    {node = "南昌", path = "walk nanchang"},--
+    {node = "铅山县", path = "walk shangrao"}, --
+    {node = "仙霞岭", path = "walk xianxia"}, --
+    {node = "袁州", path = "walk yuanzhou"}, --  
+  }
+}
+
+walk_node["仙霞岭"] = {region = "仙霞岭", map = "", -- not draw yet
+  edges = {
+    {node = "龙虎山", path = "walk longhu"},--
+    {node = "龙泉镇", path = "walk longquan"},--
+    {node = "乌溪江南岸", path = "walk quzhou"}, -- 衢州府
+    {node = "上饶县", path = "walk shangrao"}, -- 
+  }
+}
+
+walk_node["庐陵"] = {region = "庐陵", map = "lling",
+  edges = {
+    {node = "龙虎山", path = "walk longhu"},--
+    {node = "南昌", path = "walk nanchang"},--
+    {node = "袁州", path = "walk yuanzhou"}, --
+    {node = "越城岭山口", path = "walk yuechengling"}, --
+  }
+}
+
+walk_node["袁水北岸"] = {region = "袁州", map = "yzhou",
+  edges = {
+    {node = "长沙", path = "walk changsha"}, --
+    {node = "南昌", path = "walk nanchang"}, --
+  }
+}
+
+walk_node["上饶县"] = {region = "上饶县", map = "sr",
+  edges = {
+    {node = "铅山县", path = "walk qianshan"}, ---
+    {node = "衢州府", path = "walk quzhou"}, --
+    {node = "仙霞岭", path = "walk xianxia"}, --
+  }
+}
+
+walk_node["衡山"] = {region = "衡山", map = "", -- not draw yet.
+  edges = {
+    {node = "长沙", path = "walk changsha"}, --
+    {node = "衡州", path = "walk hengzhou"}, --
+  }
+}
+
+walk_node["衡州"] = {region = "衡州", map = "hengz", 
+  edges = {
+    {node = "长沙", path = "walk changsha"}, --
+    {node = "衡山", path = "walk hengshan"}, -- 
+    {node = "苗岭边缘", path = "walk miaojiang"}, --
+    {node = "五岭湘江渡口", path = "walk wuling"}, --
+  }
+}
+
+walk_node["袁州"] = {region = "袁州", map = "yzhou", -- not draw yet
+  edges = {
+    {node = "龙虎山", path = "walk longhu"},--
+    {node = "庐陵", path = "walk luling"},--
+  }
+}
+
+walk_node["乌溪江南岸"] = {region = "衢州", map = "quz", -- not draw yet
+  edges = {
+    {node = "仙霞岭", path = "walk xianxia"}, -- 
+  }
+}
+
+walk_node["龙泉镇"] = {region = "龙泉镇", map = "lqz", -- not draw yet
+  edges = {
+    {node = "处州府瓯江南岸", path = "walk chuzhou"},  -- to │处州府
+    {node = "龙虎山", path = "walk longhu"}, --
+    {node = "武夷山", path = "walk wuyi"}, --
+    {node = "仙霞岭", path = "walk xianxia"}, --
+  }
+}
+
+
+walk_node["越城岭山口"] = {region = "越城岭山口", map = "", -- not draw yet
+  edges = {
+    {node = "庐陵", path = "walk luling"}, --
+    {node = "衡州湘江东岸", path = "walk xiangjiang"}, -- to │衡州
+  }
+}
+walk_node["衡州湘江东岸"] = {region = "衡州", map = "", -- not draw yet
+  edges = {
+    {node = "越城岭山口", path = "walk luling"}, --
+  }
+}
+
+walk_node["苗岭边缘"] = {region = "苗疆", map = "", -- not draw yet
+  edges = {
+    {node = "衡州", path = "walk hengyang"}, --
+  }
+}
+
+walk_node["五岭湘江渡口"] = {region = "五岭", map = "hengz", -- not draw yet
+  edges = {
+    {node = "衡州", path = "walk hengzhou"}, --
+  }
+}
+
+walk_node["衢州府乌溪江北岸"] = {region = "仙霞岭", map = "quz",
+  edges = {
+    {node = "衢州府", path = "walk quzhou"}, 
+  }
+}
+
+walk_node["衢州府"] = {region = "衢州府", map = "quz",
+  edges = {
+    {node = "上饶县", path = "walk shangrao"}, ---
+    {node = "金华府", path = "walk shaoxing"}, --
+    {node = "衢州府乌溪江北岸", path = "walk xianxia"}, -- to │仙霞岭
+  }
+}
+
+walk_node["金华府"] = {region = "绍兴府", map = "sx",
+  edges = {
+    {node = "钱塘东渡口", path = "walk linan"}, ---
+    {node = "衢州府", path = "walk quzhou"}, -- 
+    {node = "绍兴府", path = "walk shaoxing"}, --
+    {node = "天台县", path = "walk tiantai"}, --
+  }
+}
+
+walk_node["绍兴府"] = {region = "绍兴府", map = "sx",
+  edges = {
+    {node = "金华府", path = "walk jinhua"}, ---
+    {node = "钱塘东渡口", path = "walk linan"}, --
+    {node = "明州", path = "walk mingzhou"},  --
+    {node = "天台县", path = "walk tiantai"}, --
+  }
+}
+
+walk_node["台州府灵江西岸"] = {region = "台州府", map = "tzf",
+  edges = {
+    {node = "明州", path = "walk mingzhou"}, -- 
+    {node = "天台县", path = "walk tiantai"},
+  }
+}
+
+walk_node["天台山"] = {region = "天台山", map = "tt",
+  edges = {
+    {node = "天台县", path = "walk tiantai"}, --
+  }
+}
+
+walk_node["天台县"] = {region = "天台县", map = "tt",
+  edges = {
+    {node = "金华府", path = "walk jinhua"}, --
+    {node = "明州", path = "walk mingzhou"}, -- 
+    {node = "绍兴府", path = "walk shaoxing"}, --
+    {node = "台州府灵江西岸", path = "walk taizhou"}, --
+    {node = "天台山", path = "walk tiantaishan"}, --
+    {node = "雁荡山", path = "walk yandang"}, 
+  }
+}
+
+walk_node["明州"] = {region = "明州", map = "mz",
+  edges = {
+    {node = "钱塘东渡口", path = "walk linan"}, --
+    {node = "绍兴府", path = "walk shaoxing"},--
+    {node = "台州府灵江西岸", path = "walk taizhou"},--
+    {node = "天台县", path = "walk tiantai"},--
+    {node = "雁荡山", path = "walk yandang"},--
+  }
+}
+
+walk_node["台州府灵江南岸"] = {region = "台州府", map = "tzf",
+  edges = {
+    {node = "雁荡山", path = "walk yandang"}, --
+  }
+}
+
+walk_node["雁荡山"] = {region = "雁荡山", map = "yds",
+  edges = {
+    {node = "处州府", path = "walk chuzhou"}, --
+    {node = "明州", path = "walk mingzhou"}, --
+    {node = "台州府灵江南岸", path = "walk taizhou"},  -- 
+    {node = "天台县", path = "walk tiantai"}, --
+    {node = "温州瓯江北岸", path = "walk wenzhou"}, --
+  }
+}
+
+walk_node["处州府"] = {region = "处州府", map = "chuz",
+  edges = {
+    {node = "龙泉镇瓯江北岸", path = "walk longquan"}, --
+    {node = "温州瓯江北岸", path = "walk wenzhou"}, --
+    {node = "雁荡山", path = "walk yandang"}, --
+  }
+}
+
+walk_node["温州"] = {region = "温州", map = "wenz",
+  edges = {
+    {node = "处州府瓯江南岸-温州", path = "walk chuzhou"}, --
+    {node = "闽中", path = "walk fuzhou"}, 
+  }
+}
+
+walk_node["闽中"] = {region = "闽中", map = "fz",
+  edges = {
+    {node = "建宁府", path = "walk jianning"}, --
+    {node = "莆田", path = "walk putian"}, --
+    {node = "泉州", path = "walk quanzhou"},--
+    {node = "温州", path = "walk wenzhou"},--
+  }
+}
+
+walk_node["建宁"] = {region = "建宁府", map = "jn",
+  edges = {
+    {node = "西镇渡口", path = "walk xizhen"}, --
+    {node = "闽中", path = "walk fuzhou"}, --
+  }
+}
+
+walk_node["莆田"] = {region = "莆田", map = "fz",
+  edges = {
+    {node = "泉州", path = "walk quanzhou"}, --
+    {node = "闽中", path = "walk fuzhou"}, ---
+  }
+}
+
+walk_node["泉州"] = {region = "泉州", map = "qz",
+  edges = {
+    {node = "闽中", path = "walk fuzhou"}, --
+    {node = "北津", path = "walk jianning"}, --
+    {node = "晋江东岸", path = "walk jinjiang"},--
+    {node = "南少林", path = "walk nanshaolin"}, --
+    {node = "莆田", path = "walk putian"}, --
+    {node = "武夷山", path = "walk wuyi"}, --
+  }
+}
+
+walk_node["武夷山"] = {region = "武夷山", map = "wuyi",
+  edges = {
+    {node = "北津", path = "walk jianning"}, --
+    {node = "龙泉镇", path = "walk longquan"}, --
+    {node = "泉州", path = "walk quanzhou"}, --
+  }
+}
+
+walk_node["南少林"] = {region = "南少林", map = "qz",
+  edges = {
+    {node = "泉州", path = "walk quanzhou"}, --
+    {node = "潮州", path = "walk chaozhou"}, --
+  }
+}
+
+
+
+walk_node["潮州"] = {region = "潮州", map = "cz",
+  edges = {
+    {node = "晋江西岸", path = "walk jinjiang"}, --
+    {node = "南少林", path = "walk nanshaolin"}, --
+    {node = "圣峰嶂", path = "walk shengfeng"}, --
+  }
+}
+
+walk_node["圣峰嶂"] = {region = "圣峰嶂", map = "",
+  edges = {
+    {node = "圣峰嶂西部", path = "walk xi"}, --
+    {node = "潮州", path = "walk chaozhou"}, --
+  }
+}
+
+walk_node["圣峰嶂西部"] = {region = "圣峰嶂", map = "",
+  edges = {
+    {node = "圣峰嶂", path = "walk dong"}, --
+    {node = "广州府", path = "walk guangzhou"}, --
+  }
+}
+
+walk_node["老林"] = {region = "老林", map = "",
+  edges = {
+    {node = "广州府", path = "walk guangzhou"}, --
+  }
+}
+
+walk_node["广州府"] = {region = "广州府", map = "",
+  edges = {
+    {node = "圣峰嶂西部", path = "walk shengfeng"}, --
+    {node = "珠江北岸", path = "walk foshan"}, 
+    {node = "老林", path = "walk laolin"}, --
+  }
+}
+
+walk_node["珠江北岸"] = {region = "佛山", map = "",
+  edges = {
+    {node = "广州府", path = "walk guangzhou"}, --
+  }
+}
+
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>中原地区</name>
+				<packageName></packageName>
+				<script>walk_node = walk_node or {}
+
+walk_node["信阳长江渡口"] = {region = "信阳长江渡口", map = "",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, --
+    {node = "汉口镇", path = "walk hankou"}, --
+    {node = "富池口古渡", path = "ask shao gong about jiang;enter"}, --
+  }
+}
+
+
+walk_node["荆州汉水西岸"] = {region = "荆州汉水西岸", map = "",
+  edges = {
+    {node = "荆州府", path = "walk jingzhou"}, -- 
+    {node = "汉口镇汉水渡口", path = "ride"}, -- 
+  }
+}
+
+walk_node["汉口镇汉水渡口"] = {region = "汉口镇汉水渡口", map = "",
+  edges = {
+    {node = "汉口镇", path = "walk hankou"}, --
+    {node = "荆州汉水西岸", path = "ride"}, --
+  }
+}
+
+walk_node["鸡鸣渡东"] = {region = "鸡鸣渡东", map = "",
+  edges = {
+    {node = "汉口镇", path = "walk hankou"}, -- 
+    {node = "鸡鸣渡西", path = "ride"}, -- 
+  }
+}
+
+walk_node["鸡鸣渡西"] = {region = "鸡鸣渡西", map = "",
+  edges = {
+    {node = "襄阳", path = "walk xiangyang"},--
+    {node = "鸡鸣渡东", path = "ride"}, -- 
+  }
+}
+
+
+walk_node["荆州长江渡口"] = {region = "荆州长江渡口", map = "",
+  edges = {
+    {node = "荆州府", path = "walk jingzhou"}, -- 
+    {node = "岳阳长江渡口", path = "ask shao gong about jiang;enter"}, -- 
+  }
+}
+
+walk_node["长江扬州东渡口"] = {region = "长江扬州东渡口", map = "",
+  edges = {
+    {node = "扬州", path = "walk yangzhou"}, -- 
+    {node = "京口渡", path = "ask shao gong about jiang;enter"}, -- 
+  }
+}
+
+walk_node["长江扬州西渡口"] = {region = "长江扬州西渡口", map = "",
+  edges = {
+    {node = "往生堂", path = "walk shashou"}, -- 
+    {node = "扬州", path = "walk yangzhou"}, --
+    {node = "燕子矶", path = "ask shao gong about jiang;enter"}, --
+  }
+}
+
+walk_node["泰山"] = {region = "泰山", map = "",
+  edges = {
+    {node = "曲阜", path = "walk qufu"}, --
+    {node = "泰安", path = "walk taian"}, --
+    {node = "青州", path = "walk qingzhou"}, --
+  }
+}
+
+walk_node["泰安"] = {region = "泰安", map = "taian",
+  edges = {
+    {node = "曲阜", path = "walk qufu"}, --
+    {node = "泰山", path = "walk taishan"}, --
+    {node = "青州", path = "walk qingzhou"}, --
+  }
+}
+
+walk_node["徐州"] = {region = "徐州", map = "xuzhou",
+  edges = {
+    {node = "扬州", path = "walk yangzhou"}, --
+    {node = "曲阜", path = "walk qufu"}, --
+    {node = "淮北", path = "walk huaibei"}, --
+  }
+}
+
+walk_node["曲阜黄河渡口"] = {region = "曲阜黄河渡口", map = "",
+  edges = {
+    {node = "曲阜", path = "walk qufu"}, --
+    {node = "濮阳黄河渡口", path = "ask shao gong about huanghe;enter"}, --
+  }
+}
+
+
+walk_node["曲阜"] = {region = "曲阜", map = "qufu",
+  edges = {
+    {node = "徐州", path = "walk xuzhou"}, --
+    {node = "泰安", path = "walk taian"}, --
+    {node = "泰山", path = "walk taishan"}, --
+    {node = "淮北", path = "walk huaibei"}, --
+    {node = "曲阜黄河渡口", path = "walk puyang"}, -- 在这个渡口可以去濮阳
+    {node = "青州", path = "walk qingzhou"}, --
+  }
+}
+
+walk_node["青州"] = {region = "青州", map = "qingzhou",
+  edges = {
+    {node = "曲阜", path = "walk qufu"},--
+    {node = "泰安", path = "walk taian"}, --
+    {node = "泰山", path = "walk taishan"}, -- 
+    {node = "登州", path = "walk dengzhou"}, --
+  }
+}
+
+walk_node["登州"] = {region = "登州", map = "dengzhou",
+  edges = {
+    {node = "威海卫", path = "walk weihaiwei"}, --
+    {node = "青州", path = "walk qingzhou"}, -- 
+  }
+}
+
+walk_node["威海卫"] = {region = "威海卫", map = "whw",
+  edges = {
+    {node = "登州", path = "walk dengzhou"}, --
+  }
+}
+
+
+walk_node["淮北"] = {region = "淮北", map = "",
+  edges = {
+    {node = "徐州", path = "walk xuzhou"}, --
+    {node = "曲阜", path = "walk qufu"}, -- 
+    {node = "许昌", path = "walk xuchang"}, --
+  }
+}
+
+walk_node["许昌"] = {region = "许昌", map = "",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, --
+    {node = "白河东岸", path = "walk nanyang"}, --
+    {node = "南阳城", path = "walk nanyangcheng"}, --
+    {node = "淮北", path = "walk huaibei"}, --
+    {node = "郑州", path = "walk zhengzhou"}, --
+  }
+}
+
+walk_node["白河东岸"] = {region = "白河东岸", map = "",
+  edges = {
+    {node = "南阳城", path = "walk chengnei"}, -- 
+    {node = "洛阳", path = "walk luoyang"}, --
+    {node = "登封", path = "walk dengfeng"}, --
+    {node = "襄阳", path = "walk xiangyang"}, --
+    {node = "许昌", path = "walk xuchang"}, --
+  }
+}
+
+walk_node["信阳"] = {region = "信阳", map = "xinyang",
+  edges = {
+    {node = "南阳城", path = "walk nanyang"}, --
+    {node = "庐州", path = "walk luzhou"}, --
+    {node = "往生堂", path = "walk shashou"}, --
+    {node = "扬州", path = "walk yangzhou"}, --
+    {node = "汉口镇", path = "walk hankou"}, -- 
+    {node = "信阳长江渡口", path = "walk jiangzhou"}, --
+    {node = "濠州府", path = "walk haozhou"}, -- 
+    {node = "荆州府", path = "walk jingzhou"}, -- 
+    {node = "襄阳", path = "walk xiangyang"}, -- 
+    {node = "许昌", path = "walk xuchang"}, --
+  }
+}
+
+walk_node["南阳城"] = {region = "南阳城", map = "nanyang",
+  edges = {
+    {node = "伏牛山", path = "walk funiu"}, --
+    {node = "信阳", path = "walk xinyang"}, --
+    {node = "商州", path = "walk shangzhou"},--
+    {node = "白河东岸", path = "walk baihe"},--
+    {node = "襄阳", path = "walk xiangyang"},--
+    {node = "许昌", path = "walk xuchang"}, --
+  }
+}
+
+walk_node["郑州"] = {region = "郑州", map = "",
+  edges = {
+    {node = "峻极宫前", path = "walk junji"}, -- 
+    {node = "洛阳", path = "walk luoyang"}, --
+    {node = "许昌", path = "walk xuchang"}, --
+  }
+}
+
+walk_node["洛阳黄河渡口"] = {region = "洛阳黄河渡口", map = "",
+  edges = {
+    {node = "洛阳", path = "walk luoyang"}, --
+    {node = "济源渡", path = "ask shao gong about huanghe;enter"}, --
+  }
+}
+
+walk_node["麒麟村"] = {region = "麒麟村", map = "qlc",
+  edges = {
+    {node = "洛阳", path = "walk luoyang"}, --
+  }
+}
+
+walk_node["洛阳"] = {region = "洛阳", map = "ly",
+  edges = {
+    {node = "白河东岸", path = "walk nanyang"}, --
+    {node = "卢氏县", path = "walk lushi"}, --
+    {node = "洛阳黄河渡口", path = "walk jiyuan"}, -- 这里过河可以去济源
+    {node = "登封", path = "walk dengfeng"}, --
+    {node = "郑州", path = "walk zhengzhou"}, --
+    {node = "长安通化门", path = "walk changan"}, -- 
+    {node = "麒麟村", path = "walk qilincun"}, --
+  }
+}
+
+walk_node["少林寺"] = {region = "少林寺", map = "",
+  edges = {
+    {node = "登封", path = "walk dengfeng"}, --
+  }
+}
+
+walk_node["登封"] = {region = "登封", map = "",
+  edges = {
+    {node = "伏牛山", path = "walk funiu"}, -- 
+    {node = "白河东岸", path = "walk nanyang"}, --
+    {node = "少林寺", path = "walk shaolin"}, --
+    {node = "峻极宫前", path = "walk junji"}, --
+    {node = "洛阳", path = "walk luoyang"}, --
+  }
+}
+
+walk_node["武当山"] = {region = "武当山", map = "",
+  edges = {
+    {node = "襄阳", path = "walk xiangyang"}, --
+  }
+}
+
+walk_node["襄阳"] = {region = "襄阳", map = "xiangyang",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, --
+    {node = "白河东岸", path = "walk nanyang"}, --
+    {node = "南阳城", path = "walk nanyangcheng"}, --
+    {node = "武当山", path = "walk wudang"}, --
+    {node = "鸡鸣渡西", path = "walk hankou"}, -- 
+    {node = "荆州府", path = "walk jingzhou"}, --
+  }
+}
+
+walk_node["庐州"] = {region = "庐州", map = "luzhou",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, -- 
+    {node = "往生堂", path = "walk shashou"}, --
+    {node = "扬州", path = "walk yangzhou"}, --
+    {node = "濠州府", path = "walk haozhou"}, -- 
+  }
+}
+
+walk_node["往生堂"] = {region = "杀手帮", map = "",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, --
+    {node = "庐州", path = "walk luzhou"}, --
+    {node = "长江扬州西渡口", path = "walk jiankang"}, --
+    {node = "扬州", path = "walk yangzhou"}, --
+  }
+}
+
+walk_node["汉口镇"] = {region = "汉口镇", map = "hankou",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, -- 
+    {node = "信阳长江渡口", path = "walk jiangzhou"}, -- 这里过河可以去江州
+    {node = "汉口镇汉水渡口", path = "walk jingzhou"}, -- 这里过河可以去荆州
+    {node = "鸡鸣渡东", path = "walk xiangyang"}, -- 这里过河可以去襄阳
+  }
+}
+
+walk_node["荆州府"] = {region = "荆州府", map = "jingzhou",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, --
+    {node = "荆州长江渡口", path = "walk yueyang"}, --
+    {node = "荆州汉水西岸", path = "walk hankou"}, -- 
+    {node = "襄阳", path = "walk xiangyang"}, -- 
+  }
+}
+
+walk_node["伏牛派"] = {region = "伏牛派", map = "",
+  edges = {
+    {node = "伏牛山", path = "walk muzha"},--
+  }
+}
+
+walk_node["伏牛山"] = {region = "伏牛山", map = "funiu",
+  edges = {
+    {node = "伏牛派", path = "walk funiupai"}, --
+    {node = "南阳城", path = "walk nanyang"}, --
+    {node = "卢氏县南", path = "walk lushi"}, --
+    {node = "商州", path = "walk shangzhou"}, --
+    {node = "登封", path = "walk dengfeng"},
+  }
+}
+
+walk_node["商州"] = {region = "商州", map = "shangzhou",
+  edges = {
+    {node = "伏牛山", path = "walk funiu"}, --
+    {node = "华山派", path = "walk huashan"}, -- 
+    {node = "南阳城", path = "walk nanyang"}, --
+    {node = "卢氏县南", path = "walk lushi"}, --
+    {node = "古墓派", path = "walk gumu"}, --
+    {node = "长安通化门", path = "walk changan"}, --
+  }
+}
+
+walk_node["峻极宫前"] = {region = "峻极宫前", map = "",
+  edges = {
+    {node = "登封", path = "walk dengfeng"}, --
+    {node = "郑州", path = "walk zhengzhou"}, --
+  }
+}
+
+walk_node["濠州府"] = {region = "濠州府", map = "haozhou",
+  edges = {
+    {node = "信阳", path = "walk xinyang"}, --
+    {node = "庐州", path = "walk luzhou"}, --
+    {node = "扬州", path = "walk yangzhou"}, --
+  }
+}
+
+walk_node["卢氏县"] = {region = "卢氏县", map = "lushi",
+  edges = {
+    {node = "洛阳", path = "walk luoyang"}, --
+    {node = "卢氏县南", path = "s;ride"}, --
+  }
+}
+
+walk_node["卢氏县南"] = {region = "卢氏县南", map = "",
+  edges = {
+    {node = "伏牛山", path = "walk funiu"}, --
+    {node = "商州", path = "walk shangzhou"}, --
+  }
+}
+
+walk_node["长安通化门"] = {region = "长安通化门", map = "",
+  edges = {
+    {node = "华山派", path = "walk huashan"}, --
+    {node = "商州", path = "walk shangzhou"}, -- 
+    {node = "洛阳", path = "walk luoyang"}, -- 
+    {node = "长安明德门", path = "walk mingde"}, -- 
+    {node = "长安金光门", path = "walk jinguang"}, --
+  }
+}
+
+walk_node["华山派"] = {region = "华山", map = "",
+  edges = {
+    {node = "华山村", path = "walk huashancun"}, --
+    {node = "商州", path = "walk shangzhou"}, --
+    {node = "长安通化门", path = "walk changan"}, --
+  }
+}
+
+walk_node["华山村"] = {region = "华山村", map = "",
+  edges = {
+    {node = "全真派", path = "walk quanzhen"}, --
+    {node = "华山派", path = "walk huashan"}, --
+  }
+}
+
+walk_node["全真派"] = {region = "全真派", map = "",
+  edges = {
+    {node = "华山村", path = "walk huashancun"},--
+    {node = "古墓派", path = "walk gumu"}, --
+    {node = "长安明德门", path = "walk changan"}, --
+  }
+}
+
+walk_node["古墓派"] = {region = "古墓派", map = "",
+  edges = {
+    {node = "全真派", path = "walk quanzhen"}, -- 
+    {node = "商州", path = "walk shangzhou"}, --
+  }
+}
+
+walk_node["长安明德门"] = {region = "长安明德门", map = "",
+  edges = {
+    {node = "全真派", path = "walk quanzhen"}, --
+    {node = "汉中", path = "walk hanzhong"}, -- 
+    {node = "长安通化门", path = "walk tonghua"}, --
+    {node = "长安金光门", path = "walk jinguang"}, --
+  }
+}
+
+walk_node["汉中"] = {region = "汉中", map = "",
+  edges = {
+    {node = "金牛县渡口", path = "walk guangyuan"}, --
+    {node = "汉水北渡", path = "walk chengdu"},--
+    {node = "长安明德门", path = "walk changan"}, -- 
+  }
+}
+
+walk_node["金牛县渡口"] = {region = "金牛县渡口", map = "",
+  edges = {
+    {node = "汉中", path = "walk hanzhong"}, --
+  }
+}
+
+walk_node["汉水北渡"] = {region = "汉水北渡", map = "",
+  edges = {
+    {node = "汉中", path = "walk hanzhong"}, -- 
+  }
+}
+
+walk_node["长安金光门"] = {region = "长安金光门", map = "",
+  edges = {
+    {node = "回族小镇", path = "walk huijiang"}, --
+    {node = "秦州", path = "walk qinzhou"}, --
+    {node = "长安通化门", path = "walk tonghua"}, --
+    {node = "长安明德门", path = "walk mingde"}, --
+  }
+}
+
+walk_node["秦州"] = {region = "秦州", map = "",
+  edges = {
+    {node = "回族小镇", path = "walk huijiang"}, --
+    {node = "长安金光门", path = "walk changan"}, -- 
+    {node = "秦州黄河渡口", path = "walk huanghe"}, --
+  }
+}
+
+walk_node["秦州黄河渡口"] = {region = "秦州黄河渡口", map = "",
+  edges = {
+    {node = "秦州", path = "walk qinzhou"}, -- 
+  }
+}
+
+walk_node["灵鹫宫"] = {region = "灵鹫宫", map = "",
+  edges = {
+    {node = "回族小镇", path = "walk huijiang"}, --
+  }
+}
+
+walk_node["回族小镇"] = {region = "回族小镇", map = "",
+  edges = {
+    {node = "灵州", path = "walk lingzhou"}, -- 
+    {node = "灵鹫宫", path = "walk lingjiu"}, --
+    {node = "秦州", path = "walk qinzhou"}, --
+    {node = "长安金光门", path = "walk changan"}, --
+  }
+}
+
+walk_node["灵州"] = {region = "灵州", map = "",
+  edges = {
+    {node = "回族小镇", path = "walk huijiang"}, --
+    {node = "灵州黄河渡口", path = "walk mingjiao"}, -- 
+  }
+}
+
+walk_node["灵州黄河渡口"] = {region = "灵州黄河渡口", map = "",
+  edges = {
+    {node = "灵州", path = "walk lingzhou"}, --
+  }
+}
+
+walk_node["扬州丐帮分舵"] = {region = "扬州丐帮分舵", map = "",
+  edges = {
+    {node = "扬州", path = "walk yangzhou"}, -- 
+  }
+}
+
+walk_node["扬州"] = {region = "扬州", map = "",
+  edges = {
+    {node = "扬州丐帮分舵", path = "walk gaibang"}, --
+    {node = "信阳", path = "walk xinyang"}, -- 
+    {node = "庐州", path = "walk luzhou"}, --
+    {node = "长江扬州西渡口", path = "walk jiankang"}, -- 这里过河可以去建康
+    {node = "往生堂", path = "walk shashou"}, --
+    {node = "徐州", path = "walk xuzhou"}, --
+    {node = "濠州府", path = "walk haozhou"}, --
+    {node = "长江扬州东渡口", path = "walk zhenjiang"}, -- 这里过河可以去镇江
+  }
+}
+
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>hub_fp</name>
+				<packageName></packageName>
+				<script>hub_fp = hub_fp or {}
+
+hub_fp["sz"] = {
+  ["沧浪亭|n,s,se,sw"] = "沧浪亭",
+  ["铁岭关|nw,s"] = "铁岭关",
+}
+
+hub_fp["mr"] = {
+  ["湖边|n"] = "姑苏慕容",
+}
+
+hub_fp["gyz"] = {
+  ["归云庄大门|enter,w"] = "归云庄大门",
+}
+
+hub_fp["wx"] = {
+  ["盛巷桥|n,se,w"] = "无锡",
+}
+
+hub_fp["zhenj"] = {
+  ["广场|e,n,s,w"] = "镇江",
+  ["京口渡|e,se,w"] = "京口渡",
+}
+
+hub_fp["jx"] = {
+  ["嘉兴城|e,n,nw,s,w"] = "嘉兴城",
+  ["陆家庄|enter,n"] = "陆家庄",
+}
+
+hub_fp["jk"] = {
+  ["朝阳门|e,n,nw,s,w"] = "建康府朝阳门",
+  ["正阳门|e,n,s,w"] = "建康府正阳门",
+  ["清凉门|e,nw,s,se,wu"] = "建康府清凉门",
+  ["神策门|e,n,s,w"] = "建康府神策门",
+  ["燕子矶|e,w"] = "燕子矶",
+}
+
+hub_fp["yx"] = {
+  ["义兴县城|e,enter,n,s,w"] = "义兴县",
+}
+
+hub_fp["hzf"] = {
+  ["广场|e,n,s,w"] = "湖州府",
+}
+
+hub_fp["hz"] = {
+  ["大理寺|e,n,se,w"] = "大理寺",
+  ["钱塘北渡口|e"] = "钱塘北渡口",
+  ["钱塘西渡口|wu"] = "钱塘西渡口",
+  ["钱塘东渡口|e,sw"] = "临安府钱塘东渡口",
+}
+
+hub_fp["tgz"] = {
+  ["铜官镇|e,n,ne,nw,su,sw"] = "铜官山",
+}
+
+hub_fp["huangshan"] = {
+  ["歙县|ne,nw,s"] = "黄山",
+  ["祁门县|ne,swu,w"] = "祁门县",
+}
+
+hub_fp["meizhuang"] = {
+  ["孤山梅庄|ne"] = "梅庄",
+}
+
+hub_fp["ywm"] = {
+  ["岳飞墓|nw,s"] = "岳王墓",
+}
+
+hub_fp["jiangz"] = {
+  ["中央广场|n,ne,s,sw"] = "江州",
+}
+
+hub_fp["fck"] = {
+  ["镇中心|e,n,s,w"] = "富池口",
+  ["富池口古渡|nw,se,sw"] = "富池口古渡",
+}
+
+hub_fp["jiangxia"] = {
+  ["府前街|e,n,s,w"] = "江夏",
+}
+
+hub_fp["yy"] = {
+  ["城中心|e,n,s,w"] = "岳阳",
+  ["陵矶|e,w"] = "岳阳长江渡口",
+}
+
+hub_fp["nc"] = {
+  ["城中心|e,n,s,w"] = "南昌",
+}
+
+hub_fp["csha"] = {
+  ["走马楼|e,ne,nw,s,w"] = "长沙",
+  ["袁水北岸|ne,nw,sw"] = "袁水北岸",
+}
+
+hub_fp["hshan"] = {
+  ["山门|eu,nu,s"] = "衡山",
+}
+
+hub_fp["hengz"] = {
+  ["青草桥头|e,n,ne,nw,s,w"] = "衡州",
+  ["湘江东岸|eu"] = "衡州湘江东岸",
+  ["湘江渡口|ne,nw"] = "五岭湘江渡口",
+}
+
+hub_fp["yzhou"] = {
+  ["鼓楼|e,n,s,w"] = "袁州",
+}
+
+hub_fp["miaojiang"] = {
+  ["苗岭边缘|ed,enter,n"] = "苗岭边缘",
+}
+
+hub_fp["lhs"] = {
+  ["正一观|e,enter,su,w"] = "龙虎山",
+}
+
+hub_fp["lling"] = {
+  ["嘉和门|e,ne,nw,sw,w"] = "庐陵",
+  ["山间道|ed,wu"] = "越城岭山口",
+}
+
+hub_fp["sr"] = {
+  ["中央广场|e,n,nw,s,sw"] = "上饶县",
+  ["铅山县|ne,nw,s,sw"] = "铅山县",
+}
+
+hub_fp["xianxia"] = {
+  ["关顶|nd,sd"] = "仙霞岭",
+}
+
+hub_fp["quz"] = {
+  ["北广场|e,n,s,w"] = "衢州府",
+  ["乌溪江南岸|eu,sw"] = "乌溪江南岸",
+  ["乌溪江边|n"] = "衢州府乌溪江北岸",
+}
+
+hub_fp["sx"] = {
+  ["八字桥|e,n,s"] = "绍兴府",
+  ["金华府|e,n,s,sw,w"] = "金华府",
+}
+
+hub_fp["tt"] = {
+  ["市口|e,n,w"] = "天台县",
+  ["弥勒殿|out,s"] = "天台山",
+}
+
+hub_fp["mz"] = {
+  ["鼓楼|e,n,s,w"] = "明州",
+}
+
+hub_fp["tzf"] = {
+  ["灵江西岸|nw"] = "台州府灵江西岸",
+  ["灵江南岸|sw"] = "台州府灵江南岸",
+}
+
+hub_fp["yds"] = {
+  ["碧霄峰|eu,ne,sd,wd"] = "雁荡山",
+}
+
+hub_fp["lqz"] = {
+  ["水井|e,n,s,w"] = "龙泉镇",
+}
+
+hub_fp["chuz"] = {
+  ["中央广场|e,n,ne,s,se,sw,w"] = "处州府",
+  ["瓯江北岸|e,n"] = "龙泉镇瓯江北岸",
+  ["瓯江南岸|su,w"] = "处州府瓯江南岸",
+}
+
+hub_fp["wenz"] = {
+  ["集市|e,n,s,w"] = "温州",
+  ["瓯江南岸|s,w"] = "处州府瓯江南岸-温州",
+  ["瓯江北岸|ne,nw"] = "温州瓯江北岸",
+}
+
+hub_fp["fz"] = {
+  ["城中心|e,n,s,w"] = "闽中",
+  ["中心广场|e,n,s,w"] = "莆田",
+}
+
+hub_fp["jn"] = {
+  ["南街头|e,n,s,w"] = "建宁",
+  ["西镇|s"] = "西镇渡口",
+  ["北津|n"] = "北津",
+}
+
+hub_fp["qz"] = {
+  ["城中心|e,n,ne,s,w"] = "泉州",
+  ["晋江东岸|e"] = "晋江东岸",
+  ["山门|n,sd"] = "南少林",
+}
+
+hub_fp["cz"] = {
+  ["中央广场|e,n,s,w"] = "潮州",
+  ["晋江西岸|wu"] = "晋江西岸",
+}
+
+hub_fp["wuyi"] = {
+  ["九龙窠|ne,nw,su,sw,u"] = "武夷山",
+}
+
+hub_fp["guangzhou"] = {
+  ["市口|e,n,s,w"] = "广州府",
+  ["珠江北岸|e,nw"] = "珠江北岸",
+  ["老林尽头|n,se,w"] = "老林",
+}
+
+hub_fp["unknown"] = {
+  ["山间小路|ne,w"] = "圣峰嶂西部",
+  ["山间小路|ne,nw"] = "圣峰嶂",
+}</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>walk_capture</name>
+				<packageName></packageName>
+				<script>-- walk_capture.lua
+walk_capture = walk_capture or {}
+
+walk_capture.active  = walk_capture.active or false
+walk_capture.hubCN   = walk_capture.hubCN   or nil   -- 表头里的“扬州”
+walk_capture.rows    = walk_capture.rows    or {}    -- { {regionCN, spotCN, py}, ... }
+
+local function trim(s)
+  s = tostring(s or "")
+  return (s:gsub("^%s+", ""):gsub("%s+$", ""))
+end
+
+local function wprint(msg)
+  if cecho then
+    cecho("\n&lt;cyan&gt;[WalkCap]&lt;reset&gt; " .. msg .. "\n")
+  else
+    print("[WalkCap] " .. msg)
+  end
+end
+
+function walk_capture.reset()
+  walk_capture.active = false
+  walk_capture.hubCN  = nil
+  walk_capture.rows   = {}
+end
+
+-- 解析一行“数据行”
+-- 例：│建康府  ◇ 长江渡口                   │jiankang                            │
+function walk_capture.ingestRowLine(line)
+  -- 用竖线分列（注意这里是全角/制表框的 │ ）
+  local a, b = line:match("^│(.-)│(.-)│%s*$")
+  if not a or not b then return end
+
+  a = trim(a)
+  b = trim(b)
+
+  -- 拼音列一般就是 [a-z]，但为了稳妥：取第一个连续字母/数字/下划线
+  local py = b:match("([%w_]+)")
+  if not py then return end
+  py = trim(py):lower()
+
+  -- 左列： "建康府  ◇ 长江渡口"
+  local regionCN, spotCN = a:match("^(.-)%s*◇%s*(.-)$")
+  regionCN = trim(regionCN or a)
+  spotCN   = trim(spotCN or "")
+
+  table.insert(walk_capture.rows, {
+    regionCN = regionCN,
+    spotCN   = spotCN,
+    py       = py,
+  })
+end
+
+-- 输出：1) region_key_map 增量片段；2) edges 片段；3) 同时给出“落点信息”
+function walk_capture.finishAndPrint()
+  local hub = walk_capture.hubCN or "(未知hub)"
+  local rows = walk_capture.rows or {}
+
+  wprint(string.format("采集完成：hub=%s，目的地=%d 条", hub, #rows))
+  if #rows == 0 then
+    walk_capture.reset()
+    return
+  end
+
+  -- 1) region_key_map 增量（中文 -&gt; 拼音key）
+  wprint("===== 建议追加到 region_key_map 的片段（中文 -&gt; 拼音） =====")
+  if echo then echo("\n-- from walk list @ " .. hub .. "\n") end
+  if echo then echo("region_key_map = region_key_map or {}\n") end
+
+  -- 去重：同一个中文只输出一次
+  local seenCN = {}
+  for _, r in ipairs(rows) do
+    if r.regionCN ~= "" and r.py ~= "" and not seenCN[r.regionCN] then
+      seenCN[r.regionCN] = true
+      if echo then
+        echo(string.format('region_key_map["%s"] = "%s"\n', r.regionCN, r.py))
+      else
+        print(string.format('region_key_map["%s"] = "%s"', r.regionCN, r.py))
+      end
+    end
+  end
+
+  -- 2) edges 片段（给你手工贴进 walk_node["某hub"].edges）
+  -- 注意：这里“node”我先用 regionCN（目的地区域名），你也可以后续改成你自己的 nodeKey
+  wprint("===== edges 片段（可贴到 walk_node[\"&lt;你的hub节点key&gt;\"].edges） =====")
+  if echo then echo("\nedges = {\n") end
+  for _, r in ipairs(rows) do
+    local nodeName = r.regionCN
+    local cmd = "walk " .. r.py
+    if echo then
+      echo(string.format('  {node = "%s", path = "%s"}, -- ◇ %s\n', nodeName, cmd, r.spotCN))
+    else
+      print(string.format('{node="%s", path="%s"} -- ◇ %s', nodeName, cmd, r.spotCN))
+    end
+  end
+  if echo then echo("}\n") end
+
+  -- 3) 额外信息：落点（spotCN）
+  wprint("（备注）每条目的的落点房间：用 r.spotCN 可做 hub_fp/到达判定/自动定位。")
+
+  walk_capture.reset()
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>华北地区</name>
+				<packageName></packageName>
+				<script>walk_node = walk_node or {}
+
+walk_node["滹沱河北岸"] = {region = "滹沱河北岸", map = "",
+  edges = {
+    {node = "代州", path = "walk daizhou"}, --
+    {node = "滹沱河南岸", path = "ride"}, --
+    
+  }
+}
+
+walk_node["滹沱河南岸"] = {region = "滹沱河南岸", map = "",
+  edges = {
+    {node = "晋阳", path = "walk jinyang"}, --
+    {node = "滹沱河北岸", path = "ride"}, --
+  }
+}
+
+
+walk_node["洋河北渡口"] = {region = "洋河北渡口", map = "",
+  edges = {
+    {node = "张家口", path = "walk zhangjiakou"}, --
+    {node = "洋河南渡口", path = "ride"}, --
+  }
+}
+
+walk_node["洋河南渡口"] = {region = "洋河南渡口", map = "",
+  edges = {
+    {node = "大同", path = "walk datong"}, --
+    {node = "洋河北渡口", path = "ride"}, --
+  }
+}
+
+walk_node["济源"] = {region = "济源", map = "",
+  edges = {
+    {node = "晋州", path = "walk jinzhou"}, --
+    {node = "濮阳", path = "walk puyang"}, --
+    {node = "邯郸", path = "walk handan"}, --
+    {node = "铜雀台", path = "walk tongquetai"}, --
+    {node = "济源渡", path = "sd"}, --
+  }
+}
+
+walk_node["济源渡"] = {region = "济源渡", map = "",
+  edges = {
+    {node = "济源", path = "nu"},
+    {node = "洛阳黄河渡口", path = "ask shao gong about huanghe;enter"}, --
+  }
+}
+
+walk_node["风陵渡"] = {region = "风陵渡", map = "",
+  edges = {
+    {node = "晋州", path = "walk jinzhou"}, --
+  }
+}
+
+walk_node["晋州"] = {region = "晋州", map = "",
+  edges = {
+    {node = "晋阳", path = "walk jinyang"}, --
+    {node = "济源", path = "walk jiyuan"}, -- 
+    {node = "风陵渡", path = "walk fenglingdu"}, --
+  }
+}
+
+walk_node["晋阳"] = {region = "晋阳", map = "",
+  edges = {
+    {node = "滹沱河南岸", path = "walk daizhou"}, -- 这里可以去代州
+    {node = "日月神教", path = "walk riyue"}, --
+    {node = "晋州", path = "walk jinzhou"}, --
+    {node = "正定镇", path = "walk zhengding"}, -- 
+  }
+}
+
+walk_node["正定镇"] = {region = "正定镇", map = "",
+  edges = {
+    {node = "保州", path = "walk baozhou"},
+    {node = "日月神教", path = "walk riyue"}, -- 
+    {node = "晋阳", path = "walk jinyang"}, -- 
+    {node = "邯郸", path = "walk handan"}, -- 
+    {node = "铜雀台", path = "walk tongquetai"}, --
+  }
+}
+
+walk_node["保州"] = {region = "保州", map = "",
+  edges = {
+    {node = "代州", path = "walk daizhou"}, --
+    {node = "北京南永安门", path = "walk beijing"}, --
+    {node = "塘沽口", path = "walk tanggu"}, --
+    {node = "正定镇", path = "walk zhengding"}, --
+    {node = "沧州", path = "walk cangzhou"}, --
+    {node = "邯郸", path = "walk handan"}, --
+    {node = "铜雀台", path = "walk tongquetai"}, --
+  }
+}
+
+walk_node["沧州"] = {region = "沧州", map = "",
+  edges = {
+    {node = "保州", path = "walk baozhou"}, --
+    {node = "塘沽口", path = "walk tanggu"}, -- 
+    {node = "濮阳", path = "walk puyang"}, --
+    {node = "铜雀台", path = "walk tongquetai"}, --
+  }
+}
+
+walk_node["塘沽口"] = {region = "塘沽口", map = "",
+  edges = {
+    {node = "保州", path = "walk baozhou"}, -- 
+    {node = "北京南永安门", path = "walk beijing"}, --
+    {node = "沧州", path = "walk cangzhou"}, -- 
+    {node = "铜雀台", path = "walk tongquetai"}, --
+  }
+}
+
+walk_node["北京南永安门"] = {region = "北京南永安门", map = "",
+  edges = {
+    {node = "保州", path = "walk baozhou"}, --
+    {node = "北京北安定门", path = "walk anding"}, --
+    {node = "北京广安门", path = "walk guangan"}, -- 
+    {node = "北京德胜门", path = "walk desheng"}, --
+    {node = "塘沽口", path = "walk tanggu"}, --
+  }
+}
+
+walk_node["北京德胜门"] = {region = "北京德胜门", map = "",
+  edges = {
+    {node = "北京北安定门", path = "walk anding"}, --
+    {node = "北京南永安门", path = "walk yongan"}, -- 
+    {node = "北京广安门", path = "walk guangan"}, -- 
+    {node = "张家口", path = "walk zhangjiakou"}, -- 
+  }
+}
+
+
+walk_node["北京广安门"] = {region = "北京广安门", map = "",
+  edges = {
+    {node = "北京北安定门", path = "walk anding"}, --
+    {node = "北京南永安门", path = "walk yongan"}, --
+    {node = "北京德胜门", path = "walk desheng"}, --
+  }
+}
+
+
+
+walk_node["张家口"] = {region = "张家口", map = "",
+  edges = {
+    {node = "代州", path = "walk daizhou"}, --
+    {node = "北京德胜门", path = "walk beijing"}, --
+    {node = "洋河北渡口", path = "walk datong"}, -- to 大同
+    {node = "蒙古", path = "walk menggu"}, -- 
+  }
+}
+
+walk_node["蒙古"] = {region = "蒙古", map = "",
+  edges = {
+    {node = "张家口", path = "walk zhangjiakou"}, --
+  }
+}
+
+
+
+walk_node["大同"] = {region = "大同", map = "",
+  edges = {
+    {node = "代州", path = "walk daizhou"}, --
+    {node = "洋河南渡口", path = "walk zhangjiakou"}, --
+  }
+}
+
+walk_node["北京北安定门"] = {region = "北京北安定门", map = "",
+  edges = {
+    {node = "关外", path = "walk guanwai"}, -- 
+    {node = "北京南永安门", path = "walk yongan"}, --
+    {node = "北京广安门", path = "walk guangan"}, --
+    {node = "北京德胜门", path = "walk desheng"}, --
+  }
+}
+
+walk_node["关外"] = {region = "关外", map = "",
+  edges = {
+    {node = "北京北安定门", path = "walk beijing"}, --
+  }
+}
+
+
+
+walk_node["代州"] = {region = "代州", map = "",
+  edges = {
+    {node = "保州", path = "walk baozhou"}, --
+    {node = "大同", path = "walk datong"}, -- 
+    {node = "张家口", path = "walk zhangjiakou"}, --
+    {node = "滹沱河北岸", path = "walk jinyang"}, -- to 晋阳
+  }
+}
+
+
+walk_node["日月神教"] = {region = "日月神教", map = "",
+  edges = {
+    {node = "晋阳", path = "walk jinyang"}, --
+    {node = "正定镇", path = "walk zhengding"}, --
+  }
+}
+
+
+
+walk_node["濮阳黄河渡口"] = {region = "濮阳黄河渡口", map = "",
+  edges = {
+    {node = "濮阳", path = "walk puyang"},
+    {node = "曲阜黄河渡口", path = "ask shao gong about huanghe;enter"},
+  }
+}
+
+walk_node["濮阳"] = {region = "濮阳", map = "",
+  edges = {
+    {node = "濮阳黄河渡口", path = "walk qufu"}, -- to 曲阜
+    {node = "沧州", path = "walk cangzhou"}, --
+    {node = "济源", path = "walk jiyuan"}, --
+    {node = "邯郸", path = "walk handan"}, --
+    {node = "铜雀台", path = "walk tongquetai"}, --
+  }
+}
+--
+
+walk_node["邯郸"] = {region = "邯郸", map = "",
+  edges = {
+    {node = "保州", path = "walk baozhou"}, -- 
+    {node = "正定镇", path = "walk zhengding"}, --
+    {node = "济源", path = "walk jiyuan"}, --
+    {node = "濮阳", path = "walk puyang"}, --
+    {node = "铜雀台", path = "walk tongquetai"}, --
+  }
+}
+
+walk_node["铜雀台"] = {region = "铜雀台", map = "",
+  edges = {
+    {node = "保州", path = "walk baozhou"},
+    {node = "沧州", path = "walk cangzhou"},
+    {node = "邯郸", path = "walk handan"},
+    {node = "济源", path = "walk jiyuan"},
+    {node = "濮阳", path = "walk puyang"},
+    {node = "塘沽口", path = "walk tanggu"},
+    {node = "正定镇", path = "walk zhengding"},
+  }
+}</script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>跨城路由</name>
+			<packageName></packageName>
+			<script></script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>travel - 跨区规划</name>
+				<packageName></packageName>
+				<script>-- ======================================================
+-- travel.lua (BASELINE - 可覆盖版)  [PATCHED]
+-- 只负责：跨 region 规划（walk_node 图上 BFS）+ 分段输出
+-- 不负责：send / GMCP / 成功判定 / 自动 mload / fp 反查 / 自动定位当前region
+--
+-- 依赖：
+--   - walk_node: 你的跨城 hub 图（nodeKey -&gt; {region,map,edges...}）
+--   - region_key_map:  中文名 -&gt; 拼音key   （例如 ["苏州"]="suzhou"）
+--   - region_name_by_key: 拼音key -&gt; 中文名（由 region_key_map 反向生成）
+--
+-- 用法（基线）：
+--   set from suzhou      -- 或 set from 苏州
+--   travel chaozhou      -- 或 travel 潮州
+--   travel.next()        -- 外部在“上一段完成”时调用，拿到下一段 cmd
+--   travel.show()        -- 查看剩余 hops
+--   travel.reset()       -- 清空计划
+-- ======================================================
+
+travel = travel or {}
+
+travel.planCache     = travel.planCache or nil
+travel.fromRegionKey = travel.fromRegionKey or nil  -- 拼音key（suzhou）
+travel.fromRegionCN  = travel.fromRegionCN  or nil  -- 中文名（苏州）
+
+-------------------------------------------------------
+-- 打印
+-------------------------------------------------------
+local function tprint(msg)
+  if cecho then
+    cecho("\n&lt;orange&gt;[Travel]&lt;reset&gt; " .. msg .. "\n")
+  else
+    print("[Travel] " .. msg)
+  end
+end
+
+-------------------------------------------------------
+-- 反向表：regionKey -&gt; 中文名（如未建立则尝试建立）
+-------------------------------------------------------
+local function ensureRegionReverseIndex()
+  region_name_by_key = region_name_by_key or {}
+  if region_key_map and type(region_key_map) == "table" then
+    for cn, key in pairs(region_key_map) do
+      if type(cn) == "string" and type(key) == "string" then
+        region_name_by_key[key] = region_name_by_key[key] or cn
+      end
+    end
+  end
+end
+
+-------------------------------------------------------
+-- 解析 region 输入（支持中文 / 拼音key）
+-- 返回：拼音key（例如 "suzhou"）
+-------------------------------------------------------
+function resolveRegionKey(x)
+  ensureRegionReverseIndex()
+
+  local raw = tostring(x or ""):gsub("^%s+", ""):gsub("%s+$", "")
+  if raw == "" then return nil end
+
+  -- 1) 直接输入拼音key（大小写都行）
+  local low = raw:lower()
+  if region_name_by_key and region_name_by_key[low] then
+    return low
+  end
+
+  -- 2) 输入中文（严格按原文查）
+  if region_key_map and region_key_map[raw] then
+    return region_key_map[raw]
+  end
+
+  return nil
+end
+
+-------------------------------------------------------
+-- 工具：把 key 转中文名（用于与 walk_node[*].region 对齐）
+-------------------------------------------------------
+local function keyToCN(key)
+  ensureRegionReverseIndex()
+  if not key then return nil end
+  return region_name_by_key and region_name_by_key[key] or nil
+end
+
+-------------------------------------------------------
+-- 工具：从“中文region名”找到对应的 hub nodeKey 列表
+-- 规则：walk_node[nodeKey].region == &lt;中文region名&gt; 时视为该 region 的 hub
+-------------------------------------------------------
+local function hubsByRegionCN(regionCN)
+  local list = {}
+  if not regionCN or regionCN == "" then return list end
+
+  for nodeKey, node in pairs(walk_node or {}) do
+    if type(node) == "table" and node.region == regionCN then
+      table.insert(list, nodeKey)
+    end
+  end
+
+  table.sort(list)
+  return list
+end
+
+-------------------------------------------------------
+-- 工具：在 walk_node 图上 BFS（节点是 hub nodeKey）
+-- 输出：nodeKey 路径（含起点终点）
+-------------------------------------------------------
+local function bfsNodePath(startNodeKey, targetNodeKey)
+  if startNodeKey == targetNodeKey then
+    return { startNodeKey }
+  end
+  if not (walk_node and walk_node[startNodeKey]) then return nil end
+  if not (walk_node and walk_node[targetNodeKey]) then return nil end
+
+  local q = { startNodeKey }
+  local head = 1
+  local visited = { [startNodeKey] = true }
+  local prev = {} -- nodeKey -&gt; {from=nodeKey, edgeIndex=i}
+
+  while head &lt;= #q do
+    local cur = q[head]; head = head + 1
+    if cur == targetNodeKey then break end
+
+    local curNode = walk_node[cur]
+    local edges = curNode and curNode.edges or {}
+    for i, e in ipairs(edges) do
+      local nxt = e and e.node
+      if nxt and not visited[nxt] and walk_node[nxt] then
+        visited[nxt] = true
+        prev[nxt] = { from = cur, edgeIndex = i }
+        table.insert(q, nxt)
+      end
+    end
+  end
+
+  if not visited[targetNodeKey] then return nil end
+
+  local path = {}
+  local k = targetNodeKey
+  while k do
+    table.insert(path, 1, k)
+    if k == startNodeKey then break end
+    local p = prev[k]
+    if not p then return nil end
+    k = p.from
+  end
+  return path
+end
+
+-------------------------------------------------------
+-- 工具：从 nodeKey 路径生成 hops（每段含 cmd=edge.path）
+-------------------------------------------------------
+local function buildHopsFromNodePath(nodePath)
+  local hops = {}
+  for i = 1, (#nodePath - 1) do
+    local a = nodePath[i]
+    local b = nodePath[i + 1]
+    local aNode = walk_node[a]
+    local cmd = nil
+
+    if aNode and aNode.edges then
+      for _, e in ipairs(aNode.edges) do
+        if e and e.node == b then
+          cmd = e.path
+          break
+        end
+      end
+    end
+
+    table.insert(hops, {
+      fromNode = a,
+      toNode   = b,
+      cmd      = cmd or "",
+    })
+  end
+  return hops
+end
+
+-------------------------------------------------------
+-- 内部：统一把目的地显示名算出来（永不 nil）
+-------------------------------------------------------
+local function destDisplay(plan)
+  local toKey = tostring((plan and plan.toKey) or "?")
+  local toCN  = (plan and plan.toCN) or keyToCN(toKey)
+  return tostring(toCN or toKey)
+end
+
+-------------------------------------------------------
+-- 规划：fromKey -&gt; toKey（key 是拼音）
+-- 关键点：找 hub 时用中文（walk_node.region 是中文）
+-------------------------------------------------------
+function travel.plan(fromRegionKey, toRegionKey)
+  ensureRegionReverseIndex()
+
+  local fromKey = fromRegionKey or travel.fromRegionKey
+  local toKey   = toRegionKey
+
+  fromKey = tostring(fromKey or ""):lower()
+  toKey   = tostring(toKey or ""):lower()
+
+  if fromKey == "" then
+    tprint("请先 set from &lt;region&gt;（中文或拼音都行），例如：set from suzhou / set from 苏州")
+    return nil
+  end
+  if toKey == "" then
+    tprint("用法：travel &lt;region&gt;（中文或拼音都行），例如：travel chaozhou / travel 潮州")
+    return nil
+  end
+  if not walk_node then
+    tprint("walk_node 不存在，无法规划。")
+    return nil
+  end
+
+  local fromCN = keyToCN(fromKey) or fromKey
+  local toCN   = keyToCN(toKey)   or toKey
+
+  local fromHubs = hubsByRegionCN(fromCN)
+  local toHubs   = hubsByRegionCN(toCN)
+
+  if #fromHubs == 0 then
+    tprint("fromRegion 没有 hub：region=" .. tostring(fromCN) .. "（key=" .. tostring(fromKey) .. "）")
+    return nil
+  end
+  if #toHubs == 0 then
+    tprint("toRegion 没有 hub：region=" .. tostring(toCN) .. "（key=" .. tostring(toKey) .. "）")
+    return nil
+  end
+
+  -- 基线策略：各取第一个 hub
+  local startHub  = fromHubs[1]
+  local targetHub = toHubs[1]
+
+  local nodePath = bfsNodePath(startHub, targetHub)
+  if not nodePath then
+    tprint(string.format("跨城图上找不到路径：%s(%s) -&gt; %s(%s)",
+      tostring(fromCN), tostring(startHub), tostring(toCN), tostring(targetHub)
+    ))
+    return nil
+  end
+
+  local hops = buildHopsFromNodePath(nodePath)
+
+  local plan = {
+    fromKey    = fromKey,
+    fromCN     = fromCN,
+    toKey      = toKey,
+    toCN       = toCN,
+    startHub   = startHub,
+    targetHub  = targetHub,
+    nodePath   = nodePath,
+    hops       = hops,
+    idx        = 1, -- 下一段 hop 索引
+  }
+
+  travel.planCache = plan
+  return plan
+end
+
+-------------------------------------------------------
+-- start：规划并展示
+-------------------------------------------------------
+function travel.start(toRegionKey, fromRegionKey)
+  local plan = travel.plan(fromRegionKey, toRegionKey)
+  if not plan then return nil end
+
+  tprint(string.format(
+    "已规划：%s(%s) -&gt; %s(%s)（hub: %s -&gt; %s），共 %d 段。",
+    tostring(plan.fromKey), tostring(plan.fromCN),
+    tostring(plan.toKey),   tostring(plan.toCN),
+    tostring(plan.startHub), tostring(plan.targetHub),
+    #plan.hops
+  ))
+
+  travel.show()
+  tprint("外部执行：每段完成后调用 travel.next() 取下一段 cmd，交给 walker/trigger 去跑。")
+  return plan
+end
+
+-------------------------------------------------------
+-- next：返回下一段命令（字符串），并前进 idx
+-------------------------------------------------------
+function travel.next()
+  local plan = travel.planCache
+  if not plan then
+    tprint("没有行程计划。先 travel &lt;目标&gt;")
+    return nil
+  end
+
+  -- 行程完成：idx 已经越过最后一段
+  if plan.idx == (#plan.hops + 1) then
+    tprint(string.format("已到达 %s，行程完成。", destDisplay(plan)))
+    travel.reset()
+    return nil
+  end
+
+  local total = #plan.hops
+  local idx   = plan.idx
+
+  if idx &gt; total then
+    tprint("行程已完成。")
+    return nil
+  end
+
+  local hop = plan.hops[idx] or {}
+  plan.idx = idx + 1
+
+  local cmd  = hop.cmd
+  local left = total - idx
+
+  if not cmd or cmd == "" then
+    tprint(string.format(
+      "第 %d/%d 段：%s -&gt; %s（无 cmd，请检查 walk_node）",
+      idx, total,
+      tostring(hop.fromNode),
+      tostring(hop.toNode)
+    ))
+    return ""
+  end
+
+  tprint(string.format(
+    "执行第 %d/%d 段：%s -&gt; %s，cmd = %s（剩余 %d 段）",
+    idx, total,
+    tostring(hop.fromNode),
+    tostring(hop.toNode),
+    tostring(cmd),
+    left
+  ))
+
+  -- 如果这是最后一段，提前提示完成
+  if idx == total then
+    tprint(string.format(
+      "这是最后一段（%d/%d），执行完即到达 %s。",
+      idx, total, destDisplay(plan)
+    ))
+  end
+
+  return cmd
+end
+
+-------------------------------------------------------
+-- show：打印剩余段
+-------------------------------------------------------
+function travel.show()
+  local plan = travel.planCache
+  if not plan then
+    tprint("没有行程计划。")
+    return
+  end
+
+  tprint("---- 行程 hops（未完成部分）----")
+  for i = plan.idx, #plan.hops do
+    local h = plan.hops[i]
+    local cmd = (h.cmd and h.cmd ~= "") and h.cmd or "(NO_CMD)"
+    tprint(string.format("  [%d] %s -&gt; %s : %s", i, h.fromNode, h.toNode, cmd))
+  end
+  if plan.idx &gt; #plan.hops then
+    tprint("  (none) 已全部完成")
+  end
+end
+
+function travel.moves(n)
+  n = tonumber(n)
+  if not n or n &lt;= 0 then
+    tprint("用法：moves &lt;数量&gt;   例如：moves 3")
+    return
+  end
+
+  local plan = travel.planCache
+  if not plan then
+    tprint("没有行程计划。")
+    return
+  end
+
+  tprint(string.format("连续执行 %d 段：", n))
+
+  for i = 1, n do
+    local cmd = travel.next()
+    if not cmd then return end
+    if cmd == "" then return end
+
+    if not travel.exec(cmd) then
+      return
+    end
+  end
+end
+
+-- 统一执行一条命令：trim + 明确回显 + 捕获 send 异常
+function travel.exec(cmd)
+  cmd = tostring(cmd or "")
+  cmd = cmd:gsub("\r", ""):gsub("\n", "")
+  cmd = cmd:match("^%s*(.-)%s*$") or ""
+
+  if cmd == "" then
+    tprint("exec: cmd 为空，跳过")
+    return false
+  end
+
+  tprint("SEND &gt;&gt; " .. cmd)
+
+  local ok, err = pcall(function()
+    send(cmd)
+  end)
+
+  if not ok then
+    tprint("&lt;red&gt;send 出错: " .. tostring(err) .. "&lt;/red&gt;")
+    return false
+  end
+
+  return true
+end
+
+-- 单步执行一段（给 alias: move 用）
+function travel.move()
+  return travel.moves(1)
+end
+
+-------------------------------------------------------
+-- reset：清空
+-------------------------------------------------------
+function travel.reset()
+  travel.planCache = nil
+  tprint("已清空 travel 行程缓存。")
+end
+
+-------------------------------------------------------
+-- 用户接口：set from &lt;region&gt;
+-- 支持中文/拼音
+-------------------------------------------------------
+function travel.setFrom(x)
+  local key = resolveRegionKey(x)
+  if not key then
+    if cecho then
+      cecho("\n&lt;red&gt;[Travel] 未知 region: " .. tostring(x) .. "&lt;/red&gt;\n")
+    else
+      print("[Travel] 未知 region: " .. tostring(x))
+    end
+    return
+  end
+
+  travel.fromRegionKey = tostring(key):lower()
+  travel.fromRegionCN  = keyToCN(travel.fromRegionKey)
+
+  if cecho then
+    cecho(string.format("\n&lt;green&gt;[Travel] from = %s (%s)&lt;/green&gt;\n", travel.fromRegionKey, travel.fromRegionCN or "?"))
+  else
+    print(string.format("[Travel] from = %s (%s)", travel.fromRegionKey, travel.fromRegionCN or "?"))
+  end
+end
+
+-------------------------------------------------------
+-- 用户接口：travel &lt;region&gt;
+-- 只负责规划 + 打印，不自动走
+-------------------------------------------------------
+function travel.to(x)
+  local toKey = resolveRegionKey(x)
+  if not toKey then
+    if cecho then
+      cecho("\n&lt;red&gt;[Travel] 未知 region: " .. tostring(x) .. "&lt;/red&gt;\n")
+    else
+      print("[Travel] 未知 region: " .. tostring(x))
+    end
+    return
+  end
+
+  if not travel.fromRegionKey then
+    if cecho then
+      cecho("\n&lt;yellow&gt;[Travel] 请先 set from &lt;region&gt;，例如：set from suzhou / set from 苏州&lt;/yellow&gt;\n")
+    else
+      print("[Travel] 请先 set from &lt;region&gt;")
+    end
+    return
+  end
+
+  local plan = travel.start(tostring(toKey):lower(), travel.fromRegionKey)
+  if not plan then return end
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>region_key_map</name>
+				<packageName></packageName>
+				<script>-- ======================================================
+-- region_key_map.lua
+-- 中文语义区域名 &lt;-&gt; regionKey（拼音）
+-- 不依赖 mapper / nav / travel
+-- ======================================================
+region_key_map = region_key_map or {
+
+  -- 江南 / 江浙
+  ["苏州"]     = "suzhou",
+  ["姑苏慕容"] = "murong",
+  ["归云庄"]   = "guiyun",
+  ["嘉兴"]     = "jiaxing",
+  ["无锡"]     = "wuxi",
+  ["镇江"]     = "zhenjiang",
+  ["扬州"]     = "yangzhou",
+  ["义兴县"]   = "yixing",
+  ["湖州府"]   = "huzhou",
+  ["临安府"]   = "linan",
+  ["钱塘北渡口"] = "beidukou", -- 连通
+  ["钱塘西渡口"] = "xidukou",-- 连通
+  ["钱塘东渡口"] = "dongdukou",-- 连通
+
+  -- 建康 / 周边
+  ["建康府"]   = "jiankang",
+  ["建康府东"] = "jiankang_east",
+  ["建康府南"] = "jiankang_south",
+  ["建康府西"] = "jiankang_west",
+  ["建康府北"] = "jiankang_north",
+  ["长江南岸"] = "changjiang_nanan", -- 连通
+
+  -- 皖赣一带
+  ["铜官山"]   = "tongguan",
+  ["黄山"]     = "huangshan",
+  ["祁门县"]   = "qimen",
+  ["江州"]     = "jiangzhou",
+  ["南昌"]     = "nanchang",
+  ["上饶县"]   = "shangrao",
+  ["铅山县"]   = "qianshan",
+  ["富池口"]   = "fuchikou",
+  ["信阳"]     = "xinyang",
+
+  -- 湘鄂
+  ["岳阳"]     = "yueyang",
+  ["荆州府"]   = "jingzhou",
+  ["江夏"]     = "jiangxia",
+  ["长沙"]     = "changsha",
+  ["衡山"]     = "hengshan",
+  ["衡州"]     = "hengzhou",
+  ["苗疆"]     = "miaojiang",
+  ["五岭"]     = "wuling",
+  ["袁州"]     = "yuanzhou",
+
+  -- 浙东 / 浙南
+  ["衢州府"]   = "quzhou",
+  ["衢州"]     = "quzhou_city",
+  ["仙霞岭"]   = "xianxia",
+  ["龙泉镇"]   = "longquan",
+  ["处州府"]   = "chuzhou",
+  ["温州"]     = "wenzhou",
+  ["明州"]     = "mingzhou",
+  ["绍兴府"]   = "shaoxing",
+  ["金华府"]   = "jinhua",
+  ["天台县"]   = "tiantai",
+  ["天台山"]   = "tiantaishan",
+  ["台州府"]   = "taizhou",
+  ["雁荡山"]   = "yandang",
+
+  -- 闽中 / 闽北 / 闽南
+  ["闽中"]     = "minzhong",
+  ["莆田"]     = "putian",
+  ["建宁府"]   = "jianning",
+  ["西镇渡口"] = "xizhen", -- 连通
+  ["北津"] = "beijin", -- 连通
+  ["泉州"]     = "quanzhou",
+  ["晋江东岸"] = "jinjiang_east",-- 连通
+  ["南少林"]   = "nanshaolin",
+  ["武夷山"]   = "wuyi",
+
+  -- 粤东 / 粤中
+  ["潮州"]     = "chaozhou",
+  ["晋江西岸"] = "jinjiang_west",-- 连通
+  ["圣峰嶂"]   = "shengfeng",
+  ["广州府"]   = "guangzhou",
+  ["佛山"]     = "foshan",
+  ["老林"]     = "laolin",
+  
+    -- ===== 山东 / 北地 =====
+  ["泰山"]         = "taishan",
+  ["泰安"]         = "taian",
+  ["曲阜"]         = "qufu",
+  ["青州"]         = "qingzhou",
+  ["登州"]         = "dengzhou",
+  ["威海卫"]       = "weihaiwei",
+  ["徐州"]         = "xuzhou",
+  ["淮北"]         = "huaibei",
+
+  -- ===== 河南 =====
+  ["许昌"]         = "xuchang",
+  ["郑州"]         = "zhengzhou",
+  ["洛阳"]         = "luoyang",
+  ["登封"]         = "dengfeng",
+  ["少林寺"]       = "shaolinsi",
+  ["峻极宫前"]     = "junji",
+  ["麒麟村"]       = "qilincun",
+  ["卢氏县"]       = "lushi",
+  ["卢氏县南"]     = "lushinan",
+  ["伏牛山"]       = "funiushan",
+  ["伏牛派"]       = "funiupai",
+
+  -- ===== 南阳 / 白河 =====
+  ["南阳城"]       = "nanyang",
+  ["白河东岸"]     = "baihe",
+  ["商州"]         = "shangzhou",
+
+  -- ===== 湖北 =====
+  ["信阳"]         = "xinyang",
+  ["襄阳"]         = "xiangyang",
+  ["武当山"]       = "wudang",
+  ["汉口镇"]       = "hankou",
+  ["荆州府"]       = "jingzhou",
+
+  -- ===== 水路 / 渡口 =====
+  ["曲阜黄河渡口"] = "qufudu",
+  ["济源渡"] = "jiyuandu",
+  ["洛阳黄河渡口"] = "luoyangdu",
+  ["信阳长江渡口"] = "xinyangdu",
+  ["荆州长江渡口"] = "jingzhoudu",
+  ["荆州汉水西岸"] = "hanshuixi",
+  ["汉口镇汉水渡口"] = "hanshuidu",
+  ["鸡鸣渡西"]     = "jimingxi",
+  ["鸡鸣渡东"]     = "jingmingdong",
+
+  -- ===== 江淮 =====
+  ["庐州"]         = "luzhou",
+  ["濠州府"]       = "haozhou",
+
+  -- ===== 扬州 =====
+  ["扬州"]         = "yangzhou",
+  ["扬州丐帮分舵"] = "gaibang",
+  ["长江扬州西渡口"] = "yangzhouxd",
+  ["长江扬州东渡口"] = "yangzhoudd",
+
+  -- ===== 帮派 / 特殊 =====
+  ["往生堂"]       = "shashou",
+
+  -- ===== 关中 =====
+  ["长安通化门"]   = "tonghuamen",
+  ["长安明德门"]   = "mingdemen",
+  ["长安金光门"]   = "jinguangmen",
+
+  ["华山派"]       = "huashan",
+  ["华山村"]       = "huashancun",
+  ["全真派"]       = "quanzhen",
+  ["古墓派"]       = "gumu",
+
+  -- ===== 汉中 =====
+  ["汉中"]         = "hanzhong",
+  ["金牛县渡口"]   = "jiniudu",
+  ["汉水北渡"]     = "hanshuibd",
+
+  -- ===== 西北 =====
+  ["秦州"]         = "qinzhou",
+  ["秦州黄河渡口"] = "huanghe-qz",
+  ["回族小镇"]     = "huijiang",
+  ["灵鹫宫"]       = "lingjiu",
+  ["灵州"]         = "lingzhou",
+  ["灵州黄河渡口"] = "huanghe-lz",
+  ["济源"]       = "jiyuan",
+  ["风陵渡"]     = "fenglingdu",
+  ["晋州"]       = "jinzhou",
+  ["晋阳"]       = "jinyang",
+  ["正定镇"]     = "zhengding",
+  ["保州"]       = "baozhou",
+  ["沧州"]       = "cangzhou",
+  ["塘沽口"]     = "tanggu",
+
+  ["代州"]       = "daizhou",
+  ["大同"]       = "datong",
+  ["张家口"]     = "zjk",
+  ["蒙古"]       = "menggu",
+
+  ["关外"]       = "guanwai",
+
+  ["濮阳"]       = "puyang",
+  ["濮阳黄河渡口"] = "puyangdu",
+  ["邯郸"]       = "handan",
+  ["铜雀台"]     = "tongquetai",
+
+  ["日月神教"]   = "riyueshenjiao",
+
+  -- ===== 河流 / 渡口 / ride 点 =====
+  ["滹沱河北岸"] = "hthebei",
+  ["滹沱河南岸"] = "hthenan",
+
+  ["洋河北渡口"] = "yhbei",
+  ["洋河南渡口"] = "yhenan", -- 你若更想用 “yanghenandukou” 也行（见下面说明）
+
+  -- ===== 北京城门（建议保持唯一）=====
+  ["北京南永安门"] = "yonganmen",
+  ["北京北安定门"] = "andingmen",
+  ["北京德胜门"]   = "deshengmen",
+  ["北京广安门"]   = "guanganmen",  
+}
+
+-- 反向表：regionKey -&gt; 中文名
+region_name_by_key = region_name_by_key or {}
+for cn, key in pairs(region_key_map) do
+  region_name_by_key[key] = cn
+end
+
+-- ------------------------------------------------------
+-- 工具函数：解析 region 输入
+-- 支持：
+--   resolveRegionKey("苏州")
+--   resolveRegionKey("suzhou")
+-- ------------------------------------------------------
+function resolveRegionKey(x)
+  local raw = tostring(x or ""):gsub("^%s+", ""):gsub("%s+$", "")
+  if raw == "" then return nil end
+
+  -- 1) 直接输入拼音 key（大小写都行）
+  local low = raw:lower()
+  if region_name_by_key and region_name_by_key[low] then
+    return low
+  end
+
+  -- 2) 输入中文（不要 lower 再查，直接按原文查）
+  if region_key_map and region_key_map[raw] then
+    return region_key_map[raw]
+  end
+
+  return nil
+end
+
+</script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
 	</ScriptPackage>
 	<KeyPackage />
 	<VariablePackage>
@@ -56419,36 +59411,6 @@ add("小广场", {
 				<keyType>4</keyType>
 				<value>城南大街</value>
 				<valueType>4</valueType>
-			</Variable>
-		</VariableGroup>
-		<VariableGroup>
-			<name>stat</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-			<Variable>
-				<name>water</name>
-				<keyType>4</keyType>
-				<value>198</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>food</name>
-				<keyType>4</keyType>
-				<value>86</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>jing</name>
-				<keyType>4</keyType>
-				<value>2146</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>qi</name>
-				<keyType>4</keyType>
-				<value>4231</value>
-				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
 		<VariableGroup>
@@ -56487,15 +59449,15 @@ add("小广场", {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
-				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>hunger</name>
 				<keyType>4</keyType>
 				<value>"饥饿状态"</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>short_of_shen</name>
+				<keyType>4</keyType>
+				<value>神不足</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -56709,15 +59671,15 @@ add("小广场", {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>water</name>
+				<name>max_shen</name>
 				<keyType>4</keyType>
-				<value>68</value>
+				<value>464</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_xue</name>
+				<name>water</name>
 				<keyType>4</keyType>
-				<value>693</value>
+				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -56757,20 +59719,14 @@ add("小广场", {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_shen</name>
+				<name>max_xue</name>
 				<keyType>4</keyType>
-				<value>464</value>
+				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
 		<VariableGroup>
 			<name>maps</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-		</VariableGroup>
-		<VariableGroup>
-			<name>luren_set</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
@@ -56804,6 +59760,42 @@ add("小广场", {
 				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
+		</VariableGroup>
+		<VariableGroup>
+			<name>stat</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
+			<Variable>
+				<name>qi</name>
+				<keyType>4</keyType>
+				<value>4666</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>water</name>
+				<keyType>4</keyType>
+				<value>115</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>jing</name>
+				<keyType>4</keyType>
+				<value>2782</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>food</name>
+				<keyType>4</keyType>
+				<value>0</value>
+				<valueType>3</valueType>
+			</Variable>
+		</VariableGroup>
+		<VariableGroup>
+			<name>luren_set</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
 		</VariableGroup>
 	</VariablePackage>
 </MudletPackage>
