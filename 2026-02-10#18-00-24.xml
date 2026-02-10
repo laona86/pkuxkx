@@ -74,7 +74,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>LXGW WenKai Mono,17,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>LXGW WenKai Mono,18,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -2420,7 +2420,7 @@ send("tuna 50")</script>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
-		<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>修炼</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -3259,7 +3259,7 @@ expandAlias("mgo")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
-				<mCommand>set wimpy 50;;unset forced_act</mCommand>
+				<mCommand>set wimpy 50;;unset forced_act;jiali 0</mCommand>
 				<packageName></packageName>
 				<mFgColor>#ff0000</mFgColor>
 				<mBgColor>#ffff00</mBgColor>
@@ -5067,10 +5067,9 @@ send("bei fuxue-shou")
 				<name>上装备</name>
 				<script>send("wear newam_41")
 send("wear newam_42")
-send("wear newam_45")
-send("wear newam_46")
-send("wear newam_47")
 send("wear newam_48")
+send("wear newam_49")
+send("wear am_50")
 send("wear am_39")
 send("wear am_38")
 send("wear am_37")
@@ -5078,7 +5077,7 @@ send("wear am_36")
 send("wear am_40")
 send("wear am_35")
 send("wear am_34")
-send("wear am_44")
+send("wear am_47")
 send("wear am_43")
 send("wield wp_18")
 send("wear lupi dai")
@@ -17014,7 +17013,7 @@ hsz_destination["台州"] = { path = "node walk hsz_mz" }
 hsz_destination["杭州提督府"] = { path = "node walk hsz_tdf" }
 hsz_destination["归云庄"] = { path = "node walk hsz_gyz" }
 hsz_destination["闽中"] = { path = "node walk hsz_fz" }
-hsz_destination["建宁"] = { path = "node walk hsz_jn" }
+hsz_destination["建宁府"] = { path = "node walk hsz_jn" }
 hsz_destination["桃花岛"] = { path = "node walk hsz_mz" }
 hsz_destination["龙泉镇"] = { path = "node walk hsz_lq" }
 hsz_destination["温州府"] = { path = "node walk hsz_wz" }
@@ -17582,7 +17581,7 @@ fullme.initUI()
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "dodge"
+local skill = "parry"
 
 general_scripts = {
   skills_to_learn = "yc;;lian "..skill.." 50"
@@ -17670,7 +17669,7 @@ end
 function eat_and_drink()
   send("drink;;drink")
   --send("eat gan liang;;eat gan liang;;eat gan liang")
-  send("do 3 eat zao")
+  send("do 3 eat gan liang")
 end
 
 </script>
@@ -17789,6 +17788,7 @@ end</script>
 			<packageName></packageName>
 			<script>key_room = {}
 
+key_room["积翠亭"] = {map = "thd"}
 key_room["广州"] = {map = "guangzhou"}
 key_room["建宁府"] = {map = "jn"}
 key_room["正一观"] = {map = "lhs"}
@@ -17904,9 +17904,9 @@ end
 
 function taohua_perform_skills(qishi)
   local qs = qishi+0
-  if qs &gt; 7 and not fuxue_cd then
-    expandAlias("phf")
-  end
+  -- if qs &gt; 7 and not fuxue_cd then
+    -- expandAlias("phf")
+  -- end
   
   if qs &gt; 11 and not tanzhi_cd then
     send("perform finger.tan")
@@ -18183,23 +18183,17 @@ mapper.mappingEnabled = true   -- 默认开启测绘
 
 -- ☆☆ 边界房间名字：这些名字的房间会被当成“边缘”，不会从这里继续向外探索 ☆☆
 mapper.boundaryNames = mapper.boundaryNames or {
-  ["武当广场"] = true, 
-  ["北侧门"] = true, 
-  ["后门"] = true, 
-  ["紫霄宫"] = true, 
-  ["遇真宫"] = true, 
-  ["林间小路"] = true, 
-  ["青石大道"] = true, 
-  ["武当山门"] = true,
-  ["林中小路"] = true, 
-  -- ["嵩县"] = true,
-  -- ["昭平湖"] = true,
-  -- ["黄草山"] = true,
-  -- ["荒地"] = true,  
-  -- ["石拱桥"] = true,
-  -- ["东直门"] = true,
-  -- ["宣武门"] = true,
-  -- ["崇文门"] = true,
+  ["北府大道"] = true, 
+  ["西门小巷"] = true,
+  ["东门小巷"] = true, 
+  ["府前大道"] = true,
+  ["灌木"] = true,
+  ["兰山脚下"] = true,
+  ["行宫大门"] = true,  
+  ["城墙脚下"] = true,
+  ["黄土小路"] = true,
+  ["黄土路"] = true,
+  ["城墙上"] = true,
   -- ["天安门"] = true,
   -- ["正阳门"] = true,  
 }
@@ -21212,6 +21206,747 @@ end
 			<packageName></packageName>
 			<script></script>
 			<eventHandlerList />
+			<ScriptGroup isActive="yes" isFolder="yes">
+				<name>西部</name>
+				<packageName></packageName>
+				<script></script>
+				<eventHandlerList />
+				<Script isActive="yes" isFolder="no">
+					<name>兰州 - lanz</name>
+					<packageName></packageName>
+					<script>mapper = mapper or {}
+mapper.maps = mapper.maps or {}
+
+mapper.maps["lanz"] = {
+  region = {
+    key  = "lanz",      -- 区域代号，用在 goto wx.xxx 里
+    name = "兰州",    -- 纯注释/显示用
+  },
+mapNodes = {
+  ["东门大街|e,n,s,w"] = {
+    name = "东门大街",
+    exits = {
+      ["e"] = "兰州东门|e,n,nu,s,su,w",
+      ["n"] = "东门内街|n,s",
+      ["s"] = "东门小巷|e,n,s",
+      ["w"] = "东门内大街|e,n,s,w",
+    },
+  },
+    ["东门小巷|e,n,s"] = {
+    name = "东门小巷",
+    exits = {
+      ["e"] = "钱庄|w",
+      ["n"] = "东门大街|e,n,s,w",
+      ["s;e"] = "小巷尽头|w",
+      ["s;s"] = "玉佛寺门口|enter,n",
+
+    },
+  },
+
+["小巷尽头|w"] = {
+  name = "小巷尽头",
+  exits = {
+    ["w;n"] = "东门小巷|e,n,s",
+  },
+},
+
+  ["钱庄|w"] = {
+  name = "钱庄",
+  exits = {
+    ["w"] = "东门小巷|e,n,s",
+  },
+},
+
+  ["玉佛寺门口|enter,n"] = {
+    name = "玉佛寺门口",
+    exits = {
+      ["enter"] = "庭院|out,su",
+      ["n;n"] = "东门小巷|e,n,s",
+    },
+  },  
+
+  ["西门小巷|n,s,w"] = {
+    name = "西门小巷",
+    exits = {
+      ["n"] = "西门大街|e,n,s,w",
+      ["s;s;w"] = "小酒馆|e",
+      ["s;s;s"] = "一品堂分堂|enter,n",
+      ["w"] = "客店|e,u",
+    },
+  },  
+["一品堂分堂|enter,n"] = {
+  name = "一品堂分堂",
+  exits = {
+    ["enter"] = "",
+    ["n;n;n"] = "西门小巷|n,s,w",
+  },
+},
+
+["小酒馆|e"] = {
+  name = "小酒馆",
+  exits = {
+    ["e;n;n"] = "西门小巷|n,s,w",
+  },
+},
+
+["大通铺|out"] = {
+  name = "大通铺",
+  exits = {
+    ["out"] = "二楼过道|d,enter",
+  },
+},
+  ["二楼过道|d,enter"] = {
+  name = "二楼过道",
+  exits = {
+    ["d"] = "客店|e,u",
+    ["enter"] = "大通铺|out",
+  },
+},
+
+["客店|e,u"] = {
+  name = "客店",
+  exits = {
+    ["e"] = "西门小巷|n,s,w",
+    ["u"] = "二楼过道|d,enter",
+  },
+},  
+
+  ["府前大道1|e,n,s,w"] = {
+    name = "府前大道1",
+    exits = {
+      ["e"] = "药铺|enter,n,w",
+      ["n"] = "府前大道|e,n,s,w",
+      ["s"] = "出城小路|n,s",
+      ["w"] = "当铺|e,n",
+    },
+  },
+
+  ["府前大道|e,n,s,w"] = {
+    name = "府前大道",
+    exits = {
+      ["e"] = "打铁铺|enter,n,s,w",
+      ["n"] = "府前广场|e,n,s,w",
+      ["s"] = "府前大道1|e,n,s,w",
+      ["w"] = "当铺|e,n",
+    },
+  },
+
+  ["打铁铺|enter,n,s,w"] = {
+    name = "打铁铺",
+    exits = {
+      ["enter"] = "打铁炉|out",
+      ["n"] = "东门内大街|e,n,s,w",
+      ["s"] = "药铺|enter,n,w",
+      ["w"] = "府前大道|e,n,s,w",
+    },
+  },
+
+  ["兰州大车店|e,n,s"] = {
+    name = "兰州大车店",
+    exits = {
+      ["e"] = "府前大道|e,n,s,w",
+      ["n"] = "西门内大街|e,n,s,w",
+      ["s"] = "当铺|e,n",
+    },
+  },
+
+  ["当铺|e,n"] = {
+    name = "当铺",
+    exits = {
+      ["e"] = "府前大道1|e,n,s,w",
+      ["n"] = "兰州大车店|e,n,s",
+    },
+  },  
+
+  ["药铺|enter,n,w"] = {
+    name = "药铺",
+    exits = {
+      ["n"] = "打铁铺|enter,n,s,w",
+      ["w"] = "府前大道1|e,n,s,w",
+    },
+  },
+
+  ["出城小路|n,s"] = {
+    name = "出城小路",
+    exits = {
+      ["n"] = "府前大道1|e,n,s,w",
+      ["s"] = "山间路|n,su,wu",
+    },
+  },
+  
+  
+
+  ["北府大道1|e,n,s,w"] = {
+    name = "北府大道1",
+    exits = {
+      ["e"] = "将军府大门|e,enter,w",
+      ["s"] = "北府大道|e,n,s,w",
+      ["w"] = "国师府大门|e,enter,w",
+    },
+  },
+
+  ["北府大道|e,n,s,w"] = {
+    name = "北府大道",
+    exits = {
+      ["e"] = "祖儒府大门|enter,s,w",
+      ["n"] = "北府大道1|e,n,s,w",
+      ["s"] = "府前广场|e,n,s,w",
+      ["w"] = "刺史府大门|e,enter,s",
+    },
+  },
+
+
+  ["东演武场|w"] = {
+    name = "东演武场",
+    exits = {
+      ["w"] = "演武场|e,out,s,w",
+    },
+  },
+  ["东门内大街|e,n,s,w"] = {
+    name = "东门内大街",
+    exits = {
+      ["e"] = "东门大街|e,n,s,w",
+      ["n"] = "祖儒府大门|enter,s,w",
+      ["s"] = "打铁铺|enter,n,s,w",
+      ["w"] = "府前广场|e,n,s,w",
+    },
+  },
+  ["东门内街|n,s"] = {
+    name = "东门内街",
+    exits = {
+      ["n"] = "东门内街|s,w",
+      ["s"] = "东门大街|e,n,s,w",
+    },
+  },
+  ["东门内街|s,w"] = {
+    name = "东门内街",
+    exits = {
+      ["s"] = "东门内街|n,s",
+      ["w"] = "将军府大门|e,enter,w",
+    },
+  },
+
+
+  ["兰州东门|e,n,nu,s,su,w"] = {
+    name = "兰州东门",
+    exits = {
+      ["e"] = "黄土路|n,ne,s,se,w",
+      ["n"] = "城墙脚下|n,s",
+      ["nu"] = "城墙上|n,sd",
+      ["s"] = "城墙脚下|n,s",
+      ["su"] = "城墙上|nd,s",
+      ["w"] = "东门大街|e,n,s,w",
+    },
+  },
+
+  ["兰州西门|e,n,ne,nu,s,su,w"] = {
+    name = "兰州西门",
+    exits = {
+      ["e"] = "西门大街|e,n,s,w",
+      ["n"] = "城墙脚下|n,s",
+      ["ne"] = "货栈|sw",
+      ["nu"] = "城墙上|n,sd",
+      ["s"] = "城墙脚下|n,s",
+      ["su"] = "城墙上|nd,s",
+      ["w"] = "青石官道|e,nw",
+    },
+  },
+  ["内宅|n,s"] = {
+    name = "内宅",
+    exits = {
+      ["n"] = "后花园|s",
+      ["s"] = "议事厅|n,s",
+    },
+  },
+  ["刺史府大门|e,enter,s"] = {
+    name = "刺史府大门",
+    exits = {
+      ["e"] = "北府大道|e,n,s,w",
+      ["enter"] = "门房|e,out,w",
+      ["s"] = "西门内大街|e,n,s,w",
+    },
+  },
+  ["前庭|n,ne,nw,out"] = {
+    name = "前庭",
+    exits = {
+      ["n"] = "小桥|e,n,s,w",
+      ["ne"] = "曲径|sw,w",
+      ["nw"] = "曲径|e,se",
+      ["out"] = "祖儒府大门|enter,s,w",
+    },
+  },
+
+  ["厢房|e"] = {
+    name = "厢房",
+    exits = {
+      ["e"] = "门房|e,out,w",
+    },
+  },
+  ["右耳房|w"] = {
+    name = "右耳房",
+    exits = {
+      ["w"] = "大堂|e,n,s,w",
+    },
+  },
+  ["后厅|n"] = {
+    name = "后厅",
+    exits = {
+      ["n"] = "大堂|e,n,s,w",
+    },
+  },
+  ["后宅|w"] = {
+    name = "后宅",
+    exits = {
+      ["w"] = "门房|e,out,w",
+    },
+  },
+  ["后花园|s"] = {
+    name = "后花园",
+    exits = {
+      ["s"] = "内宅|n,s",
+    },
+  },
+  ["后院|e"] = {
+    name = "后院",
+    exits = {
+      ["e"] = "正厅|e,n,w",
+    },
+  },
+  ["后院|w"] = {
+    name = "后院",
+    exits = {
+      ["w"] = "正厅|e,n,w",
+    },
+  },
+  ["国师府大门|e,enter,w"] = {
+    name = "国师府大门",
+    exits = {
+      ["e"] = "北府大道1|e,n,s,w",
+      ["enter"] = "庭院|out,s",
+      ["w"] = "西门内街|e,s",
+    },
+  },
+  ["城墙上|n,sd"] = {
+    name = "城墙上",
+    exits = {
+      ["sd"] = "兰州西门|e,n,ne,nu,s,su,w",
+    },
+  },
+  ["城墙上|nd,s"] = {
+    name = "城墙上",
+    exits = {
+      ["nd"] = "兰州西门|e,n,ne,nu,s,su,w",
+    },
+  },
+
+  ["大堂|e,n,s,w"] = {
+    name = "大堂",
+    exits = {
+      ["e"] = "右耳房|w",
+      ["n"] = "花厅|n,s",
+      ["s"] = "后厅|n",
+      ["w"] = "左耳房|e",
+    },
+  },
+  ["将军府大门|e,enter,w"] = {
+    name = "将军府大门",
+    exits = {
+      ["e"] = "东门内街|s,w",
+      ["enter"] = "演武场|e,out,s,w",
+      ["w"] = "北府大道1|e,n,s,w",
+    },
+  },
+  ["小桥|e,n,s,w"] = {
+    name = "小桥",
+    exits = {
+      ["e"] = "曲径|sw,w",
+      ["n"] = "议事厅|n,s",
+      ["s"] = "前庭|n,ne,nw,out",
+      ["w"] = "曲径|e,se",
+    },
+  },
+  ["左耳房|e"] = {
+    name = "左耳房",
+    exits = {
+      ["e"] = "大堂|e,n,s,w",
+    },
+  },
+
+  ["府前广场|e,n,s,w"] = {
+    name = "府前广场",
+    exits = {
+      ["e"] = "东门内大街|e,n,s,w",
+      ["n"] = "北府大道|e,n,s,w",
+      ["s"] = "府前大道|e,n,s,w",
+      ["w"] = "西门内大街|e,n,s,w",
+    },
+  },
+  ["庭院|out,s"] = {
+    name = "庭院",
+    exits = {
+      ["out"] = "国师府大门|e,enter,w",
+      ["s"] = "花厅|n,s",
+    },
+  },
+
+  ["打铁炉|out"] = {
+    name = "打铁炉",
+    exits = {
+      ["out"] = "打铁铺|enter,n,s,w",
+    },
+  },
+
+  ["曲径|e,se"] = {
+    name = "曲径",
+    exits = {
+      ["e"] = "小桥|e,n,s,w",
+      ["se"] = "前庭|n,ne,nw,out",
+    },
+  },
+  ["曲径|sw,w"] = {
+    name = "曲径",
+    exits = {
+      ["sw"] = "前庭|n,ne,nw,out",
+      ["w"] = "小桥|e,n,s,w",
+    },
+  },
+  ["正厅|e,n,w"] = {
+    name = "正厅",
+    exits = {
+      ["e"] = "后院|w",
+      ["n"] = "演武场|e,out,s,w",
+      ["w"] = "后院|e",
+    },
+  },
+  ["演武场|e,out,s,w"] = {
+    name = "演武场",
+    exits = {
+      ["e"] = "东演武场|w",
+      ["out"] = "将军府大门|e,enter,w",
+      ["s"] = "正厅|e,n,w",
+      ["w"] = "西演武场|e",
+    },
+  },
+  ["祖儒府大门|enter,s,w"] = {
+    name = "祖儒府大门",
+    exits = {
+      ["enter"] = "前庭|n,ne,nw,out",
+      ["s"] = "东门内大街|e,n,s,w",
+      ["w"] = "北府大道|e,n,s,w",
+    },
+  },
+  ["花厅|n,s"] = {
+    name = "花厅",
+    exits = {
+      ["n"] = "庭院|out,s",
+      ["s"] = "大堂|e,n,s,w",
+    },
+  },
+
+  ["西演武场|e"] = {
+    name = "西演武场",
+    exits = {
+      ["e"] = "演武场|e,out,s,w",
+    },
+  },
+  ["西门内大街|e,n,s,w"] = {
+    name = "西门内大街",
+    exits = {
+      ["e"] = "府前广场|e,n,s,w",
+      ["n"] = "刺史府大门|e,enter,s",
+      ["s"] = "兰州大车店|e,n,s",
+      ["w"] = "西门大街|e,n,s,w",
+    },
+  },
+  ["西门内街|e,s"] = {
+    name = "西门内街",
+    exits = {
+      ["e"] = "国师府大门|e,enter,w",
+      ["s"] = "西门内街|n,s",
+    },
+  },
+  ["西门内街|n,s"] = {
+    name = "西门内街",
+    exits = {
+      ["n"] = "西门内街|e,s",
+      ["s"] = "西门大街|e,n,s,w",
+    },
+  },
+  ["西门大街|e,n,s,w"] = {
+    name = "西门大街",
+    exits = {
+      ["e"] = "西门内大街|e,n,s,w",
+      ["n"] = "西门内街|n,s",
+      ["s"] = "西门小巷|n,s,w",
+      ["w"] = "兰州西门|e,n,ne,nu,s,su,w",
+    },
+  },
+
+  ["议事厅|n,s"] = {
+    name = "议事厅",
+    exits = {
+      ["n"] = "内宅|n,s",
+      ["s"] = "小桥|e,n,s,w",
+    },
+  },
+  ["货栈|sw"] = {
+    name = "货栈",
+    exits = {
+      ["sw"] = "兰州西门|e,n,ne,nu,s,su,w",
+    },
+  },
+  ["门房|e,out,w"] = {
+    name = "门房",
+    exits = {
+      ["e"] = "后宅|w",
+      ["out"] = "刺史府大门|e,enter,s",
+      ["w"] = "厢房|e",
+    },
+  },
+  ["青石官道|e,nw"] = {
+    name = "青石官道",
+    exits = {
+      ["e"] = "兰州西门|e,n,ne,nu,s,su,w",
+      ["nw"] = "黄土小路|nd,se",
+    },
+  },
+  ["黄土小路|nd,se"] = {
+    name = "黄土小路",
+    exits = {
+      ["se"] = "青石官道|e,nw",
+    },
+  },
+  ["黄土路|n,ne,s,se,w"] = {
+    name = "黄土路",
+    exits = {
+      ["w"] = "兰州东门|e,n,nu,s,su,w",
+    },
+  },
+
+  ["入山路|nd,s"] = {
+    name = "入山路",
+    exits = {
+      ["nd"] = "后山小路|enter,su",
+    },
+  },
+  ["卧房|w"] = {
+    name = "卧房",
+    exits = {
+      ["w"] = "弥勒殿|e,n,s,w",
+    },
+  },
+  ["后山小路|enter,su"] = {
+    name = "后山小路",
+    exits = {
+      ["enter"] = "祖师堂|n,out",
+      ["su"] = "入山路|nd,s",
+    },
+  },
+  ["地藏殿|wd"] = {
+    name = "地藏殿",
+    exits = {
+      ["wd"] = "大雄宝殿|eu,n,s,wu",
+    },
+  },
+  ["大雄宝殿|eu,n,s,wu"] = {
+    name = "大雄宝殿",
+    exits = {
+      ["eu"] = "地藏殿|wd",
+      ["n"] = "天王殿|nd,s",
+      ["s"] = "弥勒殿|e,n,s,w",
+      ["wu"] = "观音殿|ed",
+    },
+  },
+  ["天王殿|nd,s"] = {
+    name = "天王殿",
+    exits = {
+      ["nd"] = "庭院|out,su",
+      ["s"] = "大雄宝殿|eu,n,s,wu",
+    },
+  },
+  ["庭院|out,su"] = {
+    name = "庭院",
+    exits = {
+      ["out"] = "玉佛寺门口|enter,n",
+      ["su"] = "天王殿|nd,s",
+    },
+  },
+  ["弥勒殿|e,n,s,w"] = {
+    name = "弥勒殿",
+    exits = {
+      ["e"] = "卧房|w",
+      ["n"] = "大雄宝殿|eu,n,s,wu",
+      ["s"] = "祖师堂|n,out",
+      ["w"] = "斋堂|e",
+    },
+  },
+  ["斋堂|e"] = {
+    name = "斋堂",
+    exits = {
+      ["e"] = "弥勒殿|e,n,s,w",
+    },
+  },
+
+  ["祖师堂|n,out"] = {
+    name = "祖师堂",
+    exits = {
+      ["n"] = "弥勒殿|e,n,s,w",
+      ["out"] = "后山小路|enter,su",
+    },
+  },
+  ["观音殿|ed"] = {
+    name = "观音殿",
+    exits = {
+      ["ed"] = "大雄宝殿|eu,n,s,wu",
+    },
+  },
+  ["五泉山东麓|ed,w"] = {
+    name = "五泉山东麓",
+    exits = {
+      ["ed"] = "山间路|n,su,wu",
+      ["w"] = "灌木|e,nw,sd,wd",
+    },
+  },
+  ["兰山脚下|eu,wd"] = {
+    name = "兰山脚下",
+    exits = {
+      ["wd"] = "山间小路|eu,nd",
+    },
+  },
+
+  ["山间小路|eu,nd"] = {
+    name = "山间小路",
+    exits = {
+      ["eu"] = "兰山脚下|eu,wd",
+      ["nd"] = "山间路|n,su,wu",
+    },
+  },
+  ["山间路|n,su,wu"] = {
+    name = "山间路",
+    exits = {
+      ["n"] = "出城小路|n,s",
+      ["su"] = "山间小路|eu,nd",
+      ["wu"] = "五泉山东麓|ed,w",
+    },
+  },
+
+  ["灌木|e,nw,sd,wd"] = {
+    name = "灌木",
+    exits = {
+      ["e"] = "五泉山东麓|ed,w",
+    },
+  },  
+}
+}
+
+mapper.maps["lanz"].mapAliases = {
+
+  ["东门大街"] = "dmdj",
+  ["东门小巷"] = "dmxx",
+  ["小巷尽头"] = "xxjt",
+  ["钱庄"] = "qz",
+  ["玉佛寺门口"] = "yfsmk",
+
+  ["西门小巷"] = "xmxx",
+  ["一品堂分堂"] = "yptft",
+  ["小酒馆"] = "xjg",
+
+  ["大通铺"] = "dtp",
+  ["二楼过道"] = "elgd",
+  ["客店"] = "kd",
+
+  ["府前大道1"] = "fqdd1",
+  ["府前大道"] = "fqdd",
+  ["打铁铺"] = "dtp2",
+  ["兰州大车店"] = "lzdc",
+  ["当铺"] = "dp",
+  ["药铺"] = "yp",
+  ["出城小路"] = "ccxl",
+
+  ["北府大道1"] = "bfdd1",
+  ["北府大道"] = "bfdd",
+
+  ["东演武场"] = "dywc",
+  ["东门内大街"] = "dmndj",
+
+  ["东门内街"] = "dmnj1",
+  ["东门内街2"] = "dmnj2",
+
+  ["兰州东门"] = "lzdm",
+  ["兰州西门"] = "lzxm",
+
+  ["内宅"] = "nz",
+  ["刺史府大门"] = "csfdm",
+  ["前庭"] = "qt",
+  ["厢房"] = "xf",
+  ["右耳房"] = "yef",
+  ["后厅"] = "ht",
+  ["后宅"] = "hz",
+  ["后花园"] = "hhy",
+
+  ["后院1"] = "hy1",
+  ["后院2"] = "hy2",
+
+  ["国师府大门"] = "gsfdm",
+
+  ["城墙上1"] = "cqs1",
+  ["城墙上2"] = "cqs2",
+
+  ["大堂"] = "dt",
+  ["将军府大门"] = "jjfdm",
+  ["小桥"] = "xq",
+  ["左耳房"] = "zef",
+
+  ["府前广场"] = "fqgc",
+  ["庭院1"] = "ty1",
+
+  ["打铁炉"] = "dtl",
+
+  ["曲径1"] = "qj1",
+  ["曲径2"] = "qj2",
+
+  ["正厅"] = "zt",
+  ["演武场"] = "ywc",
+  ["祖儒府大门"] = "zrfdm",
+  ["花厅"] = "ht2",
+  ["西演武场"] = "xywc",
+
+  ["西门内大街"] = "xmndj",
+  ["西门内街1"] = "xmnj1",
+  ["西门内街2"] = "xmnj2",
+  ["西门大街"] = "xmdj",
+
+  ["议事厅"] = "yst",
+  ["货栈"] = "hz2",
+  ["门房"] = "mf",
+  ["青石官道"] = "qsgd",
+  ["黄土小路"] = "htxl",
+  ["黄土路"] = "htl",
+
+  ["入山路"] = "rsl",
+  ["卧房"] = "wf",
+  ["后山小路"] = "hsxl",
+
+  ["地藏殿"] = "dzd",
+  ["大雄宝殿"] = "dxbd",
+  ["天王殿"] = "twd",
+  ["庭院2"] = "ty2",
+  ["弥勒殿"] = "mld",
+  ["斋堂"] = "zt2",
+  ["祖师堂"] = "zst",
+  ["观音殿"] = "gyd",
+
+  ["五泉山东麓"] = "wqsdm",
+  ["兰山脚下"] = "lsjx",
+  ["山间小路"] = "sjxl",
+  ["山间路"] = "sjl",
+  ["灌木"] = "gm",
+}
+
+</script>
+					<eventHandlerList />
+				</Script>
+			</ScriptGroup>
 			<ScriptGroup isActive="yes" isFolder="yes">
 				<name>江南</name>
 				<packageName></packageName>
@@ -35279,6 +36014,42 @@ mapper.maps["thd"] = {
   },
 
   mapNodes = {
+
+    ["鼓楼|e,n,s,w"] = {
+      name = "鼓楼",
+      exits = {
+        ["n"] = "古街|e,n,s,w",
+      },
+    },
+  
+  
+    ["古街|e,n,s,w"] = {
+      name = "古街",
+      exits = {
+        ["n"] = "庆元港|s",
+        ["s"] = "鼓楼|e,n,s,w",
+      },
+    },
+  
+  
+      ["庆元港|s"] = {
+      name = "庆元港",
+      exits = {
+        ["s"] = "古街|e,n,s,w",
+        ["ride diao"] = "海滩|n",
+      },
+    },
+
+  
+     ["海滩|n"] = {
+      name = "海滩",
+      exits = {
+        ["n"] = "桃林|n,s",
+        ["ride diao"] = "庆元港|s",
+      },
+    },
+
+ 
     ["两忘峰|ed,sd"] = {
       name = "两忘峰",
       exits = {
@@ -35330,12 +36101,6 @@ mapper.maps["thd"] = {
       exits = {
         ["n"] = "桃林|nu,nw,s",
         ["s"] = "海滩|n",
-      },
-    },
-    ["海滩|n"] = {
-      name = "海滩",
-      exits = {
-        ["n"] = "桃林|n,s",
       },
     },
 
@@ -35547,7 +36312,7 @@ mapper.maps["thd"].mapAliases = {
 
   ["桃林1"] = "tlin1",
   ["桃林2"] = "tlin2",
-  ["海滩"] = "origin",
+  ["海滩"] = "ht",
 
   ["岩壁1"] = "yb1",
   ["岩壁2"] = "yb2",
@@ -35571,6 +36336,7 @@ mapper.maps["thd"].mapAliases = {
 
   ["试剑峰"] = "sjf",
   ["观海石"] = "ghs",
+  ["鼓楼"] = "origin",
 }
 </script>
 					<eventHandlerList />
@@ -41944,6 +42710,37 @@ mapper.maps["zjc"] = {
   },
 
   mapNodes = {
+  
+["通道|e,n,s,w"] = {
+  name = "通道",
+  exits = {
+    ["w"] = "景和门|e,w",
+  },
+},  
+    ["景和门|e,w"] = {
+      name = "景和门",
+      exits = {
+        ["e"] = "通道|e,n,s,w",
+        ["w"] = "交泰殿|e,n,s,w",
+      },
+    },  
+
+["宫中小道|e,n,s"] = {
+  name = "宫中小道",
+  exits = {
+    ["e"] = "中和殿|e,n,s,w",
+  },
+},
+
+    ["中和殿|e,n,s,w"] = {
+      name = "中和殿",
+      exits = {
+        ["n"] = "保和殿|n,s",
+        ["s"] = "太和殿|n,s",
+        ["w"] = "宫中小道|e,n,s",
+      },
+    },
+      
     ["宫中小道1|e,s,w"] = {
       name = "宫中小道1",
       exits = {
@@ -42101,14 +42898,6 @@ mapper.maps["zjc"] = {
       name = "中右门",
       exits = {
         ["se"] = "殿前广场|e,n,ne,nw,s,w",
-      },
-    },
-
-    ["中和殿|e,n,s,w"] = {
-      name = "中和殿",
-      exits = {
-        ["n"] = "保和殿|n,s",
-        ["s"] = "太和殿|n,s",
       },
     },
 
@@ -42624,13 +43413,6 @@ mapper.maps["zjc"] = {
       exits = {
         ["e"] = "宫中小道3|e,n,w",
         ["s"] = "诚肃殿|n,s",
-      },
-    },
-
-    ["景和门|e,w"] = {
-      name = "景和门",
-      exits = {
-        ["w"] = "交泰殿|e,n,s,w",
       },
     },
 
@@ -43399,12 +44181,12 @@ mapper.maps["bj"] = {
     exits = {
       ["e"] = "武胜镖局|n,w",
       ["n"] = "朝阳门大街|e,n,s,w",
-      ["s"] = "王府井大街2|n,s,w",
+      ["s"] = "王府井大街|n,s,w",
       ["w"] = "小酒馆|e",
     },
   },
-  ["王府井大街2|n,s,w"] = {
-    name = "王府井大街2",
+  ["王府井大街|n,s,w"] = {
+    name = "王府井大街",
     exits = {
       ["n"] = "王府井大街1|e,n,s,w",
       ["s"] = "崇文门|e,n,s,u,w",
@@ -43415,7 +44197,7 @@ mapper.maps["bj"] = {
       name = "崇文门",
       exits = {
         ["e"] = "东便门|n,s,u,w",
-        ["n"] = "王府井大街2|n,s,w",
+        ["n"] = "王府井大街|n,s,w",
         ["w"] = "东长安街|e,n,s,w",
         ["s"] = "崇文门外大街|n,s,w",
       },
@@ -43423,7 +44205,7 @@ mapper.maps["bj"] = {
   ["街道|e,w"] = {
     name = "街道",
     exits = {
-      ["e"] = "王府井大街2|n,s,w",
+      ["e"] = "王府井大街|n,s,w",
       ["w"] = "鳌府大门|e,w",
     },
   },
@@ -44544,7 +45326,7 @@ mapper.maps["bj"].mapAliases = {
   ["鳌拜卧房"]       = "abwf",
 
   ["王府井大街1"]    = "wfjdj1",
-  ["王府井大街2"]    = "wfjdj2",
+  ["王府井大街"]    = "wfjdj",
   ["土路"] = "tl",
   ["城墙"] = "cq",
 }
@@ -47589,6 +48371,20 @@ mapper.maps["datong"] = {
   },
 
   mapNodes = {
+     ["洋河北渡口|eu"] = {
+      name = "洋河北渡口",
+      exits = {
+        ["zong"]  = "洋河南渡口|e,sw",
+      },
+    }, 
+    ["洋河南渡口|e,sw"] = {
+      name = "洋河南渡口",
+      exits = {
+        ["e"]  = "洋河南岸|w",
+        ["sw"] = "官道|ne,sw",
+        ["zong"] = "洋河北渡口|eu",
+      },
+    },  
 
     ["魁星楼|n,s"] = {
       name = "魁星楼",
@@ -50433,7 +51229,7 @@ mapper.maps["qlc"] = {
 
     -- ===== 山路（重名处理）=====
     ["山路|ne,w"] = {
-      name = "山路1",
+      name = "山路",
       exits = {
         ["ne"] = "山路|n,sw",
         ["w"]  = "小路2|e,n,s,w",
@@ -50514,7 +51310,7 @@ mapper.maps["qlc"] = {
 
     -- ===== 小路（重名处理）=====
     ["小路|s,w"] = {
-      name = "小路1",
+      name = "小路",
       exits = {
         ["s"] = "小路|n,sw",
         ["w"] = "小广场|e,n,s,w",
@@ -50648,14 +51444,14 @@ mapper.maps["qlc"].mapAliases = {
   ["小广场"] = "origin",
 
   -- ===== 小路 =====
-  ["小路1"] = "xl1",
+  ["小路"] = "xl",
   ["小路2"] = "xl2",
   ["小路3"] = "xl3",
   ["小路4"] = "xl4",
   ["小路5"] = "xl5",
 
   -- ===== 山路 =====
-  ["山路1"]  = "sl1",
+  ["山路"]  = "sl",
   ["山路2"]  = "sl2",
   ["山路3"]  = "sl3",
   ["山路4"]  = "sl4",
@@ -52148,7 +52944,37 @@ mapper.maps["hankou"] = {
   },
 
   mapNodes = {
+  
+  ["汉水西岸|w"] = {
+  name = "汉水西岸",
+  exits = {
+    ["zong"] = "汉水渡口|n,s",
+  },
+},
 
+    ["汉水渡口|n,s"] = {
+      name = "汉水渡口",
+      exits = {
+        ["n"] = "汉水东岸|e,nw,s",
+        ["zong"] = "汉水西岸|w",
+      },
+    },
+  
+    ["鸡鸣渡西|nw"] = {
+      name = "鸡鸣渡西",
+      exits = {
+        ["zong"] = "鸡鸣渡东|s",
+      },
+    },  
+
+    ["鸡鸣渡东|s"] = {
+      name = "鸡鸣渡东",
+      exits = {
+        ["s"] = "汉水东岸|n,se",
+        ["zong"] = "鸡鸣渡西|nw",
+      },
+    },
+    
     ["东城门|e,n,s,w"] = {
       name = "东城门",
       exits = {
@@ -52284,7 +53110,7 @@ mapper.maps["hankou"] = {
 
     -- ===== 汉水东岸（重名处理）=====
     ["汉水东岸|e,nw,s"] = {
-      name = "汉水东岸1",
+      name = "汉水东岸",
       exits = {
         ["e"]  = "西城门|e,n,s,w",
         ["nw"] = "汉水东岸|n,se",
@@ -52297,13 +53123,6 @@ mapper.maps["hankou"] = {
       exits = {
         ["n"]  = "鸡鸣渡东|s",
         ["se"] = "汉水东岸|e,nw,s",
-      },
-    },
-
-    ["汉水渡口|n,s"] = {
-      name = "汉水渡口",
-      exits = {
-        ["n"] = "汉水东岸|e,nw,s",
       },
     },
 
@@ -52368,13 +53187,6 @@ mapper.maps["hankou"] = {
         ["s"] = "西大街|e,n,s,w",
       },
     },
-
-    ["鸡鸣渡东|s"] = {
-      name = "鸡鸣渡东",
-      exits = {
-        ["s"] = "汉水东岸|n,se",
-      },
-    },
   },
 }
 
@@ -52416,7 +53228,7 @@ mapper.maps["hankou"].mapAliases = {
   ["小池镇"] = "xcz",
 
   -- ===== 水路（重名别名）=====
-  ["汉水东岸1"] = "hsda1",
+  ["汉水东岸"] = "hsda",
   ["汉水东岸2"] = "hsda2",
   ["汉水渡口"] = "hsdk",
   ["渡口"] = "dk",
@@ -52521,7 +53333,7 @@ mapper.maps["jingzhou"] = {
 
     -- ===== 南大街（重名处理）=====
     ["南大街|e,n,s,w"] = {
-      name = "南大街1",
+      name = "南大街",
       exits = {
         ["e"] = "关庙|s,w",
         ["n"] = "文庙|s,w",
@@ -53065,13 +53877,12 @@ mapper.maps["jingzhou"].mapAliases = {
 
   -- ===== 南线 =====
   ["南门"] = "nm",
-  ["南大街1"] = "ndj1",
+  ["南大街"] = "ndj",
   ["南大街2"] = "ndj2",
   ["南大街3"] = "ndj3",
   ["南大街4"] = "ndj4",
   ["南大街5"] = "ndj5",
   ["南大街6"] = "ndj6",
-  ["南大街"]  = "ndj", -- 默认（南大街1）
 
   ["关庙"] = "gm",
   ["文庙"] = "wm",
@@ -53330,7 +54141,7 @@ mapper.maps["nanyang"] = {
     },
 
     ["土路|e,nw,su"] = {
-      name = "土路3",
+      name = "土路",
       exits = {
         ["e"]  = "西门|e,n,w",
         ["nw"] = "内乡|ne,nw,se,sw",
@@ -53363,7 +54174,7 @@ mapper.maps["nanyang"] = {
 
     -- ===== 官道（重名处理）=====
     ["官道|n,se,sw"] = {
-      name = "官道1",
+      name = "官道",
       exits = {
         ["n"]  = "南门|n,s,sw",
         ["se"] = "大姑冢|nw,se",
@@ -53643,15 +54454,13 @@ mapper.maps["nanyang"].mapAliases = {
   ["九龙镇"] = "jlz",
 
   -- ===== 土路（重名别名）=====
-  ["土路"]  = "tl",   -- 默认（土路1）
   ["土路1"] = "tl1",
   ["土路2"] = "tl2",
-  ["土路3"] = "tl3",
+  ["土路"] = "tl",
   ["土路4"] = "tl4",
 
   -- ===== 官道（重名别名）=====
-  ["官道"]  = "gd",   -- 默认（官道1）
-  ["官道1"] = "gd1",
+  ["官道"] = "gd",
   ["官道2"] = "gd2",
   ["官道3"] = "gd3",
 
@@ -58617,6 +59426,29 @@ mapper.maps["zhongyuan"] = {
   },
 mapNodes = {
 
+["淮河北岸|nu,sw"] = {
+  name = "淮河北岸",
+  exits = {
+    ["nu"] = "淮北|eu,ne,sd,se,w",
+  },
+},
+
+["淮北|eu,ne,sd,se,w"] = {
+  name = "淮北",
+  exits = {
+    ["sd"] = "淮河北岸|nu,sw",
+    ["w;nw"] = "青石大道|se,w",
+  },
+},
+
+  ["青石大道|se,w"] = {
+    name = "青石大道",
+    exits = {
+      ["w"] = "许昌城|e,n,nw,se,sw,w",
+      ["se;e"] = "淮北|eu,ne,sd,se,w",
+    },
+  },
+
 ["轩辕关|nw,sw"] = {
   name = "轩辕关",
   exits = {
@@ -58886,12 +59718,7 @@ mapNodes = {
       ["ne"] = "蔡州|n,sw",
     },
   },
-  ["青石大道|se,w"] = {
-    name = "青石大道",
-    exits = {
-      ["w"] = "许昌城|e,n,nw,se,sw,w",
-    },
-  },
+
   ["驻马店|n,s"] = {
     name = "驻马店",
     exits = {
@@ -59560,6 +60387,261 @@ mapper.maps["wudang"].mapAliases = {
   ["小路"]       = "xl2",
 }
 
+</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>杀手帮 - shashou</name>
+					<packageName></packageName>
+					<script>mapper = mapper or {}
+mapper.maps = mapper.maps or {}
+
+mapper.maps["shashou"] = {
+  region = {
+    key  = "shashou",
+    name = "杀手帮",
+  },
+
+mapNodes = {
+
+["山路|ed,wu"] = {
+  name = "山路",
+  exits = {
+    ["wu"] = "大道|ed,n,s,w",
+  },
+},
+  ["大道|ed,n,s,w"] = {
+    name = "大道1",
+    exits = {
+      ["ed"] = "山路|ed,wu",
+      ["n;s;s;w;s;s;s"] = "后山|nu,s",
+      ["s"] = "练武场|e,n,s,w",
+      ["w;w"] = "往生堂广场|e,n,s,w",
+    },
+  },
+
+  ["后山|nu,s"] = {
+    name = "后山",
+    exits = {},
+  },
+
+  ["练武场|e,n,s,w"] = {
+    name = "练武场",
+    exits = {
+      ["n"] = "大道|ed,n,s,w",
+    },
+  },
+
+  ["大道|e,n,s,w"] = {
+    name = "大道",
+    exits = {
+      ["e"] = "往生堂广场|e,n,s,w",
+      ["n"] = "当铺|s",
+      ["s"] = "药铺|n",
+      ["w"] = "大道|e,n,nw",
+    },
+  },
+
+  ["往生堂广场|e,n,s,w"] = {
+    name = "往生堂广场",
+    exits = {
+      ["e;n"] = "浴室|s",
+      ["e;e"] = "大道|ed,n,s,w",
+      ["n"] = "效忠楼|n,s",
+      ["s"] = "石阶|ed,n",
+      ["w"] = "大道|e,n,s,w",
+    },
+  },
+
+  ["浴室|s"] = {
+    name = "浴室",
+    exits = {
+      ["s;w"] = "往生堂广场|e,n,s,w",
+    },
+  },
+
+  ["万纶台|n,s,w"] = {
+    name = "万纶台",
+    exits = {
+      ["n"] = "石阶|nu,s",
+      ["s"] = "山门|n,s",
+      ["w"] = "饭厅|e,n",
+    },
+  },
+
+  ["休息室|s"] = {
+    name = "休息室",
+    exits = {
+      ["s"] = "饭厅|e,n",
+    },
+  },
+
+  -- 山路1
+  ["山路|ed,n,sd"] = {
+    name = "山路1",
+    exits = {
+      ["ed"] = "山路2|ed,wu",
+      ["n"] = "山路|n,s",
+      ["sd"] = "瓜步|nu,s,se,sw",
+    },
+  },
+
+  -- 山路2
+  ["山路2|ed,wu"] = {
+    name = "山路2",
+    exits = {
+      ["ed"] = "青石大道|e,nd,se,w,wu",
+      ["wu"] = "山路|ed,n,sd",
+    },
+  },
+
+  -- 山路3
+  ["山路|n,s"] = {
+    name = "山路3",
+    exits = {
+      ["n"] = "山门|n,s",
+      ["s"] = "山路|ed,n,sd",
+    },
+  },
+
+  ["山门|n,s"] = {
+    name = "山门",
+    exits = {
+      ["n"] = "万纶台|n,s,w",
+      ["s"] = "山路|n,s",
+    },
+  },
+
+  ["效忠楼|n,s"] = {
+    name = "效忠楼",
+    exits = {
+      ["n"] = "石阶|nu,s",
+      ["s"] = "往生堂广场|e,n,s,w",
+    },
+  },
+
+  ["瓜步|nu,s,se,sw"] = {
+    name = "瓜步",
+    exits = {
+      ["nu"] = "山路|ed,n,sd",
+    },
+  },
+
+  ["石阶|ed,n"] = {
+    name = "石阶",
+    exits = {
+      ["ed"] = "石阶|sd,wu",
+      ["n"] = "往生堂广场|e,n,s,w",
+    },
+  },
+
+  -- 石阶2
+  ["石阶|nu,s"] = {
+    name = "石阶2",
+    exits = {
+      ["nu"] = "石阶|sd,wu",
+      ["s"] = "万纶台|n,s,w",
+    },
+  },
+
+  -- 石阶3
+  ["石阶|sd,wu"] = {
+    name = "石阶3",
+    exits = {
+      ["sd"] = "石阶|nu,s",
+      ["wu"] = "石阶|ed,n",
+    },
+  },
+
+  ["青石大道|e,nd,se,w,wu"] = {
+    name = "青石大道",
+    exits = {
+      ["wu"] = "山路2|ed,wu",
+    },
+  },
+
+  ["饭厅|e,n"] = {
+    name = "饭厅",
+    exits = {
+      ["e"] = "万纶台|n,s,w",
+      ["n"] = "休息室|s",
+    },
+  },
+
+  ["四顶山|se,wd"] = {
+    name = "四顶山",
+    exits = {
+      ["se"] = "大道|e,n,nw",
+    },
+  },
+
+  -- 大道3
+  ["大道|e,n,nw"] = {
+    name = "大道3",
+    exits = {
+      ["e"] = "大道|e,n,s,w",
+      ["n"] = "妓院|s",
+      ["nw"] = "四顶山|se,wd",
+    },
+  },
+
+  ["妓院|s"] = {
+    name = "妓院",
+    exits = {
+      ["s"] = "大道|e,n,nw",
+    },
+  },
+
+  ["当铺|s"] = {
+    name = "当铺",
+    exits = {
+      ["s"] = "大道|e,n,s,w",
+    },
+  },
+
+  ["药铺|n"] = {
+    name = "药铺",
+    exits = {
+      ["n"] = "大道|e,n,s,w",
+    },
+  },
+
+},
+
+}
+
+-- mapAliases
+mapper.maps["shashou"].mapAliases = {
+
+  ["大道1"] = "dd1",
+  ["大道"] = "dd",
+  ["大道3"] = "dd3",
+  
+  ["山路"] = "sl",
+  ["山路1"] = "sl1",
+  ["山路2"] = "sl2",
+  ["山路3"] = "sl3",
+
+  ["石阶"] = "sj",
+  ["石阶2"] = "sj2",
+  ["石阶3"] = "sj3",
+
+  ["后山"]       = "hs",
+  ["练武场"]     = "lwc",
+  ["往生堂广场"] = "origin",
+  ["浴室"]       = "ys",
+  ["万纶台"]     = "wlt",
+  ["休息室"]     = "xxs",
+  ["山门"]       = "sm",
+  ["效忠楼"]     = "xzl",
+  ["瓜步"]       = "gb",
+  ["青石大道"]   = "qsdd",
+  ["饭厅"]       = "ft",
+  ["四顶山"]     = "sds",
+  ["妓院"]       = "jy",
+  ["当铺"]       = "dp",
+  ["药铺"]       = "yp",
+}
 </script>
 					<eventHandlerList />
 				</Script>
@@ -69308,7 +70390,7 @@ to_dest["hyd-1"] = { -- 胡一刀任务
   ["大同"] = "node walk hyd_dt",  
   ["代州"] = "node walk hyd_dz",  
   ["恒山"] = "node walk hyd_dz", 
-  ["紫禁城"] = "node walk hyd_bj",  
+  ["紫禁城"] = "s;ne;n;n;n;n;n;n;n;n",  
   ["张家口"] = "node walk hyd_zjk",  
   
   ["中原"] = "node walk hyd_jydk",
@@ -69404,9 +70486,9 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_xue</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -69416,21 +70498,21 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
-				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>thirthty</name>
 				<keyType>4</keyType>
 				<value>"饥渴状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>神不足</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>hunger</name>
+				<keyType>4</keyType>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -69626,10 +70708,10 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
+				<value>1093</value>
+				<valueType>4</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -69656,21 +70738,15 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_neili</name>
+				<name>max_neili</name>
 				<keyType>4</keyType>
-				<value>1093</value>
-				<valueType>4</valueType>
+				<value>2014</value>
+				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>base_jingli</name>
+				<name>current_jingli</name>
 				<keyType>4</keyType>
-				<value>991</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_neili</name>
-				<keyType>4</keyType>
-				<value>1432</value>
+				<value>1982</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -69680,9 +70756,15 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_jingli</name>
+				<name>current_neili</name>
 				<keyType>4</keyType>
-				<value>1982</value>
+				<value>1432</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_jingli</name>
+				<keyType>4</keyType>
+				<value>991</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -69705,40 +70787,40 @@ end
 			<valueType>5</valueType>
 		</VariableGroup>
 		<VariableGroup>
-			<name>luren_set</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-		</VariableGroup>
-		<VariableGroup>
 			<name>stat</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>water</name>
+				<name>qi</name>
 				<keyType>4</keyType>
-				<value>262</value>
+				<value>4675</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>qi</name>
+				<name>water</name>
 				<keyType>4</keyType>
-				<value>4678</value>
+				<value>9</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>jing</name>
 				<keyType>4</keyType>
-				<value>3661</value>
+				<value>3674</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
 				<keyType>4</keyType>
-				<value>262</value>
+				<value>9</value>
 				<valueType>3</valueType>
 			</Variable>
+		</VariableGroup>
+		<VariableGroup>
+			<name>luren_set</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
 		</VariableGroup>
 		<VariableGroup>
 			<name>skill_constants</name>
@@ -69746,9 +70828,9 @@ end
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -69764,9 +70846,9 @@ end
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
