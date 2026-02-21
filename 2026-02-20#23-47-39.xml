@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" disablePasswordMasking="no" HighlightHistory="yes" commandEchoMode="1" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mEnableMXP="yes" mEnableCHARSET="yes" mEnableNEWENVIRON="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowGrid="no" mMapperShowRoomBorders="yes" mVersionInTTYPE="no" mPromptedForVersionInTTYPE="no" mForceMXPProcessorOn="yes" mPromptedForMXPProcessorOn="yes" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mMapGridLineSize="0.5" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mShow3DView="no" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" f3SearchEnabled="no" enableClosedCaption="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>PKUXKX</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -42,7 +42,7 @@
 				<string>enable-accessibility</string>
 				<string>generic_mapper</string>
 			</mInstalledPackages>
-			<url>pkuxkx.com</url>
+			<url>us.pkuxkx.com</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>-1</serverPackageVersion>
 			<port>8081</port>
@@ -52,9 +52,6 @@
 			<borderRightWidth>0</borderRightWidth>
 			<wrapAt>128</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
-			<wrapHangingIndentCount>0</wrapHangingIndentCount>
-			<consoleBufferSize>100000</consoleBufferSize>
-			<useMaxConsoleBufferSize>no</useMaxConsoleBufferSize>
 			<mFgColor>#c0c0c0</mFgColor>
 			<mBgColor>#000000</mBgColor>
 			<mCommandFgColor>#717100</mCommandFgColor>
@@ -77,17 +74,14 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>LXGW WenKai Mono,17,-1,5,400,0,0,0,1,0,0,0,0,0,0,1</mDisplayFont>
-			<mCommandLineFont>LXGW WenKai Mono,17,-1,5,400,0,0,0,1,0,0,0,0,0,0,1</mCommandLineFont>
+			<mDisplayFont>LXGW WenKai Mono,17,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
-			<mBgColor2 alpha="255">#000000</mBgColor2>
-			<mLowerLevelColor>#808080</mLowerLevelColor>
-			<mUpperLevelColor>#ffffff</mUpperLevelColor>
+			<mBgColor2>#000000</mBgColor2>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
 			<mRoomCollisionBorderColor>#ffff00</mRoomCollisionBorderColor>
-			<mMapGridColor alpha="64">#d3d3d3</mMapGridColor>
 			<mMapInfoBg alpha="120">#969696</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
@@ -1099,26 +1093,6 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>孟津渡对面</name>
-				<script>set_xkx_room("孟津渡对面")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>这里是黄河北岸的渡口，东北通向晋阳，渡过黄河就是洛阳了。</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>0</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>义兴</name>
 				<script>set_xkx_room("义兴")</script>
 				<triggerType>0</triggerType>
@@ -1633,8 +1607,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>代州</name>
-				<script>set_xkx_room("代州")
-echo ("=====")</script>
+				<script>set_xkx_room("代州")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2625,8 +2598,8 @@ taohua_perform_skills(qishi)</script>
 			<regexCodePropertyList />
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="yes" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>捕捉任务信息</name>
-				<script>showMultimatches()
-echo("===&gt; 等候地址：" .. multimatches[2][2])
+				<script>--showMultimatches()
+cecho("&lt;yellow&gt; 捕获到等候地址：" .. multimatches[2][2].."\n")
 mrf_or_pozhen = "mzj"
 mzj_to_waiting_room(multimatches[2][2])
 dest_task_type("mzj")
@@ -2690,6 +2663,35 @@ end)</script>
 					<string>你定睛一看，.*正是你要找的汉奸卖国贼！</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="yes" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>捕获目标</name>
+				<script>-- showMultimatches()
+local name = string.lower(multimatches[2][2])
+cecho("&lt;yellow&gt; 捕获到目标： "..name.."\n")
+set_target_type("mzj")
+set_target_name(name)
+
+
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>5</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^你定睛一看，(.*)正是你要找的汉奸卖国.*$</string>
+					<string>^.*\((.*)\).*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -3149,7 +3151,7 @@ map_gudong_to_id(matches[2], matches[3])
 			<regexCodePropertyList />
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>发现家贼</name>
-				<script></script>
+				<script> --格格恶发现的「以彼之道还施彼身」慕容世家内鬼(Murong jiazei)</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -3163,10 +3165,12 @@ map_gudong_to_id(matches[2], matches[3])
 				<regexCodeList>
 					<string>Benboba's murong jiazei</string>
 					<string>Gegewudaren's murong jiazei</string>
+					<string> 格格恶发现的.*慕容世家内鬼(Murong jiazei)</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
 					<integer>0</integer>
+					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -3314,9 +3318,11 @@ mrf_or_pozhen = "mrf"</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>奔波灞发现的 慕容世家家贼</string>
+					<string> 格格恶发现的.*慕容世家内鬼(Murong jiazei)</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
+					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -3381,11 +3387,13 @@ expandAlias("mgo")</script>
 			<regexCodePropertyList />
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>reset 破阵环境</name>
-				<script>disableTrigger("开战大恶")</script>
+				<script>disableTrigger("开战大恶")
+send("set wimpy 50;;unset forced_act;jiali 0")
+expandAlias("shi")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
-				<mCommand>set wimpy 50;;unset forced_act;jiali 0</mCommand>
+				<mCommand></mCommand>
 				<packageName></packageName>
 				<mFgColor>#ff0000</mFgColor>
 				<mBgColor>#ffff00</mBgColor>
@@ -3737,6 +3745,30 @@ dest_primary_address("null", room)</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>^.*说道：「人算不如天算，想不到我兄弟.*都栽在你的手中.*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>发现并设置目标</name>
+				<script>local name = string.lower(matches[2])
+send("follow "..name)
+set_target_type("hyd")
+set_target_name(name)
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>盗 宝 人.*\((.*)\)</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -4862,6 +4894,43 @@ fullme.showFromUrl(url)
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>百晓生</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>额外任务</name>
+				<script>set_task_type("bys")
+set_task(matches[2])</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^.*再给你些额外考验，你还要完成一次(.*)，当然我也会给额外加二分钟时间来完成.*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
 	</TriggerPackage>
 	<TimerPackage>
 		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
@@ -5159,20 +5228,6 @@ end)
 				<regex>^gc$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>抄经</name>
-				<script></script>
-				<command>ask sengren about job;;node walk sms_sjy</command>
-				<packageName></packageName>
-				<regex>^chaojing$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>抄经返回</name>
-				<script></script>
-				<command>node walk sjy_sms</command>
-				<packageName></packageName>
-				<regex>^jing_back$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
 				<name>疗伤</name>
 				<script></script>
 				<command>yun heal</command>
@@ -5192,13 +5247,6 @@ end)
 				<command>get all</command>
 				<packageName></packageName>
 				<regex>^ga$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>gz</name>
-				<script></script>
-				<command>get xin from corpse;;get gold from corpse;;get silver from corpse</command>
-				<packageName></packageName>
-				<regex>^gz$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>node walk</name>
@@ -5331,6 +5379,20 @@ send("wear lupi dai")
 				<packageName></packageName>
 				<regex>^install_all$</regex>
 			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>自己占卜</name>
+				<script></script>
+				<command>zhanbu -myself</command>
+				<packageName></packageName>
+				<regex>^zm$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>什么任务</name>
+				<script>show_task()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^what$</regex>
+			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
 			<name>慕容</name>
@@ -5438,8 +5500,15 @@ end</script>
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>Test script</name>
-			<script>local url = "http://fullme.pkuxkx.com/robot.php?filename=1769910110136544"
-fullme.showFromUrl(url)
+			<script>nav.loadMap("zjk")
+nav.loadMap("bj")
+
+local plan, err = route.planRoomToRoom("zjk", "广灵县|e,wu", "bj", "广安门|e,n,s,u")
+if not plan then
+  print("planRoomToRoom fail:", err)
+else
+  route.show()
+end
 </script>
 			<command></command>
 			<packageName></packageName>
@@ -6256,9 +6325,9 @@ nav.pathNearestCommand(a, b)</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>查看宝图</name>
 				<script></script>
-				<command>chkan bao tu</command>
+				<command>chakan bao tu</command>
 				<packageName></packageName>
-				<regex>^ck tu$</regex>
+				<regex>^cktu$</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
@@ -6493,9 +6562,7 @@ skill_search.print(r)</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>去门派</name>
-				<script>local cmd = menpai_path_from_yangzhou[matches[2]]
-echo("===&gt; "..cmd.."\n")
-send(cmd)</script>
+				<script>to_men_pai(matches[2])</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^pai (.*)$</regex>
@@ -7445,6 +7512,40 @@ end
 			<packageName></packageName>
 			<regex>^fmreload$</regex>
 		</Alias>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>目标</name>
+			<script></script>
+			<command></command>
+			<packageName></packageName>
+			<regex></regex>
+			<Alias isActive="yes" isFolder="no">
+				<name>弹目标</name>
+				<script>local name = get_target_name()
+--cecho("target: &lt;red&gt;"..name.."\n")
+expandAlias("yp")
+expandAlias("tan "..name)</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^tt$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>杀目标</name>
+				<script>local name = get_target_name()
+--cecho("target: &lt;red&gt;"..name.."\n")
+expandAlias("yp")
+expandAlias("k "..name)</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^kk$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>显示目标</name>
+				<script>show_target()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^ss$</regex>
+			</Alias>
+		</AliasGroup>
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
@@ -16516,7 +16617,65 @@ end
 		<ScriptGroup isActive="yes" isFolder="yes">
 			<name>任务集</name>
 			<packageName></packageName>
-			<script></script>
+			<script>-- 武当
+-- 道家养生术(taoism) 太极神功(taiji-shengong) 梯云纵(tiyunzong) 沾衣十八跌(zhanyi-shibadie) 太极拳(taiji-quan) 虎爪绝户手(huzhao-shou) 银钩铁划(yingou-tiehua) 玄虚刀法(xuanxu-dao) 太极剑(taiji-jian) 梯云纵(zong) 刚柔诀(gangrou) 六合劲(liuhe) 四两拨千斤(bo) 震字诀(zhen) 虎爪绝户手(juehu) 银钩铁划·争(zheng) 单刀直入(dandao) 太极剑·随(sui) 天地同寿(tongshou) 三环套月(sanhuan) 太极剑·缠(chan) 太极剑·连(lian)
+-- 
+-- 华山
+-- 华山内功(huashan-neigong) 紫霞神功(zixia-shengong) 华山身法(huashan-shenfa) 劈石破玉拳(poyu-quan) 混元掌(hunyuan-zhang) 华山剑法(huashan-jianfa) 独孤九剑(dugu-jiujian) 狂风快剑(kuangfeng-kuaijian) 玉女十九剑(yunushijiu-jian) 希夷剑法(xiyi-jian) 养吾剑法(yangwu-jian) 冲灵剑法(chongling-jianfa) 反两仪刀法(fanliangyi-dao) 屁股向后平沙落雁式(pingsha) 雷动九天(leidong) 混元无极(wuji) 紫霞飞剑(feijian) 华山剑意(jianyi) 剑掌五连环(jianzhang) 紫霞飞剑(feijian) 华山剑意(jianyi) 剑掌五连环(jianzhang) 紫霞飞剑(feijian) 华山剑意(jianyi) 剑掌五连环(jianzhang) 独孤九剑·总诀式(po) 狂风卷地(kuangfeng) 独孤九剑·破兵式(pobing) 独孤九剑·破气式(poqi) 独孤九剑·破掌式(pozhang) 狂风连环剑(kuangfeng) 天外飞龙(feilong) 夺命连环三仙剑(lianhuan) 玉女十九式(shijiu) 无双无对，宁氏一剑(wushuang) 华岳三神蜂(sanqingfeng) 十年磨剑(shinian) 养吾剑(yangwu) 挥剑成河(huijian) 刀过竹解(daoguo)
+-- 
+-- 明教
+-- 光明圣火功(guangming-shenghuogong) 大腾挪步法(datengnuo-bufa) 乾坤大挪移(qiankun-danuoyi) 寒冰绵掌(hanbing-mianzhang) 鹰爪擒拿功(yingzhao-qinnagong) 圣火令法(shenghuo-lingfa) 烈焰刀(lieyan-dao) 飞花摘叶手法(feihua-shou) 万里黄沙(tisha) 蓄力(xuli) 寻瑕抵隙(xunxia) 大挪移(danuoyi) 天蝠嗜血(shixue) 将噬爪缩(zhaosuo) 圣火令法·夺(duo) 透骨针(tougu) 妙风(miaofeng) 圣火令法·筋斗(jindou) 阴风刀(yinfeng) 圣火光明(shenghuo) 漫天金花(tan)
+-- 
+-- 全真
+-- 道学心法(daoxue-xinfa) 先天功(xiantian-gong) 金关玉锁二十四诀(jinguan-yusuo) 金雁功(jinyan-gong) 三花聚顶掌(sanhua-judingzhang) 养心拳(yangxin-quan) 空明拳(kongming-quan) 一阳指(yiyang-zhi) 全真剑法(quanzhen-jian) 同归剑法(tonggui-jian) 天罡北斗阵(tiangang-beidou) 三花聚顶(sanhua) 正大光明诀(guangming) 拳拳在念(quanquan) 左右互搏(hubo) 渡气(duqi) 拂穴(fuxue) 一指定乾坤(yizhi) 疗伤(liao) 天罡北斗阵(beidouzhen) 一剑化三清(sanqing) 同归剑法(tonggui) 北斗剑气(jianqi) 七星绝命剑(qixing) 定阳针(ding) 七星会聚(qixing)
+-- 
+-- 天龙
+-- 枯荣禅功(kurong-changong) 北冥神功(beiming-shengong) 天南步法(tiannan-bufa) 一阳指(yiyangzhi) 飞花逐月(feihua-zhuyue) 六脉神剑(liumai-shenjian) 段家剑法(duanjia-jian) 玉带云游(yunyou) 渡气(duqi) 拂穴(fuxue) 一指定乾坤(yizhi) 疗伤(liao) 飞花逐月(feihua) 六脉齐发(qifa) 六脉剑气(liumai) 哀牢山剑意(ailao)
+-- 
+-- 桃花
+-- 碧海神功(bihai-shengong) 落英身法(luoying-shenfa) 落英神剑掌(luoying-zhang) 兰花拂穴手(fuxue-shou) 弹指神通(tanzhi-shengong) 旋风扫叶腿(xuanfeng-saoyetui) 玉萧剑法(yuxiao-jian) 劈空掌(pikong) 兰花拂穴(fuxue) 弹指绝技(tan) 花拳绣腿(xiutui) 箫花齐放(xiaohua) 碧海潮生曲(zouxiao)
+-- 
+-- 少林
+-- 禅宗心法(buddhism) 混元一气功(hunyuan-yiqi) 易筋经神功(yijin-jing) 少林身法(shaolin-shenfa) 金刚不坏神功(jingang-buhuai) 散花掌(sanhua-zhang) 般若掌(banruo-zhang) 罗汉拳(luohan-quan) 大金刚拳(jingang-quan) 风云手(fengyun-shou) 如来千叶手(qianye-shou) 鹰爪功(yingzhua-gong) 龙爪功(longzhua-gong) 拈花指(nianhua-zhi) 一指禅(yizhi-chan) 慈悲刀(cibei-dao) 修罗刀(xiuluo-dao) 燃木刀法(ranmu-daofa) 伏魔剑(fumo-jian) 达摩剑(damo-jian) 韦陀棍(weituo-gun) 无常杖法(wuchang-zhang) 普渡杖法(pudu-zhang) 少林醉棍(zui-gun) 大韦陀杵(daweituo-chu) 日月鞭法(riyue-bian) 金刚伏魔圈(jingang-fumoquan) 四季散花(sanhua) 一拍两散(san) 神掌八打(san) 罗汉(luohan) 大金刚神通(jingang) 佛光普照(foguang) 千手如来(qianshou) 一鳞半爪(baizhao) 三爪功(sanzhua) 拈花拂穴(fuxue) 天竺佛指(fozhi) 大智无定指(dazhi) 天竺佛指(fozhi) 惊魔一指(jingmo) 锥刀之末(zhuidao) 庖丁解牛(jieniu) 焚心(fenxin) 焚我(fenwo) 举火焚天(fentian) 牵鬼上剑(shangjian) 达摩三绝剑(sanjue) 百兵之长(baibing) 当头棒喝(dangtou) 棒打鸳鸯(bangda) 当头棒喝(banghe) 八仙醉打(zuida) 我佛如来(rulai) 当头棒喝(banghe) 无相无我(wuxiang) 我佛如来(rulai) 当头棒喝(banghe) 无相无我(wuxiang) 金刚伏魔圈(fumoquan) 日月鞭·缠(chan)
+-- 
+-- 古墓
+-- 玉女心法(yunu-xinfa) 九阴神功(jiuyin-shengong) 黯然销魂掌(xiaohun-zhang) 赤练神掌(chilian-shenzhang) 美女拳(meinu-quan) 三无三不手(sanwu-shou) 九阴白骨爪(jiuyin-baiguzhao) 玉女剑法(yunu-jianfa) 全真剑法(quanzhen-jian) 玄铁剑法(xuantie-jian) 长恨鞭法(changhen-bian) 千灭银针手(qianmie-shou) 纤云步法(xianyun-bufa) 黯然销魂(anran) 五毒神掌(wudu) 摄心(shexin) 三无三不手(sanbu) 摧筋破骨(cuijin) 九阴三绝爪(sanjue) 亡魂一击(zhua) 双剑合璧(hebi) 玉女素心剑法(suxin) 天罡北斗阵(beidouzhen) 一剑化三清(sanqing) 同归剑法(tonggui) 北斗剑气(jianqi) 七星绝命剑(qixing) 定阳针(ding) 海潮汹涌(xiongyong) 长恨鞭·缠(chan) 蜂尾针(fengwei)
+-- 
+-- 丐帮
+-- 叫化绝活(begging) 道听途说(checking) 妙手空空(stealing) 混天气功(huntian-qigong) 逍遥游(xiaoyaoyou) 燕双飞(yanshuangfei) 蛇形手(shexing-shou) 降龙十八掌(xianglong-zhang) 六合刀(liuhe-dao) 打狗棒法(dagou-bang) 漫天花雨掷金针(mantian-huayu) 势如破竹(pozhu) 锁喉擒拿手(suohou) 降龙啸(xiao) 通臂拳(tongbei) 亢龙有悔(kanglong) 雷霆降龙(leiting) 亢龙三悔(sanhui) 降龙啸(xiao) 通臂拳(tongbei) 亢龙有悔(kanglong) 雷霆降龙(leiting) 亢龙三悔(sanhui) 六合归虚(liuhe) 打狗棒·挑(tiao) 打狗棒·戳(chuo) 打狗棒·缠(chan) 打狗棒·转(zhuan) 掩其无备(wubei)
+-- 
+-- 峨嵋
+-- 大乘涅磐功(mahayana) 临济十二庄(linji-zhuang) 九阴神功(jiuyin-shengong) 峨嵋九阳功(emei-jiuyanggong) 诸天化身法(zhutian-shenfa) 金顶绵掌(jinding-mianzhang) 截手九式(jieshou-jiushi) 天罡指(tiangang-zhi) 雁行刀(yanxing-dao) 回风拂柳剑(fuliu-jian) 霹雳弹(pili-dan) 易如反掌(fanzhang) 佛光普照(foguang) 凌空指穴(lingkong) 大圆满之势(yuanman) 刀芒剑影(heji) 绝剑(juejian) 灭剑(miejian) 拂柳(fuliu) 回风诀(huifeng) 霹雳弹·弹(tan)
+-- 
+-- 日月
+-- 大光明心法(daguangming-xinfa) 日月神功(riyue-shengong) 吸星大法(xixing-dafa) 葵花神功(kuihua-shengong) 飞天身法(feitian-shenfa) 马屁神功(flatter) 寒冰掌(hanbing-zhang) 阴风爪(yinfeng-zhao) 日月闪电锤(shandian-chui) 日月刀法(riyue-dao) 日月剑法(riyue-jian) 泼墨披麻剑法(pomo-jianfa) 判官笔法(panguan-bifa) 棋盘功(qipan-gong) 七弦无形剑(qixian-jian) 辟邪剑法(pixie-jian) 铁布衫(tiebu-shan) 百鸟朝凤(bainiao-chaofeng) 求饶(qiurao) 凝水成冰(ningbing) 凝水成冰(ningbing) 反转流星(liuxing) 千斤锤(chui) 雷霆一破(zhen) 计出连环(lianhuan) 眩目(xuanmu) 玉龙倒悬(yulong) 一字电剑(yizi) 快笔打穴(daxue) 写字(xiezi) 吸兵器(xi) 六丁开山(kaishan) 刺目(cimu) 刺穴(cixue) 穿针引线(chuanzhen) 葵花飞影(feiying) 刺腕(ciwan) 一字电剑(yizi) 暗箭伤人(anjian)
+-- 
+-- 星宿
+-- 化功大法(huagong-dafa) 小无相功(xiaowuxiang-gong) 摘星功(zhaixinggong) 星宿毒掌(xingxiu-duzhang) 摘星手(zhaixing-shou) 天山杖法(tianshan-zhang) 毒神附体(dushen) 碧火弹雨(huoqiang) 碧火弹(huoqiu) 三笑逍遥散(sanxiao) 散毒(sandu) 腐尸毒(fushidu) 穿心诀(chuanxin) 抽髓掌(chousui) 摘星手·弹(tan) 冰魄寒毒(handu) 活色生香(huose) 飞掷(feizhi)
+-- 
+-- 慕容
+-- 神元功(shenyuan-gong) 燕灵身法(yanling-shenfa) 斗转星移(douzhuan-xingyi) 参合指(canhe-zhi) 弹腿(tan-tui) 慕容氏家传剑法(murong-jianfa) 百家刀法(baijia-daofa) 灵动如燕(yanling) 星移(xingyi) 以彼之道还施彼身(bishen) 斗转(douzhuan) 袖中指(xiu) 参商指(canshang) 星光点点(xingdian) 日月连环踢(riyue) 柳絮剑法(liuxu) 七剑连环指(lianhuan) 流星快剑(liuxing) 刀影掌(daoying)
+-- 
+-- 大轮
+-- 欢喜禅(huanxi-chan) 大日伏魔禅经(dari-fumo) 龙象般若功(longxiang-boruo) 御雪遁形(yuxue-dunxing) 火焰刀(huoyan-dao) 大手印(dashou-yin) 天王爪(tianwang-zhua) 降伏轮(xiangfu-lun) 血刀经(xuedao-jing) 无上大力杵(wushang-dali) 火焰刀气(daoqi) 火焰刀·燃(ran) 阿修罗天印(tianyin) 钩爪锯牙(gouzhao) 天人五衰(wushuai) 五轮大转(dazhuan) 往生极乐咒(jile) 天人五衰(wushuai) 五轮大转(dazhuan) 往生极乐咒(jile) 神刀穿心(shendao) 祭血神刀(jixue)
+-- 
+-- 朝廷
+-- 为官之道(leadership) 兵法战策(strategy) 碧血心法(bixue-xinfa) 龙凤双翔(longfeng-xiang) 太祖长拳(taizu-changquan) 岳家散手(yuejia-sanshou) 破军刀法(pojun-daofa) 虎钤剑法(huqian-jianfa) 太祖盘龙棍(panlong-gun) 格虎戟(gehu-ji) 杨家梨花枪(lihua-qiang) 三十六路猛虎鞭法(menghu-bian) 夹枪带棒(daibang) 虎啸山林(huxiao) 拳打一条线(yixian) 双抄封天(fengtian) 七星诀(qixing) 山字诀(shan) 锦天绣地(jintian) 崩棍(beng) 雷霆震天(zhentian) 雷霆震天(zhentian) 横枪跃马(hengqiang) 破阵(pozhen)
+-- 
+-- 灵鹫
+-- 八荒六合唯我独尊功(bahuang-gong) 小无相功(xiaowuxiang-gong) 北冥神功(beiming-shengong) 月影舞步(yueying-wubu) 天山六阳掌(liuyang-zhang) 天山折梅手(zhemei-shou) 长恨剑法(changhen-jian) 天羽奇剑(tianyu-qijian) 解生死符(jie) 连种生死符(lianzhong) 生死符(zhong) 空手入白刃(duo) 弹梅·落雪·散花香(tanmei) 折梅(zhemei) 帷灯箧剑(qiejian) 天羽纷飞(fenfei) 鳳舞九天(fengwu)
+-- 
+-- 白驼
+-- 驭兽术(training) 蛤蟆功(hamagong) 瞬息千里(shunxi-qianli) 神驼雪山掌(shentuo-zhang) 蛇形刁手(shexing-diaoshou) 灵蛇杖法(lingshe-zhangfa) 神驼夺魄(shentuo) 扑击(puji) 九阴逆转(crazy) 金丝缠腕(chanwan) 召唤蛇阵(zhaoshezhen) 狂风扫落叶(saoluoye) 喷毒(shoot)
+-- 
+-- 雪山
+-- 雪山内功(xueshan-neigong) 雁翼身法(yanyi-shenfa) 飘雪掌法(piaoxue-zhang) 凌霄拳法(lingxiao-quan) 金乌刀法(jinwu-daofa) 雪山剑法(xueshan-jianfa) 王室鞅掌(yanzhang) 神倒鬼跌三连环(san) 金乌堕地(zhuidi) 金乌融雪(jinwu) 缠斗(chandou) 风剑(fengjian) 六出诀(liuchu) 梅剑(meijian) 雪剑(xuejian) 绝壁剑法(juebi) 霜剑(shuangjian) 鹤飞九天(hefeijiutian) 林海剑法(linhai)
+-- 
+-- 神龙
+-- 招蛇之术(zhaosheshu) 神龙心法(shenlong-xinfa) 意形步法(yixingbu) 化骨绵掌(huagu-mianzhang) 毒龙匕法(dulong-bi) 神龙鞭法(shenlong-bian) 绵绵不绝(bujue) 辣手化骨(hua) 孤注一掷(zhi) 美人三招(meiren) 英雄三招(yingxiong) 云起龙骥(yunqi) 神龙鞭法·缠(chan)
+-- 
+-- 青城
+-- 唳九霄神功(heli-jiuxiao) 无影幻腿(wuying-huantui) 黑砂掌(heisha-zhang) 摧心掌(cuixin-zhang) 松风剑法(songfeng-jianfa) 青蜂钉(qingfeng-ding) 连环踢(lianhuan) 扬眉抵掌(yangmei) 震字诀(zhen) 万壑松风(wanhe) 剑影(jianying) 岁寒(suihan) 听涛(tingtao) 滴水穿石(dishui)</script>
 			<eventHandlerList />
 			<Script isActive="yes" isFolder="no">
 				<name>武当任务</name>
@@ -17080,7 +17239,34 @@ end
 			<Script isActive="yes" isFolder="no">
 				<name>通用任务</name>
 				<packageName></packageName>
-				<script>
+				<script>local tasks = {}
+function set_task_type(type)
+  tasks.type = type
+end
+function set_task(task)
+  tasks.name = task
+end
+function show_task()
+  cecho("&lt;yellow&gt; "..tasks.type.." : "..tasks.name.."\n")
+end
+local target = {}
+
+function set_target_type(type)
+  target.type = type
+end
+
+function set_target_name(name)
+  target.name = name
+end
+
+function get_target_name()
+  return target.name
+end
+
+function show_target()
+  cecho("&lt;red&gt;"..target.type..":"..target.name.."\n")
+end
+
 function get_map_code(city_name)
   return city[city_name].map
 end
@@ -17463,6 +17649,19 @@ end</script>
   qc = "node walk yz_jzmt", -- 青城派
 }
 
+function to_men_pai(menpai)
+  local room = get_current_room_name()
+  local cmd = menpai_path_from_yangzhou[menpai]
+  if room == "扬州" then 
+    echo("===&gt; "..cmd.."\n")
+    send(cmd)
+    return
+  end
+  if room == "打谷场" and menpai == "hs" then
+    send("node walk xsc_hsjx")
+  end
+end
+
 factions = factions or {}
 
 factions["emei"] = {
@@ -17753,6 +17952,12 @@ function skill_search.print(results)
   end
 end
 </script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>百晓生任务</name>
+				<packageName></packageName>
+				<script></script>
 				<eventHandlerList />
 			</Script>
 		</ScriptGroup>
@@ -18184,7 +18389,8 @@ fullme.initUI()
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "blade"
+local skill = "hand"
+local food = "gan liang"
 
 general_scripts = {
   skills_to_learn = "yc;;lian "..skill.." 50"
@@ -18272,7 +18478,7 @@ end
 function eat_and_drink()
   send("drink;;drink")
   --send("eat gan liang;;eat gan liang;;eat gan liang")
-  send("do 3 eat gan liang")
+  send("do 3 eat "..food)
 end
 
 </script>
@@ -18387,101 +18593,6 @@ end</script>
 			</eventHandlerList>
 		</Script>
 		<Script isActive="yes" isFolder="no">
-			<name>关键节点或npc</name>
-			<packageName></packageName>
-			<script>key_room = {}
-
-key_room["金山"] = {map = "zhenj"}
-key_room["东水门码头"] = {map = "yuzhou"}
-key_room["朝天门码头"] = {map = "yuzhou"}
-key_room["桃花岛"] = {map = "thd"}
-key_room["积翠亭"] = {map = "thd"}
-key_room["广州"] = {map = "guangzhou"}
-key_room["建宁府"] = {map = "jn"}
-key_room["正一观"] = {map = "lhs"}
-key_room["闽中"] = {map = "fz"}
-key_room["灵江南岸"] = {map = "tzf"}
-key_room["灵江西岸"] = {map = "tzf"}
-key_room["碧霄峰"] = {map = "yds"}
-key_room["濠州"] = {map = "haozhou"}
-key_room["信阳"] = {map = "xinyang"}
-key_room["麒麟村"] = {map = "qlc"}
-key_room["登州"] = {map = "dengzhou"}
-key_room["石板桥"] = {map = "luzhou"}
-key_room["泉州"] = {map = "qz"}
-key_room["九龙窠"] = {map = "wuyi"}
-key_room["龙泉镇"] = {map = "lqz"}
-key_room["嘉兴城"] = {map = "jx"}
-key_room["盛巷桥"] = {map = "wx"}
-key_room["镇江"] = {map = "zhenj"}
-key_room["岳阳"] = {map = "yy"}
-key_room["洛阳中心广场"] = {map = "luoyang"}
-
-key_room["青州府"] = {map = "qingzhou"}
-
-key_room["木扎岭"] = {map = "funiu"}
-key_room["孟之经"] = {map = "jk"}
-key_room["建康"] = {map = "jk"}
-key_room["正阳门"] = {map = "jk"}
-key_room["朝阳门"] = {map = "jk"}
-
-key_room["韩世忠"] = {map = "hz"}
-key_room["大理寺"] = {map = "hz"}
-
-key_room["湖州"] = {map = "hzf"}
-
-key_room["铜官镇"] = {map = "tgz"}
-key_room["江州"] = {map = "jiangz"}
-
-key_room["铅山"] = {map = "sr"}
-key_room["上饶"] = {map = "sr"}
-
-key_room["代州"] = {map = "dzhou"}
-key_room["金华府"] = {map = "sx"}
-key_room["义兴县城"] = {map = "yx"}
-key_room["荆州码头"] = {map = "jingzhou"}
-
-key_room["王府大门"] = {map = "kqwf"}
-
-key_room["永安门"] = {map = "bj"}
-key_room["德胜门"] = {map = "bj"}
-key_room["广安门"] = {map = "bj"}
-key_room["高粱地"] = {map = "bj"}
-key_room["天安门广场"] = {map = "bj"}
-key_room["灵境胡同"] = {map = "bj"}
-key_room["辟才胡同"] = {map = "bj"}
-
-
-key_room["大同魁星楼"] = {map = "datong"}
-key_room["云冈石窟"] = {map = "ygsk"}
-
-key_room["恒山山门"] = {map = "hengshan"}
-key_room["九天宫"] = {map = "hengshan"}
-
-key_room["小村庄"] = {map = "ry"}
-key_room["天安门"] = {map = "zjc"}
-key_room["朝曦门"] = {map = "jyang"}
-key_room["西天门"] = {map = "tiantan"}
-key_room["扬州"] = {map = "yz"}
-key_room["神龙岛码头"] = {map = "sld"}
-key_room["张家口"] = {map = "zjk"}
-key_room["沧浪亭"] = {map = "sz"}
-
-key_room["濮阳"] = {map = "hb"}
-key_room["塘沽口"] = {map = "hb"}
-
-key_room["岱宗坊"] = {map = "taishan"}
-key_room["威海卫中心"] = {map = "whw"}
-key_room["曲阜"] = {map = "qufu"}
-key_room["戏马台"] = {map = "xuzhou"}
-key_room["晋阳"] = {map = "jyang"}
-
-
-
-</script>
-			<eventHandlerList />
-		</Script>
-		<Script isActive="yes" isFolder="no">
 			<name>交战-perform</name>
 			<packageName></packageName>
 			<script>tanzhi_cd = false
@@ -18515,9 +18626,9 @@ function taohua_perform_skills(qishi)
     -- expandAlias("phf")
   -- end
   
-  if qs &gt; 11 and not tanzhi_cd then
-    send("perform finger.tan")
-  end
+  -- if qs &gt; 11 and not tanzhi_cd then
+    -- send("perform finger.tan")
+  -- end
   
   if qs &gt; 15 and not xiaohua_cd then
     expandAlias("ps")
@@ -18528,30 +18639,189 @@ end
 </script>
 			<eventHandlerList />
 		</Script>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>关键节点</name>
+			<packageName></packageName>
+			<script></script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>长江以南关键节点</name>
+				<packageName></packageName>
+				<script>key_room = key_room or {}
+
+key_room["东水门码头"] = {map = "yuzhou"}
+key_room["朝天门码头"] = {map = "yuzhou"}
+
+
+key_room["西湖岸边"] = {map = "xhab"}
+key_room["宣府"] = {map = "zjk"}
+key_room["金山"] = {map = "zhenj"}
+key_room["桃花岛"] = {map = "thd"}
+key_room["积翠亭"] = {map = "thd"}
+key_room["广州"] = {map = "guangzhou"}
+key_room["建宁府"] = {map = "jn"}
+key_room["正一观"] = {map = "lhs"}
+key_room["闽中"] = {map = "fz"}
+key_room["灵江南岸"] = {map = "tzf"}
+key_room["灵江西岸"] = {map = "tzf"}
+key_room["碧霄峰"] = {map = "yds"}
+key_room["岳阳"] = {map = "yy"}
+
+
+
+key_room["泉州"] = {map = "qz"}
+key_room["九龙窠"] = {map = "wuyi"}
+key_room["龙泉镇"] = {map = "lqz"}
+key_room["嘉兴城"] = {map = "jx"}
+key_room["盛巷桥"] = {map = "wx"}
+key_room["镇江"] = {map = "zhenj"}
+
+
+
+key_room["孟之经"] = {map = "jk"}
+key_room["建康"] = {map = "jk"}
+key_room["正阳门"] = {map = "jk"}
+key_room["朝阳门"] = {map = "jk"}
+
+key_room["韩世忠"] = {map = "hz"}
+key_room["大理寺"] = {map = "hz"}
+
+key_room["湖州"] = {map = "hzf"}
+
+key_room["铜官镇"] = {map = "tgz"}
+key_room["江州"] = {map = "jiangz"}
+
+key_room["铅山"] = {map = "sr"}
+key_room["上饶"] = {map = "sr"}
+
+
+key_room["金华府"] = {map = "sx"}
+key_room["义兴县城"] = {map = "yx"}
+key_room["沧浪亭"] = {map = "sz"}
+
+
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>华北地区关键节点</name>
+				<packageName></packageName>
+				<script>key_room = key_room or {}
+
+key_room["高粱地"] = {map = "bj", region = "胡一刀",}
+key_room["会仙府"] = {map = "hengshan", region = "会仙府",}
+key_room["代州"] = {map = "dzhou", region = "代州"}
+key_room["大同魁星楼"] = {map = "datong", region = "大同"}
+key_room["云冈石窟"] = {map = "ygsk", "云冈石窟"}
+key_room["晋阳"] = {map = "jyang", region = "晋阳",}
+
+key_room["恒山山门"] = {map = "hengshan", region = "恒山山门"}
+key_room["九天宫"] = {map = "hengshan"}
+
+key_room["小村庄"] = {map = "ry", region = "日月神教"}
+key_room["朝曦门"] = {map = "jyang"}
+key_room["神龙岛码头"] = {map = "sld"}
+key_room["张家口"] = {map = "zjk", region = "张家口"}
+key_room["濮阳"] = {map = "hb", region = "濮阳"}
+key_room["塘沽口"] = {map = "hb", region = "塘沽口"}
+
+key_room["青州府"] = {map = "qingzhou"}
+key_room["岱宗坊"] = {map = "taishan"}
+key_room["威海卫中心"] = {map = "whw"}
+key_room["曲阜"] = {map = "qufu"}
+key_room["戏马台"] = {map = "xuzhou"}
+key_room["登州"] = {map = "dengzhou"}
+
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>中原地区关键节点</name>
+				<packageName></packageName>
+				<script>key_room = key_room or {}
+
+key_room["木扎岭"] = {map = "funiu"}
+key_room["往生堂广场"] = {map = "shashou"}
+key_room["濠州"] = {map = "haozhou"}
+key_room["信阳"] = {map = "xinyang"}
+key_room["麒麟村"] = {map = "qlc"}
+key_room["石板桥"] = {map = "luzhou"}
+key_room["洛阳中心广场"] = {map = "luoyang"}
+key_room["荆州码头"] = {map = "jingzhou"}
+key_room["扬州"] = {map = "yz"}
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>北京地区关键节点</name>
+				<packageName></packageName>
+				<script>key_room = key_room or {}
+
+key_room["王府大门"] = {map = "kqwf", region = "亲王府"}
+key_room["永安门"] = {map = "bj", region = "北京南永安门"}
+key_room["德胜门"] = {map = "bj"}
+key_room["广安门"] = {map = "bj"}
+key_room["天安门广场"] = {map = "bj"}
+key_room["灵境胡同"] = {map = "bj"}
+key_room["辟才胡同"] = {map = "bj"}
+key_room["天安门"] = {map = "zjc"}
+key_room["西天门"] = {map = "tiantan"}
+
+
+</script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
 		<Script isActive="yes" isFolder="no">
 			<name>当前位置相关 - non-GMCP</name>
 			<packageName></packageName>
 			<script>local current_room = {}
 local pre_room = {}
+pre_room.name = ""
 
 function get_current_room_name()
   return current_room.name
 end
 
 function set_xkx_room(name)
+  if name == current_room.name then
+    return
+  end
   pre_room.name = current_room.name or ""
-  --cecho(" \n pre room set to: &lt;yellow&gt;"..pre_room.name.."\n")
-  --cecho(" current room set to: &lt;yellow&gt;"..name.."\n")
-  current_room.name = name
+  if room_chain[name] and room_chain[name][pre_room.name] then 
+    current_room.name = room_chain[name][pre_room.name]
+  else  
+  -- room_chain["渡口"]["济源"] = "济源渡口"  
+    current_room.name = name
+  end  
+  --cecho("current room is: &lt;yellow&gt;"..current_room.name.."\n")
   local map_key = key_room[name] and key_room[name].map
   if map_key ~= nil then
     expandAlias("mload "..map_key)
-  end  
+    local region = key_room[name] and key_room[name].region
+    if region == nil then
+      cecho("&lt;red&gt; ==== Region not set =====\n") 
+    end
+  end
+  
+  local region = key_room[name] and key_room[name].region
+  if region ~= nil then
+    expandAlias("set from "..region)
+  end
+    
 end
 
 function show_xkx_room()
   cecho(" \nxkx_room: &lt;yellow&gt;"..current_room.name.."\n")
 end</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>room_chain</name>
+			<packageName></packageName>
+			<script>room_chain = room_chain or {}
+room_chain["渡口"] = room_chain["渡口"] or {}
+room_chain["渡口"]["济源"] = "济源渡口"</script>
 			<eventHandlerList />
 		</Script>
 		<Script isActive="no" isFolder="no">
@@ -28886,7 +29156,7 @@ mapper.maps["jk"].mapAliases = {
 
   ["前厅"] = "qt",
   ["前院"] = "qy",
-  ["大厅"] = "mzj",
+  ["大厅"] = "meng",
   ["右厢房"] = "yxf",
   ["左厢房"] = "zxf",
   ["后厅"] = "ht",
@@ -44483,7 +44753,7 @@ mapper.maps["guangzhou"].mapAliases = {
   ["居蕃坊"]           = "jff",
   ["崔与之府"]         = "cyzf",
   ["州学"]             = "zx",
-  ["市口"]             = "sk",
+  ["市口"]             = "origin",
   ["市易司"]           = "sys",
   ["市舶司"]           = "sbs",
   ["广南东路帅司大门"] = "gndlsstdm",
@@ -44989,7 +45259,7 @@ mapper.maps["tiantan"] = {
       },
     },
 
-    ["宰牲房2|sw"] = {
+    ["宰牲房|sw"] = {
       name = "宰牲房2",
       exits = {
         ["sw"] = "祈年殿|nd,ne,s",
@@ -46533,6 +46803,133 @@ mapper.maps["bj"] = {
   },
 
   mapNodes = {
+  ["广渠门城楼|d,n,s"] = {
+  name = "广渠门城楼",
+  exits = {
+    ["d"] = "广渠门|n,s,u,w",
+  },
+},
+    ["广渠门|n,s,u,w"] = {
+      name = "广渠门",
+      exits = {
+        ["u"] = "广渠门城楼|d,n,s",
+        ["w"] = "广渠门大街|e,n,nw,s",
+      },
+    },  
+
+["朝阳门城楼|d,n,s"] = {
+  name = "朝阳门城楼",
+  exits = {
+    ["d"] = "朝阳门|e,n,s,u,w",
+  },
+},
+  
+    ["朝阳门|e,n,s,u,w"] = {
+      name = "朝阳门",
+      exits = {
+        ["u"] = "朝阳门城楼|d,n,s",
+        ["w"] = "朝阳门大街|e,n,s,w",
+        ["e"] = "大驿道|ne,w",
+      },
+    },
+  
+  
+ ["东直门城楼|d,n,s"] = {
+  name = "东直门城楼",
+  exits = {
+    ["d"] = "东直门|n,s,u,w",
+  },
+}, 
+    ["东直门|n,s,u,w"] = {
+      name = "东直门",
+      exits = {
+        ["u"] = "东直门城楼|d,n,s",
+        ["w"] = "东直门大街|e,n,s,w",
+      },
+    },
+
+  
+ ["安定门城楼|d,e,w"] = {
+  name = "安定门城楼",
+  exits = {
+    ["d"] = "安定门|e,n,s,u,w",
+  },
+},
+ 
+    ["安定门|e,n,s,u,w"] = {
+      name = "安定门",
+      exits = {
+        ["s"] = "钟楼|n,s,u",
+        ["u"] = "安定门城楼|d,e,w",
+      },
+    },
+
+  
+["德胜门城楼|d,e,sw"] = {
+  name = "德胜门城楼",
+  exits = {
+    ["d"] = "德胜门|e,nw,se,sw,u",
+  },
+},
+    ["德胜门|e,nw,se,sw,u"] = {
+      name = "德胜门",
+      exits = {
+        ["se"] = "西直门大街|e,n,nw,s,w",
+        ["u"] = "德胜门城楼|d,e,sw",
+      },
+    },
+      
+["宣武门城楼|d,e,nw"] = {
+  name = "宣武门城楼",
+  exits = {
+    ["d"] = "宣武门|e,n,s,u,w",
+  },
+},  
+    ["宣武门|e,n,s,u,w"] = {
+      name = "宣武门",
+      exits = {
+        ["e"] = "西单|e,w",
+        ["n"] = "阜成门大街2|e,n,s,se,w",
+        ["s"] = "宣武门大街|n,s",
+        ["u"] = "宣武门城楼|d,e,nw",
+        ["w"] = "西便门|e,n,s,u",
+      },
+    },
+      
+  
+["广安门城楼|d,n,s"] = {
+  name = "广安门城楼",
+  exits = {
+    ["d"] = "广安门|e,n,s,u",
+  },
+},
+    ["广安门|e,n,s,u"] = {
+      name = "广安门",
+      exits = {
+        ["e"] = "菜市口|e,n,s,w",
+        ["u"] = "广安门城楼|d,n,s",
+      },
+    },
+  
+  
+  ["永安门城楼|d,e,w"] = {
+  name = "永安门城楼",
+  exits = {
+    ["d"] = "永安门|e,n,s,u,w",
+    ["w"] = "城墙|e,w",
+  },
+},
+
+    ["永安门|e,n,s,u,w"] = {
+      name = "永安门",
+      exits = {
+        ["n"] = "正阳门外大街2|e,n,s,w",
+        ["s"] = "青石大道|n,se,sw",
+        ["u"] = "永安门城楼|d,e,w",
+        ["w"] = "土路|e,w",
+      },
+    },
+
       ["城墙|e,w"] = {
       name = "城墙",
       exits = {
@@ -46547,17 +46944,6 @@ mapper.maps["bj"] = {
 
   },
 },
-
-    ["永安门|e,n,s,u,w"] = {
-      name = "永安门",
-      exits = {
-        ["n"] = "正阳门外大街2|e,n,s,w",
-        ["s"] = "青石大道|n,se,sw",
-        ["u;w"] = "城墙|e,w",
-        ["w"] = "土路|e,w",
-      },
-    },
-    
       
   ["大院|e,n,w"] = {
     name = "大院",
@@ -46722,22 +47108,21 @@ mapper.maps["bj"] = {
   name = "青石大道",
   exits = {
     ["n"] = "永安门|e,n,s,u,w",
-    ["sw"] = "青石大道1|n,ne,sw",
+    ["sw"] = "青石大道|n,ne,sw",
   },
 },
-["青石大道1|n,ne,sw"] = {
+["青石大道|n,ne,sw"] = {
   name = "青石大道1",
   exits = {
     ["n"] = "高粱地|s",
     ["ne"] = "青石大道|n,se,sw",
-    ["sw"] = "青石大道2|ne,s,w",
+    ["sw"] = "青石大道|ne,s,w",
   },
 },
-["青石大道2|ne,s,w"] = {
+["青石大道|ne,s,w"] = {
   name = "青石大道2",
   exits = {
-    ["ne"] = "青石大道1|n,ne,sw",
-    ["s"] = "",
+    ["ne"] = "青石大道|n,ne,sw",
     ["w"] = "白虎堂大门|e,enter",
   },
 },
@@ -46745,7 +47130,7 @@ mapper.maps["bj"] = {
 ["白虎堂大门|e,enter"] = {
   name = "白虎堂大门",
   exits = {
-    ["e"] = "青石大道2|ne,s,w",
+    ["e"] = "青石大道|ne,s,w",
     ["enter"] = "白虎堂大厅|out",
   },
 },
@@ -46760,7 +47145,7 @@ mapper.maps["bj"] = {
 ["高粱地|s"] = {
   name = "高粱地",
   exits = {
-    ["s"] = "青石大道1|n,ne,sw",
+    ["s"] = "青石大道|n,ne,sw",
   },
 },
 
@@ -46962,13 +47347,6 @@ mapper.maps["bj"] = {
       },
     },
 
-    ["广安门|e,n,s,u"] = {
-      name = "广安门",
-      exits = {
-        ["e"] = "菜市口|e,n,s,w",
-      },
-    },
-
     ["西客房|e"] = {
       name = "西客房",
       exits = {
@@ -47058,16 +47436,6 @@ mapper.maps["bj"] = {
       exits = {
         ["n"] = "天安门|n,s",
         ["s"] = "长安街|e,n,s,w",
-      },
-    },
-
-    ["宣武门|e,n,s,u,w"] = {
-      name = "宣武门",
-      exits = {
-        ["e"] = "西单|e,w",
-        ["n"] = "阜成门大街2|e,n,s,se,w",
-        ["s"] = "宣武门大街|n,s",
-        ["w"] = "西便门|e,n,s,u",
       },
     },
 
@@ -47243,13 +47611,6 @@ mapper.maps["bj"] = {
       },
     },
 
-    ["东直门|n,s,u,w"] = {
-      name = "东直门",
-      exits = {
-        ["w"] = "东直门大街|e,n,s,w",
-      },
-    },
-
     ["东直门大街|e,n,s,w"] = {
       name = "东直门大街",
       exits = {
@@ -47316,13 +47677,6 @@ mapper.maps["bj"] = {
       },
     },
 
-    ["安定门|e,n,s,u,w"] = {
-      name = "安定门",
-      exits = {
-        ["s"] = "钟楼|n,s,u",
-      },
-    },
-
     ["宝源金店|s"] = {
       name = "宝源金店",
       exits = {
@@ -47337,13 +47691,6 @@ mapper.maps["bj"] = {
         ["n"] = "斗鸡房|s",
         ["s"] = "赛龟房|n",
         ["w"] = "大厅|d,e,n,s,w",
-      },
-    },
-
-    ["德胜门|e,nw,se,sw,u"] = {
-      name = "德胜门",
-      exits = {
-        ["se"] = "西直门大街|e,n,nw,s,w",
       },
     },
 
@@ -47378,13 +47725,6 @@ mapper.maps["bj"] = {
       },
     },
 
-    ["朝阳门|e,n,s,u,w"] = {
-      name = "朝阳门",
-      exits = {
-        ["w"] = "朝阳门大街|e,n,s,w",
-        ["e"] = "大驿道|ne,w",
-      },
-    },
 
     ["朝阳门大街|e,n,s,w"] = {
       name = "朝阳门大街",
@@ -48773,6 +49113,22 @@ mapper.maps["dzhou"] = {
   },
 
   mapNodes = {
+  
+  ["地宫|u"] = {
+  name = "地宫",
+  exits = {
+    ["u"] = "塔内|out",
+  },
+},
+
+    ["塔内|out"] = {
+      name = "塔内",
+      exits = {
+        ["out"] = "阿育王塔|enter,s",
+        ["do 7 put 1 silver in xiang;d"] = "地宫|u"
+      },
+    },
+
 
     ["东门|ne,w"] = {
       name = "东门",
@@ -48920,12 +49276,6 @@ mapper.maps["dzhou"] = {
       },
     },
 
-    ["塔内|out"] = {
-      name = "塔内",
-      exits = {
-        ["out"] = "阿育王塔|enter,s",
-      },
-    },
 
     ["大成殿|n,ne,nw,s"] = {
       name = "大成殿",
@@ -49327,6 +49677,7 @@ mapper.maps["dzhou"].mapAliases = {
   ["蒲阴陉"] = "pyx",
   ["蛤蟆嘴"] = "hmz",
   ["倒马关"] = "dmg",
+  ["地宫"] = "dg",
 
 }
 
@@ -50971,23 +51322,23 @@ mapper.maps["datong"] = {
       name = "山路",
       exits = {
         ["n"]  = "南门|e,n,s",
-        ["sw"] = "山路2|ne,nu,sw",
+        ["sw"] = "山路|ne,nu,sw",
       },
     },
 
-    ["山路2|ne,nu,sw"] = {
+    ["山路|ne,nu,sw"] = {
       name = "山路2",
       exits = {
         ["ne"] = "山路|n,sw",
         ["nu"] = "秦家寨|n,sd",
-        ["sw"] = "山路3|ne,se",
+        ["sw"] = "山路|ne,se",
       },
     },
 
-    ["山路3|ne,se"] = {
+    ["山路|ne,se"] = {
       name = "山路3",
       exits = {
-        ["ne"] = "山路2|ne,nu,sw",
+        ["ne"] = "山路|ne,nu,sw",
         ["se"] = "雁门关|nw,sd",
       },
     },
@@ -51032,9 +51383,9 @@ mapper.maps["datong"] = {
     ["当铺|e"] = { name = "当铺", exits = { ["e"]="南大街5|e,n,s,w"} },
     ["客栈|enter,w"] = { name = "客栈", exits = { ["enter"]="睡房|out",["w"]="南大街5|e,n,s,w"} },
     ["睡房|out"] = { name = "睡房", exits = { ["out"]="客栈|enter,w"} },
-    ["秦家寨|n,sd"] = { name = "秦家寨", exits = { ["n"]="院落|s",["sd"]="山路2|ne,nu,sw"} },
+    ["秦家寨|n,sd"] = { name = "秦家寨", exits = { ["n"]="院落|s",["sd"]="山路|ne,nu,sw"} },
     ["院落|s"] = { name = "院落", exits = { ["s"]="秦家寨|n,sd"} },
-    ["雁门关|nw,sd"] = { name = "雁门关", exits = { ["nw"]="山路3|ne,se"} },
+    ["雁门关|nw,sd"] = { name = "雁门关", exits = { ["nw"]="山路|ne,se"} },
     ["武庙|s,w"] = { name = "武庙", exits = { ["s"]="牌坊|n,s",["w"]="北大街3|e,n,s,w"} },
     ["牌坊|n,s"] = { name = "牌坊", exits = { ["n"]="武庙|s,w",["s"]="南大街2|e,n,s,w"} },
     ["东门|n,se,w"] = { name = "东门", exits = { ["n"]="大同车行|s",["se"]="城东小路|ed,nw,su",["w"]="南大街2|e,n,s,w"} },
@@ -51079,6 +51430,38 @@ mapper.maps["sld"] = {
   },
 
   mapNodes = {
+["神龙潭|out"] = {
+  name = "神龙潭",
+  exits = {
+    ["out;out"] = "山洞|enter,out",
+  },
+},  
+  
+["山洞|enter,out"] = {
+  name = "山洞",
+  exits = {
+    ["enter;enter"] = "神龙潭|out",
+    ["out"] = "深谷|",
+  },
+},  
+  
+  ["深谷|"] = {
+  name = "深谷",
+  exits = {
+    ["climb up"] = "山泉|n,s",
+    ["kan west;kan hole;enter hole"] = "山洞|enter,out",
+  },
+},
+  
+    ["山泉|n,s"] = {
+      name = "山泉",
+      exits = {
+        ["n"] = "濯垢泉|s",
+        ["s"] = "厨房|n,s",
+        ["climb down"] = "深谷|",
+      },
+    },
+      
     ["书房|w"] = {
       name = "书房",
       exits = {
@@ -51114,13 +51497,7 @@ mapper.maps["sld"] = {
         ["s"] = "客厅|e,n,nw,w",
       },
     },
-    ["山泉|n,s"] = {
-      name = "山泉",
-      exits = {
-        ["n"] = "濯垢泉|s",
-        ["s"] = "厨房|n,s",
-      },
-    },
+
     ["山脚|e,nu,s,w"] = {
       name = "山脚",
       exits = {
@@ -51419,6 +51796,9 @@ mapper.maps["sld"] = {
 
 -- 生成 mapAliases（房间名 -&gt; 简写）
 mapper.maps["sld"].mapAliases = {
+  ["山洞"] = "sd1",
+  ["神龙潭"] = "slt",
+  ["深谷"] = "sg",
   ["书房"] = "sf",
   ["卧室"] = "ws",
   ["厨房"] = "cf",
@@ -69279,6 +69659,9 @@ end
 node_city = node_city or {}
 local add = node_city.add or function(name, data) node_city[name] = data end
 
+add("昌隆镖局", { --
+  job_done   = "ask zuo about finish;ask zuo about 重置任务", 
+})
 add("岳阳", { --
   short_name = "yy", 
   back_mrf     = "node walk yy_mrf",
@@ -69303,7 +69686,7 @@ add("无锡", { -- 无锡
 -- 任务/人物点（江南）
 add("民居", {
   --short_name = "mzj", 余5婆
-  ask_job    = "ask yu about job",
+  ask_job    = "yun powerup;;yun qi;ask yu about job",
   job_fail   = "ask yu about fail",
 })
 
@@ -69501,7 +69884,7 @@ add("扬州", {
 -- 任务主城/核心点
 add("慕容复", {
   short_name = "mrf",
-  ask_job    = "ask pu about job;;unset forced_act;;jiali 0;;set wimpy 40",
+  ask_job    = "ask pu about job;;unset forced_act;;jiali 0;;set wimpy 40;yun powerup;;yun qi",
   job_done   = "give pu xin",
   job_fail   = "ask pu about fail",
   back_hangzhou = "node walk mrf_hz",
@@ -69619,12 +70002,14 @@ local add = node_city.add or function(name, data) node_city[name] = data end
 add("曲阜渡口", {
   --short_name = "lydk",
   back_yangzhou = "node walk qufudk_yz",
+  back_mrf = "node walk qufudk_yz",
   ask_job  = "ask shao gong about huanghe;enter",
 })
 
 add("濮阳黄河渡口", {
-  short_name = "",
+  short_name = "hhbkd3",
   back_yangzhou = "ask shao gong about huanghe;enter",
+  back_mrf = "ask shao gong about huanghe;enter",
   back_hyd = "node walk hhbkd3_hyd",
   ask_job  = "ask shao gong about huanghe;enter",
 })
@@ -69632,6 +70017,7 @@ add("濮阳黄河渡口", {
 add("岱宗坊", {
   short_name = "",
   back_yangzhou = "node walk ts_yz1",
+  back_mrf = "node walk ts_yz1",
   back_hyd = "walk qufu",
 })
 
@@ -69639,24 +70025,28 @@ add("岱宗坊", {
 add("青州府", {
   short_name = "qingz",
   back_yangzhou = "node walk qingz_yz1",
+  back_mrf = "node walk qingz_yz1",
   back_hyd = "walk qufu",
 })
 
 add("曲阜", {
   short_name = "qf",
   back_yangzhou = "node walk qf_yz",
+  back_mr = "node walk qf_yz",
   back_hyd = "walk puyang",
 })
 
 add("泰安", {
   short_name = "",
   back_yangzhou = "walk qufu",
+  back_mrf = "walk qufu",
   back_hyd = "walk qufu",
 })
 
 add("威海卫中心", {
   short_name = "whw",
   back_yangzhou = "node walk whw_yz1",
+  back_mrf = "node walk whw_yz1",
   back_hyd = "node walk whw_qfdk",
 })
 
@@ -69669,12 +70059,16 @@ add("恒山山门", {
 add("济源渡口", {
   short_name = "jydk",
   back_hyd = "node walk jydk_hyd",
+  back_yangzhou  = "ask shao gong about huanghe;enter",
+  back_mrf  = "ask shao gong about huanghe;enter",
   ask_job  = "ask shao gong about huanghe;enter",
 })
 
 add("孟津渡", {
   short_name = "lydk",
   back_yangzhou = "node walk lydk_yz",
+  back_mrf = "node walk lydk_yz",
+  back_hyd = "ask shao gong about huanghe;enter",
   ask_job  = "ask shao gong about huanghe;enter",
 })
 
@@ -69728,11 +70122,11 @@ add("代州", {
 
 -- 任务点
 add("高粱地", { -- 胡一刀
-  ask_job  = "ask hu about job",
+  ask_job  = "yun powerup;;yun qi;ask hu about job",
   job_done = "give hu map",
   job_fail = "ask hu about cancel",
   short_name = "hyd",
-  back_yangzhou = "node walk hyd_jydk",
+  back_yangzhou = "node walk hyd_pydk",
   back_shandong = "node walk hyd_pydk",
 })
 
@@ -69766,9 +70160,23 @@ local add = node_city.add or function(name, data) node_city[name] = data end
 
 -- 任务/人物点（中原）
 
+add("醉仙楼二楼", {
+  back_yangzhou= "node walk bxs_yz",
+  ask_job  = "ask bai about 挑战",
+  job_done   = "ask bai about finish",
+  back_mrf     = "d;w;s;s;walk zhenjiang",
+})
+
+
+add("华山脚下", {
+  back_yangzhou= "node walk hsjx_xsc",
+  back_mrf= "node walk hsjx_xsc",
+})
+
 add("打谷场", {
   short_name = "xsc",
   back_yangzhou= "node walk xsc_yz",
+  back_mrf= "node walk xsc_yz",
 })
 
 add("崇玄台", {
@@ -69795,6 +70203,7 @@ add("茅屋", {
 add("洛阳中心广场", {
     back_yangzhou = "node walk ly_yz",
     back_hyd = "walk jiyuan",
+    back_mr= "node walk ly_yz",
 })
 
 add("万安塔", {
@@ -71458,6 +71867,14 @@ end
 				<packageName></packageName>
 				<script>walk_node = walk_node or {}
 
+walk_node["会仙府"] = {region = "会仙府", map = "",
+  edges = {
+    {node = "代州", path = "node walk hshxf_dz"}, 
+    {node = "大同", path = "node walk hshxf_dt"},
+    {node = "恒山山门", path = "node walk hshxf_hssm"},
+  }
+}
+
 walk_node["云冈石窟"] = {region = "云冈石窟", map = "",
   edges = {
     {node = "代州", path = "node walk ygsk_dz"}, 
@@ -71678,10 +72095,16 @@ walk_node["关外"] = {region = "关外", map = "",
   }
 }
 
+walk_node["恒山山门"] = {region = "恒山山门", map = "",
+  edges = {
+    {node = "代州", path = "node walk hssm_dz"}, --
+  }
+}
 
 
 walk_node["代州"] = {region = "代州", map = "",
   edges = {
+    {node = "恒山山门", path = "node walk dz_hssm"}, --
     {node = "保州", path = "walk baozhou"}, --
     {node = "大同", path = "walk datong"}, -- 
     {node = "张家口", path = "walk zhangjiakou"}, --
@@ -72478,6 +72901,7 @@ end
 region_key_map = region_key_map or {
 
   -- 江南 / 江浙
+  ["龙虎山"]     = "longhushan",
   ["苏州"]     = "suzhou",
   ["姑苏慕容"] = "murong",
   ["归云庄"]   = "guiyun",
@@ -72651,6 +73075,9 @@ region_key_map = region_key_map or {
   ["塘沽口"]     = "tanggu",
 
   ["代州"]       = "daizhou",
+  ["恒山山门"]   = "hssm",
+  ["会仙府"]   = "huixianfu",
+  
   ["大同"]       = "datong",
   ["张家口"]     = "zjk",
   ["蒙古"]       = "menggu",
@@ -72821,6 +73248,552 @@ end
 </script>
 				<eventHandlerList />
 			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>利用边界节点的跨城路由</name>
+				<packageName></packageName>
+				<script>-- ======================================================
+-- router.lua (可覆盖版 / HYBRID GRAPH)
+-- 显式跨区：border_node.edges
+-- 同区互通：同 regionKey 下 border 之间用 nav.findPath 自动连通
+-- 端到端：room(fp) -&gt; 最近边界 -&gt; (混合图) -&gt; 终点边界 -&gt; room(fp)
+--
+-- 当前阶段：只保证连通性（无 cost）
+-- 提供：
+--   route.planBorder(A,B)   -- A/B 是 borderKey
+--   route.planRoomToRoom(fromR, fromFP, toR, toFP)
+--   route.show() / route.move()
+-- ======================================================
+
+route = route or {}
+border_node = border_node or {}
+
+route.planCache = route.planCache or nil
+
+-- 可选：锁源信息（用于 route.plan(target) 这种用法，当前你主要用 planBorder/planRoomToRoom）
+route.fromRegionKey = route.fromRegionKey or nil
+route.fromFP        = route.fromFP        or nil
+route.fromRoomId    = route.fromRoomId    or nil
+
+-- ------------------------------------------------------------------
+-- 打印
+-- ------------------------------------------------------------------
+local function rprint(msg)
+  if cecho then
+    cecho("\n&lt;orange&gt;[Route]&lt;reset&gt; " .. tostring(msg) .. "\n")
+  else
+    print("[Route] " .. tostring(msg))
+  end
+end
+
+local function trim(s)
+  s = tostring(s or "")
+  return (s:gsub("^%s+", ""):gsub("%s+$", ""))
+end
+
+local function joinDirs(steps)
+  if not steps then return nil end
+  local dirs = {}
+  for _, st in ipairs(steps) do
+    table.insert(dirs, st.dir)
+  end
+  return table.concat(dirs, ";")
+end
+
+-- ------------------------------------------------------------------
+-- nav 确保加载
+-- ------------------------------------------------------------------
+local function ensureNavLoaded(rkey)
+  if not nav then return false end
+  if nav.regions and nav.regions[rkey] and nav.regions[rkey].mapNodes then
+    return true
+  end
+  if nav.loadMap then nav.loadMap(rkey) end
+  return (nav.regions and nav.regions[rkey] and nav.regions[rkey].mapNodes) and true or false
+end
+
+-- ------------------------------------------------------------------
+-- 索引：regionKey -&gt; [borderKey]  ;  attachId -&gt; borderKey
+-- ------------------------------------------------------------------
+local function buildIndexes()
+  local regionIndex = {}
+  local attachIndex = {}
+
+  for bkey, bn in pairs(border_node or {}) do
+    if type(bn) == "table" and type(bn.regionKey) == "string" then
+      regionIndex[bn.regionKey] = regionIndex[bn.regionKey] or {}
+      table.insert(regionIndex[bn.regionKey], bkey)
+
+      local aid = bn.attach and bn.attach.id
+      if type(aid) == "string" and aid ~= "" then
+        attachIndex[aid] = attachIndex[aid] or bkey
+      end
+    end
+  end
+
+  for rk, list in pairs(regionIndex) do table.sort(list) end
+  return regionIndex, attachIndex
+end
+
+-- ------------------------------------------------------------------
+-- 区内 seq：rkey 内 fpA -&gt; fpB 的方向串（带缓存）
+-- ------------------------------------------------------------------
+route._intraCache = route._intraCache or {}
+local function navSeqInRegion(rkey, fpA, fpB)
+  if not rkey or rkey == "" or not fpA or fpA == "" or not fpB or fpB == "" then return nil end
+  if fpA == fpB then return "" end
+
+  local ck = rkey .. "||" .. fpA .. "&gt;&gt;" .. fpB
+  if route._intraCache[ck] ~= nil then
+    return route._intraCache[ck]
+  end
+
+  if not ensureNavLoaded(rkey) then
+    route._intraCache[ck] = nil
+    return nil
+  end
+
+  local mapNodes = nav.regions[rkey].mapNodes
+  if not mapNodes[fpA] or not mapNodes[fpB] then
+    route._intraCache[ck] = nil
+    return nil
+  end
+
+  local steps = nav.findPath(mapNodes, fpA, fpB)
+  if not steps then
+    route._intraCache[ck] = nil
+    return nil
+  end
+
+  local seq = joinDirs(steps) or ""
+  route._intraCache[ck] = seq
+  return seq
+end
+
+-- ------------------------------------------------------------------
+-- 选最近边界：从 fromFP 出发，BFS 命中任一 border.attach.id（最短步）
+-- 返回：borderKey, seq(fromFP-&gt;attach), attachId
+-- ------------------------------------------------------------------
+function route.nearestBorderInRegion(rkey, fromFP)
+  rkey   = tostring(rkey or "")
+  fromFP = tostring(fromFP or "")
+  if rkey == "" or fromFP == "" then
+    return nil, nil, nil, "usage: nearestBorderInRegion(rkey, fromFP)"
+  end
+
+  if not ensureNavLoaded(rkey) then
+    return nil, nil, nil, "nav map not loaded for region=" .. rkey
+  end
+
+  local mapNodes = nav.regions[rkey].mapNodes
+  if not mapNodes[fromFP] then
+    return nil, nil, nil, "fromFP not in map: " .. fromFP
+  end
+
+  local targets = {}  -- fp -&gt; {borderKey=..., attach=...}
+  local cnt = 0
+  for bkey, bn in pairs(border_node or {}) do
+    if type(bn)=="table" and bn.regionKey == rkey then
+      local aid = bn.attach and bn.attach.id
+      if type(aid)=="string" and aid~="" then
+        targets[aid] = { borderKey=bkey, attach=aid }
+        cnt = cnt + 1
+      end
+    end
+  end
+  if cnt == 0 then
+    return nil, nil, nil, "no border_node in region=" .. rkey
+  end
+
+  if targets[fromFP] then
+    local hit = targets[fromFP]
+    return hit.borderKey, "", hit.attach
+  end
+
+  -- BFS
+  local q = { fromFP }
+  local head = 1
+  local visited = { [fromFP]=true }
+  local prev = {} -- fp -&gt; {from=..., dir=...}
+
+  local hitFP = nil
+  while head &lt;= #q do
+    local cur = q[head]; head=head+1
+    local node = mapNodes[cur]
+    if node and node.exits then
+      for dir, nxt in pairs(node.exits) do
+        if nxt and mapNodes[nxt] and not visited[nxt] then
+          visited[nxt] = true
+          prev[nxt] = { from=cur, dir=dir }
+          if targets[nxt] then
+            hitFP = nxt
+            head = #q + 1
+            break
+          end
+          table.insert(q, nxt)
+        end
+      end
+    end
+  end
+
+  if not hitFP then
+    return nil, nil, nil, "no reachable border attach from " .. fromFP
+  end
+
+  -- 回溯 seq
+  local dirs = {}
+  local fp = hitFP
+  while fp ~= fromFP do
+    local p = prev[fp]
+    if not p then break end
+    table.insert(dirs, 1, p.dir)
+    fp = p.from
+  end
+
+  local seq = table.concat(dirs, ";")
+  local hit = targets[hitFP]
+  return hit.borderKey, seq, hit.attach
+end
+
+-- ------------------------------------------------------------------
+-- 邻居枚举：显式边 + 同区隐式边（用 navSeqInRegion 计算 cmd）
+-- kind: "explicit" / "intra"
+-- ------------------------------------------------------------------
+local function getNeighbors(bkey, regionIndex)
+  local bn = border_node[bkey]
+  if not bn then return {} end
+
+  local out = {}
+
+  -- 1) 显式边
+  for _, e in ipairs(bn.edges or {}) do
+    local nxt = e and e.to
+    if nxt and border_node[nxt] then
+      table.insert(out, { to=nxt, kind="explicit", cmd=tostring(e.cmd or "") })
+    end
+  end
+
+  -- 2) 同区隐式边（用 nav 计算 attach-&gt;attach）
+  local rk = bn.regionKey
+  local list = (regionIndex and regionIndex[rk]) or {}
+  if #list &gt; 1 then
+    local aFP = bn.attach and bn.attach.id or nil
+    if aFP and aFP ~= "" then
+      for _, other in ipairs(list) do
+        if other ~= bkey then
+          local on = border_node[other]
+          local bFP = on and on.attach and on.attach.id or nil
+          if bFP and bFP ~= "" then
+            local seq = navSeqInRegion(rk, aFP, bFP)
+            if seq ~= nil then
+              table.insert(out, { to=other, kind="intra", cmd=tostring(seq or "") })
+            end
+          end
+        end
+      end
+    end
+  end
+
+  return out
+end
+
+-- ------------------------------------------------------------------
+-- BFS 混合图：borderKey -&gt; borderKey
+-- prev[nxt] = {from=..., kind=..., cmd=...}
+-- ------------------------------------------------------------------
+local function bfsHybrid(startKey, targetKey)
+  if startKey == targetKey then return {startKey}, {} end
+  if not border_node[startKey] or not border_node[targetKey] then return nil, nil end
+
+  local regionIndex = buildIndexes()
+  -- buildIndexes 返回 (regionIndex, attachIndex)，这里只要第一个
+  if type(regionIndex) ~= "table" or not next(regionIndex) then
+    regionIndex = buildIndexes()
+  end
+
+  local q = { startKey }
+  local head = 1
+  local visited = { [startKey]=true }
+  local prev = {}
+
+  while head &lt;= #q do
+    local cur = q[head]; head=head+1
+    if cur == targetKey then break end
+
+    local neighbors = getNeighbors(cur, regionIndex)
+    for _, nb in ipairs(neighbors) do
+      local nxt = nb.to
+      if nxt and not visited[nxt] then
+        visited[nxt] = true
+        prev[nxt] = { from=cur, kind=nb.kind, cmd=tostring(nb.cmd or "") }
+        table.insert(q, nxt)
+      end
+    end
+  end
+
+  if not visited[targetKey] then
+    return nil, nil
+  end
+
+  local path = {}
+  local k = targetKey
+  while k do
+    table.insert(path, 1, k)
+    if k == startKey then break end
+    local p = prev[k]
+    if not p then return nil, nil end
+    k = p.from
+  end
+
+  return path, prev
+end
+
+-- ------------------------------------------------------------------
+-- 执行：默认 send(cmd)
+-- 你可覆盖 route.execHook(seg, cmd) 来实现更安全的执行策略
+-- ------------------------------------------------------------------
+route.execHook = route.execHook or nil
+
+function route.exec(cmd, seg)
+  cmd = tostring(cmd or "")
+  cmd = trim(cmd)
+  if cmd == "" then
+    rprint("exec: cmd 为空（0步段），跳过")
+    return true
+  end
+
+  if type(route.execHook) == "function" then
+    local ok = route.execHook(seg, cmd)
+    if ok ~= nil then return ok and true or false end
+  end
+
+  rprint("SEND &gt;&gt; " .. cmd)
+  local ok, err = pcall(function() send(cmd) end)
+  if not ok then
+    rprint("&lt;red&gt;send 出错: " .. tostring(err) .. "&lt;/red&gt;")
+    return false
+  end
+  return true
+end
+
+-- ------------------------------------------------------------------
+-- planBorder：给两个 borderKey，返回完整路径 segments
+-- ------------------------------------------------------------------
+function route.planBorder(startBorderKey, targetBorderKey)
+  startBorderKey  = trim(startBorderKey)
+  targetBorderKey = trim(targetBorderKey)
+
+  if startBorderKey == "" or targetBorderKey == "" then
+    return nil, "usage: route.planBorder(startBorderKey, targetBorderKey)"
+  end
+  if not border_node[startBorderKey] then
+    return nil, "start borderKey not exists: " .. startBorderKey
+  end
+  if not border_node[targetBorderKey] then
+    return nil, "target borderKey not exists: " .. targetBorderKey
+  end
+
+  local pathKeys, prev = bfsHybrid(startBorderKey, targetBorderKey)
+  if not pathKeys then
+    return nil, string.format("[BORDER] no path: %s -&gt; %s", startBorderKey, targetBorderKey)
+  end
+
+  local segments = {}
+  for i = 1, (#pathKeys - 1) do
+    local a = pathKeys[i]
+    local b = pathKeys[i+1]
+    local p = prev[b]
+    table.insert(segments, {
+      kind  = p and p.kind or "unknown",   -- explicit / intra
+      title = a .. " -&gt; " .. b,
+      cmd   = tostring(p and p.cmd or "")
+    })
+  end
+
+  local plan = {
+    mode        = "border",
+    startBorder = startBorderKey,
+    targetBorder= targetBorderKey,
+    borderPath  = pathKeys,
+    segments    = segments,
+    idx         = 1,
+  }
+
+  route.planCache = plan
+  return plan
+end
+
+-- ------------------------------------------------------------------
+-- planRoomToRoom：A(区域+fp) -&gt; B(区域+fp)
+-- ------------------------------------------------------------------
+function route.planRoomToRoom(fromR, fromFP, toR, toFP)
+  fromR, fromFP = tostring(fromR or ""), tostring(fromFP or "")
+  toR, toFP     = tostring(toR or ""), tostring(toFP or "")
+  if fromR=="" or fromFP=="" or toR=="" or toFP=="" then
+    return nil, "usage: route.planRoomToRoom(fromR, fromFP, toR, toFP)"
+  end
+
+  -- 起点：房间 -&gt; 最近边界
+  local sBorder, sSeq, sAttach, err1 = route.nearestBorderInRegion(fromR, fromFP)
+  if not sBorder then return nil, "from nearestBorder fail: " .. tostring(err1) end
+
+  -- 终点：目标房间 -&gt; 最近边界（我们拿到 attach，随后再算 attach-&gt;toFP）
+  local tBorder, _, tAttach, err2 = route.nearestBorderInRegion(toR, toFP)
+  if not tBorder then return nil, "to nearestBorder fail: " .. tostring(err2) end
+
+  -- 先算边界图段
+  local plan, err3 = route.planBorder(sBorder, tBorder)
+  if not plan then return nil, "planBorder fail: " .. tostring(err3) end
+
+  -- 终点：边界 attach -&gt; 目标房间
+  local seqToTarget = navSeqInRegion(toR, tAttach, toFP)
+  if seqToTarget == nil then
+    seqToTarget = "" -- 不让它 nil
+  end
+
+  -- 插入起点段/终点段
+  table.insert(plan.segments, 1, {
+    kind  = "intra",
+    title = "起点区内：房间 -&gt; 最近边界("..tostring(sBorder)..")",
+    cmd   = tostring(sSeq or "")
+  })
+
+  table.insert(plan.segments, {
+    kind  = "intra",
+    title = "终点区内：边界("..tostring(tBorder)..") -&gt; 目标房间",
+    cmd   = tostring(seqToTarget or "")
+  })
+
+  plan.mode = "room"
+  plan.idx  = 1
+  plan._debug = {
+    from = { r=fromR, fp=fromFP, border=sBorder, attach=sAttach, seq=sSeq },
+    to   = { r=toR, fp=toFP, border=tBorder, attach=tAttach, seq=seqToTarget },
+  }
+
+  route.planCache = plan
+  return plan
+end
+
+-- ------------------------------------------------------------------
+-- show：打印 plan
+-- ------------------------------------------------------------------
+function route.show()
+  local plan = route.planCache
+  if not plan then
+    rprint("没有 plan。先调用 route.planBorder(A,B) 或 route.planRoomToRoom(...)")
+    return
+  end
+
+  if plan.mode == "room" and plan._debug then
+    rprint(string.format(
+      "ROOM plan: (%s)%s -&gt; (%s)%s",
+      tostring(plan._debug.from.r), tostring(plan._debug.from.fp),
+      tostring(plan._debug.to.r),   tostring(plan._debug.to.fp)
+    ))
+  end
+
+  rprint(string.format("已规划：%s -&gt; %s（segments=%d）",
+    tostring(plan.startBorder), tostring(plan.targetBorder), #plan.segments
+  ))
+
+  for i = plan.idx, #plan.segments do
+    local s = plan.segments[i]
+    local cmd = tostring(s.cmd or "")
+    local steps = (cmd ~= "" and (#(cmd:gsub("[^;]", "")) + 1)) or 0
+    rprint(string.format("  [%d] [%s] %s : %s%s",
+      i, tostring(s.kind), tostring(s.title),
+      cmd,
+      (cmd ~= "" and ("  (steps~" .. tostring(steps) .. ")") or "  (0)")
+    ))
+  end
+end
+
+-- ------------------------------------------------------------------
+-- move：单步执行下一段
+-- ------------------------------------------------------------------
+function route.move()
+  local plan = route.planCache
+  if not plan then
+    rprint("没有 plan。先规划。")
+    return
+  end
+
+  if plan.idx &gt; #plan.segments then
+    rprint("plan 已完成。")
+    route.planCache = nil
+    return
+  end
+
+  local seg = plan.segments[plan.idx]
+  local cur = plan.idx
+  plan.idx = plan.idx + 1
+
+  rprint(string.format("执行 [%d/%d] [%s] %s",
+    cur, #plan.segments, tostring(seg.kind), tostring(seg.title)
+  ))
+
+  route.exec(seg.cmd, seg)
+end
+
+-- ------------------------------------------------------------------
+-- 便捷：清缓存
+-- ------------------------------------------------------------------
+function route.reset()
+  route.planCache = nil
+  route._intraCache = {}
+  rprint("已 reset：清除 planCache 与 intraCache。")
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>测试边界点</name>
+				<packageName></packageName>
+				<script>function border_plan(fromKey, toKey)
+  if not (border_node and border_node[fromKey] and border_node[toKey]) then
+    print("[BORDER] bad key:", fromKey, toKey)
+    return nil
+  end
+
+  local q = {fromKey}
+  local head = 1
+  local prev = {[fromKey] = false}
+
+  while head &lt;= #q do
+    local cur = q[head]; head = head + 1
+    if cur == toKey then break end
+    for _, e in ipairs(border_node[cur].edges or {}) do
+      local nxt = e.to
+      if nxt and prev[nxt] == nil then
+        prev[nxt] = {from=cur, cmd=e.cmd}
+        table.insert(q, nxt)
+      end
+    end
+  end
+
+  if prev[toKey] == nil then
+    print("[BORDER] no path:", fromKey, "-&gt;", toKey)
+    return nil
+  end
+
+  -- 回溯成段
+  local steps = {}
+  local k = toKey
+  while k ~= fromKey do
+    local p = prev[k]
+    table.insert(steps, 1, {from=p.from, to=k, cmd=p.cmd})
+    k = p.from
+  end
+
+  print(string.format("[BORDER] path %s -&gt; %s, %d steps", fromKey, toKey, #steps))
+  for i,s in ipairs(steps) do
+    print(string.format("  [%d] %s -&gt; %s : %s", i, s.from, s.to, s.cmd))
+  end
+  return steps
+end
+</script>
+				<eventHandlerList />
+			</Script>
 		</ScriptGroup>
 		<Script isActive="yes" isFolder="no">
 			<name>获得任务目标地址+并启动</name>
@@ -72879,12 +73852,264 @@ end
 </script>
 			<eventHandlerList />
 		</Script>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>边界节点</name>
+			<packageName></packageName>
+			<script></script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>河北地区</name>
+				<packageName></packageName>
+				<script>border_node = border_node or {}
+
+border_node["晋阳-平定州"] = {
+  regionKey = "jyang",
+  attach = { type="room", id="平定州|e,nu,w" },
+  edges = {
+    {to="日月神教-土路", cmd="nu"},
+  }
+}
+
+border_node["日月神教-土路"] = {
+  regionKey = "ry",
+  attach = { type="room", id="土路|n,sd" },
+  edges = {
+    {to="晋阳-平定州", cmd="sd"},
+  }
+}
+
+border_node["晋阳-娘子关"] = {
+  regionKey = "jyang",
+  attach = { type="room", id="娘子关|ne,sw" },
+  edges = {
+    {to="河北-太行山麓", cmd="ne"},
+  }
+}
+
+border_node["河北-太行山麓"] = {
+  regionKey = "hb",
+  attach = { type="room", id="太行山麓|ed,sw" },
+  edges = {
+    {to="晋阳-娘子关", cmd="sw"},
+  }
+}
+-------------------
+border_node["晋阳-轵关陉"] = {
+  regionKey = "jyang",
+  attach = { type="room", id="轵关陉|e,nw" },
+  edges = {
+    {to="河北-济源", cmd="e;se;e"},
+  }
+}
+
+border_node["河北-济源"] = {
+  regionKey = "hb",
+  attach = { type="room", id="济源|e,sd,w" },
+  edges = {
+    {to="晋阳-轵关陉", cmd="w;nw;w"},
+  }
+}
+
+-------------------------
+border_node["河北-官道"] = {
+  regionKey = "hb",
+  attach = { type="room", id="官道|ne,nw,sw" },
+  edges = {
+    {to="代州-倒马关", cmd="nw;nw"},
+  }
+}
+
+border_node["代州-倒马关"] = {
+  regionKey = "dzhou",
+  attach = { type="room", id="倒马关|nw,se" },
+  edges = {
+    {to="河北-官道", cmd="se;se"},
+  }
+}
+-------------------------------
+
+border_node["代州-蒲阴陉"] = {
+  regionKey = "dzhou",
+  attach = { type="room", id="蒲阴陉|nw,se" },
+  edges = {
+    {to="河北-山间小路", cmd="eastdown"},
+  }
+}
+
+border_node["河北-山间小路"] = {
+  regionKey = "hb",
+  attach = { type="room", id="山间小路|ne" },
+  edges = {
+    {to="代州-蒲阴陉", cmd="bo;wu"},
+  }
+}
+-----------------------------
+
+border_node["河北-高碑店"] = {
+  regionKey = "hb",
+  attach = { type="room", id="高碑店|n,se,sw,w" },
+  edges = {
+    {to="北京-青石大道", cmd="n;n"},
+  }
+}
+
+border_node["北京-青石大道"] = {
+  regionKey = "bj",
+  attach = { type="room", id="青石大道|ne,s,w" },
+  edges = {
+    {to="河北-高碑店", cmd="s;s"},
+  }
+}
+-----------------------------
+
+border_node["代州-山路"] = {
+  regionKey = "dzhou",
+  attach = { type="room", id="山路|e,nu,sw" },
+  edges = {
+    {to="恒山-山门", cmd="nu"},
+  }
+}
+
+border_node["恒山-山门"] = {
+  regionKey = "hengshan",
+  attach = { type="room", id="恒山山门|nu,sd" },
+  edges = {
+    {to="代州-山路", cmd="sd"},
+  }
+}
+------------------------
+border_node["代州-雁门关"] = {
+  regionKey = "dzhou",
+  attach = { type="room", id="雁门关|nw,sd" },
+  edges = {
+    {to="大同-山路", cmd="nw"},
+  }
+}
+
+border_node["大同-山路"] = {
+  regionKey = "datong",
+  attach = { type="room", id="山路|ne,se" },
+  edges = {
+    {to="代州-雁门关", cmd="se"},
+  }
+}
+-----------------------
+border_node["大同-恒山山脚"] = {
+  regionKey = "datong",
+  attach = { type="room", id="恒山山脚|nd,su" },
+  edges = {
+    {to="恒山-上山路", cmd="su"},
+  }
+}
+
+border_node["恒山-上山路"] = {
+  regionKey = "hengshan",
+  attach = { type="room", id="上山路|nd,se,sw" },
+  edges = {
+    {to="大同-恒山山脚", cmd="nd"},
+  }
+}
+--------------------------
+border_node["大同-北门"] = {
+  regionKey = "datong",
+  attach = { type="room", id="北门|ne,nw,s" },
+  edges = {
+    {to="云冈石窟-土路", cmd="nw"},
+  }
+}
+
+border_node["云冈石窟-土路"] = {
+  regionKey = "ygsk",
+  attach = { type="room", id="土路|n,ne,se,w" },
+  edges = {
+    {to="大同-北门", cmd="se"},
+  }
+}
+-----------------------
+
+border_node["大同-洋河北渡口"] = {
+  regionKey = "datong",
+  attach = { type="room", id="洋河北渡口|eu" },
+  edges = {
+    {to="张家口-官道", cmd="eu;ne"},
+  }
+}
+
+border_node["张家口-官道"] = {
+  regionKey = "zjk",
+  attach = { type="room", id="官道|n,ne,sw" },
+  edges = {
+    {to="大同-洋河北渡口", cmd="sw;wd"},
+  }
+}
+------------------------
+border_node["张家口-小庙坡"] = {
+  regionKey = "zjk",
+  attach = { type="room", id="小庙坡|ed,wu" },
+  edges = {
+    {to="恒山-白羊峪", cmd="wu"},
+  }
+}
+
+border_node["恒山-白羊峪"] = {
+  regionKey = "hengshan",
+  attach = { type="room", id="白羊峪|ed,su" },
+  edges = {
+    {to="张家口-小庙坡", cmd="ed"},
+  }
+}
+----------------------------
+border_node["张家口-蛤蟆嘴"] = {
+  regionKey = "zjk",
+  attach = { type="room", id="蛤蟆嘴|nd,sw" },
+  edges = {
+    {to="代州-灵丘", cmd="sw"},
+  }
+}
+
+border_node["代州-灵丘"] = {
+  regionKey = "dzhou",
+  attach = { type="room", id="灵丘|ne,se,sw" },
+  edges = {
+    {to="张家口-蛤蟆嘴", cmd="ne"},
+  }
+}
+-----------------------
+border_node["张家口-居庸关"] = {
+  regionKey = "zjk",
+  attach = { type="room", id="居庸关|ne,nw,se,w" },
+  edges = {
+    {to="北京-德胜门", cmd="se"},
+  }
+}
+
+border_node["北京-德胜门"] = {
+  regionKey = "bj",
+  attach = { type="room", id="德胜门|e,nw,se,sw,u" },
+  edges = {
+    {to="张家口-居庸关", cmd="nw"},
+  }
+}
+-----------------------
+
+
+
+</script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
 	</ScriptPackage>
 	<KeyPackage />
 	<VariablePackage>
 		<HiddenVariables>
 			<name>eat_interval</name>
 		</HiddenVariables>
+		<Variable>
+			<name>current_learning_skills</name>
+			<keyType>4</keyType>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 		<VariableGroup>
 			<name>murong_task</name>
 			<keyType>4</keyType>
@@ -72897,15 +74122,15 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>murong_target_city</name>
+				<name>murong_target_room</name>
 				<keyType>4</keyType>
-				<value>闽中</value>
+				<value>菜园子</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>murong_target_room</name>
+				<name>murong_target_city</name>
 				<keyType>4</keyType>
-				<value>山路</value>
+				<value>建宁府</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -73167,15 +74392,15 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>water</name>
+				<name>max_shen</name>
 				<keyType>4</keyType>
-				<value>68</value>
+				<value>464</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_xue</name>
+				<name>water</name>
 				<keyType>4</keyType>
-				<value>693</value>
+				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -73215,9 +74440,9 @@ end
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_shen</name>
+				<name>max_xue</name>
 				<keyType>4</keyType>
-				<value>464</value>
+				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -73235,25 +74460,25 @@ end
 			<Variable>
 				<name>qi</name>
 				<keyType>4</keyType>
-				<value>4764</value>
+				<value>4967</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
-				<value>162</value>
+				<value>228</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>jing</name>
 				<keyType>4</keyType>
-				<value>3740</value>
+				<value>3820</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
 				<keyType>4</keyType>
-				<value>236</value>
+				<value>228</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
@@ -73263,12 +74488,6 @@ end
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
-			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
 		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
