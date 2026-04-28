@@ -1643,6 +1643,26 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 						<integer>0</integer>
 					</regexCodePropertyList>
 				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>少林寺广场</name>
+					<script>set_xkx_room("少林寺广场")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>少林风波录</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>0</integer>
+					</regexCodePropertyList>
+				</Trigger>
 			</TriggerGroup>
 			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>长江以南</name>
@@ -3525,6 +3545,7 @@ map_gudong_to_id(matches[2], matches[3])
 					<script> --格格恶发现的「以彼之道还施彼身」慕容世家内鬼(Murong jiazei)
 set_target_type("慕容")
 set_target_name("jiazei")
+explorer.markNpcFound()
 </script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -3944,6 +3965,28 @@ checking_image(action)</script>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
 						<string>^刑捕头说道：「你不想听我介绍(ask xing butou about intro)一下这伙人的来历吗？.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>发现线人</name>
+					<script>--格格恶的线人 穆嘉(Mu jia)
+local name = string.lower(matches[2])
+send("give "..name.." tu")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>格格恶的线人 .*\((.*) (.*)\)</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -4560,10 +4603,16 @@ local title = matches[2]
 local name = matches[3]
 find_npc(title, name)
 
+ 
+
 if title == "泰安百姓" then
   expandAlias("mload taian")
+elseif title == "水果小贩" and name == "陈小二" then
+  set_xkx_room("泉州")  
+elseif title == "小贩" and name == "曹云" then
+  set_xkx_room("温州")    
 elseif title == "代州百姓" then
-  expandAlias("mload dzhou")  
+  expandAlias("mload dzhou")    
 elseif title == "明州平民" then
   expandAlias("mload mz")  
 elseif title == "衡州百姓" then
@@ -7846,7 +7895,7 @@ end)
 					<script></script>
 					<command>yun qimen</command>
 					<packageName></packageName>
-					<regex>^qm$</regex>
+					<regex>^mm$</regex>
 				</Alias>
 				<Alias isActive="yes" isFolder="no">
 					<name>home</name>
@@ -8296,6 +8345,40 @@ set_task_origin(matches[2])</script>
 			<packageName></packageName>
 			<regex>^andao$</regex>
 		</Alias>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>遍历</name>
+			<script></script>
+			<command></command>
+			<packageName></packageName>
+			<regex></regex>
+			<Alias isActive="yes" isFolder="no">
+				<name>开始遍历 - bli</name>
+				<script>local depth = tonumber(matches[2]) or 3  -- 默认深度3
+explorer.start(depth)
+</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^bli(?:\s+(\d+))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>停止遍历 - bff</name>
+				<script>explorer.forceStop()</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^bff$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>发现npc trigger</name>
+				<script>if explorer and explorer.active then
+  if line:find("华山派使者", 1, true) then
+    explorer.markNpcFound()
+  end
+end</script>
+				<command></command>
+				<packageName></packageName>
+				<regex></regex>
+			</Alias>
+		</AliasGroup>
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
@@ -19277,7 +19360,7 @@ fullme.initUI()
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "strike"
+local skill = "hand"
 local food = "ganliang"
 
 general_scripts = {
@@ -19287,9 +19370,9 @@ general_scripts = {
 function release_force()
   --send("yun regenerate;hua fangyuan")
   --expandAlias("yr;lingwu blade")
-  expandAlias("yr;;lingwu throwing")
+  --expandAlias("yr;;lingwu throwing")
   --expandAlias("yr;;do 4 learn huang for literate 50")
-  --expandAlias("yc;;lian parry 50")
+  expandAlias("yc;lian parry 50;yc;lian parry 50")
   --expandAlias(general_scripts.skills_to_learn)
 end
 
@@ -21497,6 +21580,13 @@ function gmcp_router.onGMCPMove()
     end
   end
 
+  if explorer and explorer.onGMCPMove then
+    local ok3, err3 = pcall(explorer.onGMCPMove, fp, room)
+    if not ok3 then
+      echo("\n[gmcp_router] explorer error: " .. tostring(err3) .. "\n")
+    end
+  end
+
   -- ==================================================
   -- 4) ⭐ walker 移动结果反馈（新增）
   --    room.result: "true" / "false"（你已验证）
@@ -23252,6 +23342,231 @@ function map_check.runAll(regionKey)
   cprint("全部检查完成。")
 end
 </script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>遍历</name>
+				<packageName></packageName>
+				<script>-- ======================================================
+-- explorer.lua
+-- DFS 路径遍历 + 深度限制 + 强制停止
+-- NPC 检测完全交给 trigger
+-- ======================================================
+
+explorer = explorer or {}
+
+-------------------------------------------------------
+-- 状态
+-------------------------------------------------------
+explorer.active     = false
+explorer.maxDepth   = 5
+
+explorer.path       = {}
+explorer.pathKey    = "ROOT"
+explorer.nodes      = {}
+explorer.stack      = {}
+
+explorer.npcFound   = false
+
+explorer._timerId   = nil
+explorer.checkDelay = 100
+
+-------------------------------------------------------
+-- 工具
+-------------------------------------------------------
+local function eprint(msg)
+  if cecho then
+    cecho("\n&lt;cyan&gt;[Explorer]&lt;reset&gt; " .. msg .. "\n")
+  else
+    print("[Explorer] " .. msg)
+  end
+end
+
+local function pathToKey(path)
+  if #path == 0 then return "ROOT" end
+  return "ROOT/" .. table.concat(path, "/")
+end
+
+local function normalizeDirs(dirs)
+  local out = {}
+
+  for _, d in ipairs(dirs or {}) do
+    local nd = mapper_core.normalizeDir(d)
+    table.insert(out, nd)
+  end
+
+  table.sort(out)
+  return out
+end
+
+local function ensureNode(pathKey, room)
+  explorer.nodes[pathKey] = explorer.nodes[pathKey] or {
+    short = room.short,
+    fp = mapper_core.currentFP,
+    dirs = normalizeDirs(room.dir),
+    tried = {},
+  }
+  return explorer.nodes[pathKey]
+end
+
+-------------------------------------------------------
+-- Timer（防止 stop 后继续执行）
+-------------------------------------------------------
+function explorer.schedule(fn, delayMs)
+  if explorer._timerId and killTimer then
+    killTimer(explorer._timerId)
+  end
+
+  explorer._timerId = tempTimer(delayMs / 1000, function()
+    explorer._timerId = nil
+    if explorer.active then
+      fn()
+    end
+  end)
+end
+
+-------------------------------------------------------
+-- 启动 / 停止
+-------------------------------------------------------
+function explorer.start(maxDepth)
+  explorer.active   = true
+  explorer.maxDepth = tonumber(maxDepth) or 3
+
+  explorer.path     = {}
+  explorer.pathKey  = "ROOT"
+  explorer.nodes    = {}
+  explorer.stack    = {}
+
+  explorer.npcFound = false
+
+  eprint(string.format(
+    "启动遍历：maxDepth=%d",
+    explorer.maxDepth
+  ))
+end
+
+function explorer.stop()
+  explorer.active = false
+  eprint("已停止。")
+end
+
+-- ⭐ 强制停止（最重要）
+function explorer.forceStop()
+  explorer.active = false
+
+  if explorer._timerId and killTimer then
+    killTimer(explorer._timerId)
+    explorer._timerId = nil
+  end
+
+  if walker and walker.stop then
+    walker.stop()
+  end
+
+  eprint("&lt;red&gt;已强制停止遍历 + walker。&lt;/red&gt;")
+end
+
+-------------------------------------------------------
+-- ⭐ NPC 命中（只负责状态）
+-------------------------------------------------------
+function explorer.markNpcFound()
+  if not explorer.active then return end
+
+  explorer.npcFound = true
+  explorer.forceStop()
+
+  eprint("&lt;green&gt;检测到目标NPC，已停止遍历。&lt;/green&gt;")
+end
+
+-------------------------------------------------------
+-- 移动
+-------------------------------------------------------
+function explorer.move(dir)
+  walker.start(dir, {
+    ackMode = true,
+    delayMs = 350,
+    maxFails = 5,
+  })
+end
+
+-------------------------------------------------------
+-- 回退
+-------------------------------------------------------
+function explorer.backtrack()
+  if #explorer.stack == 0 then
+    eprint("遍历完成。")
+    explorer.stop()
+    return
+  end
+
+  local step = table.remove(explorer.stack)
+
+  explorer.path = step.prevPath
+  explorer.pathKey = pathToKey(explorer.path)
+
+  eprint("回退: " .. step.back)
+  explorer.move(step.back)
+end
+
+-------------------------------------------------------
+-- GMCP 主入口
+-------------------------------------------------------
+function explorer.onGMCPMove(fp, room)
+  if not explorer.active then return end
+  if type(room) ~= "table" then return end
+
+  -- 等文本（NPC）先出现
+  explorer.schedule(function()
+
+    local depth = #explorer.path
+    local pathKey = pathToKey(explorer.path)
+    explorer.pathKey = pathKey
+
+    local node = ensureNode(pathKey, room)
+
+    -- 深度限制
+    if depth &gt;= explorer.maxDepth then
+      eprint("达到最大深度，回退")
+      explorer.backtrack()
+      return
+    end
+
+    -- 找未尝试方向
+    for _, dir in ipairs(node.dirs) do
+      if not node.tried[dir] then
+        node.tried[dir] = true
+
+        local back = mapper_core.oppositeDir(dir)
+        if not back then
+          eprint("&lt;red&gt;没有反向方向: " .. tostring(dir) .. "&lt;/red&gt;")
+          return
+        end
+
+        local prevPath = {}
+        for i, v in ipairs(explorer.path) do
+          prevPath[i] = v
+        end
+
+        table.insert(explorer.stack, {
+          prevPath = prevPath,
+          dir = dir,
+          back = back,
+        })
+
+        table.insert(explorer.path, dir)
+        explorer.pathKey = pathToKey(explorer.path)
+
+        eprint("探索: " .. dir .. " -&gt; " .. explorer.pathKey)
+        explorer.move(dir)
+        return
+      end
+    end
+
+    -- 没路 → 回退
+    explorer.backtrack()
+
+  end, explorer.checkDelay)
+end</script>
 				<eventHandlerList />
 			</Script>
 		</ScriptGroup>
@@ -72121,6 +72436,14 @@ add("马车行", { --
   back_mingzhou = "gu;qu shaoxing",
 })
 
+add("梅庄天井", { --
+  back_mrf     = "open gate;s",
+  back_pozhen  = "open gate;s",
+  back_hsz     = "open gate;s",
+  back_mzj     = "open gate;s",
+  back_yangzhou= "open gate;s",  
+})
+
 add("岳阳", { --
   short_name = "yy", 
   back_mrf     = "node walk yy_mrf",
@@ -72316,6 +72639,7 @@ add("潮州", {
 add("义兴", {
   back_mrf    = "walk wuxi",
   back_pozhen = "walk wuxi",
+  back_mzj    = "walk jiankang-zhengyang",
 })
 
 add("盛巷桥", {
@@ -72653,6 +72977,18 @@ node_city = node_city or {}
 local add = node_city.add or function(name, data) node_city[name] = data end
 
 -- 任务/人物点（中原）
+
+
+add("少林寺广场", {
+  back_yangzhou= "node walk igc_sl",
+  back_mrf     = "node walk igc_sl",
+})
+
+add("少林寺", {
+  back_yangzhou= "node walk sl_yz",
+  back_mrf     = "node walk sl_yz",
+})
+
 add("扬子津", {
   ask_job      = "ask shao gong about jiang;;enter",
   back_yangzhou= "walk yangzhou",
@@ -77358,15 +77694,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>murong_target_room</name>
-				<keyType>4</keyType>
-				<value>金庭门</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>murong_target_city</name>
 				<keyType>4</keyType>
 				<value>天台山</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>murong_target_room</name>
+				<keyType>4</keyType>
+				<value>金庭门</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -77388,9 +77724,9 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_xue</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -77400,21 +77736,21 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
-				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>thirthty</name>
 				<keyType>4</keyType>
 				<value>"饥渴状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>hunger</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>"饥饿状态"</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>short_of_shen</name>
+				<keyType>4</keyType>
+				<value>神不足</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -77610,10 +77946,10 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
+				<value>1093</value>
+				<valueType>4</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -77640,21 +77976,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_neili</name>
+				<name>max_neili</name>
 				<keyType>4</keyType>
-				<value>1093</value>
-				<valueType>4</valueType>
+				<value>2014</value>
+				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>base_jingli</name>
+				<name>current_jingli</name>
 				<keyType>4</keyType>
-				<value>991</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_neili</name>
-				<keyType>4</keyType>
-				<value>1432</value>
+				<value>1982</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -77664,9 +77994,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_jingli</name>
+				<name>current_neili</name>
 				<keyType>4</keyType>
-				<value>1982</value>
+				<value>1432</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_jingli</name>
+				<keyType>4</keyType>
+				<value>991</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -77689,38 +78025,32 @@ border_node["明州-城外土路"] = {
 			<valueType>5</valueType>
 		</VariableGroup>
 		<VariableGroup>
-			<name>luren_set</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-		</VariableGroup>
-		<VariableGroup>
 			<name>stat</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>water</name>
+				<name>qi</name>
 				<keyType>4</keyType>
-				<value>180</value>
+				<value>7039</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>qi</name>
+				<name>water</name>
 				<keyType>4</keyType>
-				<value>6909</value>
+				<value>225</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>jing</name>
 				<keyType>4</keyType>
-				<value>5403</value>
+				<value>5569</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
 				<keyType>4</keyType>
-				<value>180</value>
+				<value>225</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
@@ -77731,14 +78061,20 @@ border_node["明州-城外土路"] = {
 			<valueType>4</valueType>
 		</Variable>
 		<VariableGroup>
+			<name>luren_set</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
+		</VariableGroup>
+		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -77754,9 +78090,9 @@ border_node["明州-城外土路"] = {
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
