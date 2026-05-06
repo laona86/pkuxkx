@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>PKUXKX</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -1956,8 +1956,10 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
 						<string>这里是一个小广场，平时人来人往，热闹非常。几个游客不知道正议论着什么</string>
+						<string>镇江府城中这片空地最是显眼</string>
 					</regexCodeList>
 					<regexCodePropertyList>
+						<integer>0</integer>
 						<integer>0</integer>
 					</regexCodePropertyList>
 				</Trigger>
@@ -2423,8 +2425,10 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
 						<string>这里是镇江当地的一家马车行</string>
+						<string>青砖院落车马喧阗</string>
 					</regexCodeList>
 					<regexCodePropertyList>
+						<integer>0</integer>
 						<integer>0</integer>
 					</regexCodePropertyList>
 				</Trigger>
@@ -2886,10 +2890,11 @@ taohua_perform_skills(qishi)</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>通用线索</name>
 				<script>local room = matches[2]
-echo("===&gt; "..room)
+ -- echo("===&gt; "..room)
 dest_task_type("通用线索")
 dest_primary_address("null", room)
---expandAlias("pw;fg")</script>
+
+start_tracing()</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -6008,7 +6013,7 @@ send("wear lupi dai")
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>Test script</name>
-			<script>send("ling west")</script>
+			<script>show_tracing_flag()</script>
 			<command></command>
 			<packageName></packageName>
 			<regex>^testscript$</regex>
@@ -8342,10 +8347,11 @@ set_task_origin(matches[2])</script>
 		</Alias>
 		<Alias isActive="yes" isFolder="no">
 			<name>丐帮暗道</name>
-			<script></script>
-			<command>enter shudong;say 天堂有路你不走啊;d;5</command>
+			<script>local entry = tonumber(matches[2]) or 5  -- 默认深度3
+send("enter shudong;say 天堂有路你不走啊;d;"..entry)</script>
+			<command></command>
 			<packageName></packageName>
-			<regex>^andao$</regex>
+			<regex>^andao(?:\s+(\d+))?$</regex>
 		</Alias>
 		<AliasGroup isActive="yes" isFolder="yes">
 			<name>遍历</name>
@@ -8381,6 +8387,23 @@ end</script>
 				<regex></regex>
 			</Alias>
 		</AliasGroup>
+		<Alias isActive="yes" isFolder="no">
+			<name>跟踪开启 - zon</name>
+			<script>cecho("&lt;green&gt;启动跟踪\n")
+set_tracing(true)
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^zon$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>跟踪开启 - zof</name>
+			<script>cecho("&lt;red&gt;关闭跟踪\n")
+set_tracing(false)</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^zof$</regex>
+		</Alias>
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
@@ -18074,11 +18097,15 @@ end
 			<Script isActive="yes" isFolder="no">
 				<name>通用任务</name>
 				<packageName></packageName>
-				<script>local tasks = {}
+				<script>local tasks = {
+  hyd = {origin = "hyd"}
+}
 local mch_string = "马车行"
+
 function set_task_type(type)
   tasks.type = type
 end
+
 function set_task(task)
   tasks.name = task
 end
@@ -18109,31 +18136,25 @@ end
 
 function back_to_mingzhou()
   local room = get_current_room_name()
-  echo ("============&gt;:"..room)
   echo (node_city[room].back_mingzhou)
-  echo("++++++")
   send(node_city[room].back_mingzhou)
 
 end
+
 function back_to_yupo()
   local room = get_current_room_name()
-  echo ("============&gt;:"..room)
   echo (node_city[room].back_yupo)
-  echo("++++++")
   send(node_city[room].back_yupo)
 end
 
 function back_to_hyd()
   local room = get_current_room_name()
-  echo ("============&gt;:"..room)
   echo (node_city[room].back_hyd)
-  echo("++++++")
   send(node_city[room].back_hyd)
 end
 
 function ask_job()
   local room = get_current_room_name()
-  --echo("---&gt;room = "..room.."\n")
   send(node_city[room].ask_job)
 end 
 
@@ -18157,37 +18178,44 @@ function job_fail()
   send(node_city[room].job_fail)
 end
 
-function back_to_yangzhou()
+local function back_to(key)
   local room = get_current_room_name()
-  if string.find(room, mch_string) then
+  if not room then return end
+
+  -- 1. Exact room first
+  if node_city[room] and node_city[room][key] then
+    send(node_city[room][key])
+    return
+  end
+
+  -- 2. Fallback to mch_string
+  if mch_string and string.find(room, mch_string, 1, true) then
     room = mch_string
-  end  
-  send(node_city[room].back_yangzhou)
-  
+  end
+
+  if node_city[room] and node_city[room][key] then
+    send(node_city[room][key])
+  end
 end
 
 function back_to_mrf()
-  local room = get_current_room_name()
-  if string.find(room, mch_string) then
-    room = mch_string
-  end  
-  send(node_city[room].back_mrf)
+  back_to("back_mrf")
+end
+
+function back_to_yangzhou()
+  back_to("back_yangzhou")
 end
 
 function back_to_hz()
-  local room = get_current_room_name()
-  if string.find(room, mch_string) then
-    room = mch_string
-  end  
-  send(node_city[room].back_hangzhou)
+  back_to("back_hangzhou")
 end
 
 function back_to_pozhen()
-  local room = get_current_room_name()
-  if string.find(room, mch_string) then
-    room = mch_string
-  end  
-  send(node_city[room].back_pozhen)
+  back_to("back_pozhen")
+end
+
+function back_to_hsz()
+  back_to("back_hsz")
 end
 
 function back_to_changan()
@@ -18203,14 +18231,6 @@ end
 function back_to_hua()
   local room = get_current_room_name()
   send(node_city[room].back_hua)
-end
-
-function back_to_hsz()
-  local room = get_current_room_name()
-  if string.find(room, mch_string) then
-    room = mch_string
-  end  
-  send(node_city[room].back_hsz)
 end
 
 function back_to_mzj()
@@ -18856,19 +18876,7 @@ end
 			<Script isActive="yes" isFolder="no">
 				<name>设置任务返回点</name>
 				<packageName></packageName>
-				<script>local task_origin = {}
-task_origin["yu"] = {"衢州府", "民居"}
-
-function set_task_origin(task)
-  local dest = task_origin[task]
-  -- echo("--dest[1]: "..dest[1])
-  -- echo("--dest[2]: "..dest[2])
-  if dest ~= nil then
-     -- echo("=====\n")
-     dest_task_type("task-origin-entry")
-     dest_primary_address(dest[1], dest[2])
-  end
-end</script>
+				<script></script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
@@ -18933,34 +18941,56 @@ function nearest_mch(room)
 end</script>
 				<eventHandlerList />
 			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>自动追踪</name>
+				<packageName></packageName>
+				<script>local tracing = false
+
+function set_tracing(flag)
+  tracing = flag
+end
+
+function show_tracing_flag()
+  if tracing then
+    cecho("&lt;yellow&gt; tracing flag: on\n")
+  else
+    cecho("&lt;yellow&gt; tracing flag: off\n")
+  end
+end
+
+function start_tracing()
+  if tracing then 
+    expandAlias("pw;fg")
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
 		</ScriptGroup>
 		<Script isActive="yes" isFolder="no">
 			<name>fullme</name>
 			<packageName></packageName>
 			<script>-- =========================================================
--- fullme.lua  (RIGHT-SIDE, COMPATIBLE, AUTO-FIT JPG VERSION)
+-- fullme.lua  (RIGHT-SIDE, AUTO-FIT + BUTTON VERSION)
 -- =========================================================
--- Show PKUxkx fullme image inside Mudlet
--- No LuaSocket required
--- Uses downloadFile + sysDownloadDone
--- Right-side dock, compatible with old/new Mudlet
+
 cecho("&lt;cyan&gt; [fullme] 已加载\n")
 fullme = fullme or {}
 
--- =========================
--- Config
--- =========================
 fullme.cfg = {
   windowName = "fullme_img",
 
-  -- Max window size (image will be scaled to fit within this, keeping aspect ratio)
+  -- 默认最大尺寸
   w = 420,
   h = 420,
 
-  -- Top margin
-  y = 20,
+  -- 智能缩放参数
+  tallMaxH = 400,      -- 高图最高
+  wideMaxW = 900,      -- 宽图最宽
+  normalMaxW = 200,    -- 普通图最大宽
+  normalMaxH = 200,    -- 普通图最大高
+  ratioThreshold = 1.3,
 
-  -- Right margin
+  y = 45,
   margin = 80,
 
   prefer_net = true,
@@ -18968,21 +18998,18 @@ fullme.cfg = {
   debug = false,
 }
 
--- =========================
--- State
--- =========================
-fullme._seq   = 0
-fullme._jobs  = {}
-fullme._eh    = nil
-fullme._resizeEH = nil
+fullme._seq   = fullme._seq or 0
+fullme._jobs  = fullme._jobs or {}
+fullme._eh    = fullme._eh or nil
+fullme._resizeEH = fullme._resizeEH or nil
 
--- current (actual) window size after autoFit
 fullme._curW = fullme._curW or fullme.cfg.w
 fullme._curH = fullme._curH or fullme.cfg.h
+fullme._lastUrl = fullme._lastUrl or nil
 
--- =========================
+-------------------------------------------------------
 -- Utils
--- =========================
+-------------------------------------------------------
 local function dbg(msg)
   if fullme.cfg.debug then
     cecho("\n&lt;cyan&gt;[fullme]&lt;/cyan&gt; " .. msg .. "\n")
@@ -19007,7 +19034,6 @@ local function cacheDir()
   return dir
 end
 
--- Main window size (compatible)
 function fullme.getMainSize()
   if type(getMainWindowSize) == "function" then
     local w, h = getMainWindowSize()
@@ -19084,9 +19110,9 @@ local function extractImg(html, base)
       or html:match("(https?://[%w%._%-%/%%?=&amp;]+%.webp[%w%._%-%/%%?=&amp;]*)")
 end
 
--- =========================
--- Image size (JPEG/PNG/GIF) for auto-fit
--- =========================
+-------------------------------------------------------
+-- Image size
+-------------------------------------------------------
 local function readU16BE(f)
   local b1 = f:read(1)
   local b2 = f:read(1)
@@ -19106,7 +19132,6 @@ local function getJpegSize(path)
   end
 
   while true do
-    -- seek marker prefix 0xFF
     local c = f:read(1)
     if not c then break end
     while c and c:byte() ~= 0xFF do
@@ -19114,7 +19139,6 @@ local function getJpegSize(path)
     end
     if not c then break end
 
-    -- skip fill 0xFFs
     local m = f:read(1)
     if not m then break end
     while m and m:byte() == 0xFF do
@@ -19123,11 +19147,7 @@ local function getJpegSize(path)
     if not m then break end
 
     local marker = m:byte()
-
-    -- SOS/EOI -&gt; stop
-    if marker == 0xDA or marker == 0xD9 then
-      break
-    end
+    if marker == 0xDA or marker == 0xD9 then break end
 
     local segLen = readU16BE(f)
     if not segLen or segLen &lt; 2 then break end
@@ -19140,7 +19160,7 @@ local function getJpegSize(path)
       (marker &gt;= 0xCD and marker &lt;= 0xCF)
 
     if isSOF then
-      f:read(1) -- precision
+      f:read(1)
       local h = readU16BE(f)
       local w = readU16BE(f)
       f:close()
@@ -19161,11 +19181,10 @@ local function getPngGifSize(path)
   local head = f:read(24) or ""
   f:close()
 
-  -- PNG
   if head:sub(1,8) == "\137PNG\r\n\026\n" and head:sub(13,16) == "IHDR" then
     local function be32(s, i)
       local b1,b2,b3,b4 = s:byte(i, i+3)
-      if not b1 then return nil end
+      if not b4 then return nil end
       return ((b1*256 + b2)*256 + b3)*256 + b4
     end
     local w = be32(head, 17)
@@ -19173,7 +19192,6 @@ local function getPngGifSize(path)
     if w and h then return w, h end
   end
 
-  -- GIF
   if head:sub(1,6) == "GIF87a" or head:sub(1,6) == "GIF89a" then
     local b7,b8,b9,b10 = head:byte(7,10)
     if b10 then
@@ -19192,16 +19210,36 @@ function fullme.getImageSize(path)
   return getPngGifSize(path)
 end
 
+-------------------------------------------------------
+-- Auto fit
+-------------------------------------------------------
 function fullme.autoFitFromFile(path)
   local iw, ih = fullme.getImageSize(path)
   if not iw or not ih then
-    -- if can't detect size, keep current size
+    resizeWindow(fullme.cfg.windowName, fullme._curW or fullme.cfg.w, fullme._curH or fullme.cfg.h)
+    fullme.updatePosition()
     return
   end
 
-  local maxW = fullme.cfg.w
-  local maxH = fullme.cfg.h
-  local s = math.min(maxW / iw, maxH / ih, 1) -- do not upscale
+  local s
+  local th = tonumber(fullme.cfg.ratioThreshold) or 1.3
+
+  -- 高图：限制最高
+  if ih &gt; iw * th then
+    s = math.min((fullme.cfg.tallMaxH or 400) / ih, 1)
+
+  -- 宽图：限制最宽
+  elseif iw &gt; ih * th then
+    s = math.min((fullme.cfg.wideMaxW or 900) / iw, 1)
+
+  -- 普通图：放进 200x200
+  else
+    s = math.min(
+      (fullme.cfg.normalMaxW or 200) / iw,
+      (fullme.cfg.normalMaxH or 200) / ih,
+      1
+    )
+  end
 
   local nw = math.max(1, math.floor(iw * s + 0.5))
   local nh = math.max(1, math.floor(ih * s + 0.5))
@@ -19211,31 +19249,46 @@ function fullme.autoFitFromFile(path)
   fullme.updatePosition()
 end
 
--- =========================
+-------------------------------------------------------
 -- UI
--- =========================
+-------------------------------------------------------
 function fullme.updatePosition()
   local mw, _ = fullme.getMainSize()
   local w = fullme._curW or fullme.cfg.w
+
   local x = mw - w - fullme.cfg.margin
   local y = fullme.cfg.y
+
   moveWindow(fullme.cfg.windowName, x, y)
+
+  moveWindow("fullme_btn_refresh", x, y - 24)
+  moveWindow("fullme_btn_close", x + 70, y - 24)
 end
 
 function fullme.initUI()
   if not getWindowWrap(fullme.cfg.windowName) then
-    createLabel(
-      fullme.cfg.windowName,
-      0,
-      0,
-      fullme.cfg.w,
-      fullme.cfg.h,
-      true
-    )
+    createLabel(fullme.cfg.windowName, 0, 0, fullme.cfg.w, fullme.cfg.h, true)
     setBackgroundColor(fullme.cfg.windowName, 0, 0, 0, 255)
   end
 
-  -- initialize to current size (may be auto-fitted later)
+  if not getWindowWrap("fullme_btn_refresh") then
+    createLabel("fullme_btn_refresh", 0, 0, 65, 22, true)
+    echo("fullme_btn_refresh", "&lt;center&gt;刷新&lt;/center&gt;")
+    setLabelStyleSheet("fullme_btn_refresh",
+      "background-color: rgba(50,50,50,200); color: white; border-radius:5px;"
+    )
+    setLabelClickCallback("fullme_btn_refresh", "fullme.reload")
+  end
+
+  if not getWindowWrap("fullme_btn_close") then
+    createLabel("fullme_btn_close", 0, 0, 65, 22, true)
+    echo("fullme_btn_close", "&lt;center&gt;关闭&lt;/center&gt;")
+    setLabelStyleSheet("fullme_btn_close",
+      "background-color: rgba(120,30,30,200); color: white; border-radius:5px;"
+    )
+    setLabelClickCallback("fullme_btn_close", "fullme.hide")
+  end
+
   resizeWindow(fullme.cfg.windowName, fullme._curW or fullme.cfg.w, fullme._curH or fullme.cfg.h)
   fullme.updatePosition()
 
@@ -19247,9 +19300,21 @@ function fullme.initUI()
   end
 end
 
--- =========================
+function fullme.hide()
+  hideWindow(fullme.cfg.windowName)
+  hideWindow("fullme_btn_refresh")
+  hideWindow("fullme_btn_close")
+end
+
+function fullme.show()
+  showWindow(fullme.cfg.windowName)
+  showWindow("fullme_btn_refresh")
+  showWindow("fullme_btn_close")
+end
+
+-------------------------------------------------------
 -- Download pipeline
--- =========================
+-------------------------------------------------------
 function fullme.fetchRobot(url)
   fullme.initUI()
   fullme._seq = fullme._seq + 1
@@ -19285,9 +19350,9 @@ function fullme.onDownloadDone(_, file)
 
   if job.stage == "robot" then
     if detectImage(file) then
-      -- robot.php directly returned an image
       fullme.autoFitFromFile(file)
       setBackgroundImage(fullme.cfg.windowName, file)
+      fullme.show()
       fullme._jobs[file] = nil
       return
     end
@@ -19309,6 +19374,7 @@ function fullme.onDownloadDone(_, file)
     if detectImage(file) then
       fullme.autoFitFromFile(file)
       setBackgroundImage(fullme.cfg.windowName, file)
+      fullme.show()
     else
       err("图片下载失败（非图片内容）")
     end
@@ -19316,44 +19382,36 @@ function fullme.onDownloadDone(_, file)
   end
 end
 
--- =========================
+-------------------------------------------------------
 -- Public API
--- =========================
+-------------------------------------------------------
 function fullme.showFromUrl(url)
+  fullme._lastUrl = url
+
   if not fullme._eh then
     fullme._eh = registerAnonymousEventHandler(
       "sysDownloadDone",
       "fullme.onDownloadDone"
     )
   end
+
   fullme.fetchRobot(url)
 end
 
--- =========================
--- Reload support
--- =========================
-fullme._lastUrl = fullme._lastUrl or nil
-
--- override/showFromUrl to remember last url
-local _old_showFromUrl = fullme.showFromUrl
-function fullme.showFromUrl(url)
-  fullme._lastUrl = url
-  _old_showFromUrl(url)
-end
-
--- reload last url (force re-download)
-function fullme.reload(url)
-  url = url or fullme._lastUrl
+function fullme.reload()
+  local url = fullme._lastUrl
   if not url or url == "" then
     err("reload 失败：没有可用的上一次 URL")
     return
   end
+
   fullme.fetchRobot(url)
 end
 
--- auto init
-fullme.initUI()
-</script>
+-------------------------------------------------------
+-- Auto init
+-------------------------------------------------------
+fullme.initUI()</script>
 			<eventHandlerList>
 				<string>sysProfileLoadEvent</string>
 			</eventHandlerList>
@@ -19362,7 +19420,7 @@ fullme.initUI()
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "finger"
+local skill = "dodge"
 local food = "ganliang"
 
 general_scripts = {
@@ -19371,11 +19429,11 @@ general_scripts = {
 
 function release_force()
   --send("yun regenerate;hua fangyuan")
-  --expandAlias("yr;lingwu force")
+  expandAlias("yr;lingwu parry")
   --expandAlias("yr;;lingwu throwing")
   --expandAlias("yr;;do 4 learn huang for literate 50")
   --expandAlias("yc;lian parry 50;yc;lian parry 50")
-  expandAlias(general_scripts.skills_to_learn)
+  --expandAlias(general_scripts.skills_to_learn)
 end
 
 function reset_is_full()
@@ -20137,9 +20195,10 @@ mapper.mappingEnabled = true   -- 默认开启测绘
 
 -- ☆☆ 边界房间名字：这些名字的房间会被当成“边缘”，不会从这里继续向外探索 ☆☆
 mapper.boundaryNames = mapper.boundaryNames or {
-  ["花园"] = true, 
-  ["提督府正门"] = true,
-  -- ["饭厅"] = true, 
+  ["太湖边"] = true, 
+  ["青石官道"] = true,
+  --["官道"] = true, 
+  ["农田"] = true,
   -- ["走廊"] = true,
   -- ["码头"] = true,
   -- ["兰山脚下"] = true,
@@ -23487,7 +23546,8 @@ end
 function explorer.move(dir)
   walker.start(dir, {
     ackMode = true,
-    delayMs = 350,
+    delayMs = 150,
+    baseDelayMs = 150,
     maxFails = 5,
   })
 end
@@ -27255,384 +27315,6 @@ mapper.maps["zhenj"].mapAliases = {
   ["土路14"]  = "tl14",
   ["土路15"]  = "tl15",
   ["土路16"]  = "tl16",
-}
-</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
-					<name>嘉兴 - jx</name>
-					<packageName></packageName>
-					<script>mapper = mapper or {}
-mapper.maps = mapper.maps or {}
-
-mapper.maps["jx"] = {
-
-  region = {
-    key  = "jx",      -- 区域代号，用在 goto wx.xxx 里
-    name = "嘉兴",    -- 纯注释/显示用
-  },
-mapNodes = {
-  ["乡间小径|ne,sw,w"] = {
-    name = "乡间小径",
-    exits = {
-      ["ne"] = "嘉兴南门|e,n,s,sw",
-      ["sw"] = "树林|e,ne,s",
-      ["w"] = "河岸|e,nw",
-    },
-  },
-  ["后院|n"] = {
-    name = "后院",
-    exits = {
-      ["n"] = "大厅|out,s",
-    },
-  },
-  ["嘉兴南湖|e,n,nd,s,se,w"] = {
-    name = "嘉兴南湖",
-    exits = {
-      ["e"] = "钱塘江口|w",
-      ["n"] = "嘉兴钱庄|s",
-      ["nd"] = "无名谷底|e,nu,su,w",
-      ["s"] = "铁枪庙|n,s,w",
-      ["se"] = "嘉兴南湖|e,nw,s",
-      ["w"] = "嘉兴城|e,n,nw,s,w",
-    },
-  },
-  ["嘉兴南湖|e,nw,s"] = {
-    name = "嘉兴南湖",
-    exits = {
-      ["e"] = "秀水客栈|enter,w",
-      ["nw"] = "嘉兴南湖|e,n,nd,s,se,w",
-      ["s"] = "烟雨楼|n,u",
-    },
-  },
-  ["嘉兴南门|e,n,s,sw"] = {
-    name = "嘉兴南门",
-    exits = {
-      ["e"] = "铁枪庙|n,s,w",
-      ["n"] = "嘉兴城|e,n,nw,s,w",
-      ["s"] = "城南官道|n,se",
-      ["sw"] = "乡间小径|ne,sw,w",
-    },
-  },
-  ["嘉兴城|e,n,nw,s,w"] = {
-    name = "嘉兴城",
-    exits = {
-      ["e"] = "嘉兴南湖|e,n,nd,s,se,w",
-      ["n"] = "青石官道|n,s",
-      ["nw"] = "落帆亭|se",
-      ["s"] = "嘉兴南门|e,n,s,sw",
-      ["w"] = "山路|e,nu",
-    },
-  },
-  ["嘉兴钱庄|s"] = {
-    name = "嘉兴钱庄",
-    exits = {
-      ["s"] = "嘉兴南湖|e,n,nd,s,se,w",
-    },
-  },
-  ["坟墓|w"] = {
-    name = "坟墓",
-    exits = {
-      ["w"] = "树林|e,ne,s",
-    },
-  },
-  ["城南官道|n,se"] = {
-    name = "城南官道",
-    exits = {
-      ["n"] = "嘉兴南门|e,n,s,sw",
-      ["se"] = "官道|nw,s",
-    },
-  },
-  ["大厅|out,s"] = {
-    name = "大厅",
-    exits = {
-      ["out"] = "天井|enter,out",
-      ["s"] = "后院|n",
-    },
-  },
-  ["天井|enter,out"] = {
-    name = "天井",
-    exits = {
-      ["enter"] = "大厅|out,s",
-      ["out"] = "陆家庄|enter,n",
-    },
-  },
-  ["太湖码头|se"] = {
-    name = "太湖码头",
-    exits = {
-      ["se"] = "河岸|e,nw",
-    },
-  },
-  ["太湖边|se,wu"] = {
-    name = "太湖边",
-    exits = {
-      ["se"] = "太湖边|nw,se",
-    },
-  },
-    
-  ["太湖边|nw,se"] = {
-    name = "太湖边",
-    exits = {
-      ["se"] = "山路|nw,sd",
-      ["nw"] = "太湖边|se,wu",
-    },
-  },
-  ["官道|n,s"] = {
-    name = "官道",
-    exits = {
-      ["n"] = "官道|nw,s",
-      ["s"] = "盐官县北门|n,s",
-    },
-  },
-  ["官道|nw,s"] = {
-    name = "官道",
-    exits = {
-      ["nw"] = "城南官道|n,se",
-      ["s"] = "官道|n,s",
-    },
-  },
-  ["宴客厅门厅|enter,out"] = {
-    name = "宴客厅门厅",
-    exits = {
-      ["out"] = "烟雨楼二楼|d,enter",
-    },
-  },
-  ["山路|e,nu"] = {
-    name = "山路",
-    exits = {
-      ["e"] = "嘉兴城|e,n,nw,s,w",
-      ["nu"] = "山路|nw,sd",
-    },
-  },
-  ["山路|nw,sd"] = {
-    name = "山路",
-    exits = {
-      ["nw"] = "太湖边|nw,se",
-      ["sd"] = "山路|e,nu",
-    },
-  },
-  ["无名谷底|e,nu,su,w"] = {
-    name = "无名谷底",
-    exits = {
-      ["e"] = "荒谷|w",
-      ["ask chou diao about 独孤求败"] = "杂草森林|nu,sd",
-      ["su"] = "嘉兴南湖|e,n,nd,s,se,w",
-      ["w"] = "蛇窟|e",
-    },
-  },
-  ["杂草森林|nu,sd"] = {
-  name = "杂草森林",
-  exits = {
-    ["nu"] = "虎溪|sd,se",
-    ["sd"] = "无名谷底|e,nu,su,w",
-  },
-},
-["虎溪|sd,se"] = {
-  name = "虎溪",
-  exits = {
-    ["sd"] = "杂草森林|nu,sd",
-    ["se"] = "挂剑祠|nw",
-  },
-},
-["挂剑祠|nw"] = {
-  name = "挂剑祠",
-  exits = {
-    ["nw"] = "虎溪|sd,se",
-  },
-},
-  ["树林|e,ne,s"] = {
-    name = "树林",
-    exits = {
-      ["e"] = "坟墓|w",
-      ["ne"] = "乡间小径|ne,sw,w",
-      ["s"] = "陆家庄|enter,n",
-    },
-  },
-  ["河岸|e,nw"] = {
-    name = "河岸",
-    exits = {
-      ["e"] = "乡间小径|ne,sw,w",
-      ["nw"] = "太湖码头|se",
-    },
-  },
-  ["灵塔|e"] = {
-    name = "灵塔",
-    exits = {
-      ["e"] = "盐官镇|eu,ne,s,sw,w",
-    },
-  },
-  ["烟雨楼|n,u"] = {
-    name = "烟雨楼",
-    exits = {
-      ["n"] = "嘉兴南湖|e,nw,s",
-      ["u"] = "烟雨楼二楼|d,enter",
-    },
-  },
-  ["烟雨楼二楼|d,enter"] = {
-    name = "烟雨楼二楼",
-    exits = {
-      ["d"] = "烟雨楼|n,u",
-      ["enter"] = "宴客厅门厅|enter,out",
-    },
-  },
-  ["盐官县北门|n,s"] = {
-    name = "盐官县北门",
-    exits = {
-      ["n"] = "官道|n,s",
-      ["s"] = "盐官县城|n,sw",
-    },
-  },
-  ["盐官县城|n,sw"] = {
-    name = "盐官县城",
-    exits = {
-      ["n"] = "盐官县北门|n,s",
-      ["sw"] = "盐官镇|eu,ne,s,sw,w",
-    },
-  },
-  ["盐官镇|eu,ne,s,sw,w"] = {
-    name = "盐官镇",
-    exits = {
-      ["eu"] = "观潮台|se,wd",
-      ["ne"] = "盐官县城|n,sw",
-      ["s"] = "鱼鳞石塘|e,n",
-      ["sw"] = "青石官道|e,ne,w",
-      ["w"] = "灵塔|e",
-    },
-  },
-  ["秀水客栈|enter,w"] = {
-    name = "秀水客栈",
-    exits = {
-      ["enter"] = "里间|out",
-      ["w"] = "嘉兴南湖|e,nw,s",
-    },
-  },
-  ["荒谷|w"] = {
-    name = "荒谷",
-    exits = {
-      ["w"] = "无名谷底|e,nu,su,w",
-    },
-  },
-  ["落帆亭|se"] = {
-    name = "落帆亭",
-    exits = {
-      ["se"] = "嘉兴城|e,n,nw,s,w",
-    },
-  },
-  ["蛇窟|e"] = {
-    name = "蛇窟",
-    exits = {
-      ["e"] = "无名谷底|e,nu,su,w",
-    },
-  },
-  ["观潮台|se,wd"] = {
-    name = "观潮台",
-    exits = {
-      ["se"] = "鱼鳞石塘|nw,w",
-      ["wd"] = "盐官镇|eu,ne,s,sw,w",
-    },
-  },
-  ["计氏马车分行|n"] = {
-    name = "计氏马车分行",
-    exits = {
-      ["n"] = "铁枪庙|n,s,w",
-    },
-  },
-  ["里间|out"] = {
-    name = "里间",
-    exits = {
-      ["out"] = "秀水客栈|enter,w",
-    },
-  },
-  ["钱塘江口|w"] = {
-    name = "钱塘江口",
-    exits = {
-      ["w"] = "嘉兴南湖|e,n,nd,s,se,w",
-    },
-  },
-  ["铁枪庙|n,s,w"] = {
-    name = "铁枪庙",
-    exits = {
-      ["n"] = "嘉兴南湖|e,n,nd,s,se,w",
-      ["s"] = "计氏马车分行|n",
-      ["w"] = "嘉兴南门|e,n,s,sw",
-    },
-  },
-  ["陆家庄|enter,n"] = {
-    name = "陆家庄",
-    exits = {
-      ["enter"] = "天井|enter,out",
-      ["n"] = "树林|e,ne,s",
-    },
-  },
-  ["青石官道|e,ne,w"] = {
-    name = "青石官道",
-    exits = {
-      ["ne"] = "盐官镇|eu,ne,s,sw,w",
-    },
-  },
-  ["青石官道|n,s"] = {
-    name = "青石官道",
-    exits = {
-      ["s"] = "嘉兴城|e,n,nw,s,w",
-    },
-  },
-  ["鱼鳞石塘|e,n"] = {
-    name = "鱼鳞石塘",
-    exits = {
-      ["e"] = "鱼鳞石塘|nw,w",
-      ["n"] = "盐官镇|eu,ne,s,sw,w",
-    },
-  },
-  ["鱼鳞石塘|nw,w"] = {
-    name = "鱼鳞石塘",
-    exits = {
-      ["nw"] = "观潮台|se,wd",
-      ["w"] = "鱼鳞石塘|e,n",
-    },
-  },
-}
-}
-
-mapper.maps["jx"].mapAliases = {
-  ["乡间小径"]       = "xjxj",
-  ["后院"]           = "hy",
-  ["嘉兴南湖"]       = "jxnh",
-  ["嘉兴南门"]       = "jxnm",
-  ["嘉兴城"]         = "origin",
-  ["嘉兴钱庄"]       = "jxqz",
-  ["坟墓"]           = "fm",
-  ["城南官道"]       = "cngd",
-  ["大厅"]           = "dt",
-  ["天井"]           = "tj",
-  ["太湖码头"]       = "thmt",
-  ["太湖边"]         = "thb",
-
-  ["官道"]           = "gd",
-  ["宴客厅门厅"]     = "yktmt",
-  ["山路"]           = "sl",
-  ["无名谷底"]       = "wmgd",
-  ["树林"]           = "slin",
-  ["河岸"]           = "ha",
-  ["灵塔"]           = "lt",
-  ["烟雨楼"]         = "yyl",
-  ["烟雨楼二楼"]     = "yylel",
-
-  ["盐官县北门"]     = "ygxbm",
-  ["盐官县城"]       = "ygxc",
-  ["盐官镇"]         = "ygz",
-  ["秀水客栈"]       = "xskz",
-  ["荒谷"]           = "hg",
-  ["落帆亭"]         = "lft",
-  ["蛇窟"]           = "sk",
-  ["观潮台"]         = "gct",
-
-  ["计氏马车分行"]   = "mch",
-  ["里间"]           = "lj",
-  ["钱塘江口"]       = "qtjk",
-  ["铁枪庙"]         = "tqm",
-  ["陆家庄"]         = "ljz",
-  ["青石官道"]       = "qsgd",
-  ["鱼鳞石塘"]       = "ylst",
 }
 </script>
 					<eventHandlerList />
@@ -31616,6 +31298,709 @@ mapper.maps["xcheng"] = {
     },
   }
 }</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>嘉兴 - jx</name>
+					<packageName></packageName>
+					<script>mapper = mapper or {}
+mapper.maps = mapper.maps or {}
+
+mapper.maps["jx"] = {
+  region = {
+    key  = "jx",      -- 区域代号，用在 goto wx.xxx 里
+    name = "嘉兴",    -- 纯注释/显示用
+  },
+  mapNodes = {
+  
+    ["官道|e,n,s,w"] = {
+    name = "官道3",
+    exits = {
+      ["n"] = "官道|e,n,nw,s,w",
+      ["s"] = "盐官县北门|n,s",
+    },
+  },
+  
+  ["官道|e,n,nw,s,w"] = {
+    name = "官道2",
+    exits = {
+      ["nw"] = "城南官道|e,n,s,se,w",
+      ["s"] = "官道|e,n,s,w",
+    },
+  },  
+  ["广济桥|n,se"] = {
+    name = "广济桥",
+    exits = {
+      ["se"] = "官道|e,n,nw,s,su,w",
+    },
+  },  
+  ["官道|e,n,nw,s,su,w"] = {
+    name = "官道",
+    exits = {
+      ["su"] = "迎春桥|nd,sd",
+      ["nw"] = "广济桥|n,se",
+    },
+  },
+    
+  ["北码头|s"] = {
+    name = "北码头",
+    exits = {
+      ["s"] = "小路|e,n,s,sw",
+      ["ride"] = "渡口|ne",
+    },
+  },
+  ["南码头|n,sw"] = {
+    name = "南码头",
+    exits = {
+      ["n"] = "小路|nw,s",
+      ["sw"] = "小路|ne,swu,w",
+      ["zong"] = "渡口|e,s,w",
+    },
+  },
+  
+  ["渡口|e,s,w"] = {
+    name = "渡口",
+    exits = {
+      ["e"] = "南湖湖畔|w",
+      ["s"] = "湖畔小道|n,wu",
+      ["w"] = "南湖湖畔|e",
+      ["zong"] = "南码头|n,sw",
+    },
+  },
+  ["渡口|ne"] = {
+    name = "渡口",
+    exits = {
+      ["ne"] = "宣公弄|nw,se,sw",
+      ["ride"] = "北码头|s",
+    },
+  },  
+    
+  ["东门|eu,w"] = {
+    name = "东门",
+    exits = {
+      ["eu"] = "宣公桥|ed,wd",
+      ["w"] = "东门大街|e,n,su,w",
+    },
+  },
+  ["东门大街|e,n,su,w"] = {
+    name = "东门大街",
+    exits = {
+      ["e"] = "东门|eu,w",
+      ["n"] = "秀水客栈|enter,s",
+      ["su"] = "戏台|nd",
+      ["w"] = "府前街|e,n,s,se,w",
+    },
+  },
+  ["乡间小径|ne,sw,w"] = {
+    name = "乡间小径",
+    exits = {
+      ["ne"] = "嘉兴南门|e,n,s,se,sw",
+      ["sw"] = "树林|e,ne,s",
+      ["w"] = "河岸|e,nw",
+    },
+  },
+  ["北门|n,s,w"] = {
+    name = "北门",
+    exits = {
+      ["n"] = "杉青闸街|nu,nw,s,se,w",
+      ["s"] = "府前街|e,n,s,se,w",
+      ["w"] = "计氏马车分行|e,n",
+    },
+  },
+  ["医馆|s"] = {
+    name = "医馆",
+    exits = {
+      ["s"] = "宣公弄|n,se,wu",
+    },
+  },
+  ["南湖湖畔|e"] = {
+    name = "南湖湖畔",
+    exits = {
+      ["e"] = "渡口|e,s,w",
+    },
+  },
+  ["南湖湖畔|nw"] = {
+    name = "南湖湖畔",
+    exits = {
+      ["nw"] = "宣公弄|nw,se,sw",
+    },
+  },
+  ["南湖湖畔|w"] = {
+    name = "南湖湖畔",
+    exits = {
+      ["w"] = "渡口|e,s,w",
+    },
+  },
+  ["后院|n"] = {
+    name = "后院",
+    exits = {
+      ["n"] = "大厅|out,s",
+    },
+  },
+  ["嘉兴南门|e,n,s,se,sw"] = {
+    name = "嘉兴南门",
+    exits = {
+      ["e"] = "铁枪庙|w",
+      ["n"] = "府前街|e,n,s,w",
+      ["s"] = "城南官道|e,n,s,se,w",
+      ["se"] = "湖畔小道|eu,nw",
+      ["sw"] = "乡间小径|ne,sw,w",
+    },
+  },
+  ["坟墓|w"] = {
+    name = "坟墓",
+    exits = {
+      ["w"] = "树林|e,ne,s",
+    },
+  },
+  ["城南官道|e,n,s,se,w"] = {
+    name = "城南官道",
+    exits = {
+      ["n"] = "嘉兴南门|e,n,s,se,sw",
+      ["se"] = "官道|e,n,nw,s,w",
+    },
+  },
+
+  ["大厅|out,s"] = {
+    name = "大厅",
+    exits = {
+      ["out"] = "天井|enter,out",
+      ["s"] = "后院|n",
+    },
+  },
+  ["天井|enter,out"] = {
+    name = "天井",
+    exits = {
+      ["enter"] = "大厅|out,s",
+      ["out"] = "陆家庄|enter,n",
+    },
+  },
+  ["太湖码头|se"] = {
+    name = "太湖码头",
+    exits = {
+      ["se"] = "河岸|e,nw",
+    },
+  },
+  ["太湖边|nw,se"] = {
+    name = "太湖边",
+    exits = {
+      ["nw"] = "太湖边|se,wu",
+      ["se"] = "山路|nw,sd",
+    },
+  },
+  
+  ["太湖边|se,wu"] = {
+  name = "太湖边",
+  exits = {
+    ["se"] = "太湖边|nw,se",
+  },
+},
+
+  ["宣公弄|n,se,wu"] = {
+    name = "宣公弄",
+    exits = {
+      ["n"] = "医馆|s",
+      ["se"] = "宣公弄|nw,se,sw",
+      ["wu"] = "宣公桥|ed,wd",
+    },
+  },
+  ["宣公弄|nw,se,sw"] = {
+    name = "宣公弄",
+    exits = {
+      ["nw"] = "宣公弄|n,se,wu",
+      ["se"] = "南湖湖畔|nw",
+      ["sw"] = "渡口|ne",
+    },
+  },
+  ["宣公桥|ed,wd"] = {
+    name = "宣公桥",
+    exits = {
+      ["ed"] = "宣公弄|n,se,wu",
+      ["wd"] = "东门|eu,w",
+    },
+  },
+  ["宾月楼|w"] = {
+    name = "宾月楼",
+    exits = {
+      ["w"] = "府前街|e,n,s,w",
+    },
+  },
+  ["山路|eu,nu,swd"] = {
+    name = "山路",
+    exits = {
+      ["eu"] = "德政桥|ed,wd",
+      ["nu"] = "山路|nw,sd",
+      ["swd"] = "无名谷底|e,neu,w",
+    },
+  },
+  ["山路|nw,sd"] = {
+    name = "山路2",
+    exits = {
+      ["nw"] = "太湖边|nw,se",
+      ["sd"] = "山路|eu,nu,swd",
+    },
+  },
+  ["府前街|e,n,s,se,w"] = {
+    name = "府前街2",
+    exits = {
+      ["e"] = "东门大街|e,n,su,w",
+      ["n"] = "北门|n,s,w",
+      ["s"] = "府前街|e,n,s,w",
+      ["se"] = "金明寺|nw",
+      ["w"] = "西门|e,wu",
+    },
+  },
+  ["府前街|e,n,s,w"] = {
+    name = "府前街",
+    exits = {
+      ["e"] = "宾月楼|w",
+      ["n"] = "府前街|e,n,s,se,w",
+      ["s"] = "嘉兴南门|e,n,s,se,sw",
+      ["w"] = "府衙大门|e,enter",
+    },
+  },
+  ["府衙大门|e,enter"] = {
+    name = "府衙大门",
+    exits = {
+      ["e"] = "府前街|e,n,s,w",
+      ["enter"] = "正厅|out",
+    },
+  },
+  ["当铺|s"] = {
+    name = "当铺",
+    exits = {
+      ["s"] = "杉青闸街|eu,n,nw",
+    },
+  },
+  ["德政桥|ed,wd"] = {
+    name = "德政桥",
+    exits = {
+      ["ed"] = "西门|e,wu",
+      ["wd"] = "山路|eu,nu,swd",
+    },
+  },
+  ["戏台|nd"] = {
+    name = "戏台",
+    exits = {
+      ["nd"] = "东门大街|e,n,su,w",
+    },
+  },
+  ["无名谷底|e,neu,w"] = {
+    name = "无名谷底",
+    exits = {
+      ["e"] = "荒谷|w",
+      ["neu"] = "山路|eu,nu,swd",
+      ["w"] = "蛇窟|e",
+    },
+  },
+  ["杉青闸街|e,n,s"] = {
+    name = "杉青闸街",
+    exits = {
+      ["e"] = "杉青闸街|nu,nw,s,se,w",
+      ["n"] = "钱庄|s",
+      ["s"] = "计氏马车分行|e,n",
+    },
+  },
+  ["杉青闸街|eu,n,nw"] = {
+    name = "杉青闸街",
+    exits = {
+      ["eu"] = "资圣观|wd",
+      ["n"] = "当铺|s",
+      ["nw"] = "杉青闸街|nu,nw,s,se,w",
+    },
+  },
+  ["杉青闸街|nu,nw,s,se,w"] = {
+    name = "杉青闸街",
+    exits = {
+      ["nu"] = "迎春桥|nd,sd",
+      ["nw"] = "落帆亭|se",
+      ["s"] = "北门|n,s,w",
+      ["se"] = "杉青闸街|eu,n,nw",
+      ["w"] = "杉青闸街|e,n,s",
+    },
+  },
+  ["树林|e,ne,s"] = {
+    name = "树林",
+    exits = {
+      ["e"] = "坟墓|w",
+      ["ne"] = "乡间小径|ne,sw,w",
+      ["s"] = "陆家庄|enter,n",
+    },
+  },
+  ["正厅|out"] = {
+    name = "正厅",
+    exits = {
+      ["out"] = "府衙大门|e,enter",
+    },
+  },
+  ["河岸|e,nw"] = {
+    name = "河岸",
+    exits = {
+      ["e"] = "乡间小径|ne,sw,w",
+      ["nw"] = "太湖码头|se",
+    },
+  },
+
+  ["湖畔小道|eu,nw"] = {
+    name = "湖畔小道",
+    exits = {
+      ["eu"] = "澄海桥|ed,wd",
+      ["nw"] = "嘉兴南门|e,n,s,se,sw",
+    },
+  },
+  ["湖畔小道|n,wu"] = {
+    name = "湖畔小道",
+    exits = {
+      ["n"] = "渡口|e,s,w",
+      ["wu"] = "澄海桥|ed,wd",
+    },
+  },
+  ["澄海桥|ed,wd"] = {
+    name = "澄海桥",
+    exits = {
+      ["ed"] = "湖畔小道|n,wu",
+      ["wd"] = "湖畔小道|eu,nw",
+    },
+  },
+  ["秀水客栈|enter,s"] = {
+    name = "秀水客栈",
+    exits = {
+      ["enter"] = "里间|out",
+      ["s"] = "东门大街|e,n,su,w",
+    },
+  },
+  ["荒谷|w"] = {
+    name = "荒谷",
+    exits = {
+      ["w"] = "无名谷底|e,neu,w",
+    },
+  },
+  ["落帆亭|se"] = {
+    name = "落帆亭",
+    exits = {
+      ["se"] = "杉青闸街|nu,nw,s,se,w",
+    },
+  },
+  ["蛇窟|e"] = {
+    name = "蛇窟",
+    exits = {
+      ["e"] = "无名谷底|e,neu,w",
+    },
+  },
+  ["西门|e,wu"] = {
+    name = "西门",
+    exits = {
+      ["e"] = "府前街|e,n,s,se,w",
+      ["wu"] = "德政桥|ed,wd",
+    },
+  },
+  ["计氏马车分行|e,n"] = {
+    name = "计氏马车分行",
+    exits = {
+      ["e"] = "北门|n,s,w",
+      ["n"] = "杉青闸街|e,n,s",
+    },
+  },
+  ["资圣观|wd"] = {
+    name = "资圣观",
+    exits = {
+      ["wd"] = "杉青闸街|eu,n,nw",
+    },
+  },
+  ["迎春桥|nd,sd"] = {
+    name = "迎春桥",
+    exits = {
+      ["nd"] = "官道|e,n,nw,s,su,w",
+      ["sd"] = "杉青闸街|nu,nw,s,se,w",
+    },
+  },
+  ["里间|out"] = {
+    name = "里间",
+    exits = {
+      ["out"] = "秀水客栈|enter,s",
+    },
+  },
+  ["金明寺|nw"] = {
+    name = "金明寺",
+    exits = {
+      ["nw"] = "府前街|e,n,s,se,w",
+    },
+  },
+  ["钱庄|s"] = {
+    name = "钱庄",
+    exits = {
+      ["s"] = "杉青闸街|e,n,s",
+    },
+  },
+  ["铁枪庙|w"] = {
+    name = "铁枪庙",
+    exits = {
+      ["w"] = "嘉兴南门|e,n,s,se,sw",
+    },
+  },
+  ["陆家庄|enter,n"] = {
+    name = "陆家庄",
+    exits = {
+      ["enter"] = "天井|enter,out",
+      ["n"] = "树林|e,ne,s",
+    },
+  },
+  ["安澜园|ed"] = {
+    name = "安澜园",
+    exits = {
+      ["ed"] = "小路|se,wu",
+    },
+  },
+
+  ["小路|se,wu"] = {
+    name = "小路",
+    exits = {
+      ["se"] = "盐官镇|eu,ne,nw,s,sw,w",
+      ["wu"] = "安澜园|ed",
+    },
+  },
+  ["灵塔|e"] = {
+    name = "灵塔",
+    exits = {
+      ["e"] = "盐官镇|eu,ne,nw,s,sw,w",
+    },
+  },
+  ["盐官县北门|n,s"] = {
+    name = "盐官县北门",
+    exits = {
+      ["n"] = "官道|e,n,s,w",
+      ["s"] = "盐官县城|n,sw",
+    },
+  },
+  ["盐官县城|n,sw"] = {
+    name = "盐官县城",
+    exits = {
+      ["n"] = "盐官县北门|n,s",
+      ["sw"] = "盐官镇|eu,ne,nw,s,sw,w",
+    },
+  },
+  ["盐官镇|eu,ne,nw,s,sw,w"] = {
+    name = "盐官镇",
+    exits = {
+      ["eu"] = "观潮台|se,wd",
+      ["ne"] = "盐官县城|n,sw",
+      ["nw"] = "小路|se,wu",
+      ["s"] = "鱼鳞石塘|e,n",
+      ["sw"] = "青石官道|e,n,ne,s,w",
+      ["w"] = "灵塔|e",
+    },
+  },
+  ["观潮台|se,wd"] = {
+    name = "观潮台",
+    exits = {
+      ["se"] = "鱼鳞石塘|nw,w",
+      ["wd"] = "盐官镇|eu,ne,nw,s,sw,w",
+    },
+  },
+  ["青石官道|e,n,ne,s,w"] = {
+    name = "青石官道",
+    exits = {
+      ["ne"] = "盐官镇|eu,ne,nw,s,sw,w",
+    },
+  },
+  ["鱼鳞石塘|e,n"] = {
+    name = "鱼鳞石塘",
+    exits = {
+      ["e"] = "鱼鳞石塘|nw,w",
+      ["n"] = "盐官镇|eu,ne,nw,s,sw,w",
+    },
+  },
+  ["鱼鳞石塘|nw,w"] = {
+    name = "鱼鳞石塘",
+    exits = {
+      ["nw"] = "观潮台|se,wd",
+      ["w"] = "鱼鳞石塘|e,n",
+    },
+  },  
+  ["二楼|d,enter"] = {
+    name = "二楼",
+    exits = {
+      ["d"] = "大厅|out,u",
+      ["enter"] = "门厅|enter,out",
+    },
+  },
+
+  ["大厅|out,u"] = {
+    name = "大厅",
+    exits = {
+      ["out"] = "烟雨楼|enter,n",
+      ["u"] = "二楼|d,enter",
+    },
+  },
+  ["小路|e,n,s,sw"] = {
+    name = "小路",
+    exits = {
+      ["e"] = "小路|se,w",
+      ["n"] = "北码头|s",
+      ["s"] = "烟雨楼|enter,n",
+      ["sw"] = "小路|ne,se,sw",
+    },
+  },
+  ["小路|e,nw,seu"] = {
+    name = "小路",
+    exits = {
+      ["e"] = "滩涂|e,su,w",
+      ["nw"] = "小路|ne,se,sw",
+      ["seu"] = "钓鱼矶|nd,ned,nwd",
+    },
+  },
+  ["小路|ne,se,sw"] = {
+    name = "小路",
+    exits = {
+      ["ne"] = "小路|e,n,s,sw",
+      ["se"] = "小路|e,nw,seu",
+      ["sw"] = "放鹤洲|ne",
+    },
+  },
+  ["小路|ne,swu,w"] = {
+    name = "小路",
+    exits = {
+      ["ne"] = "南码头|n,sw",
+      ["swu"] = "钓鱼矶|nd,ned,nwd",
+      ["w"] = "滩涂|e,su,w",
+    },
+  },
+  ["小路|nw,s"] = {
+    name = "小路",
+    exits = {
+      ["nw"] = "小路|se,w",
+      ["s"] = "南码头|n,sw",
+    },
+  },
+  ["小路|se,w"] = {
+    name = "小路",
+    exits = {
+      ["se"] = "小路|nw,s",
+      ["w"] = "小路|e,n,s,sw",
+    },
+  },
+  ["放鹤洲|ne"] = {
+    name = "放鹤洲",
+    exits = {
+      ["ne"] = "小路|ne,se,sw",
+    },
+  },
+  ["滩涂|e,su,w"] = {
+    name = "滩涂",
+    exits = {
+      ["e"] = "小路|ne,swu,w",
+      ["su"] = "钓鱼矶|nd,ned,nwd",
+      ["w"] = "小路|e,nw,seu",
+    },
+  },
+  ["烟雨楼|enter,n"] = {
+    name = "烟雨楼",
+    exits = {
+      ["enter"] = "大厅|out,u",
+      ["n"] = "小路|e,n,s,sw",
+    },
+  },
+  ["钓鱼矶|nd,ned,nwd"] = {
+    name = "钓鱼矶",
+    exits = {
+      ["nd"] = "滩涂|e,su,w",
+      ["ned"] = "小路|ne,swu,w",
+      ["nwd"] = "小路|e,nw,seu",
+    },
+  },
+  ["门厅|enter,out"] = {
+    name = "门厅",
+    exits = {
+      ["out"] = "二楼|d,enter",
+    },
+  },  
+}
+}
+
+mapper.maps["jx"].mapAliases = {
+
+  ["官道"] = "gd",
+  ["官道2"] = "gd2",
+  ["官道3"] = "gd3",
+
+  ["广济桥"] = "gjq",
+  ["迎春桥"] = "ycq",
+  ["德政桥"] = "dzq",
+  ["澄海桥"] = "chq",
+  ["宣公桥"] = "xgq",
+
+  ["北码头"] = "bmt",
+  ["南码头"] = "nmt",
+  ["太湖码头"] = "thmt",
+
+  ["渡口"] = "dk",
+  ["东门"] = "dm",
+  ["东门大街"] = "dmdj",
+  ["北门"] = "bm",
+  ["嘉兴南门"] = "jxnm",
+  ["西门"] = "xm",
+
+  ["府前街"] = "origin",
+  ["府前街2"] = "fqj",
+  ["府衙大门"] = "fydm",
+  ["正厅"] = "zt",
+
+  ["秀水客栈"] = "xskz",
+  ["里间"] = "lj",
+  ["宾月楼"] = "byl",
+  ["戏台"] = "xt",
+
+  ["医馆"] = "yg",
+  ["当铺"] = "dp",
+  ["钱庄"] = "qz",
+  ["计氏马车分行"] = "mch",
+
+  ["宣公弄"] = "xgn",
+  ["南湖湖畔"] = "nhhp",
+  ["湖畔小道"] = "hpxd",
+  ["太湖边"] = "thb",
+  ["河岸"] = "ha",
+
+  ["城南官道"] = "cngd",
+  ["乡间小径"] = "xjxj",
+  ["树林"] = "sl",
+  ["坟墓"] = "fm",
+  ["陆家庄"] = "ljz",
+  ["天井"] = "tj",
+  ["大厅"] = "dt",
+  ["后院"] = "hy",
+
+  ["山路"] = "sl",
+  ["山路2"] = "sl2",
+  ["无名谷底"] = "wmgd",
+  ["荒谷"] = "hg",
+  ["蛇窟"] = "sk",
+
+  ["杉青闸街"] = "sqzj",
+  ["落帆亭"] = "lft",
+  ["资圣观"] = "zsg",
+
+  ["金明寺"] = "jms",
+  ["铁枪庙"] = "tqm",
+
+  ["安澜园"] = "aly",
+  ["小路"] = "xl",
+  ["灵塔"] = "lt",
+  ["盐官县北门"] = "ygxbm",
+  ["盐官县城"] = "ygxc",
+  ["盐官镇"] = "ygz",
+  ["观潮台"] = "gct",
+  ["青石官道"] = "qsgd",
+  ["鱼鳞石塘"] = "ylst",
+
+  ["二楼"] = "el",
+  ["烟雨楼"] = "yyl",
+  ["放鹤洲"] = "fhz",
+  ["滩涂"] = "tt",
+  ["钓鱼矶"] = "dyj",
+  ["门厅"] = "mt",
+}
+</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
@@ -36965,6 +37350,29 @@ mapper.maps["hz"] = {
 
   mapNodes = {
   
+    ["内宅|s"] = {
+      name = "内宅",
+      exits = {
+        ["s"] = "小院|n,out",
+      },
+    },  
+  
+    ["小院|n,out"] = {
+      name = "小院",
+      exits = {
+        ["n"] = "内宅|s",
+        ["out"] = "院门|s",
+      },
+    },  
+    
+    ["院门|s"] = {
+      name = "院门",
+      exits = {
+        ["s"] = "湖畔|n,se,w",
+        ["say 红花老祖本姓朱 为救苍生下凡来"] = "小院|n,out", 
+      },
+    },
+     
     ["钱塘江南岸|ne,se,sw"] = {
       name = "钱塘江南岸",
       exits = {
@@ -37342,13 +37750,6 @@ mapper.maps["hz"] = {
       exits = {
         ["n"] = "院门|s",
         ["se"] = "清波门|e,nw,sw",
-      },
-    },
-
-    ["院门|s"] = {
-      name = "院门",
-      exits = {
-        ["s"] = "湖畔|n,se,w",
       },
     },
 
@@ -53055,6 +53456,22 @@ mapper.maps["jyang"] = {
   },
 
   mapNodes = {
+  
+    ["开远门|e,n,s,w"] = {
+      name = "开远门",
+      exits = {
+        ["e"] = "城墙|e,w",
+        ["n"] = "南大街|e,n,s",
+        ["s"] = "太谷县|e,n,sw",
+      },
+    }, 
+   
+     ["城墙|e,w"] = {
+      name = "城墙1",
+      exits = {
+        ["w"] = "开远门|e,n,s,w",
+      },
+    },    
   
      ["官道|ne,s"] = {
       name = "官道",
@@ -72430,6 +72847,10 @@ add("昌隆镖局", { --
   job_done   = "ask zuo about finish;ask zuo about 重置任务", 
 })
 
+add("镇江马车行", { -- 
+  back_yangzhou= "s;do 6 w;do 2 nw;e",  
+})
+
 add("马车行", { -- 
   back_mrf     = "gu;qu suzhou",
   back_pozhen  = "gu;qu guiyunzhuang",
@@ -72514,9 +72935,9 @@ add("孟之经", {
   job_done   = "ask meng about finish",
   job_fail   = "ask meng about fail",
   back_mrf     = "node walk mzj_mrf",
-  back_pozhen  = "node walk mzj_pozhen",
-  back_hsz     = "node walk mzj_hsz",
-  back_yangzhou= "node walk mzj_zjdk",
+  back_pozhen  = "w;w;w;n;n;n;n;n;n;nw;n;n;nu;e;enter;gu;qu guiyunzhuang",
+  back_hsz     = "s;s;s;s;e;se;s",
+  back_yangzhou= "w;w;w;n;n;n;n;n;n;nw;n;n;nu;e;enter;gu;qu zhenjiang",
   back_yupo = "node walk mzj_qz1",
   back_mingzhou = "w;w;w;n;n;n;n;n;n;nw;n;n;nu;e;enter;gu;qu shaoxing",
 })
@@ -72526,17 +72947,18 @@ add("韩世忠", {
   ask_job    = "ask han about job;;unset forced_act;;set wimpy 50;;jiali 0",
   job_done   = "ask han about finish",
   job_fail   = "ask han about fail",
-  back_pozhen  = "node walk hsz_pozhen",
-  back_yangzhou= "node walk hsz_zjdk3",
+  back_pozhen  = "s;out;s;w;w;n;e;n;gu;qu guiyunzhuang",
+  back_yangzhou= "s;out;s;w;w;n;e;n;gu;qu zhenjiang",
   back_yupo = "node walk hsz_qz1",
   back_mingzhou = "s;out;s;w;w;n;e;n;gu;qu shaoxing",
-  back_mrf = "node walk hsz_mrf",
+  back_mrf = "s;out;s;do 5 e;do 2 ne;do 3 n;nw;do 5 n;nu;nd;nw;do 4 n;ne",
 })
 
 -- 城门/路由点（江南一带）
 add("正阳门", {
   back_mrf    = "walk chaoyang",
   back_pozhen = "walk guiyun",
+  back_hsz     = "walk linan",
 })
 
 add("清凉门", {
@@ -72668,7 +73090,10 @@ add("湖州", {
   back_hsz = "node walk hzf_hsz",
 })
 
--- 注意：京口渡 / 镇江渡口 都是渡口点，short_name 都是 zjdk（如果你未来按 short_name 反查要小心）
+add("西津渡口", {
+  back_yangzhou = "e;ask shao gong about jiang;enter",
+})
+
 add("京口渡", {
   short_name = "zjdk",
   ask_job      = "ask shao gong about jiang;;enter",
@@ -72676,17 +73101,17 @@ add("京口渡", {
   back_hangzhou = "node walk zjdk_hz",
   back_pozhen   = "node walk zjdk_pozhen",
   back_mrf      = "node walk zjdk_mrf",
-  back_hsz      = "node walk zjdk_hsz",
+  back_hsz      = "node walk zjdk_hsz3",
   back_yupo = "node walk zjdk_qz1",
 })
 
 add("扬州", {
   short_name = "yz",
-  back_mrf    = "walk zhenjiang",
-  back_pozhen = "walk zhenjiang",
+  back_mrf    = "do 4 s;su;se;su;e;ask shao gong about jiang;enter",
+  back_pozhen = "do 4 s;su;se;su;e;ask shao gong about jiang;enter",
   back_changan= "node walk yz_ca",
   back_hua    = "node walk yz_qinz",
-  back_hyd = "enter shudong;say 天堂有路你不走呀;d;7;n;do 2 ne;n;out",
+  back_hyd = "enter shudong;say 天堂有路你不走呀;d;7;n;do 2 ne;n;out;ask shao gong about huanghe;enter",
 })
 
 -- 任务主城/核心点
@@ -72695,10 +73120,10 @@ add("慕容复", {
   ask_job    = "ask pu about job;;unset forced_act;;jiali 0;;set wimpy 40;yun powerup;;yun qi",
   job_done   = "give pu xin",
   job_fail   = "ask pu about fail",
-  back_hangzhou = "node walk mrf_hz",
-  back_yangzhou = "node walk mrf_zjdk",
-  back_pozhen   = "node walk mrf_pozhen",
-  back_hsz      = "node walk mrf_hsz",
+  back_hangzhou = "sw; do 4 s;se;su;sd;do 5 s;se;do 3 s;do 2 sw;do 7 w;",
+  back_yangzhou = "sw;n;n;n;e;e;gu;qu zhenjiang;",
+  back_pozhen   = "sw;n;n;n;e;e;gu;qu guiyunzhuang;",
+  back_hsz      = "sw; do 4 s;se;su;sd;do 5 s;se;do 3 s;do 2 sw;do 5 w;n;enter;n",
   back_yupo      = "node walk mrf_qz1",
   back_mingzhou = "sw;n;n;n;e;e;gu;qu shaoxing;",
 })
@@ -72708,10 +73133,10 @@ add("归云庄", {
   ask_job    = "ask lu about pozhen;;set forced_act;;jiali max;;set wimpy 0",
   job_done   = "ask lu about 破阵奖励;;tell feixuex 治疗",
   job_fail   = "ask lu about 破阵失败;tell feixuex 治疗",
-  back_hangzhou = "node walk pozhen_hz",
+  back_hangzhou = "node walk pozhen_mrf",
   back_yangzhou = "node walk pozhen_zjdk",
   back_mrf      = "node walk pozhen_mrf",
-  back_hsz      = "node walk pozhen_hsz",
+  back_hsz      = "node walk pozhen_mrf",
   back_yupo      = "node walk pozhen_qz",
 })
 
@@ -72776,6 +73201,7 @@ add("镇江", {
   back_hangzhou = "node walk zj_hz",
   back_pozhen   = "node walk zj_pozhen",
   back_mrf      = "node walk zj_mrf",
+  back_yangzhou      = "walk yangzhou",
 })
 
 add("江州", {
@@ -72815,7 +73241,7 @@ local add = node_city.add or function(name, data) node_city[name] = data end
 add("曲阜渡口", {
   --short_name = "lydk",
   back_yangzhou = "zuan hole;s;sw;sw;s;s;u;out",
-  back_mrf = "zuan hole;s;sw;sw;s;s;u;out",
+  back_mrf = "zuan hole;s;sw;sw;s;s;u;out;do 4 s;su;se;su;e;ask shao gong about jiang;enter",
   back_hyd  = "ask shao gong about huanghe;enter",
 })
 
@@ -72946,8 +73372,8 @@ add("高粱地", { -- 胡一刀
   job_done = "combine;give hu map",
   job_fail = "ask hu about cancel",
   short_name = "hyd",
-  back_yangzhou = "s;sw;do 2 s;do 3 sw;do 5 sw;s;sd;su;do 2 s;do 3 se;sw;s;se;sw;e",
-  back_shandong = "s;sw;do 2 s;do 3 sw;do 5 sw;s;sd;su;do 2 s;do 3 se;sw;s;se;sw;e",
+  back_yangzhou = "s;sw;do 2 s;do 3 sw;do 5 sw;s;sd;su;do 2 s;do 3 se;sw;s;se;sw;e;ask shao gong about 过河;;enter",
+  back_shandong = "s;sw;do 2 s;do 3 sw;do 5 sw;s;sd;su;do 2 s;do 3 se;sw;s;se;sw;e;ask shao gong about 过河;;enter",
 })
 
 
@@ -72994,7 +73420,7 @@ add("少林寺", {
 add("扬子津", {
   ask_job      = "ask shao gong about jiang;;enter",
   back_yangzhou= "walk yangzhou",
-  back_hyd = "w;nd;nw;nd;do 4 n;enter shudong;say 天堂有路你不走呀;down;7;north;northeast;northeast;north;out",
+  back_hyd = "w;nd;nw;nd;do 4 n;enter shudong;say 天堂有路你不走呀;down;7;north;northeast;northeast;north;out;ask shao gong about 过河;;enter",
 })
 
 add("许昌城", {
@@ -77696,15 +78122,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>murong_target_city</name>
-				<keyType>4</keyType>
-				<value>天台山</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>murong_target_room</name>
 				<keyType>4</keyType>
 				<value>金庭门</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>murong_target_city</name>
+				<keyType>4</keyType>
+				<value>天台山</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -77726,9 +78152,9 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_xue</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -77738,21 +78164,21 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
-				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>thirthty</name>
 				<keyType>4</keyType>
 				<value>"饥渴状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>神不足</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>hunger</name>
+				<keyType>4</keyType>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -77948,10 +78374,10 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
+				<value>1093</value>
+				<valueType>4</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -77966,33 +78392,27 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
+				<name>max_shen</name>
+				<keyType>4</keyType>
+				<value>464</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
 				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_xue</name>
+				<name>max_neili</name>
 				<keyType>4</keyType>
-				<value>693</value>
-				<valueType>4</valueType>
+				<value>2014</value>
+				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>base_neili</name>
+				<name>current_jingli</name>
 				<keyType>4</keyType>
-				<value>1093</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_jingli</name>
-				<keyType>4</keyType>
-				<value>991</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_neili</name>
-				<keyType>4</keyType>
-				<value>1432</value>
+				<value>1982</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -78002,9 +78422,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_jingli</name>
+				<name>current_neili</name>
 				<keyType>4</keyType>
-				<value>1982</value>
+				<value>1432</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_jingli</name>
+				<keyType>4</keyType>
+				<value>991</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -78014,20 +78440,14 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_shen</name>
+				<name>max_xue</name>
 				<keyType>4</keyType>
-				<value>464</value>
+				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
 		<VariableGroup>
 			<name>maps</name>
-			<keyType>4</keyType>
-			<value></value>
-			<valueType>5</valueType>
-		</VariableGroup>
-		<VariableGroup>
-			<name>luren_set</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
@@ -78039,32 +78459,38 @@ border_node["明州-城外土路"] = {
 			<valueType>4</valueType>
 		</Variable>
 		<VariableGroup>
+			<name>luren_set</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
+		</VariableGroup>
+		<VariableGroup>
 			<name>stat</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>water</name>
+				<name>qi</name>
 				<keyType>4</keyType>
-				<value>272</value>
+				<value>6637</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>qi</name>
+				<name>water</name>
 				<keyType>4</keyType>
-				<value>7102</value>
+				<value>0</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>jing</name>
 				<keyType>4</keyType>
-				<value>5570</value>
+				<value>5186</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
 				<keyType>4</keyType>
-				<value>272</value>
+				<value>102</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
@@ -78074,9 +78500,9 @@ border_node["明州-城外土路"] = {
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -78092,9 +78518,9 @@ border_node["明州-城外土路"] = {
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
