@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>PKUXKX</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -42,7 +42,7 @@
 				<string>enable-accessibility</string>
 				<string>generic_mapper</string>
 			</mInstalledPackages>
-			<url>47.110.45.145</url>
+			<url>us5.pkuxkx.com</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>1</serverPackageVersion>
 			<port>8081</port>
@@ -74,7 +74,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>LXGW WenKai Mono,14,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>LXGW WenKai Mono,16,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -774,7 +774,7 @@ set_message(name, msg)
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
-		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>积攒内力</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -885,7 +885,7 @@ tempTimer(10, function() expandAlias("start_jiqi") end)</script>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
-		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>释放内力</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -2810,7 +2810,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 				</Trigger>
 			</TriggerGroup>
 		</TriggerGroup>
-		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>修炼</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -2936,7 +2936,8 @@ start_tracing()</script>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>额外任务</name>
 					<script>set_task_type("bys")
-set_task(matches[2])</script>
+set_task(matches[2])
+bxsTask.addTask("bxs-random", matches[2])</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -2952,6 +2953,186 @@ set_task(matches[2])</script>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>开始百晓生任务</name>
+					<script>expandAlias("bxs")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^百晓生微微颔首道：“口令无误，请接受挑战吧.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>公孙止完成</name>
+					<script>expandAlias("bxs done bxs-random")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^公孙止说道：「我知道了。格小子，干的不错.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>慕容家贼完成</name>
+					<script>expandAlias("bxs done bxs-mrf")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^你给仆人一封信件.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>推车完成</name>
+					<script>expandAlias("bxs done bxs-tuiche")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^陆世清吩咐了旁边的镖头几句，转头对你道.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>韩世忠完成</name>
+					<script>expandAlias("bxs done bxs-hsz")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^.*韩世忠说道：「很好。格小子，辛苦你了.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>胡一刀完成</name>
+					<script>expandAlias("bxs done bxs-hu")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^.*完成了.*胡一刀任务后，你获得了.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>百晓生完成</name>
+					<script>expandAlias("bxs clear")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>百晓生(Bai xiaosheng)告诉你：大侠果然身手不凡，过挑战一次</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>0</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>万安塔完成</name>
+					<script>expandAlias("bxs done bxs-random")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^你在万安塔任务中被奖励了</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>破阵完成</name>
+					<script>expandAlias("bxs done bxs-random")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>完成破阵任务之后，你被奖励了</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>0</integer>
 					</regexCodePropertyList>
 				</Trigger>
 			</TriggerGroup>
@@ -6015,7 +6196,8 @@ send("wear lupi dai")
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>Test script</name>
-			<script>show_tracing_flag()</script>
+			<script>bxsTask.addTask("bys_random", "公孙止")
+echo ("===\n")</script>
 			<command></command>
 			<packageName></packageName>
 			<regex>^testscript$</regex>
@@ -8339,6 +8521,20 @@ set_task_origin(matches[2])</script>
 				<packageName></packageName>
 				<regex>^task (.*)$</regex>
 			</Alias>
+			<AliasGroup isActive="yes" isFolder="yes">
+				<name>百晓生</name>
+				<script></script>
+				<command></command>
+				<packageName></packageName>
+				<regex></regex>
+				<Alias isActive="yes" isFolder="no">
+					<name>百晓生完成一个子任务</name>
+					<script>bxsTask.completeTask(matches[2])</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^bxs done (\S+)$</regex>
+				</Alias>
+			</AliasGroup>
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>显示丹枝状态</name>
@@ -18872,7 +19068,349 @@ end
 			<Script isActive="yes" isFolder="no">
 				<name>百晓生任务</name>
 				<packageName></packageName>
-				<script></script>
+				<script>bxsTask = bxsTask or {}
+
+-- =========================
+-- 配置区
+-- =========================
+
+bxsTask.config = {
+  panelX = "-250",
+  panelY = "-270",
+  panelWidth = 200,
+
+  titleFontSize = 5,
+  taskFontSize = 4,
+
+  titleHeight = 35,
+  rowHeight = 40,
+  rowGap = 42,
+
+  titleY = 0,
+  firstRowY = 40,
+
+  -- 百晓生固定任务
+  defaultTasks = {
+    { id = "bxs-hu", name = "胡一刀" },
+    { id = "bxs-mrf", name = "慕容" },
+    { id = "bxs-tuiche", name = "推车" },
+    { id = "bxs-hsz", name = "韩世忠" },
+  }
+}
+
+bxsTask.file = getMudletHomeDir() .. "/bxsTaskData.lua"
+
+-- =========================
+-- 数据
+-- =========================
+
+bxsTask.data = bxsTask.data or {
+  active = false,
+  taskType = "",
+  tasks = {}
+}
+
+function bxsTask.save()
+  table.save(bxsTask.file, bxsTask.data)
+end
+
+function bxsTask.load()
+  local ok, data = pcall(table.load, bxsTask.file)
+
+  if ok and type(data) == "table" then
+    bxsTask.data = data
+  end
+end
+
+-- =========================
+-- 开始百晓生任务
+-- =========================
+
+function bxsTask.start()
+  bxsTask.data = {
+    active = true,
+    taskType = "bys",
+    tasks = {}
+  }
+
+  for _, t in ipairs(bxsTask.config.defaultTasks) do
+    table.insert(bxsTask.data.tasks, {
+      id = t.id,
+      name = t.name,
+      done = false
+    })
+  end
+
+  bxsTask.save()
+  bxsTask.createUI()
+end
+
+-- =========================
+-- 查找任务
+-- =========================
+
+function bxsTask.findTaskIndex(id)
+  for i, t in ipairs(bxsTask.data.tasks) do
+    if t.id == id then
+      return i
+    end
+  end
+
+  return nil
+end
+
+-- =========================
+-- 增加任务
+-- =========================
+
+function bxsTask.addTask(id, name)
+  local index = bxsTask.findTaskIndex(id)
+
+  if index then
+    bxsTask.data.tasks[index].name = name
+    bxsTask.data.tasks[index].done = false
+  else
+    table.insert(bxsTask.data.tasks, {
+      id = id,
+      name = name,
+      done = false
+    })
+  end
+
+  bxsTask.save()
+  bxsTask.createUI()
+end
+
+-- =========================
+-- 完成任务
+-- =========================
+
+function bxsTask.completeTask(id)
+  local index = bxsTask.findTaskIndex(id)
+
+  if index then
+    bxsTask.data.tasks[index].done = true
+    bxsTask.save()
+    bxsTask.update()
+  end
+end
+
+-- =========================
+-- 取消完成
+-- =========================
+
+function bxsTask.uncompleteTask(id)
+  local index = bxsTask.findTaskIndex(id)
+
+  if index then
+    bxsTask.data.tasks[index].done = false
+    bxsTask.save()
+    bxsTask.update()
+  end
+end
+
+-- =========================
+-- 点击切换
+-- =========================
+
+function bxsTask.toggleTask(index)
+  if bxsTask.data.tasks[index] then
+    bxsTask.data.tasks[index].done =
+      not bxsTask.data.tasks[index].done
+
+    bxsTask.save()
+    bxsTask.update()
+  end
+end
+
+-- =========================
+-- 删除任务
+-- =========================
+
+function bxsTask.removeTask(id)
+  local index = bxsTask.findTaskIndex(id)
+
+  if index then
+    table.remove(bxsTask.data.tasks, index)
+
+    bxsTask.save()
+    bxsTask.createUI()
+  end
+end
+
+-- =========================
+-- 清空任务
+-- =========================
+
+function bxsTask.clear()
+  bxsTask.data = {
+    active = false,
+    taskType = "",
+    tasks = {}
+  }
+
+  bxsTask.save()
+
+  if bxsTask.container then
+    bxsTask.container:hide()
+    --bxsTask.container:delete()
+  end
+
+  bxsTask.container = nil
+end
+
+-- =========================
+-- 完成统计
+-- =========================
+
+function bxsTask.countDone()
+  local done = 0
+  local total = #bxsTask.data.tasks
+
+  for _, t in ipairs(bxsTask.data.tasks) do
+    if t.done then
+      done = done + 1
+    end
+  end
+
+  return done, total
+end
+
+-- =========================
+-- 创建UI
+-- =========================
+
+function bxsTask.createUI()
+  local c = bxsTask.config
+
+  if bxsTask.container then
+    bxsTask.container:hide()
+    --bxsTask.container:delete()
+  end
+
+  bxsTask.container = nil
+  bxsTask.title = nil
+  bxsTask.rows = {}
+
+  local rowCount = #bxsTask.data.tasks
+  local panelHeight = c.firstRowY + rowCount * c.rowGap + 20
+
+  bxsTask.container = Geyser.Container:new({
+    name = "bxsTaskContainer",
+    x = c.panelX,
+    y = c.panelY,
+    width = tostring(c.panelWidth),
+    height = tostring(panelHeight)
+  })
+
+  bxsTask.title = Geyser.Label:new({
+    name = "bxsTaskTitle",
+    x = 0,
+    y = c.titleY,
+    width = tostring(c.panelWidth),
+    height = tostring(c.titleHeight)
+  }, bxsTask.container)
+
+  for i, _ in ipairs(bxsTask.data.tasks) do
+    bxsTask.rows[i] = Geyser.Label:new({
+      name = "bxsTaskRow" .. i,
+      x = 0,
+      y = c.firstRowY + (i - 1) * c.rowGap,
+      width = tostring(c.panelWidth),
+      height = tostring(c.rowHeight)
+    }, bxsTask.container)
+
+    bxsTask.rows[i]:setClickCallback(
+      "bxsTask.toggleTask",
+      i
+    )
+  end
+
+  bxsTask.update()
+end
+
+-- =========================
+-- 更新UI
+-- =========================
+
+function bxsTask.update()
+  if not bxsTask.container then
+    return
+  end
+
+  local c = bxsTask.config
+  local done, total = bxsTask.countDone()
+
+  bxsTask.title:echo(
+    "&lt;center&gt;&lt;font size='" ..
+      c.titleFontSize ..
+      "'&gt;&lt;yellow&gt;&lt;b&gt;百晓生任务 (" ..
+      done ..
+      "/" ..
+      total ..
+      ")&lt;/b&gt;&lt;/yellow&gt;&lt;/font&gt;&lt;/center&gt;"
+  )
+
+  for i, t in ipairs(bxsTask.data.tasks) do
+    local mark = t.done and "[√]" or "[ ]"
+
+    if t.done then
+      bxsTask.rows[i]:setStyleSheet([[
+        background-color: rgb(20,80,20);
+        color: rgb(180,255,180);
+        border: 1px solid rgb(60,120,60);
+        padding-left: 8px;
+      ]])
+    else
+      bxsTask.rows[i]:setStyleSheet([[
+        background-color: rgb(80,20,20);
+        color: rgb(255,180,180);
+        border: 1px solid rgb(120,60,60);
+        padding-left: 8px;
+      ]])
+    end
+
+    bxsTask.rows[i]:echo(
+      "&lt;font size='" ..
+        c.taskFontSize ..
+        "'&gt;" ..
+        mark ..
+        " " ..
+        t.name ..
+        "&lt;/font&gt;"
+    )
+  end
+end
+
+-- =========================
+-- 启动
+-- =========================
+
+bxsTask.load()
+
+if bxsTask.data.active then
+  bxsTask.createUI()
+end
+
+-- =========================
+-- Alias
+-- =========================
+
+tempAlias("^bxs$", [[bxsTask.start()]])
+tempAlias("^bxs clear$", [[bxsTask.clear()]])
+tempAlias("^bxs show$", [[bxsTask.createUI()]])
+
+tempAlias("^bxs add (%S+) (.+)$",
+  [[bxsTask.addTask(matches[2], matches[3])]])
+
+tempAlias("^bxs done (%S+)$",
+  [[bxsTask.completeTask(matches[2])]])
+
+tempAlias("^bxs undo (%S+)$",
+  [[bxsTask.uncompleteTask(matches[2])]])
+
+tempAlias("^bxs remove (%S+)$",
+  [[bxsTask.removeTask(matches[2])]])</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
@@ -19422,7 +19960,7 @@ fullme.initUI()</script>
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "grappling"
+local skill = "sword"
 local food = "ganliang"
 
 general_scripts = {
@@ -19710,7 +20248,7 @@ end
 				<packageName></packageName>
 				<script>key_room = key_room or {}
 
-
+key_room["慕容复"] = {map = "sz"}
 key_room["香积寺"] = {map = "lushan"}
 key_room["岳飞墓"] = {map = "ywm"}
 key_room["龙游"] = {map = "sx"}
@@ -78675,9 +79213,9 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>hunger</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -78687,21 +79225,21 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>thirthty</name>
-				<keyType>4</keyType>
-				<value>"饥渴状态"</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>short_of_shen</name>
 				<keyType>4</keyType>
 				<value>神不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>thirthty</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>"饥渴状态"</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>short_of_xue</name>
+				<keyType>4</keyType>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -78897,10 +79435,10 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_neili</name>
+				<name>max_neili</name>
 				<keyType>4</keyType>
-				<value>1093</value>
-				<valueType>4</valueType>
+				<value>2014</value>
+				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -78927,21 +79465,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>current_jingli</name>
-				<keyType>4</keyType>
-				<value>1982</value>
+				<value>1093</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_xue</name>
+				<name>base_jingli</name>
 				<keyType>4</keyType>
-				<value>693</value>
+				<value>991</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -78951,9 +79483,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_jingli</name>
+				<name>current_xue</name>
 				<keyType>4</keyType>
-				<value>991</value>
+				<value>693</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_jingli</name>
+				<keyType>4</keyType>
+				<value>1982</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -78975,12 +79513,6 @@ border_node["明州-城外土路"] = {
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
-			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
 		<VariableGroup>
 			<name>luren_set</name>
 			<keyType>4</keyType>
@@ -78995,37 +79527,43 @@ border_node["明州-城外土路"] = {
 			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
-				<value>315</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>food</name>
-				<keyType>4</keyType>
-				<value>310</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>jing</name>
-				<keyType>4</keyType>
-				<value>5656</value>
+				<value>258</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>qi</name>
 				<keyType>4</keyType>
-				<value>6819</value>
+				<value>7251</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>jing</name>
+				<keyType>4</keyType>
+				<value>5733</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>food</name>
+				<keyType>4</keyType>
+				<value>258</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
+		<Variable>
+			<name>current_learning_skills</name>
+			<keyType>4</keyType>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -79041,9 +79579,9 @@ border_node["明州-城外土路"] = {
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
