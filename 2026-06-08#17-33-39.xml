@@ -74,7 +74,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>LXGW WenKai Mono,15,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>LXGW WenKai Mono,16,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -124,7 +124,7 @@
 		</Host>
 	</HostPackage>
 	<TriggerPackage>
-		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>加内力值</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -146,7 +146,7 @@ if stat.food+0 &lt; 50 then
 --if hp_info.food+0 &lt; 100 then
   eat_and_drink()
 end
-send("dazuo 200")</script>
+send("dazuo 10")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -272,7 +272,7 @@ if stat.food+0 &lt; 50 then
 --if hp_info.food+0 &lt; 100 then
   eat_and_drink()
 end
-send("tuna 200")</script>
+send("tuna 20")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -342,7 +342,7 @@ if stat.food+0 &lt; 50 then
 --if hp_info.food+0 &lt; 100 then
   eat_and_drink()
 end
-send("tuna 50")</script>
+send("tuna 20")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -2854,7 +2854,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 			<name>积蓄攻势</name>
 			<script>local qishi = matches[2]
 -- 桃花到特技
-taohua_perform_skills(qishi)</script>
+-- taohua_perform_skills(qishi)</script>
 			<triggerType>0</triggerType>
 			<conditonLineDelta>0</conditonLineDelta>
 			<mStayOpen>0</mStayOpen>
@@ -4815,6 +4815,8 @@ if title == "泰安百姓" then
   expandAlias("mload taian")
 elseif title == "水果小贩" and name == "陈小二" then
   set_xkx_room("泉州")  
+elseif title == "明教光明左使" and name == "杨逍" then
+  set_xkx_room("明教广场")
 elseif title == "小贩" and name == "曹云" then
   set_xkx_room("温州")    
 elseif title == "巡山弟子" and get_current_room_name() == "山腰" then
@@ -5734,6 +5736,140 @@ end</script>
 				<integer>0</integer>
 			</regexCodePropertyList>
 		</Trigger>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>明教</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>圣火任务</name>
+				<script>--你已经看守了足够久时间的圣火，可以会狮王那里复命了。
+--你找到一柄钢刀。
+-- 殷天正对你道：你去练功房找(zhao)一件钢剑去武场打磨(mo)一下交给我。
+-- 我要求捕捉
+-- 1. 钢剑那个位置，可能是钢剑或者其他什么，比如钢刀
+-- 2. 钢剑或者钢刀是带有颜色的，也需要把颜色捕捉下来。
+
+ --你已经看守了足够久时间的圣火，可以会狮王那里复命了。</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList />
+				<regexCodePropertyList />
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>加柴</name>
+					<script>--圣火熊熊地燃烧着，也许快加点柴火吧。
+ --赶紧扇风，火会更大。
+ --圣火中出现了几朵火花，大约快加点柴火吧。
+ --圣火越烧越旺，也许柴火快烧光了。
+ --圣火势头略微大了一点，大约很需要加柴火。
+</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand>jiachai</mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>再不加柴火，圣火就要熄灭了</string>
+						<string>太需要加柴火了</string>
+						<string>有多少柴火都加进去吧</string>
+						<string>马上加柴火</string>
+						<string>很需要加柴火</string>
+						<string>有需要加柴火</string>
+						<string>柴火快烧光了。</string>
+						<string>快加点柴火吧。</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>扇风</name>
+					<script></script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand>shanfeng</mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>但是风不够大啦</string>
+						<string>(?&lt;!没)有必要用扇子。</string>
+						<string>快扇风啊</string>
+						<string>很必要用扇子</string>
+						<string>扇扇扇，快快快</string>
+						<string>马上扇呀</string>
+						<string>扇！</string>
+						<string>要灭了。</string>
+						<string>赶紧扇风，火会更大。</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>0</integer>
+						<integer>1</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>狮王复命</name>
+					<script></script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand>out;s;ask xie about fuming</mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>你已经看守了足够久时间的圣火，可以会狮王那里复命了。</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>0</integer>
+					</regexCodePropertyList>
+				</Trigger>
+			</TriggerGroup>
+		</TriggerGroup>
 	</TriggerPackage>
 	<TimerPackage>
 		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
@@ -5809,6 +5945,13 @@ end</script>
 			<command></command>
 			<packageName></packageName>
 			<time>00:00:04.000</time>
+		</Timer>
+		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
+			<name>xue</name>
+			<script></script>
+			<command>xue xin for guangming-shenghuogong 15</command>
+			<packageName></packageName>
+			<time>00:00:15.000</time>
 		</Timer>
 	</TimerPackage>
 	<AliasPackage>
@@ -8623,6 +8766,20 @@ set_tracing(false)</script>
 			<packageName></packageName>
 			<regex>^zof$</regex>
 		</Alias>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>明教</name>
+			<script></script>
+			<command></command>
+			<packageName></packageName>
+			<regex></regex>
+			<Alias isActive="yes" isFolder="no">
+				<name>fuming</name>
+				<script>send("ask "..matches[2].." about fuming")</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^fuming (.*)$</regex>
+			</Alias>
+		</AliasGroup>
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
@@ -20759,13 +20916,13 @@ mapper.mappingEnabled = true   -- 默认开启测绘
 
 -- ☆☆ 边界房间名字：这些名字的房间会被当成“边缘”，不会从这里继续向外探索 ☆☆
 mapper.boundaryNames = mapper.boundaryNames or {
-  --["北山盘道"] = true, 
-  ["温泉镇"] = true,
-  ["白鹿镇"] = true, 
-  ["石坊"] = true,
-  ["南山盘道"] = true,
-  ["山前小路"] = true,
-  ["香积寺"] = true,
+  ["大沙漠"] = true, 
+  ["走廊"] = true,
+  -- ["白鹿镇"] = true, 
+  -- ["石坊"] = true,
+  -- ["南山盘道"] = true,
+  -- ["山前小路"] = true,
+  -- ["香积寺"] = true,
   -- ["行宫大门"] = true,  
   -- ["城墙脚下"] = true,
   -- ["黄土小路"] = true,
@@ -74354,6 +74511,7 @@ add("嘉兴", {
 node_city = node_city or {}
 local add = node_city.add or function(name, data) node_city[name] = data end
 
+
 add("曲阜渡口", {
   --short_name = "lydk",
   back_yangzhou = "zuan hole;s;sw;sw;s;s;u;out",
@@ -74662,6 +74820,15 @@ add("小广场", {
 				<packageName></packageName>
 				<script>node_city = node_city or {}
 local add = node_city.add or function(name, data) node_city[name] = data end
+
+add("明教广场", {
+  --short_name = "lydk",
+  back_yangzhou = "zuan hole;s;sw;sw;s;s;u;out",
+  back_mrf = "zuan hole;s;sw;sw;s;s;u;out;do 4 s;su;se;su;e;ask shao gong about jiang;enter",
+  back_hyd  = "ask shao gong about huanghe;enter",
+  ask_job  = "ask yang about job",
+  job_done   = "ask yang about fuming",
+})
 
 add("兰州", {
   back_yangzhou= "node walk lanz_yz",
@@ -79268,9 +79435,9 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
+				<name>hunger</name>
 				<keyType>4</keyType>
-				<value>神不足</value>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -79280,9 +79447,9 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>神不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -79574,6 +79741,12 @@ border_node["明州-城外土路"] = {
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
+		<Variable>
+			<name>current_learning_skills</name>
+			<keyType>4</keyType>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 		<VariableGroup>
 			<name>stat</name>
 			<keyType>4</keyType>
@@ -79588,13 +79761,13 @@ border_node["明州-城外土路"] = {
 			<Variable>
 				<name>qi</name>
 				<keyType>4</keyType>
-				<value>7615</value>
+				<value>-1</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>jing</name>
 				<keyType>4</keyType>
-				<value>5932</value>
+				<value>120</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
@@ -79604,12 +79777,6 @@ border_node["明州-城外土路"] = {
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
-			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
 		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
