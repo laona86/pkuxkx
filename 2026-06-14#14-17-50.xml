@@ -42,7 +42,7 @@
 				<string>enable-accessibility</string>
 				<string>generic_mapper</string>
 			</mInstalledPackages>
-			<url>hk.pkuxkx.com</url>
+			<url>us.pkuxkx.com</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>1</serverPackageVersion>
 			<port>8081</port>
@@ -74,7 +74,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>LXGW WenKai Mono,14,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>LXGW WenKai Mono,16,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -272,7 +272,7 @@ if stat.food+0 &lt; 50 then
 --if hp_info.food+0 &lt; 100 then
   eat_and_drink()
 end
-send("tuna 100")</script>
+send("tuna 200")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -774,7 +774,7 @@ set_message(name, msg)
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
-		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>积攒内力</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -885,7 +885,7 @@ tempTimer(10, function() expandAlias("start_jiqi") end)</script>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
-		<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>释放内力</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -905,7 +905,7 @@ tempTimer(10, function() expandAlias("start_jiqi") end)</script>
 				<script>if stat.neili+0 &gt; 500 then
   tempTimer(0.1, function() 
     release_force()
-    send("response release force 1 round") 
+    --send("response release force 1 round") 
   end)
 else 
   expandAlias("start_jiqi")  
@@ -974,6 +974,26 @@ echo("===&gt; 切换到基本功\n")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>冲穴</name>
+				<script>send("response release force 1 round") </script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^此次冲穴消耗了</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>空手</name>
 				<script></script>
 				<triggerType>0</triggerType>
@@ -991,6 +1011,26 @@ echo("===&gt; 切换到基本功\n")</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>内力不足</name>
+				<script>expandAlias("start_jiqi")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^你现在内力不足，强行通脉，有害无.*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
@@ -1773,7 +1813,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>韩世忠(</string>
+						<string>蕲王 韩世忠(</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>0</integer>
@@ -3009,7 +3049,7 @@ bxsTask.addTask("bxs-random", matches[2])</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>^仆人对着你点了点头.*$</string>
+						<string>^你给仆人一封信件.*$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -3090,6 +3130,46 @@ bxsTask.addTask("bxs-random", matches[2])</script>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
 						<string>百晓生(Bai xiaosheng)告诉你：大侠果然身手不凡，过挑战一次</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>0</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>万安塔完成</name>
+					<script>expandAlias("bxs done bxs-random")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^你在万安塔任务中被奖励了</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>破阵完成</name>
+					<script>expandAlias("bxs done bxs-random")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>完成破阵任务之后，你被奖励了</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>0</integer>
@@ -3947,7 +4027,7 @@ dest_task_type("reset")</script>
 						<integer>0</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>开战大恶</name>
 					<script>--echo("==find==")
 local name = string.lower(matches[2])
@@ -4565,6 +4645,26 @@ end)</script>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>推车完成</name>
+					<script>send("set wimpy 50")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>.*对你说道：“终于到了！壮士辛苦了.*$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
 			</TriggerGroup>
 		</TriggerGroup>
 		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -4755,10 +4855,14 @@ if title == "泰安百姓" then
   expandAlias("mload taian")
 elseif title == "水果小贩" and name == "陈小二" then
   set_xkx_room("泉州")  
+elseif title == "心如止水" and name == "游方和尚" then
+  set_xkx_room("朱雀大街")    
 elseif title == "小贩" and name == "曹云" then
-  set_xkx_room("温州")    
+  set_xkx_room("温州")   
 elseif title == "巡山弟子" and get_current_room_name() == "山腰" then
   set_xkx_room("神龙岛山腰")      
+elseif title == "货郎" and get_current_room_name() == "城中心" then
+  set_xkx_room("闽中")   
 elseif title == "散财龙女" then
   set_xkx_room("洛阳中心广场")    
 elseif title == "代州百姓" then
@@ -4767,6 +4871,8 @@ elseif title == "明州平民" then
   expandAlias("mload mz")  
 elseif title == "衡州百姓" then
   expandAlias("mload hengz")   
+elseif name == "黄铜大钟" then
+  set_xkx_room("兰州")    
 elseif title == "长沙府平民" then
   expandAlias("mload csha")     
 elseif title == "耍猴艺人" then
@@ -5623,6 +5729,30 @@ end</script>
 					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>磕药</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand>eat jin</mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>你摇头晃脑、歪歪斜斜地站都站不稳，眼看就要倒在地上。</string>
+					<string>你已经一副头重脚轻的模样，正在勉力支撑著不倒下去。</string>
+					<string>你已经陷入半昏迷状态，随时都可能摔倒晕去。</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
 		</TriggerGroup>
 		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>画方圆</name>
@@ -5743,12 +5873,12 @@ end</script>
 			<packageName></packageName>
 			<time>00:00:10.000</time>
 		</Timer>
-		<Timer isActive="yes" isFolder="no" isTempTimer="no" isOffsetTimer="no">
+		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
 			<name>自己占卜</name>
-			<script>cecho("&lt;red&gt; ==== 占卜 ==== \n")</script>
+			<script>send("hua southeast")</script>
 			<command></command>
 			<packageName></packageName>
-			<time>00:30:00.000</time>
+			<time>00:00:06.000</time>
 		</Timer>
 	</TimerPackage>
 	<AliasPackage>
@@ -6152,6 +6282,13 @@ send("wear lupi dai")
 				<command></command>
 				<packageName></packageName>
 				<regex>^idt (.*)$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>kill all - ka</name>
+				<script></script>
+				<command>killall;perform hujia-daofa.daoying</command>
+				<packageName></packageName>
+				<regex>^ka$</regex>
 			</Alias>
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
@@ -8019,7 +8156,8 @@ tempTimer(1, function()
   send("w;;w;;s;;s")
   tempTimer(2, function() 
     send("ask gu about 蓉姐姐;;n;;n;;w;;nu;;ed;;enter door")
-    tempTimer(3, function() send("ask huang about 软猬甲;;out;;wu;;sd;;e;;e;;e") end)
+    tempTimer(3, function() send("ask huang about 软猬甲") end)
+    --tempTimer(3, function() send("ask huang about 软猬甲;;out;;wu;;sd;;e;;e;;e") end)
   end)
 end)
 </script>
@@ -8446,6 +8584,7 @@ tempTimer(2, function() send("ask "..name.." about 重置任务") end)
 				<Alias isActive="yes" isFolder="no">
 					<name>接镖</name>
 					<script>send("getesc "..matches[2])
+send("set wimpy 20")
 dest_task_type("护镖")</script>
 					<command></command>
 					<packageName></packageName>
@@ -8481,6 +8620,20 @@ set_task_origin(matches[2])</script>
 				<packageName></packageName>
 				<regex>^task (.*)$</regex>
 			</Alias>
+			<AliasGroup isActive="yes" isFolder="yes">
+				<name>百晓生</name>
+				<script></script>
+				<command></command>
+				<packageName></packageName>
+				<regex></regex>
+				<Alias isActive="yes" isFolder="no">
+					<name>百晓生完成一个子任务</name>
+					<script>bxsTask.completeTask(matches[2])</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^bxs done (\S+)$</regex>
+				</Alias>
+			</AliasGroup>
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>显示丹枝状态</name>
@@ -8548,6 +8701,19 @@ set_tracing(false)</script>
 			<packageName></packageName>
 			<regex>^zof$</regex>
 		</Alias>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>通脉</name>
+			<script>-- 此次冲穴消耗了七百三十一点内力，内力被纳入二间穴。
+-- response release force 1 round
+-- 你手阳明大肠经上二间穴已经充盈，你可以尝试下一个穴道三间穴了。
+-- 系统回馈：release = force 1 round
+-- &gt; vt
+-- vein through 二间
+-- 现在你只能尝试往三间里灌注内力。</script>
+			<command>vein through 扶突</command>
+			<packageName></packageName>
+			<regex>^vt$</regex>
+		</AliasGroup>
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
@@ -18430,17 +18596,17 @@ pozhen_destination["岳阳"] = { path = "node walk pozhen_yy" }
 pozhen_destination["建康府北城"] = { path = "node walk pozhen_jk" }
 pozhen_destination["建康府南城"] = { path = "node walk lcf_cym" }
 pozhen_destination["无锡"] = { path = "node walk pozhen_wx" }
-pozhen_destination["明州"] = { path = "node walk pozhen_mz" }
+pozhen_destination["明州"] = { path = "w;w;sd;sd;out;w;w;s;gu;qu shaoxing" }
 pozhen_destination["杭州提督府"] = { path = "node walk pozhen_tdf" }
 pozhen_destination["江州"] = { path = "node walk pozhen_jz" }
-pozhen_destination["湖州"] = { path = "node walk pozhen_hzf" }
-pozhen_destination["绍兴府"] = { path = "node walk pozhen_sx" }
+pozhen_destination["湖州"] = { path = "w;w;sd;sd;out;w;w;s;gu;qu huzhou" }
+pozhen_destination["绍兴府"] = { path = "w;w;sd;sd;out;w;w;s;gu;qu shaoxing;" }
 pozhen_destination["苏州"] = { path = "node walk pozhen_mrf" }
-pozhen_destination["衢州"] = { path = "node walk pozhen_qz" }
+pozhen_destination["衢州"] = { path = "w;w;sd;sd;out;w;w;s;gu;qu shaoxing;" }
 pozhen_destination["西湖"] = { path = "node walk pozhen_xhab" }
 pozhen_destination["诸军统制府"] = { path = "node walk pozhen_mzj" }
 pozhen_destination["铜官山"] = { path = "node walk pozhen_tgz" }
-pozhen_destination["镇江"] = { path = "node walk pozhen_zj"}
+pozhen_destination["镇江"] = { path = "w;w;sd;sd;out;w;w;s;gu;qu zhenjiang"}
 pozhen_destination["长沙府"] = { path = "node walk pozhen_cs"}
 
 local bagua = {
@@ -18533,6 +18699,7 @@ hsz_destination["温州府"] = { path = "s;out;s;w;w;n;e;n;gu;qu quanzhou" }
 hsz_destination["泉州"] = { path = "s;out;s;w;w;n;e;n;gu;qu quanzhou" }
 hsz_destination["雁荡山"] = { path = "s;out;s;w;w;do 8 e;sw;w;zong" }
 hsz_destination["武夷山"] = { path = "s;out;s;w;w;n;e;n;gu;qu quanzhou" }
+hsz_destination["潮州"] = { path = "s;out;s;w;w;n;e;n;gu;qu chaozhou" }
 hsz_destination["临安府"] = { path = "node walk hsz_hz" }
 hsz_destination["处州府"] = { path = "s;out;s;w;w;n;e;n;gu;qu chuzhou" }
 hsz_destination["天台山"] = { path = "s;out;s;w;w;do 8 e;sw;w;zong" }
@@ -19906,7 +20073,7 @@ fullme.initUI()</script>
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "grappling"
+local skill = "finger"
 local food = "ganliang"
 
 general_scripts = {
@@ -19914,12 +20081,13 @@ general_scripts = {
 }
 
 function release_force()
+  expandAlias("vt")
   --send("yun regenerate;hua fangyuan")
   --expandAlias("yr;lingwu force")
   --expandAlias("yr;;lingwu throwing")
   --expandAlias("yr;;do 4 learn huang for literate 50")
   --expandAlias("yc;lian parry 50;yc;lian parry 50")
-  expandAlias(general_scripts.skills_to_learn)
+  --expandAlias(general_scripts.skills_to_learn)
 end
 
 function reset_is_full()
@@ -20167,17 +20335,17 @@ end
 function taohua_perform_skills(qishi)
   local qs = qishi+0
   local type = get_task_type()
-  if qs &gt; 7 and not fuxue_cd then
-    expandAlias("phf")
-  end
+  -- if qs &gt; 7 and not fuxue_cd then
+    -- expandAlias("phf")
+  -- end
   
   -- if qs &gt; 11 and not tanzhi_cd then
     -- send("perform finger.tan")
   -- end
   
-  if qs &gt; 15 and not xiaohua_cd then
-    expandAlias("ps")
-  end
+  -- if qs &gt; 15 and not xiaohua_cd then
+    -- expandAlias("ps")
+  -- end
   
 end
 
@@ -20194,8 +20362,10 @@ end
 				<packageName></packageName>
 				<script>key_room = key_room or {}
 
+
 key_room["慕容复"] = {map = "sz"}
 key_room["香积寺"] = {map = "lushan"}
+key_room["温泉镇"] = {map = "lushan"}
 key_room["岳飞墓"] = {map = "ywm"}
 key_room["龙游"] = {map = "sx"}
 key_room["湖州府马车行"] = {map = "hzf"}
@@ -20318,8 +20488,8 @@ key_room["东水门码头"] = {map = "yuzhou"}
 key_room["朝天门码头"] = {map = "yuzhou"}
 key_room["许昌城"] = {map = "zhongyuan"}
 key_room["少林寺"] = {map = "sl"}
-
-</script>
+key_room["朱雀大街"] = {map = "ca"}
+key_room["兰州"] = {map = "lanz"}</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
@@ -20683,20 +20853,30 @@ mapper.mappingEnabled = true   -- 默认开启测绘
 
 -- ☆☆ 边界房间名字：这些名字的房间会被当成“边缘”，不会从这里继续向外探索 ☆☆
 mapper.boundaryNames = mapper.boundaryNames or {
-  --["北山盘道"] = true, 
-  ["温泉镇"] = true,
-  ["白鹿镇"] = true, 
-  ["石坊"] = true,
-  ["南山盘道"] = true,
-  ["山前小路"] = true,
-  ["香积寺"] = true,
-  -- ["行宫大门"] = true,  
-  -- ["城墙脚下"] = true,
-  -- ["黄土小路"] = true,
-  -- ["黄土路"] = true,
-  -- ["城墙上"] = true,
-  -- ["天安门"] = true,
-  -- ["正阳门"] = true,  
+  ["石坊"] = true, 
+  -- ["昭平湖"] = true,
+  -- ["石拱桥"] = true, 
+  -- ["黄草山"] = true,
+  -- ["荒地"] = true,
+  -- 
+  -- ["伊川"] = true,
+  -- ["石阶"] = true,
+  -- ["林间小路"] = true, 
+  -- ["山路"] = true,
+  -- ["轩辕关"] = true,
+  -- ["虎牢关"] = true,
+  -- ["小路"] = true,
+  -- ["太室山脚"] = true,
+  -- ["郑州"] = true,
+  -- ["尉氏县"] = true, 
+  -- ["天光云影亭"] = true, 
+  -- ["尉氏县"] = true, 
+  -- ["相山"] = true,
+  -- ["归德府"] = true,
+  -- ["青石大道"] = true,
+   -- ["驻马店"] = true,
+   -- ["蔡州"] = true,
+   -- ["白河东岸"] = true,
 }
 
 -------------------------------------------------------
@@ -48841,6 +49021,7 @@ mapper.maps["lushan"] = {
     exits = {
       ["n"] = "北山盘道|nw,s",
       ["sd"] = "南山盘道|e,nu,swd",
+      ["w"] = "石坊|e,wd",
     },
   },
   
@@ -48852,7 +49033,7 @@ mapper.maps["lushan"] = {
     },
   },
   ["北山盘道|eu,nu,su"] = {
-    name = "北山盘道",
+    name = "北山盘道1",
     exits = {
       ["eu"] = "捉马岭|wd",
       ["nu"] = "北山盘道|ned,sd",
@@ -48861,35 +49042,35 @@ mapper.maps["lushan"] = {
   },
 
   ["北山盘道|nd,se"] = {
-    name = "北山盘道",
+    name = "北山盘道2",
     exits = {
       ["nd"] = "北山盘道|eu,nu,su",
       ["se"] = "北山盘道|nw,s",
     },
   },
   ["北山盘道|nd,su"] = {
-    name = "北山盘道",
+    name = "北山盘道3",
     exits = {
       ["nd"] = "庐山道口|e,n,su,w",
       ["su"] = "北山盘道|nd,swu",
     },
   },
   ["北山盘道|nd,swu"] = {
-    name = "北山盘道",
+    name = "北山盘道4",
     exits = {
       ["nd"] = "北山盘道|nd,su",
       ["swu"] = "北山盘道|ned,sd",
     },
   },
   ["北山盘道|ned,sd"] = {
-    name = "北山盘道",
+    name = "北山盘道5",
     exits = {
       ["ned"] = "北山盘道|nd,swu",
       ["sd"] = "北山盘道|eu,nu,su",
     },
   },
   ["北山盘道|nw,s"] = {
-    name = "北山盘道",
+    name = "北山盘道6",
     exits = {
       ["nw"] = "北山盘道|nd,se",
       ["s"] = "北山盘道|n,sd,w",
@@ -49246,6 +49427,165 @@ mapper.maps["lushan"] = {
       ["wu"] = "云雾茶岭|ed,w",
     },
   },
+  
+  ["三宝树|enter,n,sed"] = {
+    name = "三宝树",
+    exits = {
+      ["enter"] = "黄龙寺|out",
+      ["n"] = "会仙峡口|e,s",
+      ["sed"] = "黄龙潭|e,nwu",
+    },
+  },
+  ["乌龙潭|n,w"] = {
+    name = "乌龙潭",
+    exits = {
+      ["n"] = "龙首崖下|e,s,u,w",
+      ["w"] = "黄龙潭|e,nwu",
+    },
+  },
+  ["仙人洞内|out"] = {
+    name = "仙人洞内",
+    exits = {
+      ["out"] = "仙人洞外|enter,sd,w",
+    },
+  },
+  ["仙人洞外|enter,sd,w"] = {
+    name = "仙人洞外",
+    exits = {
+      ["enter"] = "仙人洞内|out",
+      ["sd"] = "芦林湖|e,nu",
+      ["w"] = "会仙峡口|e,s",
+    },
+  },
+  ["会仙峡口|e,s"] = {
+    name = "会仙峡口",
+    exits = {
+      ["e"] = "仙人洞外|enter,sd,w",
+      ["s"] = "三宝树|enter,n,sed",
+    },
+  },
+  ["内间|out"] = {
+    name = "内间",
+    exits = {
+      ["out"] = "牯岭客栈|enter,n",
+    },
+  },
+  ["听泉居|s"] = {
+    name = "听泉居",
+    exits = {
+      ["s"] = "西街|e,n,wu",
+    },
+  },
+  ["如琴湖东岸|sw,w"] = {
+    name = "如琴湖东岸",
+    exits = {
+      ["sw"] = "曲桥|ne,w",
+      ["w"] = "花径|e,n,s",
+    },
+  },
+  ["山中草堂|e,n"] = {
+    name = "山中草堂",
+    exits = {
+      ["e"] = "曲桥|ne,w",
+      ["n"] = "花径|e,n,s",
+    },
+  },
+  ["曲桥|ne,w"] = {
+    name = "曲桥",
+    exits = {
+      ["ne"] = "如琴湖东岸|sw,w",
+      ["w"] = "山中草堂|e,n",
+    },
+  },
+  ["正街|eu,s,w"] = {
+    name = "正街",
+    exits = {
+      ["eu"] = "石坊|e,wd",
+      ["s"] = "花径|e,n,s",
+      ["w"] = "街心|e,s,w",
+    },
+  },
+  ["牯岭客栈|enter,n"] = {
+    name = "牯岭客栈",
+    exits = {
+      ["enter"] = "内间|out",
+      ["n"] = "街心|e,s,w",
+    },
+  },
+  ["石坊|e,wd"] = {
+    name = "石坊",
+    exits = {
+      ["wd"] = "正街|eu,s,w",
+      ["e"] = "北山盘道|n,sd,w",
+    },
+  },
+  ["翠竹林|w"] = {
+    name = "翠竹林",
+    exits = {
+      ["w"] = "龙首崖下|e,s,u,w",
+    },
+  },
+  ["芦林湖|e,nu"] = {
+    name = "芦林湖",
+    exits = {
+      ["e"] = "龙首崖下|e,s,u,w",
+      ["nu"] = "仙人洞外|enter,sd,w",
+    },
+  },
+  ["花径|e,n,s"] = {
+    name = "花径",
+    exits = {
+      ["e"] = "如琴湖东岸|sw,w",
+      ["n"] = "正街|eu,s,w",
+      ["s"] = "山中草堂|e,n",
+    },
+  },
+  ["街心|e,s,w"] = {
+    name = "街心",
+    exits = {
+      ["e"] = "正街|eu,s,w",
+      ["s"] = "牯岭客栈|enter,n",
+      ["w"] = "西街|e,n,wu",
+    },
+  },
+  ["西街|e,n,wu"] = {
+    name = "西街",
+    exits = {
+      ["e"] = "街心|e,s,w",
+      ["n"] = "听泉居|s",
+      ["wu"] = "龙首崖|d,ed",
+    },
+  },
+  ["黄龙寺|out"] = {
+    name = "黄龙寺",
+    exits = {
+      ["out"] = "三宝树|enter,n,sed",
+    },
+  },
+  ["黄龙潭|e,nwu"] = {
+    name = "黄龙潭",
+    exits = {
+      ["e"] = "乌龙潭|n,w",
+      ["nwu"] = "三宝树|enter,n,sed",
+    },
+  },
+  ["龙首崖|d,ed"] = {
+    name = "龙首崖",
+    exits = {
+      ["d"] = "龙首崖下|e,s,u,w",
+      ["ed"] = "西街|e,n,wu",
+    },
+  },
+  ["龙首崖下|e,s,u,w"] = {
+    name = "龙首崖下",
+    exits = {
+      ["e"] = "翠竹林|w",
+      ["s"] = "乌龙潭|n,w",
+      ["u"] = "龙首崖|d,ed",
+      ["w"] = "芦林湖|e,nu",
+    },
+  },
+    
 }
 }
 
@@ -49274,7 +49614,7 @@ mapper.maps["lushan"].mapAliases = {
   ["北山盘道4"] = "bspd4",
   ["北山盘道5"] = "bspd5",
   ["北山盘道6"] = "bspd6",
-  ["北山盘道7"] = "bspd7",
+  ["北山盘道"] = "bspd",
 
   ["南山盘道1"] = "nspd1",
   ["南山盘道2"] = "nspd2",
@@ -57476,6 +57816,46 @@ mapper.maps["ry"] = {
   },
 
   mapNodes = {
+    ["黑木崖|e,n,s,w"] = {
+      name = "黑木崖",
+      exits = {
+        ["e"] = "望海石|eu,w",
+        ["n"] = "成德殿门|e,enter,s,w",
+        ["s"] = "",
+        ["w"] = "",
+        ["enter lou"] = "黑木崖下|s",
+      },
+    },
+    ["成德殿门|e,enter,s,w"] = {
+      name = "成德殿门",
+      exits = {
+        ["e"] = "",
+        ["enter"] = "长廊|n,out",
+        ["s"] = "黑木崖|e,n,s,w",
+        ["w"] = "",
+      },
+    },
+    ["长廊|n,out"] = {
+      name = "长廊",
+      exits = {
+        ["n"] = "",
+        ["out"] = "成德殿门|e,enter,s,w",
+      },
+    },
+    ["望海石|eu,w"] = {
+      name = "望海石",
+      exits = {
+        ["eu"] = "",
+        ["w"] = "黑木崖|e,n,s,w",
+      },
+    },
+    ["黑木崖下|s"] = {
+      name = "黑木崖下",
+      exits = {
+        ["s;s;s"] = "村中小路|e,n,s,w",
+        ["enter lou"] = "黑木崖|e,n,s,w",
+      },
+    },
     ["村中小路|e,n,s,w"] = {
       name = "村中小路",
       exits = {
@@ -57517,13 +57897,6 @@ mapper.maps["ry"] = {
       name = "厨房",
       exits = {
         ["w"] = "内厅|e,s",
-      },
-    },
-
-    ["黑木崖下|s"] = {
-      name = "黑木崖下",
-      exits = {
-        ["s;s;s"] = "村中小路|e,n,s,w",
       },
     },
 
@@ -66382,14 +66755,14 @@ mapper.maps["xsc"].mapAliases = {
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>中原 - zhongyuan</name>
+					<name>中原2 - zhongyuan</name>
 					<packageName></packageName>
 					<script>mapper = mapper or {}
 mapper.maps = mapper.maps or {}
 
-mapper.maps["zhongyuan"] = {
+mapper.maps["zhongyuan2"] = {
   region = {
-    key  = "zhongyuan",
+    key  = "zhongyuan2",
     name = "中原",
   },
 mapNodes = {
@@ -67612,6 +67985,456 @@ mapper.maps["shashou"].mapAliases = {
   ["妓院"]       = "jy",
   ["当铺"]       = "dp",
   ["药铺"]       = "yp",
+}
+</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>中原</name>
+					<packageName></packageName>
+					<script>mapper = mapper or {}
+mapper.maps = mapper.maps or {}
+
+mapper.maps["zhongyuan"] = {
+  region = {
+    key  = "zhongyuan",
+    name = "中原",
+  },
+mapNodes = {
+
+  ["青石大道|e,nw,sw"] = {
+    name = "青石大道",
+    exits = {
+      ["e"] = "淮北|eu,n,ne,sd,se,w",
+      ["nw"] = "青石大道|se,w",
+      ["sw"] = "亳州|ne,se,sw",
+      
+    },
+  },
+  ["青石大道|se,w"] = {
+    name = "青石大道",
+    exits = {
+      ["se"] = "青石大道|e,nw,sw",
+      ["w"] = "许昌城|e,n,ne,nw,se,sw,w",
+    },
+  },
+  
+  ["青石大道|n,nw,se"] = {
+  name = "青石大道",
+  exits = {
+    ["nw"] = "淮北|eu,n,ne,sd,se,w",
+    ["se"] = "洪泽湖畔|nw,s,se",
+  },
+},
+
+["洪泽湖畔|nw,s,se"] = {
+  name = "洪泽湖畔",
+  exits = {
+    ["nw"] = "青石大道|n,nw,se",
+  },
+},
+
+["淮北|eu,n,ne,sd,se,w"] = {
+  name = "淮北",
+  exits = {
+    ["eu"] = "",
+    ["n"] = "官道|e,n,nw,s,w,wu",
+    ["ne"] = "",
+    ["sd"] = "",
+    ["se"] = "青石大道|n,nw,se",
+    ["w"] = "青石大道|e,nw,sw",
+  },
+},
+
+["淮河北岸|nu,sw"] = {
+  name = "淮河北岸",
+  exits = {
+    ["nu"] = "淮北|eu,n,ne,sd,se,w",
+    ["sw"] = "淮河北岸|ne",
+  },
+},
+
+["淮河北岸|ne"] = {
+  name = "淮河北岸",
+  exits = {
+    ["ne"] = "淮河北岸|nu,sw",
+  },
+},
+
+["官道|e,n,nw,s,w,wu"] = {
+  name = "官道",
+  exits = {
+    ["s"] = "淮北|eu,n,ne,sd,se,w",
+    ["wu"] = "相山|ed",
+  },
+},
+
+["相山|ed"] = {
+  name = "相山",
+  exits = {
+    ["ed"] = "官道|e,n,nw,s,w,wu",
+  },
+},
+
+
+  
+  ["官道|e,n,s,w"] = {
+    name = "官道",
+    exits = {
+      ["n"] = "郾城|neu,nw,s,se",
+      ["s"] = "驻马店|n,s",
+    },
+  },
+    
+  ["上蔡|ne,nw,s,se"] = {
+    name = "上蔡",
+    exits = {
+      ["ne"] = "亳州|ne,se,sw",
+      ["nw"] = "郾城|neu,nw,s,se",
+      ["s"] = "蔡州|n,sw",
+      ["se"] = "山路|nw,su",
+    },
+  },
+  ["中原马车总行|s"] = {
+    name = "中原马车总行",
+    exits = {
+      ["s"] = "许昌城|e,n,ne,nw,se,sw,w",
+    },
+  },
+  ["乾溪沟|nw,sw"] = {
+    name = "乾溪沟",
+    exits = {
+      ["nw"] = "亳州|ne,se,sw",
+      ["sw"] = "章华台|ne",
+    },
+  },
+  ["五岳庙|enter,sw"] = {
+    name = "五岳庙",
+    exits = {
+      ["enter"] = "五岳殿|n,out",
+      ["sw"] = "襄城县|ne,nw,s",
+    },
+  },
+  ["五岳殿|n,out"] = {
+    name = "五岳殿",
+    exits = {
+      ["n"] = "真武殿|nu,s",
+      ["out"] = "五岳庙|enter,sw",
+    },
+  },
+  ["亳州|ne,se,sw"] = {
+    name = "亳州",
+    exits = {
+      ["ne"] = "青石大道|e,nw,sw",
+      ["se"] = "乾溪沟|nw,sw",
+      ["sw"] = "上蔡|ne,nw,s,se",
+    },
+  },
+  ["伊川|e,n,se,sw"] = {
+    name = "伊川",
+    exits = {
+      ["e"] = "驿道|e,w",
+      ["se"] = "驿道|e,nw",
+    },
+  },
+
+  ["后殿|sd"] = {
+    name = "后殿",
+    exits = {
+      ["sd"] = "真武殿|nu,s",
+    },
+  },
+  ["大驿道|e,s"] = {
+    name = "大驿道",
+    exits = {
+      ["e"] = "大驿道|ne,w",
+      ["s"] = "大驿道|n,sw",
+    },
+  },
+  ["大驿道|n,ne,sw"] = {
+    name = "大驿道",
+    exits = {
+      ["n"] = "襄城县|ne,nw,s",
+      ["ne"] = "大驿道|n,sw",
+      ["sw"] = "白河东岸|e,n,ne,sw,wu",
+    },
+  },
+  ["大驿道|n,sw"] = {
+    name = "大驿道",
+    exits = {
+      ["n"] = "大驿道|e,s",
+      ["sw"] = "大驿道|n,ne,sw",
+    },
+  },
+  ["大驿道|ne,nw,s,w"] = {
+    name = "大驿道",
+    exits = {
+      ["ne"] = "郏县|e,ne,se,sw",
+      ["nw"] = "汝州|ne,se,w",
+      ["s"] = "鲁山|enter,n,sw,w",
+    },
+  },
+  ["大驿道|ne,s,w"] = {
+    name = "大驿道",
+    exits = {
+      ["ne"] = "鲁山|enter,n,sw,w",
+      ["s"] = "白河东岸|e,n,ne,sw,wu",
+    },
+  },
+  ["大驿道|ne,sw"] = {
+    name = "大驿道",
+    exits = {
+      ["ne"] = "许昌城|e,n,ne,nw,se,sw,w",
+      ["sw"] = "大驿道|ne,w",
+    },
+  },
+  ["大驿道|ne,w"] = {
+    name = "大驿道",
+    exits = {
+      ["ne"] = "大驿道|ne,sw",
+      ["w"] = "大驿道|e,s",
+    },
+  },
+  ["大驿道|nw,se,sw,w"] = {
+    name = "大驿道",
+    exits = {
+      ["nw"] = "新郑|e,n,se,sw",
+      ["se"] = "许昌城|e,n,ne,nw,se,sw,w",
+      ["sw"] = "神垕镇|ne,sw",
+      ["w"] = "登封|e,nu,nw,sw,w",
+    },
+  },
+
+  ["小商桥|nw,se"] = {
+    name = "小商桥",
+    exits = {
+      ["nw"] = "许昌城|e,n,ne,nw,se,sw,w",
+      ["se"] = "郾城|neu,nw,s,se",
+    },
+  },
+
+  ["山路|nw,su"] = {
+    name = "山路",
+    exits = {
+      ["nw"] = "上蔡|ne,nw,s,se",
+    },
+  },
+  ["山间道|eu,ne,nu,nw,sd"] = {
+    name = "山间道",
+    exits = {
+      ["nu"] = "鹅岭口|ne,sd",
+      ["sd"] = "登封|e,nu,nw,sw,w",
+    },
+  },
+
+  ["市集|se"] = {
+    name = "市集",
+    exits = {
+      ["se"] = "登封|e,nu,nw,sw,w",
+    },
+  },
+  ["彼岸寺|swd"] = {
+    name = "彼岸寺",
+    exits = {
+      ["swd"] = "郾城|neu,nw,s,se",
+    },
+  },
+  ["新郑|e,n,se,sw"] = {
+    name = "新郑",
+    exits = {
+      ["n"] = "郑州|e,nw,s,se,wu",
+      ["se"] = "大驿道|nw,se,sw,w",
+    },
+  },
+
+
+  ["汝州|ne,se,w"] = {
+    name = "汝州",
+    exits = {
+      ["ne"] = "登封|e,nu,nw,sw,w",
+      ["se"] = "大驿道|ne,nw,s,w",
+      ["w"] = "驿道|e,nw",
+    },
+  },
+  ["登封|e,nu,nw,sw,w"] = {
+    name = "登封",
+    exits = {
+      ["e"] = "大驿道|nw,se,sw,w",
+      ["nu"] = "山间道|eu,ne,nu,nw,sd",
+      ["nw"] = "市集|se",
+      ["sw"] = "汝州|ne,se,w",
+      ["w"] = "驿道|e,w",
+    },
+  },
+  ["白河东岸|e,n,ne,sw,wu"] = {
+    name = "白河东岸",
+    exits = {
+      ["n"] = "大驿道|ne,s,w",
+      ["ne"] = "大驿道|n,ne,sw",
+    },
+  },
+  ["真武殿|nu,s"] = {
+    name = "真武殿",
+    exits = {
+      ["nu"] = "后殿|sd",
+      ["s"] = "五岳殿|n,out",
+    },
+  },
+
+  ["神垕镇|ne,sw"] = {
+    name = "神垕镇",
+    exits = {
+      ["ne"] = "大驿道|nw,se,sw,w",
+      ["sw"] = "郏县|e,ne,se,sw",
+    },
+  },
+  ["章华台|ne"] = {
+    name = "章华台",
+    exits = {
+      ["ne"] = "乾溪沟|nw,sw",
+    },
+  },
+  ["蔡州|n,sw"] = {
+    name = "蔡州",
+    exits = {
+      ["n"] = "上蔡|ne,nw,s,se",
+    },
+  },
+  ["襄城县|ne,nw,s"] = {
+    name = "襄城县",
+    exits = {
+      ["ne"] = "五岳庙|enter,sw",
+      ["nw"] = "郏县|e,ne,se,sw",
+      ["s"] = "大驿道|n,ne,sw",
+    },
+  },
+  ["许昌城|e,n,ne,nw,se,sw,w"] = {
+    name = "许昌城",
+    exits = {
+      ["e"] = "青石大道|se,w",
+      ["n"] = "中原马车总行|s",
+      ["nw"] = "大驿道|nw,se,sw,w",
+      ["se"] = "小商桥|nw,se",
+      ["sw"] = "大驿道|ne,sw",
+      ["w"] = "郏县|e,ne,se,sw",
+    },
+  },
+  ["轩辕关|nw,sw"] = {
+    name = "轩辕关",
+    exits = {
+      ["sw"] = "鹅岭口|ne,sd",
+    },
+  },
+  ["郏县|e,ne,se,sw"] = {
+    name = "郏县",
+    exits = {
+      ["e"] = "许昌城|e,n,ne,nw,se,sw,w",
+      ["ne"] = "神垕镇|ne,sw",
+      ["se"] = "襄城县|ne,nw,s",
+      ["sw"] = "大驿道|ne,nw,s,w",
+    },
+  },
+  ["郑州|e,nw,s,se,wu"] = {
+    name = "郑州",
+    exits = {
+      ["s"] = "新郑|e,n,se,sw",
+    },
+  },
+  ["郾城|neu,nw,s,se"] = {
+    name = "郾城",
+    exits = {
+      ["neu"] = "彼岸寺|swd",
+      ["nw"] = "小商桥|nw,se",
+      ["s"] = "官道|e,n,s,w",
+      ["se"] = "上蔡|ne,nw,s,se",
+    },
+  },
+
+  ["驻马店|n,s"] = {
+    name = "驻马店",
+    exits = {
+      ["n"] = "官道|e,n,s,w",
+    },
+  },
+  ["驿道|e,nw"] = {
+    name = "驿道",
+    exits = {
+      ["e"] = "汝州|ne,se,w",
+      ["nw"] = "伊川|e,n,se,sw",
+    },
+  },
+  ["驿道|e,w"] = {
+    name = "驿道",
+    exits = {
+      ["e"] = "登封|e,nu,nw,sw,w",
+      ["w"] = "伊川|e,n,se,sw",
+    },
+  },
+  ["鲁山|enter,n,sw,w"] = {
+    name = "鲁山",
+    exits = {
+      ["n"] = "大驿道|ne,nw,s,w",
+      ["sw"] = "大驿道|ne,s,w",
+    },
+  },
+  ["鹅岭口|ne,sd"] = {
+    name = "鹅岭口",
+    exits = {
+      ["ne"] = "轩辕关|nw,sw",
+      ["sd"] = "山间道|eu,ne,nu,nw,sd",
+    },
+  },
+}
+}
+
+-- mapAliases（房间名 -&gt; 拼音缩写）
+mapper.maps["zhongyuan"].mapAliases = {
+  ["轩辕关"]       = "xyg",
+  ["鹅岭口"]       = "elk",
+  ["山间道"]       = "sjd",
+
+  ["上蔡"]         = "sc",
+  ["蔡州"]         = "cz",
+  ["驻马店"]       = "zmd",
+  ["长台关"]       = "ctg",
+
+  ["郾城"]         = "yc",
+  ["小商桥"]       = "xsq",
+
+  ["许昌城"]       = "origin",
+  ["中原马车总行"] = "mch",
+  ["青石大道"]     = "qsdd",
+
+  ["郏县"]         = "jx",
+  ["襄城县"]       = "xcx",
+
+  ["郑州"]         = "zz",
+  ["新郑"]         = "xz",
+  ["六合门"]       = "lhm",
+  ["大官道"]       = "dgd",
+
+  ["登封"]         = "df",
+  ["市集"]         = "sj",
+
+  ["汝州"]         = "rz",
+  ["伊川"]         = "yc2", 
+  ["驿道"]         = "yd",
+
+  ["白河东岸"]     = "bhda",
+  ["悦来客栈"]     = "ylkz",
+  ["客店二楼"]     = "kdel",
+
+  ["鲁山"]         = "ls",
+
+  ["山路"]         = "sl",
+  ["擂鼓山"]       = "lgs",
+
+  ["天光云影亭"]   = "tgyyt",
+
+  ["环翠峪"]       = "hcy",
+
+  ["官道"]         = "gd",
+  ["大驿道"]       = "dyd",
 }
 </script>
 					<eventHandlerList />
@@ -73844,8 +74667,68 @@ end
 node_city = node_city or {}
 local add = node_city.add or function(name, data) node_city[name] = data end
 
+-- 城中心 - [酷晴]current room is -- : 城中心
+    -- 货郎 徐宇宏(Xu yuhong)
+    -- 闽中百姓 凌惠(Ling hui)
+-- 
+-- 你到达了福州。
+
 add("昌隆镖局", { --
   job_done   = "ask zuo about finish;ask zuo about 重置任务", 
+})
+
+add("灵江东岸", { -- 
+  back_mrf     = "zong",
+  back_pozhen  = "zong",
+  back_hsz     = "zong",
+  back_mzj     = "zong",
+  back_yangzhou= "zong",  
+  back_mingzhou = "zong",
+})
+
+add("鸣珂街", { -- 
+  back_mrf     = "walk dongan",
+  back_pozhen  = "walk dongan",
+  back_hsz     = "walk dongan",
+  back_mzj     = "walk dongan",
+  back_yangzhou= "walk dongan",  
+  back_mingzhou = "walk dongan",
+})
+
+add("九龙窠", { -- 
+  back_mrf     = "walk quanzhou",
+  back_pozhen  = "walk quanzhou",
+  back_hsz     = "walk quanzhou",
+  back_mzj     = "walk quanzhou",
+  back_yangzhou= "walk quanzhou",  
+  back_mingzhou = "walk quanzhou",
+})
+
+add("灵江西岸", { -- 
+  back_mrf     = "walk mingzhou",
+  back_pozhen  = "walk mingzhou",
+  back_hsz     = "walk mingzhou",
+  back_mzj     = "walk mingzhou",
+  back_yangzhou= "walk mingzhou",  
+  back_mingzhou = "walk mingzhou",
+})
+
+add("雁荡山", { -- 
+  back_mrf     = "walk mingzhou",
+  back_pozhen  = "walk mingzhou",
+  back_hsz     = "walk mingzhou",
+  back_mzj     = "walk mingzhou",
+  back_yangzhou= "walk mingzhou",  
+  back_mingzhou = "walk mingzhou",
+})
+
+add("市口", { -- 
+  back_mrf     = "walk mingzhou",
+  back_pozhen  = "walk mingzhou",
+  back_hsz     = "walk mingzhou",
+  back_mzj     = "walk mingzhou",
+  back_yangzhou= "walk mingzhou",  
+  back_mingzhou = "walk mingzhou",
 })
 
 add("镇江马车行", { -- 
@@ -74140,7 +75023,7 @@ add("归云庄", {
   job_done   = "ask lu about 破阵奖励;;tell feixuex 治疗",
   job_fail   = "ask lu about 破阵失败;tell feixuex 治疗",
   back_hangzhou = "node walk pozhen_mrf",
-  back_yangzhou = "node walk pozhen_zjdk",
+  back_yangzhou = "w;w;sd;sd;out;w;w;s;gu;qu zhenjiang",
   back_mrf      = "node walk pozhen_mrf",
   back_hsz      = "node walk pozhen_mrf",
   back_yupo      = "node walk pozhen_qz",
@@ -74445,7 +75328,7 @@ add("醉仙楼二楼", {
   back_yangzhou= "node walk bxs_yz",
   ask_job  = "ask bai about 挑战",
   job_done   = "ask bai about finish",
-  back_mrf     = "d;w;s;s;walk zhenjiang",
+  back_mrf     = "d;w;s;s;do 4 s;su;se;su;e;ask shao gong about jiang;enter",
 })
 
 
@@ -79129,15 +80012,15 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>murong_target_city</name>
-				<keyType>4</keyType>
-				<value>天台山</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>murong_target_room</name>
 				<keyType>4</keyType>
 				<value>金庭门</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>murong_target_city</name>
+				<keyType>4</keyType>
+				<value>天台山</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -79159,9 +80042,9 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>神不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -79171,21 +80054,21 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
+				<name>hunger</name>
+				<keyType>4</keyType>
+				<value>"饥饿状态"</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
 				<name>thirthty</name>
 				<keyType>4</keyType>
 				<value>"饥渴状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
+				<name>short_of_xue</name>
 				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>hunger</name>
-				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -79381,10 +80264,10 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>base_neili</name>
+				<name>max_neili</name>
 				<keyType>4</keyType>
-				<value>1093</value>
-				<valueType>4</valueType>
+				<value>2014</value>
+				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -79399,39 +80282,21 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_shen</name>
-				<keyType>4</keyType>
-				<value>464</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
 				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
-				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>current_jingli</name>
-				<keyType>4</keyType>
-				<value>1982</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_xue</name>
+				<name>max_xue</name>
 				<keyType>4</keyType>
 				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>current_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>1432</value>
+				<value>1093</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -79441,15 +80306,33 @@ border_node["明州-城外土路"] = {
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
+				<name>current_neili</name>
+				<keyType>4</keyType>
+				<value>1432</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_xue</name>
+				<keyType>4</keyType>
+				<value>693</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_jingli</name>
+				<keyType>4</keyType>
+				<value>1982</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
 				<name>base_shen</name>
 				<keyType>4</keyType>
 				<value>464</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_xue</name>
+				<name>max_shen</name>
 				<keyType>4</keyType>
-				<value>693</value>
+				<value>464</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -79459,12 +80342,6 @@ border_node["明州-城外土路"] = {
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
-			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
 		<VariableGroup>
 			<name>luren_set</name>
 			<keyType>4</keyType>
@@ -79477,39 +80354,45 @@ border_node["明州-城外土路"] = {
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>qi</name>
+				<name>water</name>
 				<keyType>4</keyType>
-				<value>7133</value>
+				<value>307</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>water</name>
+				<name>qi</name>
 				<keyType>4</keyType>
-				<value>249</value>
+				<value>7230</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>jing</name>
 				<keyType>4</keyType>
-				<value>5656</value>
+				<value>5445</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
 				<keyType>4</keyType>
-				<value>249</value>
+				<value>294</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
+		<Variable>
+			<name>current_learning_skills</name>
+			<keyType>4</keyType>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -79525,9 +80408,9 @@ border_node["明州-城外土路"] = {
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
