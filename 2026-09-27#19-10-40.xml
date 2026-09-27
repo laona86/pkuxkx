@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" commandEchoMode="1" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mEnableMXP="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_CHARSET_NEGOTIATION_OFF="no" mVersionInTTYPE="no" mPromptedForVersionInTTYPE="no" mForceMXPProcessorOn="yes" mPromptedForMXPProcessorOn="yes" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" f3SearchEnabled="no" enableClosedCaption="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" disablePasswordMasking="no" HighlightHistory="yes" commandEchoMode="1" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mEnableBlinkText="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mEnableMXP="yes" mEnableNAWS="yes" mUndoServerWrap="no" mEnableCHARSET="yes" mEnableNEWENVIRON="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowGrid="no" mMapperShowRoomBorders="yes" mVersionInTTYPE="no" mPromptedForVersionInTTYPE="no" mForceMXPProcessorOn="yes" mPromptedForMXPProcessorOn="yes" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mRoomBorderSize="10.0" mMapGridLineSize="0.5" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mShow3DView="no" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mEditorThemeDark="" mEditorThemeFileDark="" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mDiscordMode="2" mRequiredDiscordUserName="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" enableOSC8Hyperlinks="yes" f3SearchEnabled="no" enableClosedCaption="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>MingJiao</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -53,8 +53,11 @@
 			<wrapAt>128</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<wrapHangingIndentCount>0</wrapHangingIndentCount>
+			<undoServerWrapWidth>80</undoServerWrapWidth>
+			<consoleBufferSize>100000</consoleBufferSize>
+			<useMaxConsoleBufferSize>no</useMaxConsoleBufferSize>
 			<mFgColor>#c0c0c0</mFgColor>
-			<mBgColor>#000000</mBgColor>
+			<mBgColor alpha="255">#000000</mBgColor>
 			<mCommandFgColor>#717100</mCommandFgColor>
 			<mCommandBgColor>#000000</mCommandBgColor>
 			<mCommandLineFgColor>#808080</mCommandLineFgColor>
@@ -85,6 +88,7 @@
 			<mUpperLevelColor>#ffffff</mUpperLevelColor>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
 			<mRoomCollisionBorderColor>#ffff00</mRoomCollisionBorderColor>
+			<mMapGridColor alpha="64">#d3d3d3</mMapGridColor>
 			<mMapInfoBg alpha="120">#969696</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
@@ -123,7 +127,19 @@
 			<profileShortcut key="Toggle Replay">Ctrl+Alt+R</profileShortcut>
 			<profileShortcut key="Toggle Logging">Ctrl+Alt+L</profileShortcut>
 			<profileShortcut key="Toggle Emergency Stop">Ctrl+Alt+S</profileShortcut>
+			<profileShortcut key="Next profile">Ctrl+Tab</profileShortcut>
+			<profileShortcut key="Previous profile">Ctrl+Shift+Tab</profileShortcut>
+			<profileShortcut key="Switch to profile 1">Ctrl+1</profileShortcut>
+			<profileShortcut key="Switch to profile 2">Ctrl+2</profileShortcut>
+			<profileShortcut key="Switch to profile 3">Ctrl+3</profileShortcut>
+			<profileShortcut key="Switch to profile 4">Ctrl+4</profileShortcut>
+			<profileShortcut key="Switch to profile 5">Ctrl+5</profileShortcut>
+			<profileShortcut key="Switch to profile 6">Ctrl+6</profileShortcut>
+			<profileShortcut key="Switch to profile 7">Ctrl+7</profileShortcut>
+			<profileShortcut key="Switch to profile 8">Ctrl+8</profileShortcut>
+			<profileShortcut key="Switch to profile 9">Ctrl+9</profileShortcut>
 			<stopwatches />
+			<MMCP chatName="" chatPort="4050" chatPrefix="&lt;CHAT>" autostartServer="no" allowPeekRequests="no" prefixEmotes="no" chatMessageNewline="yes" autoAcceptCalls="yes" snoopInMain="yes" />
 		</Host>
 	</HostPackage>
 	<TriggerPackage>
@@ -2218,7 +2234,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 						<integer>0</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>慕容复</name>
 					<script>set_xkx_room("慕容复")</script>
 					<triggerType>0</triggerType>
@@ -2799,7 +2815,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 				</Trigger>
 			</TriggerGroup>
 		</TriggerGroup>
-		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>修炼</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -3984,7 +4000,7 @@ dest_task_type("reset")</script>
 						<integer>0</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>开战大恶</name>
 					<script>--echo("==find==")
 local name = string.lower(matches[2])
@@ -17995,7 +18011,7 @@ npc_say.buildIndex()</script>
 -- fullme.lua  (RIGHT-SIDE, AUTO-FIT + BUTTON VERSION)
 -- =========================================================
 
-cecho("&lt;cyan&gt; [fullme] 已加载\n")
+--cecho("&lt;cyan&gt; [fullme] 已加载\n")
 fullme = fullme or {}
 
 fullme.cfg = {
@@ -18017,7 +18033,7 @@ fullme.cfg = {
 
   prefer_net = true,
   cache_dir_name = "fullme_cache",
-  debug = false,
+  debug = true,
 }
 
 fullme._seq   = fullme._seq or 0
@@ -18034,12 +18050,12 @@ fullme._lastUrl = fullme._lastUrl or nil
 -------------------------------------------------------
 local function dbg(msg)
   if fullme.cfg.debug then
-    cecho("\n&lt;cyan&gt;[fullme]&lt;/cyan&gt; " .. msg .. "\n")
+    echo("\n&lt;cyan&gt;[fullme]&lt;/cyan&gt; " .. msg .. "\n")
   end
 end
 
 local function err(msg)
-  cecho("\n&lt;red&gt;[fullme]&lt;/red&gt; " .. msg .. "\n")
+  echo("\n&lt;red&gt;[fullme]&lt;/red&gt; " .. msg .. "\n")
 end
 
 local function ensureDir(path)
@@ -18299,7 +18315,7 @@ function fullme.initUI()
     setLabelStyleSheet("fullme_btn_refresh",
       "background-color: rgba(50,50,50,200); color: white; border-radius:5px;"
     )
-    setLabelClickCallback("fullme_btn_refresh", "fullme.reload")
+    setLabelClickCallback("fullme_btn_refresh", fullme.reload)
   end
 
   if not getWindowWrap("fullme_btn_close") then
@@ -18308,7 +18324,7 @@ function fullme.initUI()
     setLabelStyleSheet("fullme_btn_close",
       "background-color: rgba(120,30,30,200); color: white; border-radius:5px;"
     )
-    setLabelClickCallback("fullme_btn_close", "fullme.hide")
+    setLabelClickCallback("fullme_btn_close", fullme.hide)
   end
 
   resizeWindow(fullme.cfg.windowName, fullme._curW or fullme.cfg.w, fullme._curH or fullme.cfg.h)
@@ -18317,7 +18333,7 @@ function fullme.initUI()
   if not fullme._resizeEH then
     fullme._resizeEH = registerAnonymousEventHandler(
       "sysWindowResizeEvent",
-      function() fullme.updatePosition() end
+      "fullme.updatePosition"
     )
   end
 end
@@ -18442,7 +18458,7 @@ fullme.initUI()</script>
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "parry"
+local skill = "dodge"
 local food = "ganliang"
 local water = ""
 
@@ -50370,20 +50386,20 @@ mapper.maps["bj"] = {
     },
   
   
-  ["永安门城楼|d,e,w"] = {
-  name = "永安门城楼",
+  ["永定门城楼|d,e,w"] = {
+  name = "永定门城楼",
   exits = {
-    ["d"] = "永安门|e,n,s,u,w",
+    ["d"] = "永定门|e,n,s,u,w",
     ["w"] = "城墙|e,w",
   },
 },
 
-    ["永安门|e,n,s,u,w"] = {
-      name = "永安门",
+    ["永定门|e,n,s,u,w"] = {
+      name = "永定门",
       exits = {
         ["n"] = "正阳门外大街2|e,n,s,w",
         ["s"] = "青石大道|n,se,sw",
-        ["u"] = "永安门城楼|d,e,w",
+        ["u"] = "永定门城楼|d,e,w",
         ["w"] = "土路|e,w",
       },
     },
@@ -50391,14 +50407,14 @@ mapper.maps["bj"] = {
       ["城墙|e,w"] = {
       name = "城墙",
       exits = {
-        ["e;d"] = "永安门|e,n,s,u,w",
+        ["e;d"] = "永定门|e,n,s,u,w",
         ["s"] = "青石大道|n,se,sw",
       },
     },
     ["土路|e,w"] = {
   name = "土路",
   exits = {
-    ["e"] = "永安门|e,n,s,u,w",
+    ["e"] = "永定门|e,n,s,u,w",
 
   },
 },
@@ -50517,7 +50533,7 @@ mapper.maps["bj"] = {
       exits = {
         ["e"] = "甜水井胡同|n,w",
         ["n"] = "正阳门外大街1|e,n,s,w",
-        ["s"] = "永安门|e,n,s,u,w",
+        ["s"] = "永定门|e,n,s,u,w",
         ["w"] = "夏家胡同|e,n,w",
       },
     },  
@@ -50565,7 +50581,7 @@ mapper.maps["bj"] = {
 ["青石大道|n,se,sw"] = {
   name = "青石大道",
   exits = {
-    ["n"] = "永安门|e,n,s,u,w",
+    ["n"] = "永定门|e,n,s,u,w",
     ["sw"] = "青石大道|n,ne,sw",
   },
 },
@@ -51412,6 +51428,7 @@ mapper.maps["bj"].mapAliases = {
   ["正阳门外大街2"]  = "zymwdj2",
   ["正阳门外大街3"]  = "zymwdj3",
   ["永安门"]          = "yanm",
+  ["永定门"]          = "ydm",
   ["西天门"]          = "tt",
   ["辟才胡同"]        = "bcht",
   ["甜水井胡同"]      = "tsjht",
@@ -51557,12 +51574,21 @@ mapper.maps["bj"].mapAliases = {
       },
     },
 
-    ["客房2|e"] = {
-      name = "客房2",
+    ["客房|e"] = {
+      name = "客房",
       exits = {
-        ["e;e"] = "卧佛殿|e,n,s,w",
+        ["e"] = "禅房|e,w",
       },
     },
+    
+    ["禅房|e,w"] = {
+  name = "禅房",
+  exits = {
+    ["e"] = "卧佛殿|e,n,s,w",
+    ["w"] = "客房|e",
+  },
+},
+
 
     ["万安塔|se"] = {
       name = "万安塔",
@@ -51584,10 +51610,6 @@ mapper.maps["bj"].mapAliases = {
       name = "万安寺大门",
       exits = {
         ["n"] = "寺内广场|n,s",
-
-        -- 原来这里有：
-        -- ["se;se;se"] = "城西集市|e,nw,s",
-        -- 万安寺已经搬离洛阳，所以删除。
       },
     },
 
@@ -51604,7 +51626,7 @@ mapper.maps["bj"].mapAliases = {
         ["e;e"] = "客房1|w",
         ["n"] = "讲经台|e,nd,s,w",
         ["s"] = "大雄宝殿|e,n,s,w",
-        ["w;w"] = "客房2|e",
+        ["w"] = "禅房|e,w",
       },
     },
 
@@ -51704,7 +51726,7 @@ mapper.maps["bj"].mapAliases = {
     ["小屋"]       = "xw",
     ["小院"]       = "xy",
     ["客房1"]      = "kf1",
-    ["客房2"]      = "kf2",
+    ["客房"]      = "kf",
     ["万安塔"]     = "wat",
     ["万安寺后院"] = "washy",
     ["万安寺大门"] = "origin",
@@ -51721,7 +51743,8 @@ mapper.maps["bj"].mapAliases = {
     ["讲经台"]     = "jjt",
     ["钟楼"]       = "zl",
     ["鼓楼"]       = "gl",
-  },
+    ["禅房"]       = "cf",
+   },
 
   --origin = "万安寺大门|n,se",
 }</script>
@@ -58553,12 +58576,21 @@ mapper.maps["haozhou"] = {
       },
     },
       
-["通商客栈|nw"] = {
+["通商客栈|nw,u"] = {
   name = "通商客栈",
   exits = {
     ["nw"] = "淮河边|ne,s,se",
+    ["u"] = "二楼|d",
   },
 },  
+
+["二楼|d"] = {
+  name = "二楼",
+  exits = {
+    ["d"] = "通商客栈|nw,u",
+  },
+},  
+
 ["淮河边|ne,s,se"] = {
   name = "淮河边",
   exits = {
@@ -65112,26 +65144,94 @@ mapper.maps["zhongyuan"] = {
   },
 mapNodes = {
 
-["淮河北岸|nu,sw"] = {
-  name = "淮河北岸",
+  ["许昌城|e,n,ne,nw,se,sw,w"] = {
+    name = "许昌城",
+    exits = {
+      ["e"] = "青石大道|se,w",
+      ["n"] = "中原马车总行|s",
+      ["nw"] = "大驿道|nw,se,sw,w",
+      ["se"] = "小商桥|nw,se",
+      ["sw"] = "大驿道|ne,sw",
+      ["w"] = "郏县|e,ne,se,sw",
+    },
+  },
+  
+  ["兴国寺|enter,w"] = {
+  name = "兴国寺",
   exits = {
-    ["nu"] = "淮北|eu,ne,sd,se,w",
+    ["enter"] = "兴国寺塔|out",
   },
 },
 
-["淮北|eu,ne,sd,se,w"] = {
+["兴国寺塔|out"] = {
+  name = "兴国寺塔",
+  exits = {
+    ["out"] = "兴国寺|enter,w",
+  },
+},
+
+  
+  ["大驿道|nw,se,sw,w"] = {
+    name = "大驿道",
+    exits = {
+      ["nw"] = "新郑|e,n,se,sw",
+      ["se"] = "许昌城|e,n,ne,nw,se,sw,w",
+      ["sw"] = "神垕镇|ne,sw",
+      ["w"] = "登封|e,nu,nw,w",
+    },
+  },
+
+["神垕镇|ne,sw"] = {
+  name = "神垕镇",
+  exits = {
+    ["ne"] = "大驿道|nw,se,sw,w",
+    ["sw"] = "郏县|e,ne,se,sw",
+  },
+},
+
+  ["郏县|e,ne,se,sw"] = {
+    name = "郏县",
+    exits = {
+      ["e"] = "许昌城|e,n,ne,nw,se,sw,w",
+      ["ne"] = "神垕镇|ne,sw",
+      ["se"] = "襄城县|nw,s",
+      ["sw"] = "大驿道|ne,nw,s,w",
+    },
+  },
+
+  
+  
+["淮河北岸|nu,sw"] = {
+  name = "淮河北岸",
+  exits = {
+    ["nu"] = "淮北|eu,n,ne,sd,se,w",
+  },
+},
+
+["淮北|eu,n,ne,sd,se,w"] = {
   name = "淮北",
   exits = {
     ["sd"] = "淮河北岸|nu,sw",
-    ["w;nw"] = "青石大道|se,w",
+    ["w"] = "青石大道|e,nw,sw",
   },
 },
+
+["青石大道|e,nw,sw"] = {
+  name = "青石大道",
+  exits = {
+    ["e"] = "淮北|eu,n,ne,sd,se,w",
+    ["nw"] = "青石大道|se,w",
+    ["sw"] = "亳州|ne,se,sw",
+  },
+},
+
+
 
   ["青石大道|se,w"] = {
     name = "青石大道",
     exits = {
       ["w"] = "许昌城|e,n,ne,nw,se,sw,w",
-      ["se;e"] = "淮北|eu,ne,sd,se,w",
+      ["se"] = "青石大道|e,nw,sw",
     },
   },
 
@@ -65158,14 +65258,41 @@ mapNodes = {
     },
   },
   
-  ["上蔡|nw,s,se"] = {
+  ["上蔡|ne,nw,s,se"] = {
     name = "上蔡",
     exits = {
-      ["nw"] = "郾城|nw,s,se",
+      ["ne"] = "亳州|ne,se,sw",
+      ["nw"] = "郾城|neu,nw,s,se",
       ["s"] = "蔡州|n,sw",
       ["se"] = "山路|nw,su",
     },
   },
+  
+  ["亳州|ne,se,sw"] = {
+  name = "亳州",
+  exits = {
+    ["ne"] = "青石大道|e,nw,sw",
+    ["se"] = "乾溪沟|nw,sw",
+    ["sw"] = "上蔡|ne,nw,s,se",
+  },
+},
+
+["乾溪沟|nw,sw"] = {
+  name = "乾溪沟",
+  exits = {
+    ["nw"] = "亳州|ne,se,sw",
+    ["sw"] = "章华台|ne",
+  },
+},
+
+["章华台|ne"] = {
+  name = "章华台",
+  exits = {
+    ["ne"] = "乾溪沟|nw,sw",
+  },
+},
+
+
   ["中原马车总行|s"] = {
     name = "中原马车总行",
     exits = {
@@ -65216,7 +65343,7 @@ mapNodes = {
   ["大驿道|ne,nw,s,w"] = {
     name = "大驿道",
     exits = {
-      ["ne"] = "郏县|e,se,sw",
+      ["ne"] = "郏县|e,ne,se,sw",
       ["nw"] = "汝州|se,w",
       ["s"] = "鲁山|enter,n,sw,w",
     },
@@ -65242,24 +65369,17 @@ mapNodes = {
       ["w"] = "大驿道|e,s",
     },
   },
-  ["大驿道|nw,se,w"] = {
-    name = "大驿道",
-    exits = {
-      ["nw"] = "新郑|n,se,sw",
-      ["se"] = "许昌城|e,n,ne,nw,se,sw,w",
-      ["w"] = "登封|e,nu,nw,w",
-    },
-  },
+
   ["天光云影亭|ne,sd"] = {
     name = "天光云影亭",
     exits = {
-      ["ne"] = "新郑|n,se,sw",
+      ["ne"] = "新郑|e,n,se,sw",
     },
   },
   ["官道|n,s"] = {
     name = "官道",
     exits = {
-      ["n"] = "郾城|nw,s,se",
+      ["n"] = "郾城|neu,nw,s,se",
       ["s"] = "驻马店|n,s",
     },
   },
@@ -65278,13 +65398,13 @@ mapNodes = {
     name = "小商桥",
     exits = {
       ["nw"] = "许昌城|e,n,ne,nw,se,sw,w",
-      ["se"] = "郾城|nw,s,se",
+      ["se"] = "郾城|neu,nw,s,se",
     },
   },
   ["山路|nw,su"] = {
     name = "山路",
     exits = {
-      ["nw"] = "上蔡|nw,s,se",
+      ["nw"] = "上蔡|ne,nw,s,se",
       ["su"] = "擂鼓山|nd",
     },
   },
@@ -65308,11 +65428,12 @@ mapNodes = {
       ["nd"] = "山路|nw,su",
     },
   },
-  ["新郑|n,se,sw"] = {
+
+  ["新郑|e,n,se,sw"] = {
     name = "新郑",
     exits = {
       ["n"] = "郑州|nw,s,se,wu",
-      ["se"] = "大驿道|nw,se,w",
+      ["se"] = "大驿道|nw,se,sw,w",
       ["sw"] = "天光云影亭|ne,sd",
     },
   },
@@ -65332,13 +65453,13 @@ mapNodes = {
   ["登封|e,nu,nw,w"] = {
     name = "登封",
     exits = {
-      ["e"] = "大驿道|nw,se,w",
+      ["e"] = "大驿道|nw,se,sw,w",
       ["nu"] = "山间道|eu,ne,nu,nw,sd",
       ["nw"] = "市集|se",
       ["w"] = "驿道|e,w",
     },
   },
-  ["白河东岸|e,n,ne,sw,wu"] = {
+  ["白河东岸|e,n,ne,wu"] = {
     name = "白河东岸",
     exits = {
       ["e"] = "悦来客栈|u,w",
@@ -65350,53 +65471,43 @@ mapNodes = {
   ["蔡州|n,sw"] = {
     name = "蔡州",
     exits = {
-      ["n"] = "上蔡|nw,s,se",
+      ["n"] = "上蔡|ne,nw,s,se",
       ["sw"] = "长台关|n,ne,s,w",
     },
   },
   ["襄城县|nw,s"] = {
     name = "襄城县",
     exits = {
-      ["nw"] = "郏县|e,se,sw",
+      ["nw"] = "郏县|e,ne,se,sw",
       ["s"] = "大驿道|n,ne,sw",
     },
   },
-  ["许昌城|e,n,ne,nw,se,sw,w"] = {
-    name = "许昌城",
-    exits = {
-      ["e"] = "青石大道|se,w",
-      ["n"] = "中原马车总行|s",
-      ["nw"] = "大驿道|nw,se,w",
-      ["se"] = "小商桥|nw,se",
-      ["sw"] = "大驿道|ne,sw",
-      ["w"] = "郏县|e,se,sw",
-    },
-  },
-  ["郏县|e,se,sw"] = {
-    name = "郏县",
-    exits = {
-      ["e"] = "许昌城|e,n,ne,nw,se,sw,w",
-      ["se"] = "襄城县|nw,s",
-      ["sw"] = "大驿道|ne,nw,s,w",
-    },
-  },
+
   ["郑州|nw,s,se,wu"] = {
     name = "郑州",
     exits = {
       ["nw"] = "大官道|nw,se",
-      ["s"] = "新郑|n,se,sw",
+      ["s"] = "新郑|e,n,se,sw",
       ["se"] = "六合门|nw",
       ["wu"] = "环翠峪|ed,nd,sw",
     },
   },
-  ["郾城|nw,s,se"] = {
+  ["郾城|neu,nw,s,se"] = {
     name = "郾城",
     exits = {
+      ["neu"] = "彼岸寺|swd",
       ["nw"] = "小商桥|nw,se",
       ["s"] = "官道|n,s",
-      ["se"] = "上蔡|nw,s,se",
+      ["se"] = "上蔡|ne,nw,s,se",
     },
   },
+["彼岸寺|swd"] = {
+  name = "彼岸寺",
+  exits = {
+    ["swd"] = "郾城|neu,nw,s,se",
+  },
+},
+  
   ["长台关|n,ne,s,w"] = {
     name = "长台关",
     exits = {
@@ -66346,7 +66457,15 @@ mapper.maps["kf"] = {
     name = "开封",    -- 纯注释/显示用
   },
   mapNodes = {
-
+  
+    ["望春门|e,w"] = {
+    name = "望春门",
+    exits = {
+      ["e"] = "牛行街|e,n,s,w",
+      ["w"] = "甜水巷|e,n,s,w",
+    },
+  },
+  
   ["牛行街|e,n,s,w"] = {
     name = "牛行街",
     exits = {
@@ -66363,7 +66482,7 @@ mapper.maps["kf"] = {
       ["e"] = "新曹门|e,w",
       ["n"] = "手工坊|s",
       ["s"] = "逸仙楼|n,u",
-      ["w"] = "望春门|e,w",
+      ["w"] = "牛行街|e,n,s,w",
     },
   },
   
@@ -66375,13 +66494,100 @@ mapper.maps["kf"] = {
   },
 },
 
+  
+
 ["东城门外|e,w"] = {
   name = "东城门外",
   exits = {
-    ["e"] = "",
+    ["e;e"] = "兰封|e,neu,nw,se,w",
     ["w"] = "新曹门|e,w",
   },
 },
+
+["兰封|e,neu,nw,se,w"] = {
+  name = "兰封",
+  exits = {
+    ["e"] = "方家院子|enter,w",
+    ["neu"] = "五霸冈|ne,nw,swd",
+    ["se"] = "官道|e,n,nw,s,se,w",
+    ["w;w"] = "东城门外|e,w",
+  },
+},
+
+["官道|e,n,nw,s,se,w"] = {
+  name = "官道",
+  exits = {
+    ["nw"] = "兰封|e,neu,nw,se,w",
+    ["se"] = "归德府|e,nw,se,wu",
+  },
+},
+
+["归德府|e,nw,se,wu"] = {
+  name = "归德府",
+  exits = {
+    ["nw"] = "官道|e,n,nw,s,se,w",
+    ["wu"] = "山坳|ed",
+  },
+},
+
+["山坳|ed"] = {
+  name = "山坳",
+  exits = {
+    ["ed"] = "归德府|e,nw,se,wu",
+  },
+},
+
+["方家内宅|out"] = {
+  name = "方家内宅",
+  exits = {
+    ["out"] = "方家院子|enter,w",
+  },
+},
+
+
+["方家院子|enter,w"] = {
+  name = "方家院子",
+  exits = {
+    ["enter"] = "方家内宅|out",
+    ["w"] = "兰封|e,neu,nw,se,w",
+  },
+},
+
+
+["五霸冈|ne,nw,swd"] = {
+  name = "五霸冈",
+  exits = {
+    ["ne"] = "土路|neu,sw",
+    ["nw"] = "东明|n,se",
+    ["swd"] = "兰封|e,neu,nw,se,w",
+  },
+},
+
+["土路|neu,sw"] = {
+  name = "土路",
+  exits = {
+    ["neu"] = "梁山泊|ed,swd",
+    ["sw"] = "五霸冈|ne,nw,swd",
+  },
+},
+
+["梁山泊|ed,swd"] = {
+  name = "梁山泊",
+  exits = {
+    ["ed"] = "",
+    ["swd"] = "土路|neu,sw",
+  },
+},
+
+
+["东明|n,se"] = {
+  name = "东明",
+  exits = {
+    ["n"] = "",
+    ["se"] = "五霸冈|ne,nw,swd",
+  },
+},
+
 
 
   ["逸仙楼|n,u"] = {
@@ -66899,13 +67105,7 @@ mapper.maps["kf"] = {
       ["s"] = "开封府|n,s,w",
     },
   },
-  ["望春门|e,w"] = {
-    name = "望春门",
-    exits = {
-      ["e"] = "牛行街|e,n,s,w",
-      ["w"] = "甜水巷|e,n,s,w",
-    },
-  },
+
   ["朱雀门|n,s,sw"] = {
     name = "朱雀门",
     exits = {
@@ -75055,7 +75255,7 @@ add("张家口", {
 })
 
 add("晋阳", { -- 晋阳
-  short_name = "jy",
+  short_name = "jyang",
   fp = "广场|n,sw",
   back_hyd      = "node walk jy_hyd",
   back_yangzhou = "node walk jy_qf",
@@ -75267,7 +75467,7 @@ add("茅屋", {
   job_done   = "jxf_done",
   back_yangzhou= "out;node walk jxf_yz",
   back_mrf     = "out;node walk jxf_yz",
-  back_yy = "out;node walk jxf_xiny"
+  back_yy = "out;ed;se;do 4 w;do 3 s;sd;se;s"
 })
 
 add("洛阳中心广场", {
@@ -86461,9 +86661,9 @@ rdprint(
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
+				<name>short_of_xue</name>
 				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
+				<value>血不足</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -86473,21 +86673,21 @@ rdprint(
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_shen</name>
-				<keyType>4</keyType>
-				<value>神不足</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>thirthty</name>
 				<keyType>4</keyType>
 				<value>"饥渴状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>short_of_xue</name>
+				<name>short_of_shen</name>
 				<keyType>4</keyType>
-				<value>血不足</value>
+				<value>神不足</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>hunger</name>
+				<keyType>4</keyType>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -86611,10 +86811,10 @@ rdprint(
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_neili</name>
+				<name>base_neili</name>
 				<keyType>4</keyType>
-				<value>2014</value>
-				<valueType>3</valueType>
+				<value>1093</value>
+				<valueType>4</valueType>
 			</Variable>
 			<Variable>
 				<name>food</name>
@@ -86629,7 +86829,49 @@ rdprint(
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
+				<name>max_xue</name>
+				<keyType>4</keyType>
+				<value>693</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
 				<name>max_shen</name>
+				<keyType>4</keyType>
+				<value>464</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>max_neili</name>
+				<keyType>4</keyType>
+				<value>2014</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>current_jingli</name>
+				<keyType>4</keyType>
+				<value>1982</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_xue</name>
+				<keyType>4</keyType>
+				<value>693</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>current_neili</name>
+				<keyType>4</keyType>
+				<value>1432</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_jingli</name>
+				<keyType>4</keyType>
+				<value>991</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>base_shen</name>
 				<keyType>4</keyType>
 				<value>464</value>
 				<valueType>4</valueType>
@@ -86640,48 +86882,6 @@ rdprint(
 				<value>68</value>
 				<valueType>4</valueType>
 			</Variable>
-			<Variable>
-				<name>base_neili</name>
-				<keyType>4</keyType>
-				<value>1093</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_jingli</name>
-				<keyType>4</keyType>
-				<value>991</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_neili</name>
-				<keyType>4</keyType>
-				<value>1432</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_xue</name>
-				<keyType>4</keyType>
-				<value>693</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>current_jingli</name>
-				<keyType>4</keyType>
-				<value>1982</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>base_shen</name>
-				<keyType>4</keyType>
-				<value>464</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
-				<name>max_xue</name>
-				<keyType>4</keyType>
-				<value>693</value>
-				<valueType>4</valueType>
-			</Variable>
 		</VariableGroup>
 		<VariableGroup>
 			<name>maps</name>
@@ -86689,12 +86889,6 @@ rdprint(
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
-			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
 		<VariableGroup>
 			<name>stat</name>
 			<keyType>4</keyType>
@@ -86703,19 +86897,19 @@ rdprint(
 			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
-				<value>746</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>qi</name>
-				<keyType>4</keyType>
-				<value>16233</value>
+				<value>895</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>neili</name>
 				<keyType>4</keyType>
-				<value>7550</value>
+				<value>18038</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>food</name>
+				<keyType>4</keyType>
+				<value>895</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
@@ -86725,33 +86919,39 @@ rdprint(
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>jing</name>
-				<keyType>4</keyType>
-				<value>14399</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
 				<name>jingli</name>
 				<keyType>4</keyType>
-				<value>10080</value>
+				<value>18330</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>food</name>
+				<name>jing</name>
 				<keyType>4</keyType>
-				<value>838</value>
+				<value>14683</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>qi</name>
+				<keyType>4</keyType>
+				<value>16497</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
+		<Variable>
+			<name>current_learning_skills</name>
+			<keyType>4</keyType>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
 			<Variable>
-				<name>basic_skill_higher_cannot_lingwu</name>
+				<name>current_learning_skills</name>
 				<keyType>4</keyType>
-				<value>你的基本功夫比你的高级功夫还高！</value>
+				<value>lingwu cuff</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -86767,9 +86967,9 @@ rdprint(
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
-				<name>current_learning_skills</name>
+				<name>basic_skill_higher_cannot_lingwu</name>
 				<keyType>4</keyType>
-				<value>lingwu cuff</value>
+				<value>你的基本功夫比你的高级功夫还高！</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
