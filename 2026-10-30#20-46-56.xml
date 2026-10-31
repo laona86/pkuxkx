@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" disablePasswordMasking="no" HighlightHistory="yes" commandEchoMode="1" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mEnableBlinkText="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mEnableMXP="yes" mEnableNAWS="yes" mUndoServerWrap="no" mEnableCHARSET="yes" mEnableNEWENVIRON="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowGrid="no" mMapperShowRoomBorders="yes" mVersionInTTYPE="no" mPromptedForVersionInTTYPE="no" mForceMXPProcessorOn="yes" mPromptedForMXPProcessorOn="yes" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mRoomBorderSize="10.0" mMapGridLineSize="0.5" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mShow3DView="no" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mEditorThemeDark="" mEditorThemeFileDark="" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="447" mDiscordMode="2" mRequiredDiscordUserName="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" enableOSC8Hyperlinks="yes" f3SearchEnabled="no" enableClosedCaption="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" disablePasswordMasking="no" HighlightHistory="yes" commandEchoMode="1" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="no" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mEnableBlinkText="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="no" mEnableMXP="yes" mEnableNAWS="yes" mUndoServerWrap="no" mEnableCHARSET="yes" mEnableNEWENVIRON="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="no" mAcceptServerMedia="no" mMapperUseAntiAlias="yes" mMapperShowGrid="no" mMapperShowRoomBorders="yes" mVersionInTTYPE="no" mPromptedForVersionInTTYPE="no" mForceMXPProcessorOn="yes" mPromptedForMXPProcessorOn="yes" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mRoomBorderSize="10.0" mMapGridLineSize="0.5" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mShow3DView="no" mHaveMapperScript="yes" mEditorAutoComplete="yes" mEditorShowBidi="yes" mEditorTheme="Mudlet" mEditorThemeFile="Mudlet.tmTheme" mEditorThemeDark="" mEditorThemeFileDark="" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="no" mDiscordAccessFlags="447" mDiscordMode="2" mRequiredDiscordUserName="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" enableOSC8Hyperlinks="yes" f3SearchEnabled="no" enableClosedCaption="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300" ShowIDsInEditor="no">
 			<name>MingJiao</name>
 			<mInstalledPackages>
 				<string>gui-drop</string>
@@ -42,7 +42,7 @@
 				<string>enable-accessibility</string>
 				<string>generic_mapper</string>
 			</mInstalledPackages>
-			<url>us.pkuxkx.com</url>
+			<url>jp.pkuxkx.com</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>1</serverPackageVersion>
 			<port>8081</port>
@@ -703,7 +703,7 @@ send("tuna 20")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>打坐完成</name>
-				<script>local level = 160
+				<script>local level = 260
 if stat.water+0 &lt; level or stat.food+0 &lt; level then
   eat_and_drink()
   tempTimer(1, function() yunqi() end)
@@ -807,7 +807,7 @@ end</script>
 				<script>if stat.neili+0 &gt; 500 then
   tempTimer(0.1, function() 
     release_force()
-    --send("response release force 1 round") 
+    send("response release force 1 round") 
   end)
 else 
   expandAlias("start_jiqi")  
@@ -2815,7 +2815,7 @@ echo(" \n========&gt; 发出箫花 =====\n")</script>
 				</Trigger>
 			</TriggerGroup>
 		</TriggerGroup>
-		<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 			<name>修炼</name>
 			<script></script>
 			<triggerType>0</triggerType>
@@ -6813,7 +6813,7 @@ end</script>
 		</Timer>
 		<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
 			<name>xue</name>
-			<script>if stat.food+0 &lt; 50 or stat.water+0 &lt; 50 then
+			<script>if stat.food+0 &lt; 150 or stat.water+0 &lt; 150 then
   eat_and_drink()
 end
 send("lian parry 50") </script>
@@ -9891,6 +9891,45 @@ cecho("&lt;green&gt;[RESULT]&lt;/green&gt; currentNode = "
 			<packageName></packageName>
 			<regex>^tm$</regex>
 		</Alias>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>马车行</name>
+			<script></script>
+			<command></command>
+			<packageName></packageName>
+			<regex></regex>
+			<Alias isActive="yes" isFolder="no">
+				<name>去潮州</name>
+				<script>expandAlias("mch")
+send("gu;qu chaozhou")</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^mcz$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>去孟之经</name>
+				<script>expandAlias("mch")
+send("gu;qu jiankangfu")</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^mmeng$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>杭州</name>
+				<script>expandAlias("mch")
+send("gu;qu linan")</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^mhz$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>江州</name>
+				<script>expandAlias("mch")
+send("gu;qu jiangzhou")</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^mjz$</regex>
+			</Alias>
+		</AliasGroup>
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
@@ -18579,7 +18618,7 @@ echo("\nFULLME TEST: " .. tostring(fullme.showFromUrl) .. "\n")</script>
 			<name>XKX scripts</name>
 			<packageName></packageName>
 			<script>local is_full = false
-local skill = "throwing"
+local skill = "dodge"
 local food = "ganliang"
 local water = ""
 
@@ -18592,19 +18631,13 @@ function eat_and_drink()
   send("do 10 eat "..food)
 end
 
-
 function release_force()
-  --expandAlias("yr;xue zhang for guangming-shenghuogong 10")
-  --expandAlias("yr;do 10 watch canju")
-  --expandAlias("yr;study book for 50")
-  --expandAlias("yc;lian dodge 50")
-  --expandAlias("yr;do 5 lingwu blade 1")
   --expandAlias("yr;;lingwu force")
   --expandAlias("yr;do 10 xue zhang for guangming-shenghuogong 50")
   --expandAlias("yr;do 5 xue zhang for qiankun-danuoyi 50")
   --expandAlias("yc;yr;lian parry 50")
-  --expandAlias(general_scripts.skills_to_learn)
-  expandAlias("tm")
+  expandAlias(general_scripts.skills_to_learn)
+  --expandAlias("tm")
 end
 
 function reset_is_full()
@@ -86881,15 +86914,15 @@ end</script>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>hunger</name>
-				<keyType>4</keyType>
-				<value>"饥饿状态"</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>short_of_shen</name>
 				<keyType>4</keyType>
 				<value>神不足</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>hunger</name>
+				<keyType>4</keyType>
+				<value>"饥饿状态"</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -87031,15 +87064,15 @@ end</script>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_shen</name>
-				<keyType>4</keyType>
-				<value>464</value>
-				<valueType>4</valueType>
-			</Variable>
-			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
 				<value>68</value>
+				<valueType>4</valueType>
+			</Variable>
+			<Variable>
+				<name>max_xue</name>
+				<keyType>4</keyType>
+				<value>693</value>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
@@ -87079,9 +87112,9 @@ end</script>
 				<valueType>4</valueType>
 			</Variable>
 			<Variable>
-				<name>max_xue</name>
+				<name>max_shen</name>
 				<keyType>4</keyType>
-				<value>693</value>
+				<value>464</value>
 				<valueType>4</valueType>
 			</Variable>
 		</VariableGroup>
@@ -87091,12 +87124,6 @@ end</script>
 			<value></value>
 			<valueType>5</valueType>
 		</VariableGroup>
-		<Variable>
-			<name>current_learning_skills</name>
-			<keyType>4</keyType>
-			<value>lingwu dodge</value>
-			<valueType>4</valueType>
-		</Variable>
 		<VariableGroup>
 			<name>stat</name>
 			<keyType>4</keyType>
@@ -87105,19 +87132,19 @@ end</script>
 			<Variable>
 				<name>water</name>
 				<keyType>4</keyType>
-				<value>836</value>
-				<valueType>3</valueType>
-			</Variable>
-			<Variable>
-				<name>food</name>
-				<keyType>4</keyType>
-				<value>836</value>
+				<value>761</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>neili</name>
 				<keyType>4</keyType>
-				<value>15839</value>
+				<value>8300</value>
+				<valueType>3</valueType>
+			</Variable>
+			<Variable>
+				<name>food</name>
+				<keyType>4</keyType>
+				<value>761</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
@@ -87129,22 +87156,28 @@ end</script>
 			<Variable>
 				<name>jingli</name>
 				<keyType>4</keyType>
-				<value>18708</value>
+				<value>11317</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>jing</name>
 				<keyType>4</keyType>
-				<value>16486</value>
+				<value>18059</value>
 				<valueType>3</valueType>
 			</Variable>
 			<Variable>
 				<name>qi</name>
 				<keyType>4</keyType>
-				<value>19572</value>
+				<value>21115</value>
 				<valueType>3</valueType>
 			</Variable>
 		</VariableGroup>
+		<Variable>
+			<name>current_learning_skills</name>
+			<keyType>4</keyType>
+			<value>lingwu dodge</value>
+			<valueType>4</valueType>
+		</Variable>
 		<VariableGroup>
 			<name>skill_constants</name>
 			<keyType>4</keyType>
